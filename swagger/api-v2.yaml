@@ -1,0 +1,1096 @@
+swagger: '2.0'
+info:
+  version: 0.0.0
+  title: YEAY Rest API V2
+host: '127.0.0.1:8080'
+basePath: /v2
+schemes:
+  - https
+  - http
+consumes:
+  - application/json
+produces:
+  - application/json
+securityDefinitions:
+  Bearer:
+    description: |
+      Value has to contain string of this format `Bearer <accessToken>`
+    type: apiKey
+    name: Authorization
+    in: header
+  None:
+    description: |
+      No auth needed
+    type: basic
+tags:
+  - name: Catalog
+paths:
+  /asset-library/video-background-music:
+    x-swagger-router-controller: videoMusicAssetController
+    get:
+      tags:
+        - Asset library
+      operationId: list
+      summary: Retrieves a list of all available video music assets
+      description: Retrieves a list of all available video music assets
+      parameters:
+        - $ref: '#/parameters/queryPaginationOffset'
+        - $ref: '#/parameters/queryPaginationLimit'
+      responses:
+        '200':
+          description: A paginated list of assets
+          schema:
+            $ref: '#/definitions/PaginatedVideoMusicAssetList'
+        default:
+          description: Error
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+    post:
+      tags:
+        - Asset library
+      operationId: create
+      summary: Creates a video music asset
+      description: Creates a video music asset
+      security:
+        - Bearer: []
+      x-yeay-scope: admin
+      parameters:
+        - name: body
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/CreateOrUpdateVideoMusicAssetRequest'
+      responses:
+        '200':
+          description: The created video music asset
+          schema:
+            $ref: '#/definitions/VideoMusicAsset'
+        default:
+          description: Error
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+  '/asset-library/video-background-music/{assetId}':
+    x-swagger-router-controller: videoMusicAssetController
+    get:
+      tags:
+        - Asset library
+      operationId: get
+      summary: Retrieves a specific video music asset
+      description: Retrieves a specific video music asset
+      parameters:
+        - name: assetId
+          in: path
+          type: string
+          required: true
+      responses:
+        '200':
+          description: The requested video music asset
+          schema:
+            $ref: '#/definitions/VideoMusicAsset'
+        default:
+          description: Error
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+    put:
+      tags:
+        - Asset library
+      operationId: update
+      summary: Updates a specific video music asset
+      description: Updates a specific video music asset
+      security:
+        - Bearer: []
+      x-yeay-scope: admin
+      parameters:
+        - name: assetId
+          in: path
+          type: string
+          required: true
+        - name: body
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/CreateOrUpdateVideoMusicAssetRequest'
+      responses:
+        '200':
+          description: The updated video music asset
+          schema:
+            $ref: '#/definitions/VideoMusicAsset'
+        default:
+          description: Error
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+    delete:
+      tags:
+        - Asset library
+      operationId: delete
+      summary: Removes a specific video music asset
+      description: Removes a specific video music asset
+      security:
+        - Bearer: []
+      x-yeay-scope: admin
+      parameters:
+        - name: assetId
+          in: path
+          type: string
+          required: true
+      responses:
+        '204':
+          description: The video was successfully deleted
+        default:
+          description: Error
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+  '/asset-library/video-background-music/{assetId}/audio':
+    x-swagger-router-controller: videoMusicAssetController
+    post:
+      operationId: uploadAudio
+      summary: Updates a specific video music asset
+      description: Updates a specific video music asset
+      tags:
+        - Asset library
+      security:
+        - Bearer: []
+      consumes:
+        - multipart/form-data
+      x-yeay-scope: admin
+      parameters:
+        - name: assetId
+          in: path
+          type: string
+          required: true
+        - name: file
+          in: formData
+          description: The uploaded audio file data
+          required: false
+          type: file
+      responses:
+        '202':
+          description: >
+            Audio file uploaded successfully and will be processed, but success
+            isn't guranteed.
+
+            After successfull processing `audioSourceChecksum` and asset urls
+            will be adjusted.
+
+            Currently there is no way to determine success or failuer except
+            watching sayed
+
+            properties ovre time.
+        default:
+          description: Error
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+  '/asset-library/video-background-music/{assetId}/image':
+    x-swagger-router-controller: videoMusicAssetController
+    post:
+      tags:
+        - Asset library
+      operationId: uploadImage
+      summary: Uploads an image for a specific video music asset
+      description: Uploads an image for a specific video music asset
+      consumes:
+        - multipart/form-data
+      security:
+        - Bearer: []
+      x-yeay-scope: admin
+      parameters:
+        - name: assetId
+          in: path
+          type: string
+          required: true
+        - name: file
+          in: formData
+          description: The file to be uploaded
+          required: true
+          type: file
+      responses:
+        '200':
+          description: The URL of the uploaded file
+          schema:
+            type: object
+            properties:
+              url:
+                type: string
+        default:
+          description: Error
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+  /autocomplete/video-tag:
+    x-swagger-router-controller: autocompleteV2Controller
+    get:
+      tags:
+        - Autocomplete
+      summary: Generates a list of autocomplete suggestions for the given string
+      description: Generates a list of autocomplete suggestions for the given string
+      operationId: autocompleteVideoTag
+      parameters:
+        - name: q
+          in: query
+          type: string
+          required: true
+        - name: size
+          type: number
+          in: query
+          default: 10
+          minimum: 1
+          maximum: 100
+      responses:
+        '200':
+          description: The suggestions
+          schema:
+            type: array
+            items:
+              type: string
+        default:
+          description: Error
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+  /autocomplete/brand-tag:
+    x-swagger-router-controller: autocompleteV2Controller
+    get:
+      tags:
+        - Autocomplete
+      summary: >-
+        Generates a list of brand tag autocomplete suggestions for the given
+        string
+      description: >-
+        Generates a list of brand tag autocomplete suggestions for the given
+        string
+      operationId: autocompleteBrandTag
+      parameters:
+        - name: q
+          in: query
+          type: string
+          required: true
+        - name: size
+          type: number
+          in: query
+          default: 10
+          minimum: 1
+          maximum: 100
+      responses:
+        '200':
+          description: The suggestions
+          schema:
+            type: array
+            items:
+              type: string
+        default:
+          description: Error
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+  /catalog/videos:
+    x-swagger-router-controller: catalogVideosV2Controller
+    get:
+      tags:
+        - Catalog
+      operationId: getCatalogVideos
+      summary: Retrieves a list of videos that are publicly available
+      description: |
+        Retrieve a list of videos that are publicly available
+      parameters:
+        - $ref: '#/parameters/queryPaginationOffset'
+        - $ref: '#/parameters/queryPaginationLimit'
+        - $ref: '#/parameters/querySearch'
+        - name: ids
+          description: Filter list by video ids. Separate multiple values by comma
+          type: array
+          items:
+            type: string
+          in: query
+        - name: creatorIds
+          description: Filter list by video creator ids. Separate multiple values by comma
+          type: array
+          items:
+            type: string
+          in: query
+        - name: tags
+          description: Filter list by tags. Separate multiple values by comma
+          type: array
+          items:
+            type: string
+          in: query
+        - name: challengeIds
+          description: Filter list by challenge ids. Separate multiple values by comma
+          type: array
+          items:
+            type: string
+          in: query
+        - name: channelIds
+          in: query
+          description: >-
+            Filter list by channel ids (a.k.a. categories). Separate multiple
+            values by comma
+          type: array
+          items:
+            type: string
+        - name: isFeatured
+          description: Include only or exclude any featured videos
+          type: boolean
+          in: query
+        - $ref: '#/parameters/queryCurrency'
+      responses:
+        '200':
+          description: A paginated list of catalog videos
+          schema:
+            $ref: '#/definitions/PaginatedCatalogVideoList'
+        default:
+          description: Error
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+  '/catalog/videos/{videoId}':
+    x-swagger-router-controller: catalogVideosV2Controller
+    get:
+      tags:
+        - Catalog
+      operationId: getCatalogVideo
+      summary: Retrieves a specific publicly available video
+      description: |
+        Retrieve a specific video
+      parameters:
+        - $ref: '#/parameters/queryCurrency'
+        - name: videoId
+          in: path
+          type: string
+          required: true
+      responses:
+        '200':
+          description: A catalog videos
+          schema:
+            $ref: '#/definitions/PaginatedCatalogVideoList'
+        default:
+          description: Error
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+  /catalog/feeds/home/1:
+    x-swagger-router-controller: catalogHomeFeedV2Controller
+    get:
+      tags:
+        - Catalog
+      operationId: getHomeFeed_1
+      summary: Retrieves content for the home feed
+      description: |
+        Retrieves content for the home feed.
+      security:
+        - None: []
+        - Bearer: []
+      parameters:
+        - $ref: '#/parameters/queryCurrency'
+        - $ref: '#/parameters/queryPaginationOffset'
+        - $ref: '#/parameters/queryPaginationLimit'
+      responses:
+        '200':
+          description: >
+            Object containing paginated list of home feed videos and pagination
+            metadata.
+          schema:
+            $ref: '#/definitions/PaginatedCatalogVideoList'
+        default:
+          description: Error
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+  /purchase-requests:
+    x-swagger-router-controller: purchaseRequestControllerV2
+    post:
+      tags:
+        - Misc
+      operationId: createPurchaseRequest
+      summary: Creates a new affiliate product purchase request for the requesting user
+      description: Creates a new affiliate product purchase request for the requesting user
+      security:
+        - Bearer: []
+      x-yeay-scope: user
+      parameters:
+        - name: body
+          in: body
+          required: true
+          schema:
+            type: object
+            required:
+              - productId
+              - address
+            properties:
+              productId:
+                type: string
+                pattern: '^[a-f0-9]{24}$'
+              videoId:
+                type: string
+              email:
+                type: string
+              phoneNumber:
+                type: string
+              address:
+                $ref: '#/definitions/Address'
+      responses:
+        '200':
+          description: The created purchase request
+          schema:
+            $ref: '#/definitions/PurchaseRequest'
+        default:
+          description: Error
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+  '/videos/{videoId}/poster-image':
+    x-swagger-router-controller: videoFileV2Controller
+    post:
+      tags:
+        - Videos
+      operationId: uploadPosterImage
+      security:
+        - Bearer: []
+      x-yeay-scope: user
+      summary: Upload a poster image for a specific video of the requesting user
+      description: Upload a poster image for a specific video of the requesting user
+      consumes:
+        - multipart/form-data
+      parameters:
+        - $ref: '#/parameters/headerAsUser'
+        - name: videoId
+          in: path
+          required: true
+          type: string
+        - name: file
+          in: formData
+          description: The uploaded file data
+          required: false
+          type: file
+      responses:
+        '201':
+          description: The image URL
+          schema:
+            type: object
+            properties:
+              url:
+                type: string
+            required:
+              - url
+        default:
+          description: Error
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+    delete:
+      tags:
+        - Videos
+      operationId: deletePosterImage
+      security:
+        - Bearer: []
+      x-yeay-scope: user
+      summary: Remove the poster image from a specific video of the requesting user
+      description: Remove the poster image from a specific video of the requesting user
+      parameters:
+        - name: videoId
+          in: path
+          required: true
+          type: string
+      responses:
+        '200':
+          description: The image was deleted successfully
+        default:
+          description: Error
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+  '/videos/{videoId}/video':
+    x-swagger-router-controller: videoFileV2Controller
+    post:
+      tags:
+        - Videos
+      operationId: uploadVideo
+      security:
+        - Bearer: []
+      x-yeay-scope: user
+      summary: Uploads a video file to a specific video of a user
+      description: Uploads a video file to a specific video of a user
+      consumes:
+        - multipart/form-data
+      parameters:
+        - $ref: '#/parameters/headerAsUser'
+        - name: videoId
+          in: path
+          required: true
+          type: string
+        - name: file
+          in: formData
+          description: The uploaded file data
+          required: false
+          type: file
+      responses:
+        '201':
+          description: The url of the uploaded video
+          schema:
+            type: object
+            properties:
+              url:
+                type: string
+            required:
+              - url
+        default:
+          description: Error
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+  /videos/video-file:
+    x-swagger-router-controller: videoFileV2Controller
+    post:
+      tags:
+        - Videos
+      operationId: uploadAnonymousVideo
+      security:
+        - Bearer: []
+      x-yeay-scope: user
+      summary: >-
+        Uploads a video file and implicitly creates a new video entity for the
+        requesting user
+      description: >
+        Uploads a video file and implicitly creates a new video entity for the
+        requesting user
+      consumes:
+        - multipart/form-data
+      parameters:
+        - $ref: '#/parameters/headerAsUser'
+        - name: file
+          in: formData
+          description: The uploaded file data
+          required: false
+          type: file
+      responses:
+        '201':
+          description: The created video containing the uploaded video file
+          schema:
+            $ref: '#/definitions/Video'
+        default:
+          description: Error
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+  /videos:
+    x-swagger-router-controller: videosV2Controller
+    get:
+      tags:
+        - Videos
+      operationId: getVideos
+      summary: Retrieves all videos of the requesting user
+      description: |
+        Retrieves all videos of the requesting user
+      security:
+        - Bearer: []
+      x-yeay-scope: user
+      parameters:
+        - $ref: '#/parameters/headerAsUser'
+        - $ref: '#/parameters/queryPaginationOffset'
+        - $ref: '#/parameters/queryPaginationLimit'
+      responses:
+        '200':
+          description: A paginated list of catalog videos
+          schema:
+            $ref: '#/definitions/PaginatedVideoList'
+        default:
+          description: Error
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+    post:
+      tags:
+        - Videos
+      operationId: createVideo
+      summary: Creates a video for the requesting user
+      description: |
+        Creates a video for the requesting user
+      security:
+        - Bearer: []
+      x-yeay-scope: user
+      parameters:
+        - $ref: '#/parameters/headerAsUser'
+        - name: body
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/CreateOrUpdateVideoRequest'
+            required:
+              - title
+      responses:
+        '201':
+          description: The created video
+          schema:
+            $ref: '#/definitions/Video'
+        default:
+          description: Error
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+  '/videos/{videoId}':
+    x-swagger-router-controller: videosV2Controller
+    get:
+      tags:
+        - Videos
+      operationId: getVideo
+      summary: Retrieves a specific video of the requesting user
+      description: |
+        Retrieves a specific video of the requesting user
+      security:
+        - Bearer: []
+      x-yeay-scope: user
+      parameters:
+        - name: videoId
+          in: path
+          type: string
+          required: true
+      responses:
+        '200':
+          description: A catalog videos
+          schema:
+            $ref: '#/definitions/Video'
+        default:
+          description: Error
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+    delete:
+      tags:
+        - Videos
+      operationId: deleteVideo
+      summary: Deletes a specific video of the requesting user
+      description: |
+        Deletes a specific video of the requesting user
+      security:
+        - Bearer: []
+      x-yeay-scope: user
+      parameters:
+        - name: videoId
+          in: path
+          type: string
+          required: true
+      responses:
+        '204':
+          description: Video deletion successfull
+        '404':
+          description: Video does not exists
+        default:
+          description: Error
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+    put:
+      tags:
+        - Videos
+      operationId: updateVideo
+      summary: Updates a specific video of the requesting user
+      description: |
+        Updates a specific video of the requesting user
+      security:
+        - Bearer: []
+      x-yeay-scope: user
+      parameters:
+        - name: videoId
+          in: path
+          type: string
+          required: true
+        - $ref: '#/parameters/headerAsUser'
+        - name: body
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/CreateOrUpdateVideoRequest'
+      responses:
+        '200':
+          description: A video
+          schema:
+            $ref: '#/definitions/Video'
+        '409':
+          description: |
+            Cannot create the video.
+        default:
+          description: Error
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+parameters:
+  headerAsUser:
+    name: X-YEAY-AS-USER
+    in: header
+    description: Perform the request in the name of the user with this user id
+    type: string
+  headerLanguage:
+    name: Accept-Language
+    in: header
+    description: Language of the calling entity
+    type: string
+  headerYeayClientVersion:
+    name: X-YEAY-CLIENT-VERSION
+    in: header
+    type: string
+    description: >-
+      Should follow semantic versioning pattern. If it does not then the version
+      is considered 'latest' and will be treated as such.
+  headerYeayClientName:
+    name: X-YEAY-CLIENT-NAME
+    in: header
+    type: string
+    description: >-
+      Specifies requesting client name. Supported values are `android`, `ios`,
+      `portal`, `shop` and `legacy`.
+  queryPaginationOffset:
+    name: offset
+    in: query
+    description: Retrieve paginated items starting at this offset.
+    type: integer
+    default: 0
+    minimum: 0
+  queryPaginationLimit:
+    name: limit
+    in: query
+    description: Maximum items in pagination list.
+    type: integer
+    default: 20
+    minimum: 0
+    maximum: 100
+  queryCurrency:
+    name: currency
+    in: query
+    type: string
+    minLength: 3
+    maxLength: 3
+    description: >
+      Convert prices into this currency (if available). 3-letter currency code,
+      e.g. `USD` or `EUR`.
+  querySearch:
+    name: search
+    in: query
+    type: array
+    items:
+      type: string
+    description: >
+      Phrases used to perform full text search. This may impact ordering of
+      results.
+definitions:
+  Address:
+    properties:
+      administrativeArea:
+        description: e.g. State
+        type: string
+      formattedAddressLines:
+        type: string
+        description: 'Read-only, pretty printed string of the address'
+      locality:
+        description: City
+        type: string
+        example: Berlin
+      thoroughfare:
+        description: Street
+        type: string
+      postalCode:
+        type: string
+        example: 12345
+      name:
+        type: string
+        example: Home
+      suite:
+        type: string
+      isoCountryCode:
+        description: '2-letter ISO country code, e.g. US, FR, DE'
+        type: string
+  AffiliateProduct:
+    type: object
+    properties:
+      id:
+        type: string
+      name:
+        type: string
+        example: Adidas Stan Smith
+      description:
+        type: string
+        example: Nice pair of adidas sneakers
+      link:
+        type: string
+        example: 'https://affiliateproductpage.com'
+      price:
+        type: object
+        properties:
+          value:
+            type: number
+            example: 20
+          currency:
+            type: string
+            example: USD
+      assets:
+        type: array
+        items:
+          $ref: '#/definitions/Asset'
+  Asset:
+    type: object
+    properties:
+      name:
+        type: string
+        example: first_pic
+      type:
+        type: string
+        example: image
+      url:
+        type: string
+        example: 'httts://example.com/image.png'
+    required:
+      - name
+      - type
+      - url
+  AssetWithChecksum:
+    allOf:
+      - $ref: '#/definitions/Asset'
+      - properties:
+          checksum:
+            type: string
+            example: 120EA8A25E5D487BF68B5F7096440019
+  CatalogVideo:
+    properties:
+      id:
+        type: string
+        example: 123
+      title:
+        type: string
+        example: Adidas Stan Smith Shoes
+      challengeId:
+        type: string
+        example: 123sd
+      shareUrl:
+        type: string
+        example: 'https://shop.yeay.com/123'
+      brand:
+        type: string
+        example: Nike
+      affiliateProducts:
+        type: array
+        items:
+          $ref: '#/definitions/AffiliateProduct'
+      assets:
+        type: array
+        items:
+          $ref: '#/definitions/Asset'
+      creator:
+        $ref: '#/definitions/CatalogVideoCreator'
+      socialStats:
+        $ref: '#/definitions/SocialStats'
+      isFeatured:
+        type: boolean
+      tags:
+        type: array
+        items:
+          type: string
+          example: 'summer, beach'
+  CatalogVideoCreator:
+    type: object
+    properties:
+      id:
+        type: string
+      uniqueId:
+        type: string
+      assets:
+        type: array
+        items:
+          $ref: '#/definitions/Asset'
+  CreateOrUpdateVideoMusicAssetRequest:
+    required:
+      - name
+    properties:
+      name:
+        type: string
+      artist:
+        type: string
+  CreateOrUpdateVideoRequest:
+    properties:
+      title:
+        description: Title of video
+        type: string
+      description:
+        description: Description of the video
+        $ref: '#/definitions/StringOrNull'
+      challengeId:
+        description: >
+          An optional challenge ID. **NOTE**: if the given challenge is invalid
+          the request will fail with a `400 - Bad Request`.
+        $ref: '#/definitions/StringOrNull'
+      brands:
+        description: A list of brand tags for the video
+        type: string
+  ErrorResponse:
+    required:
+      - message
+    properties:
+      message:
+        type: string
+      code:
+        type: string
+  InvalidAuthError:
+    required:
+      - message
+      - code
+    properties:
+      message:
+        type: string
+      code:
+        type: string
+    example:
+      message: Authentication field is invalid
+      code: INVALID_AUTH
+  PaginatedCatalogVideoList:
+    allOf:
+      - $ref: '#/definitions/PaginatedList'
+      - properties:
+          items:
+            type: array
+            items:
+              $ref: '#/definitions/CatalogVideo'
+        required:
+          - items
+  PaginatedList:
+    type: object
+    properties:
+      total:
+        description: Absolute number of items available.
+        type: integer
+      count:
+        description: Number of items in the list.
+        type: integer
+      offset:
+        description: Current offset from beginning of the total result set.
+        type: integer
+      limit:
+        description: Maximum list size.
+        type: integer
+      items:
+        description: The result list of entities.
+        type: array
+        items:
+          type: object
+    required:
+      - total
+      - count
+      - offset
+      - limit
+      - items
+  PaginatedVideoList:
+    allOf:
+      - $ref: '#/definitions/PaginatedList'
+      - properties:
+          items:
+            type: array
+            items:
+              $ref: '#/definitions/Video'
+        required:
+          - items
+  PaginatedVideoMusicAssetList:
+    allOf:
+      - $ref: '#/definitions/PaginatedList'
+      - properties:
+          items:
+            type: array
+            items:
+              $ref: '#/definitions/VideoMusicAsset'
+        required:
+          - items
+  PurchaseRequest:
+    required:
+      - id
+      - userId
+      - productId
+      - address
+    properties:
+      id:
+        type: string
+        example: 123
+      userId:
+        type: string
+        example: 456
+      userYeayScore:
+        type: number
+        example: 120000
+      productId:
+        type: string
+        example: 123adb2
+      productYeayScorePrice:
+        type: number
+        example: 100000
+      videoId:
+        type: string
+        example: v12314
+      email:
+        type: string
+        example: hi@example.com
+      phoneNumber:
+        type: string
+        example: 001231234678
+      address:
+        $ref: '#/definitions/Address'
+  SocialStats:
+    type: object
+    properties:
+      comments:
+        type: number
+        example: 5
+      likes:
+        type: number
+        example: 123
+      views:
+        type: number
+        example: 456
+  StringOrNull:
+    type: string
+  Video:
+    properties:
+      id:
+        type: string
+        example: 123
+      title:
+        type: string
+        example: Adidas Stan Smith Shoes
+      description:
+        type: string
+        example: My `Adidas Stan Smith Shoes` video from last week.
+      challengeId:
+        type: string
+        example: 123
+      updatedAt:
+        type: string
+        example: '2018-06-04T19:45:02.097Z'
+      createdAt:
+        type: string
+        example: '2018-06-02T19:45:02.097Z'
+      isFeatured:
+        type: boolean
+        example: true
+      socialStats:
+        $ref: '#/definitions/SocialStats'
+      affiliateProductIds:
+        type: array
+        items:
+          type: string
+          example: 123
+      assets:
+        type: array
+        items:
+          $ref: '#/definitions/Asset'
+      tags:
+        type: array
+        items:
+          type: string
+          description: Comma seperated tags
+          example: 'summer, beach'
+      brands:
+        type: string
+        example: Adidas
+  VideoMusicAsset:
+    required:
+      - id
+      - name
+    properties:
+      id:
+        type: string
+        example: 123
+      name:
+        type: string
+        example: Music123
+      artist:
+        type: string
+        example: John Doe
+      assets:
+        type: array
+        items:
+          $ref: '#/definitions/AssetWithChecksum'
+      createdAt:
+        type: string
+        format: date-time
+        example: '2018-06-04T19:45:02.097Z'
+      updatedAt:
+        type: string
+        format: date-time
+        example: '2018-06-04T19:45:02.097Z'
