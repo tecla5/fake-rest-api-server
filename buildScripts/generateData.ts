@@ -1,4 +1,5 @@
-import { green, red } from "chalk";
+import chalk from "chalk";
+const { green, red } = chalk
 import * as fs from "fs";
 import * as jsf from "json-schema-faker";
 import groupSchema from "./groupSchema";
@@ -7,6 +8,10 @@ import ISite from "../src/models/ISite";
 import siteSchema from "./siteSchema";
 
 const compiledGroupSchema = jsf(groupSchema);
+
+jsf.extend('faker', function() {
+  return require('faker');
+});
 
 const groups = compiledGroupSchema.groups;
 let sites: ISite[] = [];
