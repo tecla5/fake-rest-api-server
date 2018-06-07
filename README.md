@@ -43,6 +43,16 @@ The JSON server serves the generated JSON database on a REST server on port 3000
 
 `json-server --watch buildScripts/db.json --port 3000`
 
+#### Custom routes
+
+```bash
+npm run start:routes
+```
+
+Starts JSON server using custom routes defined in `buildScripts/routes.json`
+
+See [add-custom-routes](https://github.com/typicode/json-server#add-custom-routes)
+
 ## Design
 
 The source code currently lives in `/buildScripts` and `/src`

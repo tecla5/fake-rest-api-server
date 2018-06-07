@@ -17,6 +17,7 @@
   "scripts": {
     "generate-mock-api-data": "ts-node buildScripts/generateData.ts",
     "prestart": "npm run generate-mock-api-data",
-    "start": "json-server --watch buildScripts/db.json --port 3000"
+    "start": "json-server --watch buildScripts/db.json --port 3000",
+    "start:routes": "json-server --watch buildScripts/db.json --routes buildScripts/routes.json --port 3000"    
   }
 }
