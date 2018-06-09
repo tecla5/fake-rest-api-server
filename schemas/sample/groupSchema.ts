@@ -1,4 +1,4 @@
-const groupSchema = {
+export const groupSchema = {
   type: "object",
   properties: {
     groups: {
@@ -24,5 +24,3 @@ const groupSchema = {
   },
   required: ["groups"]
 };
-
-export default groupSchema;

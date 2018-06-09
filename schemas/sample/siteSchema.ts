@@ -1,4 +1,4 @@
-const siteSchema = {
+export const siteSchema = {
   type: "object",
   properties: {
     sites: {
@@ -36,5 +36,3 @@ const siteSchema = {
   },
   required: ["sites"]
 };
-
-export default siteSchema;

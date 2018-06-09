@@ -1,0 +1,5 @@
+// TODO: generate file
+export const schemas = {
+  affiliateProduct: require('affiliate-product.json'),
+  // ...
+}

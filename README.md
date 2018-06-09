@@ -23,17 +23,41 @@ npm run prestart
 npm run start
 ```
 
-### Generate schema
+### Generate schemas
 
-Generate JSON schema(s) from Swagger API yaml file
+Generate JSON schema(s) from Swagger API yaml file in `schemas` folder
 
 ```bash
-npm run generate-schema
+npm run generate-schemas
 ```
+
+Output:
+
+```bash
+affiliate-product.json
+catalog-seller.json
+...
+```
+
+To generate an index file that collects all the generated schemas into a JS object:
+
+```bash
+npm run generate-schema-index
+```
+
+Will write a `schemas/index.ts` file which can be referenced from the JS code.
 
 ### Routes
 
 Generates a `routes.json` file from all the entries under `paths` in the Swagger API file
+
+Routes with params such as `'/affiliate-products/{productId}'` will be written to `routes.json` as `/affiliate-products/:productId`
+
+```json
+{
+  "/affiliate-products/:productId": "/affiliate-products/:productId"
+}
+```
 
 ### Schemas
 

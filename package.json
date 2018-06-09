@@ -15,14 +15,17 @@
     "typescript": "^2.9.1"
   },
   "scripts": {
-    "generate-schema": "ts-node buildScripts/generateSchema.ts",
-    "generate-mock-api-data": "ts-node buildScripts/generateData.ts",
+    "generate-schema-index": "ts-node schemas/generate-index.ts",
+    "generate-schemas": "ts-node src/generate/schemas/run.ts",
+    "generate-mock-api-data": "ts-node src/generate/data/run.ts",
     "prestart": "npm run generate-mock-api-data",
-    "start": "json-server --watch buildScripts/db.json --port 3000",
-    "start:routes": "json-server --watch buildScripts/db.json --routes buildScripts/routes.json --port 3000"
+    "start": "json-server --watch src/db.json --port 3000",
+    "start:routes": "json-server --watch src/db.json --routes routes.json --port 3000"
   },
   "dependencies": {
     "js-yaml": "^3.12.0",
-    "json-schema-deref": "^0.4.3"
+    "json-schema-deref": "^0.4.3",
+    "lodash": "^4.17.10",
+    "template-helpers": "^0.6.7"
   }
 }
