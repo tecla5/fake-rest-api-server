@@ -1,0 +1,70 @@
+{
+  "allOf": [
+    {
+      "properties": {
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "network": {
+                "type": "string"
+              },
+              "advertisingId": {
+                "type": "string"
+              },
+              "link": {
+                "type": "string"
+              },
+              "networkProductId": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "isInStock": {
+                "type": "boolean"
+              },
+              "imageUrl": {
+                "type": "string"
+              },
+              "isActive": {
+                "type": "boolean"
+              },
+              "createdAt": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "globalProductIds": {
+                "type": "object",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "price": {
+                "type": "object",
+                "properties": {
+                  "value": {
+                    "type": "number"
+                  },
+                  "currency": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "required": [
+        "items"
+      ]
+    }
+  ]
+}

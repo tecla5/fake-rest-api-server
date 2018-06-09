@@ -8,16 +8,21 @@
   "devDependencies": {
     "@types/node": "^10.3.1",
     "chalk": "^2.4.1",
+    "faker": "^4.1.0",
     "json-schema-faker": "^0.5.0-rc15",
     "json-server": "^0.13.0",
     "ts-node": "^6.1.0",
-    "typescript": "^2.9.1",
-    "faker": "^4.1.0"
+    "typescript": "^2.9.1"
   },
   "scripts": {
+    "generate-schema": "ts-node buildScripts/generateSchema.ts",
     "generate-mock-api-data": "ts-node buildScripts/generateData.ts",
     "prestart": "npm run generate-mock-api-data",
     "start": "json-server --watch buildScripts/db.json --port 3000",
-    "start:routes": "json-server --watch buildScripts/db.json --routes buildScripts/routes.json --port 3000"    
+    "start:routes": "json-server --watch buildScripts/db.json --routes buildScripts/routes.json --port 3000"
+  },
+  "dependencies": {
+    "js-yaml": "^3.12.0",
+    "json-schema-deref": "^0.4.3"
   }
 }

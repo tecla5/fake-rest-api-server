@@ -1,0 +1,113 @@
+swagger: '2.0'
+info:
+  version: 1.10.0
+  title: YEAY Rest API
+host: '127.0.0.1:8080'
+basePath: /v1
+schemes:
+  - https
+  - http
+consumes:
+  - application/json
+produces:
+  - application/json
+securityDefinitions:
+  Bearer:
+    description: |
+      Value has to contain string of this format `Bearer <accessToken>`
+    type: apiKey
+    name: Authorization
+    in: header
+  None:
+    description: |
+      No auth needed
+    type: basic
+tags:
+  - name: Auth
+  - name: Product & Video
+  - name: Featured videos & sellers
+  - name: Catalog
+  - name: Users
+  - name: Misc
+  - name: Deprecated
+    description: ⚠ Endpoints that should no longer be used.
+paths:
+  /affiliate-products:
+    x-swagger-router-controller: affiliateProductsController
+    get:
+      security:
+        - Bearer: []
+      x-yeay-scope: admin
+      operationId: getAffiliateProductsList
+      tags:
+        - Affiliate Products
+      summary: Retrieves a list of affiliate products
+      description: >
+        Returns a paginated list of affiliate products. Allows for filtering
+        based on search term or list of ids.
+      parameters:
+        - name: ids
+          in: query
+          description: Comma separated list of ids
+          type: array
+          items:
+            type: string
+            pattern: '^[a-f0-9]{24}$'
+        - name: network
+          in: query
+          type: string
+          description: Filter the list by an affiliate network
+      responses:
+        '200':
+          description: The paginated list of affiliate products.
+          schema:
+            $ref: '#/definitions/AffiliateProductList'
+
+definitions:
+  AffiliateProduct:
+    type: object
+    properties:
+      id:
+        type: string
+      network:
+        type: string
+      advertisingId:
+        type: string
+      link:
+        type: string
+      networkProductId:
+        type: string
+      name:
+        type: string
+      description:
+        type: string
+      isInStock:
+        type: boolean
+      imageUrl:
+        type: string
+      isActive:
+        type: boolean
+      createdAt:
+        type: string
+        format: date-time
+      globalProductIds:
+        type: object
+        items:
+          type: string
+      price:
+        type: object
+        properties:
+          value:
+            type: number
+          currency:
+            type: string
+
+  AffiliateProductList:
+    allOf:
+      - properties:
+          items:
+            type: array
+            items:
+              $ref: '#/definitions/AffiliateProduct'
+        required:
+          - items
