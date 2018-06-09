@@ -62,7 +62,554 @@ paths:
           description: The paginated list of affiliate products.
           schema:
             $ref: '#/definitions/AffiliateProductList'
+  '/affiliate-products/{productId}':
+    x-swagger-router-controller: affiliateProductsController
+    get:
+      security:
+        - Bearer: []
+      x-yeay-scope: admin
+      operationId: getAffiliateProduct
+      tags:
+        - Affiliate Products
+      summary: Returns a specific affiliate product
+      description: Returns an affiliate product specified by an id.
+      parameters:
+        - in: path
+          name: productId
+          type: string
+          pattern: '^[a-f0-9]{24}$'
+          required: true
+      responses:
+        '200':
+          description: The affiliate product
+          schema:
+            $ref: '#/definitions/AffiliateProduct'
+  '/affiliate-products/{productId}/image':
+    x-swagger-router-controller: affiliateProductsController
+    post:
+      tags:
+        - Affiliate Products
+      operationId: uploadAffiliateProductImage
+      security:
+        - Bearer: []
+      x-yeay-scope: admin
+      summary: Uploads an image for a specific affiliate product
+      description: Uploads an image for a specific affiliate product
+      consumes:
+        - multipart/form-data
+      parameters:
+        - name: productId
+          in: path
+          required: true
+          type: string
+        - name: file
+          in: formData
+          description: The uploaded file data
+          required: false
+          type: file
+      responses:
+        '200':
+          description: The updated affiliate product
+          schema:
+            $ref: '#/definitions/AffiliateProduct'
+  /auth/signup:
+    x-swagger-router-controller: accountController
+    post:
+      tags:
+        - Auth
+      summary: Creates a new account
+      description: Creates a new account
+      parameters:
+        - name: body
+          in: body
+          required: true
+          schema:
+            type: object
+            additionalProperties: false
+            required:
+              - email
+              - firstname
+              - lastname
+              - password
+              - username
+            properties:
+              email:
+                type: string
+                minLength: 1
+              password:
+                type: string
+                minLength: 1
+              firstname:
+                type: string
+              lastname:
+                type: string
+              username:
+                type: string
+                minLength: 1
+      responses:
+        '201':
+          description: Success
+          schema:
+            $ref: '#/definitions/User'
+  /auth:
+    x-swagger-router-controller: authController
+    post:
+      tags:
+        - Auth
+      summary: Creates a new auth token
+      description: Creates an auth token and returns it.
+      parameters:
+        - name: body
+          in: body
+          required: true
+          schema:
+            type: object
+            additionalProperties: false
+            required:
+              - email
+              - password
+            properties:
+              email:
+                description: The email address
+                type: string
+              password:
+                description: The password
+                type: string
+      responses:
+        '201':
+          description: Authentication accepted
+          schema:
+            type: object
+            properties:
+              accessToken:
+                type: string
+              user:
+                $ref: '#/definitions/User'
+        '400':
+          description: Authentication failed
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+        default:
+          description: Error
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+    delete:
+      tags:
+        - Auth
+      summary: Invalidates the currently used auth token
+      description: Invalidates the current auth token.
+      security:
+        - Bearer: []
+      x-yeay-scope: user
+      responses:
+        '200':
+          description: Auth successfully invalidate
+        default:
+          description: Error
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+  /passwordReset:
+    x-swagger-router-controller: passwordResetController
+    post:
+      tags:
+        - Auth
+      summary: Triggers the password reset process for the requesting user
+      description: Triggers a password reset
+      parameters:
+        - name: body
+          in: body
+          required: true
+          schema:
+            type: object
+            required:
+              - email
+            properties:
+              email:
+                type: string
+      responses:
+        '201':
+          description: Reset successfully initiated
+        default:
+          description: Error
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+  /fbAuth:
+    x-swagger-router-controller: authController
+    post:
+      tags:
+        - Auth
+      operationId: fbAuth
+      summary: Authenticates with Facebook login flow
+      description: Authenticates with Facebook login flow
+      parameters:
+        - name: body
+          in: body
+          required: true
+          schema:
+            type: object
+            additionalProperties: false
+            required:
+              - fbUserId
+              - fbAccessToken
+              - fbExpirationDate
+            properties:
+              fbUserId:
+                description: Facebook user id
+                type: string
+              fbAccessToken:
+                description: Facbook access token
+                type: string
+              fbExpirationDate:
+                description: Facbook login expiration date
+                type: string
+      responses:
+        '201':
+          description: Authentication accepted
+          schema:
+            type: object
+            properties:
+              accessToken:
+                type: string
+              user:
+                $ref: '#/definitions/User'
+  /autocomplete/uniqueId:
+    x-swagger-router-controller: autocompleteController
+    get:
+      tags:
+        - Autocomplete
+      summary: Generates a list of autocomplete suggestions for the given string
+      description: Generates a list of autocomplete suggestions for the given string
+      operationId: autocompleteUniqueId
+      parameters:
+        - name: q
+          in: query
+          type: string
+          required: true
+        - name: size
+          type: number
+          in: query
+          default: 10
+          minimum: 1
+          maximum: 100
+      responses:
+        '200':
+          description: The suggestions
+          schema:
+            type: array
+            items:
+              type: object
+              properties:
+                id:
+                  type: string
+                uniqueId:
+                  type: string
+                avatarImageUrl:
+                  type: string
+  /autocomplete/productTag:
+    x-swagger-router-controller: autocompleteController
+    get:
+      tags:
+        - Autocomplete
+      summary: Generates a list of autocomplete suggestions for the given string
+      description: Generates a list of autocomplete suggestions for the given string
+      operationId: autocompleteProductTag
+      parameters:
+        - name: q
+          in: query
+          type: string
+          required: true
+        - name: size
+          type: number
+          in: query
+          default: 10
+          minimum: 1
+          maximum: 100
+      responses:
+        '200':
+          description: The suggestions
+          schema:
+            type: array
+            items:
+              type: string
+        default:
+          description: Error
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+  /catalog/products:
+    x-swagger-router-controller: catalogProductsController
+    get:
+      tags:
+        - Deprecated
+      operationId: getCatalogProducts
+      description: >
+        **DEPRECATED**
 
+        Browse the catalog with `GET /catalog/videos` instead.
+
+
+        Retrieves a list products. Available filter fields are `id`, `sellerId`,
+        `channelId`, `tags` and `isFeatured`
+      responses:
+        '200':
+          description: The product list
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/CatalogProduct'
+        default:
+          description: Error
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+  '/catalog/products/{productId}':
+    x-swagger-router-controller: catalogProductsController
+    get:
+      tags:
+        - Deprecated
+      operationId: getCatalogProduct
+      description: |
+        **DEPRECATED**
+        Browse the catalog with `GET /catalog/videos/{videoId}` instead.
+
+        Retrieves a specific product
+      parameters:
+        - name: productId
+          in: path
+          type: string
+          required: true
+      responses:
+        '200':
+          description: The requested product
+          schema:
+            $ref: '#/definitions/CatalogProduct'
+        default:
+          description: Error
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+  /catalog/featuredSellers:
+    x-swagger-router-controller: catalogSellerController
+    get:
+      tags:
+        - Catalog
+      operationId: getCatalogFeaturedSellers
+      summary: Retrieves a list of featured sellers (users)
+      description: Retrieves a list of featured sellers.
+      security:
+        - None: []
+        - Bearer: []
+      parameters:
+        - $ref: '#/parameters/queryPageSize'
+        - $ref: '#/parameters/queryPageNumber'
+      responses:
+        '200':
+          description: The seller list
+          schema:
+            $ref: '#/definitions/CatalogFeaturedSellerList'
+        default:
+          description: Error
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+  '/catalog/sellers/{sellerId}':
+    x-swagger-router-controller: catalogSellerController
+    get:
+      tags:
+        - Catalog
+      operationId: getCatalogSeller
+      summary: Retrieves a specific user
+      description: Retrieves details for a seller
+      security:
+        - None: []
+        - Bearer: []
+      parameters:
+        - name: sellerId
+          in: path
+          type: string
+          required: true
+      responses:
+        '200':
+          description: The requested seller
+          schema:
+            $ref: '#/definitions/CatalogSellerDetails'
+        default:
+          description: Error
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+  /catalog/users/search:
+    x-swagger-router-controller: catalogSearchController
+    get:
+      tags:
+        - Catalog
+      operationId: searchCatalogUsers
+      security:
+        - None: []
+        - Bearer: []
+      summary: Retrieves users that match a given search term
+      description: Search for users. Available filter is `uniqueId`
+      parameters:
+        - name: q
+          in: query
+          type: string
+        - $ref: '#/parameters/queryPageSize'
+        - $ref: '#/parameters/queryPageOffset'
+        - $ref: '#/parameters/queryFilter'
+      responses:
+        '200':
+          description: Catalog videos
+          schema:
+            $ref: '#/definitions/CatalogUserSearchResult'
+        default:
+          description: Error
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+  /catalog/discover:
+    x-swagger-router-controller: catalogContentController
+    get:
+      deprecated: true
+      tags:
+        - Deprecated
+      operationId: getDiscoverContent
+      description: >
+        Retrieves content for catalog discovery.
+
+
+        ### Client specific responses
+
+        The **featured-challenge** field (if any) is only returned for android
+        and ios clients >= 2.1.0.
+      security:
+        - None: []
+        - Bearer: []
+      parameters:
+        - $ref: '#/parameters/queryCurrency'
+        - $ref: '#/parameters/queryCountry'
+        - $ref: '#/parameters/queryGender'
+        - $ref: '#/parameters/headerLanguage'
+        - name: latlon
+          description: |
+            Format: `lat,lon` - e.g. `52.49363,13.43539`
+          in: query
+          type: string
+      responses:
+        '200':
+          description: The discover screen content
+          schema:
+            $ref: '#/definitions/CatalogDiscoverContent'
+        default:
+          description: Error
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+  /catalog/discovery-stream:
+    x-swagger-router-controller: catalogDiscoveryStreamController
+    get:
+      deprecated: true
+      tags:
+        - Deprecated
+      operationId: getDiscoveryStream
+      description: |
+        Retrieves content for catalog discovery.
+      security:
+        - None: []
+        - Bearer: []
+      parameters:
+        - $ref: '#/parameters/queryCurrency'
+        - $ref: '#/parameters/queryCountry'
+        - $ref: '#/parameters/queryGender'
+        - $ref: '#/parameters/queryPaginationOffset'
+        - $ref: '#/parameters/queryPaginationLimit'
+        - $ref: '#/parameters/headerLanguage'
+      responses:
+        '200':
+          description: >
+            The discovery stream. Response is a paginated list of types of
+            items. Type of item is an enum of `collection`, `challenge`, and
+            `videoFeed`, `userFeed`.
+          schema:
+            allOf:
+              - $ref: '#/definitions/PaginatedList'
+              - properties:
+                  items:
+                    $ref: '#/definitions/DiscoveryStreamItem'
+                required:
+                  - items
+        default:
+          description: Error
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+  /catalog/feeds/home/1:
+    x-swagger-router-controller: catalogHomeFeedController
+    get:
+      tags:
+        - Catalog
+      operationId: getHomeFeed_1
+      summary: Retrieves content for the home feed
+      description: |
+        Retrieves content for the home feed.
+      security:
+        - None: []
+        - Bearer: []
+      parameters:
+        - $ref: '#/parameters/queryCurrency'
+        - $ref: '#/parameters/queryPaginationOffset'
+        - $ref: '#/parameters/queryPaginationLimit'
+      responses:
+        '200':
+          description: >
+            Object containing paginated list of home feed videos and pagination
+            metadata.
+          schema:
+            allOf:
+              - $ref: '#/definitions/PaginatedList'
+              - properties:
+                  items:
+                    type: array
+                    items:
+                      $ref: '#/definitions/CatalogHomeFeedVideo'
+                required:
+                  - items
+        default:
+          description: Error
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+  '/catalog/feeds/videos/{feedId}':
+    x-swagger-router-controller: catalogVideoFeedController
+    get:
+      deprecated: true
+      tags:
+        - Deprecated
+      operationId: getVideoFeed
+      description: |
+        Retrieves content for a specified video feed.
+      security:
+        - None: []
+        - Bearer: []
+      parameters:
+        - name: feedId
+          in: path
+          type: string
+          enum:
+            - whats-new
+            - on-fire
+            - near-you
+            - trending-videos
+          required: true
+      responses:
+        '200':
+          description: >
+            Object containing paginated list of catalog videos based on feed Id
+            and pagination metadata.
+          schema:
+            allOf:
+              - $ref: '#/definitions/PaginatedList'
+              - properties:
+                  items:
+                    type: array
+                    items:
+                      $ref: '#/definitions/CatalogVideo'
+                required:
+                  - items
+        default:
+          description: Error
+          schema:
+            $ref: '#/definitions/ErrorResponse'
 definitions:
   AffiliateProduct:
     type: object
@@ -111,3 +658,272 @@ definitions:
               $ref: '#/definitions/AffiliateProduct'
         required:
           - items
+  User:
+    properties:
+      id:
+        type: string
+      email:
+        type: string
+      firstname:
+        type: string
+      lastname:
+        type: string
+      username:
+        type: string
+      emailVerified:
+        type: boolean
+      avatarImageUrl:
+        type: string
+      splashImageUrl:
+        type: string
+      deviceToken:
+        type: string
+      updatedAt:
+        type: string
+      createdAt:
+        type: string
+      paypalEmail:
+        type: string
+      phoneNumber:
+        type: string
+      gender:
+        type: string
+      birthday:
+        type: string
+        format: date
+      taxId:
+        type: string
+      locale:
+        type: string
+      roles:
+        type: array
+        items:
+          type: string
+      altAvatarImages:
+        type: object
+      profileBio:
+        type: string
+      allowsChat:
+        type: boolean
+      currency:
+        type: string
+      paymentDetails:
+        type: object
+      appUserType:
+        type: string
+        enum:
+          - regular
+          - influencer
+          - retailer
+          - brand
+      isVerifiedByYeay:
+        type: boolean
+      yeayScore:
+        type: integer
+        minimum: 0
+        description: Only available if user is own user or when in admin context
+      isScoreFrozen:
+        type: boolean
+        description: Only available if user is own user or when in admin context
+  CatalogVideo:
+    properties:
+      id:
+        type: string
+      title:
+        type: string
+      shareUrl:
+        type: string
+      mediaUrl:
+        type: string
+      altMediaUrl:
+        type: string
+      sourceMediaUrl:
+        type: string
+      socialVideoUrl:
+        type: string
+      previewUrl:
+        type: string
+      altPreviewUrl:
+        type: string
+      sharingImageUrl:
+        type: string
+      squareVideoUrl:
+        type: string
+      posterImageUrl:
+        type: string
+      converted:
+        type: boolean
+      videoFormat:
+        type: string
+      ranking:
+        type: number
+      approved:
+        type: boolean
+      featured:
+        type: boolean
+      createdAt:
+        type: string
+        format: date-time
+      updatedAt:
+        type: string
+        format: date-time
+      numOfLikes:
+        type: number
+      numOfRecentLikes:
+        type: number
+      numOfViews:
+        type: number
+      numOfRecentViews:
+        type: number
+      numOfComments:
+        type: number
+      numOfRecentComments:
+        type: number
+      product:
+        $ref: '#/definitions/CatalogVideoProduct'
+      challengeId:
+        type: string
+  CatalogVideoProduct:
+    properties:
+      id:
+        type: string
+      name:
+        type: string
+      description:
+        type: string
+      price:
+        type: number
+      yeayScorePrice:
+        description: The product price in yeay score points.
+        type: integer
+        format: int32
+        minimum: 0
+      shippingPrice:
+        type: number
+      intlShippingPrice:
+        type: number
+      productImageUrl:
+        type: string
+      currency:
+        type: string
+      originCountry:
+        type: string
+      shipsInternational:
+        type: boolean
+      quantity:
+        type: number
+      productOptions:
+        type: object
+      condition:
+        type: string
+      shareUrl:
+        type: string
+      size:
+        type: string
+      gender:
+        type: string
+      color:
+        type: string
+      material:
+        type: string
+      brand:
+        type: string
+      pattern:
+        type: string
+      googleProductCategory:
+        type: number
+      shipping:
+        type: object
+        properties:
+          weight:
+            type: number
+          length:
+            type: number
+          width:
+            type: number
+          height:
+            type: number
+      regularPrice:
+        type: number
+      taxes:
+        type: number
+      totalSales:
+        type: number
+      sellerPaysShipping:
+        type: boolean
+      geoLocationCoordinate:
+        type: object
+        properties:
+          lat:
+            type: number
+          lon:
+            type: number
+      isLocalPickupEnabled:
+        type: boolean
+      isShippingDisabled:
+        type: boolean
+      affiliateLink:
+        type: string
+      affiliateName:
+        type: string
+      yeayScorePurchasability:
+        type: string
+        description: >-
+          If the request is authenticated, this field describes if the
+          authenticated user is able to purchase the product with yeayScore.
+        enum:
+          - unavailable
+          - insufficient_balance
+          - purchasable
+      createdAt:
+        type: string
+        format: date-time
+      updatedAt:
+        type: string
+        format: date-time
+  PaginatedList:
+    type: object
+    properties:
+      total:
+        description: Absolute number of items available.
+        type: integer
+      count:
+        description: Number of items in the list.
+        type: integer
+      offset:
+        description: Current offset from beginning of the total result set.
+        type: integer
+      limit:
+        description: Maximum list size.
+        type: integer
+      items:
+        description: The result list of entities.
+        type: array
+        items:
+          type: object
+    required:
+      - total
+      - count
+      - offset
+      - limit
+      - items
+  ErrorResponse:
+    required:
+      - message
+    properties:
+      message:
+        type: string
+      code:
+        type: string
+  InvalidAuthError:
+    required:
+      - message
+      - code
+    properties:
+      message:
+        type: string
+      code:
+        type: string
+    example:
+      message: Authentication field is invalid
+      code: INVALID_AUTH

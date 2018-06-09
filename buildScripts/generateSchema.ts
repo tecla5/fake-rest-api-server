@@ -33,6 +33,7 @@ function translatePath(path : string) : string {
 }
 
 function writeToFile(filePath : string, obj : any) {
+  log('Writing to:', filePath)
   $fs.writeFileSync(filePath, obj, 'utf8')
 }
 
@@ -74,25 +75,77 @@ async function generate() {
 
     const {paths} = $doc
 
-    // const pathKeys = Object.keys(paths) log('paths', pathKeys);
+    const pathKeys = Object.keys(paths)
+
     // writeRoutes(pathKeys)
 
-    const ap = paths['/affiliate-products']
-    const tags = (ap.get || {}).tags
-    const tag = tags[0]
-    log({tag})
+    const singleEntityPaths = pathKeys //.filter(filterPath)
 
-    const schema = ap.get.responses['200'].schema
-    const schemaFileName = `${dasherize(tag)}.json`
-    const schemaFilePath = $path.join(rootPath, 'schemas', schemaFileName)
-    writeToFile(schemaFilePath, toJson(schema))
-    return schema
+    const promises = singleEntityPaths.map(async(singleEntityPath : string) => {
+      const pathObj = paths[singleEntityPath]
+      return await generateOne(pathObj)
+    })
 
+    return Promise.all(promises)
   } catch (e) {
     log(e);
+    return e
   }
 }
 
+function filterPath(path : string) {
+  // return /\/:\w+/.test(path)
+  return /\/{\w+}/.test(path)
+}
+
+const httpMethods = ['get', 'put', 'post', 'delete']
+
+function hasDeprecated(tags : string[]) {
+  return tags.find((tag : string) => tag === 'Deprecated')
+}
+
+function nameOf(method : any, tags : string[]) {
+  const opId = method.operationId
+  return opId
+    ? opId.replace(/^get/, '')
+    : tags[0]
+}
+
+async function generateOne(path : any) {
+  // only GET methods are valid
+  const methodName : any = ['get'].find((name : string) => !!path[name])
+  if (!methodName) {
+    return
+  }
+  const method = path[methodName]
+  const tags = method.tags || {}
+  if (hasDeprecated(tags)) {
+    return
+  }
+
+  const name = nameOf(method, tags)
+  // log({name})
+
+  if (/List$/.test(name)) {
+    return
+  }
+
+  const schema = method.responses['200'].schema
+
+  // ignore any schema with allOf at top leve, since this means it is a list
+  const schemaKeys = Object.keys(schema)
+  if (schemaKeys.includes('allOf')) {
+    return
+  }
+
+  const schemaFileName = `${dasherize(name)}.json`
+  const schemaFilePath = $path.join(rootPath, 'schemas', schemaFileName)
+  writeToFile(schemaFilePath, toJson(schema))
+  return schema
+
+}
+
 generate().then((schema) => {
-  printObj('DONE', schema)
+  // printObj('DONE', schema)
+  log('DONE', !!schema)
 })

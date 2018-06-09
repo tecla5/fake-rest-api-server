@@ -1,0 +1,17 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string"
+      },
+      "uniqueId": {
+        "type": "string"
+      },
+      "avatarImageUrl": {
+        "type": "string"
+      }
+    }
+  }
+}

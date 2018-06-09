@@ -23,6 +23,25 @@ npm run prestart
 npm run start
 ```
 
+### Generate schema
+
+Generate JSON schema(s) from Swagger API yaml file
+
+```bash
+npm run generate-schema
+```
+
+### Routes
+
+Generates a `routes.json` file from all the entries under `paths` in the Swagger API file
+
+### Schemas
+
+For each path definition under `paths`, find those that get a single domain entity
+
+* `'/affiliate-products/{productId}'` (get single product by ID)
+* `'/affiliate-products` (get list)
+
 ### Generate mock data
 
 ```bash
@@ -90,12 +109,12 @@ fs.writeFile("./buildScripts/db.json", json, err => {
 
 Define models:
 
-- `/src/models/IGroup.ts`
-- `/src/models/ISchema.ts`
+* `/src/models/IGroup.ts`
+* `/src/models/ISchema.ts`
 
 ### Schemas
 
 Define schemas:
 
-- `/buildScripts/groupSchema.ts`
-- `/buildScripts/siteSchema.ts`
+* `/buildScripts/groupSchema.ts`
+* `/buildScripts/siteSchema.ts`
