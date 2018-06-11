@@ -1,0 +1,587 @@
+{
+  "type": "array",
+  "items": {
+    "properties": {
+      "id": {
+        "type": "string"
+      },
+      "title": {
+        "type": "string"
+      },
+      "shareUrl": {
+        "type": "string"
+      },
+      "mediaUrl": {
+        "type": "string"
+      },
+      "altMediaUrl": {
+        "type": "string"
+      },
+      "sourceMediaUrl": {
+        "type": "string"
+      },
+      "socialVideoUrl": {
+        "type": "string"
+      },
+      "previewUrl": {
+        "type": "string"
+      },
+      "altPreviewUrl": {
+        "type": "string"
+      },
+      "sharingImageUrl": {
+        "type": "string"
+      },
+      "squareVideoUrl": {
+        "type": "string"
+      },
+      "posterImageUrl": {
+        "type": "string"
+      },
+      "converted": {
+        "type": "boolean"
+      },
+      "videoFormat": {
+        "type": "string"
+      },
+      "ranking": {
+        "type": "number"
+      },
+      "approved": {
+        "type": "boolean"
+      },
+      "featured": {
+        "type": "boolean"
+      },
+      "createdAt": {
+        "type": "string",
+        "format": "date-time"
+      },
+      "updatedAt": {
+        "type": "string",
+        "format": "date-time"
+      },
+      "categories": {
+        "type": "array",
+        "items": {
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "ranking": {
+              "type": "number"
+            }
+          }
+        }
+      },
+      "numOfLikes": {
+        "type": "number"
+      },
+      "numOfRecentLikes": {
+        "type": "number"
+      },
+      "numOfViews": {
+        "type": "number"
+      },
+      "numOfRecentViews": {
+        "type": "number"
+      },
+      "numOfComments": {
+        "type": "number"
+      },
+      "numOfRecentComments": {
+        "type": "number"
+      },
+      "product": {
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "price": {
+            "type": "number"
+          },
+          "yeayScorePrice": {
+            "description": "The product price in yeay score points.",
+            "type": "integer",
+            "format": "int32",
+            "minimum": 0
+          },
+          "shippingPrice": {
+            "type": "number"
+          },
+          "intlShippingPrice": {
+            "type": "number"
+          },
+          "productImageUrl": {
+            "type": "string"
+          },
+          "currency": {
+            "type": "string"
+          },
+          "originCountry": {
+            "type": "string"
+          },
+          "shipsInternational": {
+            "type": "boolean"
+          },
+          "quantity": {
+            "type": "number"
+          },
+          "productOptions": {
+            "type": "object"
+          },
+          "condition": {
+            "type": "string"
+          },
+          "shareUrl": {
+            "type": "string"
+          },
+          "size": {
+            "type": "string"
+          },
+          "gender": {
+            "type": "string"
+          },
+          "color": {
+            "type": "string"
+          },
+          "material": {
+            "type": "string"
+          },
+          "brand": {
+            "type": "string"
+          },
+          "pattern": {
+            "type": "string"
+          },
+          "googleProductCategory": {
+            "type": "number"
+          },
+          "shipping": {
+            "type": "object",
+            "properties": {
+              "weight": {
+                "type": "number"
+              },
+              "length": {
+                "type": "number"
+              },
+              "width": {
+                "type": "number"
+              },
+              "height": {
+                "type": "number"
+              }
+            }
+          },
+          "regularPrice": {
+            "type": "number"
+          },
+          "taxes": {
+            "type": "number"
+          },
+          "totalSales": {
+            "type": "number"
+          },
+          "sellerPaysShipping": {
+            "type": "boolean"
+          },
+          "geoLocationCoordinate": {
+            "type": "object",
+            "properties": {
+              "lat": {
+                "type": "number"
+              },
+              "lon": {
+                "type": "number"
+              }
+            }
+          },
+          "isLocalPickupEnabled": {
+            "type": "boolean"
+          },
+          "isShippingDisabled": {
+            "type": "boolean"
+          },
+          "seller": {
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              },
+              "firstname": {
+                "type": "string"
+              },
+              "lastname": {
+                "type": "string"
+              },
+              "userName": {
+                "type": "string"
+              },
+              "username": {
+                "type": "string"
+              },
+              "profileKey": {
+                "type": "string"
+              },
+              "avatarImageUrl": {
+                "type": "string"
+              },
+              "altAvatarImages": {
+                "type": "object"
+              },
+              "splashImageUrl": {
+                "type": "string"
+              },
+              "shipToAddress": {
+                "properties": {
+                  "administrativeArea": {
+                    "type": "string"
+                  },
+                  "country": {
+                    "type": "string",
+                    "description": "Deprecated, use `isoCountryCode` instead."
+                  },
+                  "formattedAddressLines": {
+                    "type": "string",
+                    "description": "Read-only, pretty printed string of the address"
+                  },
+                  "locality": {
+                    "type": "string"
+                  },
+                  "thoroughfare": {
+                    "type": "string"
+                  },
+                  "postalCode": {
+                    "type": "string"
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "suite": {
+                    "type": "string"
+                  },
+                  "isoCountryCode": {
+                    "type": "string"
+                  }
+                }
+              },
+              "phoneNumber": {
+                "type": "string"
+              },
+              "profileBio": {
+                "type": "string"
+              },
+              "sellerRating": {
+                "type": "number"
+              },
+              "totalReviews": {
+                "type": "number"
+              },
+              "paypalEmail": {
+                "type": "string"
+              },
+              "shareUrl": {
+                "type": "string"
+              },
+              "allowsChat": {
+                "type": "boolean"
+              },
+              "isFollowed": {
+                "type": "boolean"
+              },
+              "createdAt": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "updatedAt": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "appUserType": {
+                "type": "string",
+                "enum": [
+                  "regular",
+                  "influencer",
+                  "retailer",
+                  "brand"
+                ]
+              },
+              "isVerifiedByYeay": {
+                "type": "boolean"
+              }
+            }
+          },
+          "purchaseStatus": {
+            "description": "Indicates how/if the product can be purchased.",
+            "type": "string",
+            "enum": [
+              "coming-soon",
+              "pre-order",
+              "available"
+            ]
+          },
+          "affiliateLink": {
+            "type": "string"
+          },
+          "affiliateName": {
+            "type": "string"
+          },
+          "yeayScorePurchasability": {
+            "type": "string",
+            "description": "If the request is authenticated, this field describes if the authenticated user is able to purchase the product with yeayScore.",
+            "enum": [
+              "unavailable",
+              "insufficient_balance",
+              "purchasable"
+            ]
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "updatedAt": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "creator": {
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "firstname": {
+            "type": "string"
+          },
+          "lastname": {
+            "type": "string"
+          },
+          "userName": {
+            "type": "string"
+          },
+          "username": {
+            "type": "string"
+          },
+          "profileKey": {
+            "type": "string"
+          },
+          "avatarImageUrl": {
+            "type": "string"
+          },
+          "altAvatarImages": {
+            "type": "object"
+          },
+          "splashImageUrl": {
+            "type": "string"
+          },
+          "shipToAddress": {
+            "properties": {
+              "administrativeArea": {
+                "type": "string"
+              },
+              "country": {
+                "type": "string",
+                "description": "Deprecated, use `isoCountryCode` instead."
+              },
+              "formattedAddressLines": {
+                "type": "string",
+                "description": "Read-only, pretty printed string of the address"
+              },
+              "locality": {
+                "type": "string"
+              },
+              "thoroughfare": {
+                "type": "string"
+              },
+              "postalCode": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "suite": {
+                "type": "string"
+              },
+              "isoCountryCode": {
+                "type": "string"
+              }
+            }
+          },
+          "phoneNumber": {
+            "type": "string"
+          },
+          "profileBio": {
+            "type": "string"
+          },
+          "sellerRating": {
+            "type": "number"
+          },
+          "totalReviews": {
+            "type": "number"
+          },
+          "paypalEmail": {
+            "type": "string"
+          },
+          "shareUrl": {
+            "type": "string"
+          },
+          "allowsChat": {
+            "type": "boolean"
+          },
+          "isFollowed": {
+            "type": "boolean"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "updatedAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "appUserType": {
+            "type": "string",
+            "enum": [
+              "regular",
+              "influencer",
+              "retailer",
+              "brand"
+            ]
+          },
+          "isVerifiedByYeay": {
+            "type": "boolean"
+          }
+        }
+      },
+      "seller": {
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "firstname": {
+            "type": "string"
+          },
+          "lastname": {
+            "type": "string"
+          },
+          "userName": {
+            "type": "string"
+          },
+          "username": {
+            "type": "string"
+          },
+          "profileKey": {
+            "type": "string"
+          },
+          "avatarImageUrl": {
+            "type": "string"
+          },
+          "altAvatarImages": {
+            "type": "object"
+          },
+          "splashImageUrl": {
+            "type": "string"
+          },
+          "shipToAddress": {
+            "properties": {
+              "administrativeArea": {
+                "type": "string"
+              },
+              "country": {
+                "type": "string",
+                "description": "Deprecated, use `isoCountryCode` instead."
+              },
+              "formattedAddressLines": {
+                "type": "string",
+                "description": "Read-only, pretty printed string of the address"
+              },
+              "locality": {
+                "type": "string"
+              },
+              "thoroughfare": {
+                "type": "string"
+              },
+              "postalCode": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "suite": {
+                "type": "string"
+              },
+              "isoCountryCode": {
+                "type": "string"
+              }
+            }
+          },
+          "phoneNumber": {
+            "type": "string"
+          },
+          "profileBio": {
+            "type": "string"
+          },
+          "sellerRating": {
+            "type": "number"
+          },
+          "totalReviews": {
+            "type": "number"
+          },
+          "paypalEmail": {
+            "type": "string"
+          },
+          "shareUrl": {
+            "type": "string"
+          },
+          "allowsChat": {
+            "type": "boolean"
+          },
+          "isFollowed": {
+            "type": "boolean"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "updatedAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "appUserType": {
+            "type": "string",
+            "enum": [
+              "regular",
+              "influencer",
+              "retailer",
+              "brand"
+            ]
+          },
+          "isVerifiedByYeay": {
+            "type": "boolean"
+          }
+        }
+      },
+      "challengeId": {
+        "type": "string"
+      }
+    }
+  }
+}

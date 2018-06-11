@@ -1,0 +1,68 @@
+{
+  "properties": {
+    "numOfTotalOrders": {
+      "type": "number"
+    },
+    "numOfOrders": {
+      "type": "array",
+      "items": {
+        "properties": {
+          "day": {
+            "type": "string"
+          },
+          "value": {
+            "type": "number"
+          }
+        }
+      }
+    },
+    "numOfTotalProducts": {
+      "type": "number"
+    },
+    "numOfProducts": {
+      "type": "array",
+      "items": {
+        "properties": {
+          "day": {
+            "type": "string"
+          },
+          "value": {
+            "type": "number"
+          }
+        }
+      }
+    },
+    "numOfTotalLikes": {
+      "type": "number"
+    },
+    "numOfLikes": {
+      "type": "array",
+      "items": {
+        "properties": {
+          "day": {
+            "type": "string"
+          },
+          "value": {
+            "type": "number"
+          }
+        }
+      }
+    },
+    "numOfTotalFollows": {
+      "type": "number"
+    },
+    "numOfFollows": {
+      "type": "array",
+      "items": {
+        "properties": {
+          "day": {
+            "type": "string"
+          },
+          "value": {
+            "type": "number"
+          }
+        }
+      }
+    }
+  }
+}

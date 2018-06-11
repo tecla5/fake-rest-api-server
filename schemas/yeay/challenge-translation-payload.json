@@ -1,0 +1,20 @@
+{
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "orderNote": {
+      "type": "string"
+    },
+    "terms": {
+      "type": "string"
+    },
+    "learnMore": {
+      "type": "string"
+    }
+  }
+}

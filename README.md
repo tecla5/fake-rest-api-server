@@ -71,8 +71,22 @@ For each path definition under `paths`, find those that get a single domain enti
 Routes in `routes.json`
 
 ```js
-schemas = {
+export const schemas = {
   affiliateProduct: require('affiliate-product.json'),
+  appSetting: require('app-setting.json'),
+  appStatus: require('app-status.json'),
+  autocompleteProductTag: require('autocomplete-product-tag.json'),
+  autocompleteUniqueId: require('autocomplete-unique-id.json'),
+  catalogChallengeListItem: require('catalog-challenge-list-item.json'),
+  catalogChallenges: require('catalog-challenges.json'),
+  catalogSeller: require('catalog-seller.json'),
+  catalogUserSearchResult: require('catalog-user-search-result.json'),
+  catalogVideoSearchResult: require('catalog-video-search-result.json'),
+  catalogVideos: require('catalog-videos.json'),
+  challengeTranslationPayload: require('challenge-translation-payload.json'),
+  challengeTranslations: require('challenge-translations.json'),
+  challenge: require('challenge.json'),
+  // ...
 }
 ```
 

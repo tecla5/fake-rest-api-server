@@ -1,0 +1,19 @@
+{
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "totalLikes": {
+      "type": "number"
+    },
+    "totalFollowing": {
+      "type": "number"
+    },
+    "totalFollowers": {
+      "type": "number"
+    },
+    "totalProducts": {
+      "type": "number"
+    }
+  }
+}

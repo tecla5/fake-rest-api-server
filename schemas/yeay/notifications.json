@@ -1,0 +1,19 @@
+{
+  "type": "array",
+  "items": {
+    "properties": {
+      "id": {
+        "type": "string"
+      },
+      "message": {
+        "type": "string"
+      },
+      "properties": {
+        "type": "object"
+      },
+      "createdAt": {
+        "type": "string"
+      }
+    }
+  }
+}

@@ -35,7 +35,37 @@
             "type": "string"
           },
           "shipToAddress": {
-            "$ref": "#/definitions/Address"
+            "properties": {
+              "administrativeArea": {
+                "type": "string"
+              },
+              "country": {
+                "type": "string",
+                "description": "Deprecated, use `isoCountryCode` instead."
+              },
+              "formattedAddressLines": {
+                "type": "string",
+                "description": "Read-only, pretty printed string of the address"
+              },
+              "locality": {
+                "type": "string"
+              },
+              "thoroughfare": {
+                "type": "string"
+              },
+              "postalCode": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "suite": {
+                "type": "string"
+              },
+              "isoCountryCode": {
+                "type": "string"
+              }
+            }
           },
           "phoneNumber": {
             "type": "string"

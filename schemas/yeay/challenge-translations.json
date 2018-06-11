@@ -1,0 +1,424 @@
+{
+  "properties": {
+    "zh-CN": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "orderNote": {
+          "type": "string"
+        },
+        "terms": {
+          "type": "string"
+        },
+        "learnMore": {
+          "type": "string"
+        }
+      }
+    },
+    "ja": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "orderNote": {
+          "type": "string"
+        },
+        "terms": {
+          "type": "string"
+        },
+        "learnMore": {
+          "type": "string"
+        }
+      }
+    },
+    "fr": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "orderNote": {
+          "type": "string"
+        },
+        "terms": {
+          "type": "string"
+        },
+        "learnMore": {
+          "type": "string"
+        }
+      }
+    },
+    "de": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "orderNote": {
+          "type": "string"
+        },
+        "terms": {
+          "type": "string"
+        },
+        "learnMore": {
+          "type": "string"
+        }
+      }
+    },
+    "ko": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "orderNote": {
+          "type": "string"
+        },
+        "terms": {
+          "type": "string"
+        },
+        "learnMore": {
+          "type": "string"
+        }
+      }
+    },
+    "it": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "orderNote": {
+          "type": "string"
+        },
+        "terms": {
+          "type": "string"
+        },
+        "learnMore": {
+          "type": "string"
+        }
+      }
+    },
+    "ru": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "orderNote": {
+          "type": "string"
+        },
+        "terms": {
+          "type": "string"
+        },
+        "learnMore": {
+          "type": "string"
+        }
+      }
+    },
+    "nl": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "orderNote": {
+          "type": "string"
+        },
+        "terms": {
+          "type": "string"
+        },
+        "learnMore": {
+          "type": "string"
+        }
+      }
+    },
+    "tr": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "orderNote": {
+          "type": "string"
+        },
+        "terms": {
+          "type": "string"
+        },
+        "learnMore": {
+          "type": "string"
+        }
+      }
+    },
+    "pl": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "orderNote": {
+          "type": "string"
+        },
+        "terms": {
+          "type": "string"
+        },
+        "learnMore": {
+          "type": "string"
+        }
+      }
+    },
+    "sv": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "orderNote": {
+          "type": "string"
+        },
+        "terms": {
+          "type": "string"
+        },
+        "learnMore": {
+          "type": "string"
+        }
+      }
+    },
+    "fi": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "orderNote": {
+          "type": "string"
+        },
+        "terms": {
+          "type": "string"
+        },
+        "learnMore": {
+          "type": "string"
+        }
+      }
+    },
+    "el": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "orderNote": {
+          "type": "string"
+        },
+        "terms": {
+          "type": "string"
+        },
+        "learnMore": {
+          "type": "string"
+        }
+      }
+    },
+    "da": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "orderNote": {
+          "type": "string"
+        },
+        "terms": {
+          "type": "string"
+        },
+        "learnMore": {
+          "type": "string"
+        }
+      }
+    },
+    "id": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "orderNote": {
+          "type": "string"
+        },
+        "terms": {
+          "type": "string"
+        },
+        "learnMore": {
+          "type": "string"
+        }
+      }
+    },
+    "th": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "orderNote": {
+          "type": "string"
+        },
+        "terms": {
+          "type": "string"
+        },
+        "learnMore": {
+          "type": "string"
+        }
+      }
+    },
+    "pt-BR": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "orderNote": {
+          "type": "string"
+        },
+        "terms": {
+          "type": "string"
+        },
+        "learnMore": {
+          "type": "string"
+        }
+      }
+    },
+    "nb": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "orderNote": {
+          "type": "string"
+        },
+        "terms": {
+          "type": "string"
+        },
+        "learnMore": {
+          "type": "string"
+        }
+      }
+    },
+    "es": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "orderNote": {
+          "type": "string"
+        },
+        "terms": {
+          "type": "string"
+        },
+        "learnMore": {
+          "type": "string"
+        }
+      }
+    },
+    "es-MX": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "orderNote": {
+          "type": "string"
+        },
+        "terms": {
+          "type": "string"
+        },
+        "learnMore": {
+          "type": "string"
+        }
+      }
+    },
+    "pt": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "orderNote": {
+          "type": "string"
+        },
+        "terms": {
+          "type": "string"
+        },
+        "learnMore": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

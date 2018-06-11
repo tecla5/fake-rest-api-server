@@ -1,0 +1,1269 @@
+{
+  "type": "array",
+  "items": {
+    "required": [
+      "id",
+      "name"
+    ],
+    "properties": {
+      "id": {
+        "type": "string"
+      },
+      "name": {
+        "type": "string"
+      },
+      "description": {
+        "type": "string"
+      },
+      "challengeCode": {
+        "type": "string"
+      },
+      "isEnabled": {
+        "type": "boolean"
+      },
+      "rank": {
+        "type": "integer"
+      },
+      "imageUrl": {
+        "type": "string"
+      },
+      "brandLogoUrl": {
+        "type": "string"
+      },
+      "brandName": {
+        "type": "string"
+      },
+      "terms": {
+        "type": "string",
+        "description": "The participation terms of the challenge."
+      },
+      "orderNote": {
+        "type": "string",
+        "description": "The orderNote is included in challangen order confirmation emails."
+      },
+      "learnMore": {
+        "type": "string",
+        "description": "Additional text to learn more about the challenge."
+      },
+      "commissionAmount": {
+        "type": "integer",
+        "description": "Commission amount in cents"
+      },
+      "commissionCurrency": {
+        "type": "string",
+        "pattern": "[A-Z]",
+        "minLength": 3,
+        "maxLength": 3
+      },
+      "associatedProducts": {
+        "type": "array",
+        "items": {
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "sellerId": {
+              "type": "string"
+            },
+            "price": {
+              "type": "number"
+            },
+            "yeayScorePrice": {
+              "description": "The product price in yeay score points.",
+              "type": "integer",
+              "format": "int32",
+              "minimum": 0
+            },
+            "shippingPrice": {
+              "type": "number"
+            },
+            "intlShippingPrice": {
+              "type": "number"
+            },
+            "productImageUrl": {
+              "type": "string"
+            },
+            "currency": {
+              "type": "string"
+            },
+            "originCountry": {
+              "type": "string"
+            },
+            "shipsInternational": {
+              "type": "boolean"
+            },
+            "quantity": {
+              "type": "number"
+            },
+            "productOptions": {
+              "type": "object"
+            },
+            "totalSales": {
+              "type": "number"
+            },
+            "seller": {
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "email": {
+                  "type": "string"
+                },
+                "firstname": {
+                  "type": "string"
+                },
+                "lastname": {
+                  "type": "string"
+                },
+                "username": {
+                  "type": "string"
+                },
+                "emailVerified": {
+                  "type": "boolean"
+                },
+                "avatarImageUrl": {
+                  "type": "string"
+                },
+                "splashImageUrl": {
+                  "type": "string"
+                },
+                "deviceToken": {
+                  "type": "string"
+                },
+                "updatedAt": {
+                  "type": "string"
+                },
+                "createdAt": {
+                  "type": "string"
+                },
+                "address": {
+                  "properties": {
+                    "administrativeArea": {
+                      "type": "string"
+                    },
+                    "country": {
+                      "type": "string",
+                      "description": "Deprecated, use `isoCountryCode` instead."
+                    },
+                    "formattedAddressLines": {
+                      "type": "string",
+                      "description": "Read-only, pretty printed string of the address"
+                    },
+                    "locality": {
+                      "type": "string"
+                    },
+                    "thoroughfare": {
+                      "type": "string"
+                    },
+                    "postalCode": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "suite": {
+                      "type": "string"
+                    },
+                    "isoCountryCode": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "paypalEmail": {
+                  "type": "string"
+                },
+                "phoneNumber": {
+                  "type": "string"
+                },
+                "gender": {
+                  "type": "string"
+                },
+                "birthday": {
+                  "type": "string",
+                  "format": "date"
+                },
+                "taxId": {
+                  "type": "string"
+                },
+                "locale": {
+                  "type": "string"
+                },
+                "roles": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "altAvatarImages": {
+                  "type": "object"
+                },
+                "profileBio": {
+                  "type": "string"
+                },
+                "allowsChat": {
+                  "type": "boolean"
+                },
+                "currency": {
+                  "type": "string"
+                },
+                "paymentDetails": {
+                  "type": "object",
+                  "properties": {
+                    "stripe": {
+                      "type": "object",
+                      "properties": {
+                        "gatewayCustomerId": {
+                          "type": "string"
+                        },
+                        "gatewayEmail": {
+                          "type": "string"
+                        },
+                        "gatewayPayload": {
+                          "type": "object"
+                        },
+                        "gatewayCommerceType": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                },
+                "appUserType": {
+                  "type": "string",
+                  "enum": [
+                    "regular",
+                    "influencer",
+                    "retailer",
+                    "brand"
+                  ]
+                },
+                "isVerifiedByYeay": {
+                  "type": "boolean"
+                },
+                "yeayScore": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "description": "Only available if user is own user or when in admin context"
+                },
+                "isScoreFrozen": {
+                  "type": "boolean",
+                  "description": "Only available if user is own user or when in admin context"
+                }
+              }
+            },
+            "sellerName": {
+              "type": "string"
+            },
+            "yeay": {
+              "type": "boolean"
+            },
+            "condition": {
+              "type": "string"
+            },
+            "adminTags": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "size": {
+              "type": "string"
+            },
+            "gender": {
+              "type": "string"
+            },
+            "color": {
+              "type": "string"
+            },
+            "material": {
+              "type": "string"
+            },
+            "brand": {
+              "type": "string"
+            },
+            "pattern": {
+              "type": "string"
+            },
+            "googleProductCategory": {
+              "type": "number"
+            },
+            "shippping": {
+              "properties": {
+                "weight": {
+                  "type": "number"
+                },
+                "length": {
+                  "type": "number"
+                },
+                "width": {
+                  "type": "number"
+                },
+                "height": {
+                  "type": "number"
+                }
+              }
+            },
+            "createdAt": {
+              "type": "string"
+            },
+            "updatedAt": {
+              "type": "string"
+            },
+            "video": {
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "videoTitle": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "approved": {
+                  "type": "boolean"
+                },
+                "submitted": {
+                  "type": "boolean"
+                },
+                "featured": {
+                  "type": "boolean"
+                },
+                "videoType": {
+                  "type": "string"
+                },
+                "converted": {
+                  "type": "boolean"
+                },
+                "expired": {
+                  "type": "boolean"
+                },
+                "airedAt": {
+                  "type": "string"
+                },
+                "ranking": {
+                  "type": "number"
+                },
+                "mediaUrl": {
+                  "type": "string"
+                },
+                "sourceMediaUrl": {
+                  "type": "string"
+                },
+                "altMediaUrl": {
+                  "type": "string",
+                  "description": "A new MPEG DASH url"
+                },
+                "sharingImageUrl": {
+                  "type": "string",
+                  "description": "A url for shareable image generated on video upload"
+                },
+                "posterImageUrl": {
+                  "type": "string",
+                  "description": "The image that is used as the poster image"
+                },
+                "previewUrl": {
+                  "type": "string",
+                  "description": "A url for a gif formatted preview of the video"
+                },
+                "altPreviewUrl": {
+                  "type": "string",
+                  "description": "A url for an mp4 formatted preview video. Not gif"
+                },
+                "indexedAt": {
+                  "type": "string"
+                },
+                "updatedAt": {
+                  "type": "string"
+                },
+                "createdAt": {
+                  "type": "string"
+                },
+                "website": {
+                  "type": "string"
+                },
+                "socialVideoUrl": {
+                  "type": "string"
+                },
+                "channels": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "adminTags": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "yeay": {
+                  "type": "boolean"
+                },
+                "affiliateProductIds": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "totalLikes": {
+                  "type": "number"
+                },
+                "creator": {
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "email": {
+                      "type": "string"
+                    },
+                    "firstname": {
+                      "type": "string"
+                    },
+                    "lastname": {
+                      "type": "string"
+                    },
+                    "username": {
+                      "type": "string"
+                    },
+                    "emailVerified": {
+                      "type": "boolean"
+                    },
+                    "avatarImageUrl": {
+                      "type": "string"
+                    },
+                    "splashImageUrl": {
+                      "type": "string"
+                    },
+                    "deviceToken": {
+                      "type": "string"
+                    },
+                    "updatedAt": {
+                      "type": "string"
+                    },
+                    "createdAt": {
+                      "type": "string"
+                    },
+                    "address": {
+                      "properties": {
+                        "administrativeArea": {
+                          "type": "string"
+                        },
+                        "country": {
+                          "type": "string",
+                          "description": "Deprecated, use `isoCountryCode` instead."
+                        },
+                        "formattedAddressLines": {
+                          "type": "string",
+                          "description": "Read-only, pretty printed string of the address"
+                        },
+                        "locality": {
+                          "type": "string"
+                        },
+                        "thoroughfare": {
+                          "type": "string"
+                        },
+                        "postalCode": {
+                          "type": "string"
+                        },
+                        "name": {
+                          "type": "string"
+                        },
+                        "suite": {
+                          "type": "string"
+                        },
+                        "isoCountryCode": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "paypalEmail": {
+                      "type": "string"
+                    },
+                    "phoneNumber": {
+                      "type": "string"
+                    },
+                    "gender": {
+                      "type": "string"
+                    },
+                    "birthday": {
+                      "type": "string",
+                      "format": "date"
+                    },
+                    "taxId": {
+                      "type": "string"
+                    },
+                    "locale": {
+                      "type": "string"
+                    },
+                    "roles": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "altAvatarImages": {
+                      "type": "object"
+                    },
+                    "profileBio": {
+                      "type": "string"
+                    },
+                    "allowsChat": {
+                      "type": "boolean"
+                    },
+                    "currency": {
+                      "type": "string"
+                    },
+                    "paymentDetails": {
+                      "type": "object",
+                      "properties": {
+                        "stripe": {
+                          "type": "object",
+                          "properties": {
+                            "gatewayCustomerId": {
+                              "type": "string"
+                            },
+                            "gatewayEmail": {
+                              "type": "string"
+                            },
+                            "gatewayPayload": {
+                              "type": "object"
+                            },
+                            "gatewayCommerceType": {
+                              "type": "string"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "appUserType": {
+                      "type": "string",
+                      "enum": [
+                        "regular",
+                        "influencer",
+                        "retailer",
+                        "brand"
+                      ]
+                    },
+                    "isVerifiedByYeay": {
+                      "type": "boolean"
+                    },
+                    "yeayScore": {
+                      "type": "integer",
+                      "minimum": 0,
+                      "description": "Only available if user is own user or when in admin context"
+                    },
+                    "isScoreFrozen": {
+                      "type": "boolean",
+                      "description": "Only available if user is own user or when in admin context"
+                    }
+                  }
+                },
+                "user": {
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "email": {
+                      "type": "string"
+                    },
+                    "firstname": {
+                      "type": "string"
+                    },
+                    "lastname": {
+                      "type": "string"
+                    },
+                    "username": {
+                      "type": "string"
+                    },
+                    "emailVerified": {
+                      "type": "boolean"
+                    },
+                    "avatarImageUrl": {
+                      "type": "string"
+                    },
+                    "splashImageUrl": {
+                      "type": "string"
+                    },
+                    "deviceToken": {
+                      "type": "string"
+                    },
+                    "updatedAt": {
+                      "type": "string"
+                    },
+                    "createdAt": {
+                      "type": "string"
+                    },
+                    "address": {
+                      "properties": {
+                        "administrativeArea": {
+                          "type": "string"
+                        },
+                        "country": {
+                          "type": "string",
+                          "description": "Deprecated, use `isoCountryCode` instead."
+                        },
+                        "formattedAddressLines": {
+                          "type": "string",
+                          "description": "Read-only, pretty printed string of the address"
+                        },
+                        "locality": {
+                          "type": "string"
+                        },
+                        "thoroughfare": {
+                          "type": "string"
+                        },
+                        "postalCode": {
+                          "type": "string"
+                        },
+                        "name": {
+                          "type": "string"
+                        },
+                        "suite": {
+                          "type": "string"
+                        },
+                        "isoCountryCode": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "paypalEmail": {
+                      "type": "string"
+                    },
+                    "phoneNumber": {
+                      "type": "string"
+                    },
+                    "gender": {
+                      "type": "string"
+                    },
+                    "birthday": {
+                      "type": "string",
+                      "format": "date"
+                    },
+                    "taxId": {
+                      "type": "string"
+                    },
+                    "locale": {
+                      "type": "string"
+                    },
+                    "roles": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "altAvatarImages": {
+                      "type": "object"
+                    },
+                    "profileBio": {
+                      "type": "string"
+                    },
+                    "allowsChat": {
+                      "type": "boolean"
+                    },
+                    "currency": {
+                      "type": "string"
+                    },
+                    "paymentDetails": {
+                      "type": "object",
+                      "properties": {
+                        "stripe": {
+                          "type": "object",
+                          "properties": {
+                            "gatewayCustomerId": {
+                              "type": "string"
+                            },
+                            "gatewayEmail": {
+                              "type": "string"
+                            },
+                            "gatewayPayload": {
+                              "type": "object"
+                            },
+                            "gatewayCommerceType": {
+                              "type": "string"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "appUserType": {
+                      "type": "string",
+                      "enum": [
+                        "regular",
+                        "influencer",
+                        "retailer",
+                        "brand"
+                      ]
+                    },
+                    "isVerifiedByYeay": {
+                      "type": "boolean"
+                    },
+                    "yeayScore": {
+                      "type": "integer",
+                      "minimum": 0,
+                      "description": "Only available if user is own user or when in admin context"
+                    },
+                    "isScoreFrozen": {
+                      "type": "boolean",
+                      "description": "Only available if user is own user or when in admin context"
+                    }
+                  }
+                },
+                "challengeId": {
+                  "type": "string",
+                  "description": "The challenge id, if the video was uploaded for a challenge."
+                },
+                "challenge": {
+                  "allOf": [
+                    {
+                      "required": [
+                        "id"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  ]
+                },
+                "generalFeedVisibility": {
+                  "type": "boolean",
+                  "description": "Flag controlling feed visibility: `true` makes video visible in all feeds, `false` makes\nvideo invisible in all feeds. Invisible videos will be excluded from feeds. Default is `true`.\nCan be overwritten by `feedVisibility` on per feed basis.\n\nOnly admin users are allowed to change this property.\n"
+                },
+                "specificFeedVisibilities": {
+                  "type": "object",
+                  "description": "Seetings object controlling feed visibility on per feed basis: `true` will make video visible\nin specified feed, `false` will make video invisble in specified feed. Unspecified feeds will\n(property not set) will be shown/hidden as specified by `defaultFeedVisibility`. Invisible\nvideos will be excluded from feeds\n\nOnly admin users are allowed to update this property.\n",
+                  "properties": {
+                    "new-videos": {
+                      "type": "boolean"
+                    },
+                    "trending-videos": {
+                      "type": "boolean"
+                    },
+                    "on-fire": {
+                      "type": "boolean"
+                    },
+                    "near-you": {
+                      "type": "boolean"
+                    }
+                  }
+                },
+                "isOnline": {
+                  "description": "Determines if a video is publically accessible.",
+                  "type": "boolean"
+                },
+                "brands": {
+                  "description": "List of brand tags that appear in the video",
+                  "type": "string"
+                }
+              }
+            },
+            "altProductImages": {
+              "type": "object"
+            },
+            "geoLocationCoordinate": {
+              "type": "object",
+              "properties": {
+                "lat": {
+                  "type": "number"
+                },
+                "lon": {
+                  "type": "number"
+                }
+              }
+            },
+            "isLocalPickupEnabled": {
+              "type": "boolean"
+            },
+            "isShippingDisabled": {
+              "type": "boolean"
+            },
+            "isOnline": {
+              "description": "Determines if a product and its videos are publically accessible.",
+              "type": "boolean"
+            },
+            "purchaseStatus": {
+              "description": "Indicates how/if the product can be purchased.",
+              "type": "string",
+              "enum": [
+                "coming-soon",
+                "pre-order",
+                "available"
+              ]
+            },
+            "affiliateLink": {
+              "type": "string"
+            },
+            "affiliateName": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "participationRequirements": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "enum": [
+            "ENTER_CODE",
+            "PURCHASE_CHALLENGE_PRODUCT"
+          ]
+        }
+      },
+      "featuredVideoIds": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "description": "Ordered list of video IDs that will be shown in top of the list of challenge videos"
+      },
+      "translations": {
+        "properties": {
+          "zh-CN": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "orderNote": {
+                "type": "string"
+              },
+              "terms": {
+                "type": "string"
+              },
+              "learnMore": {
+                "type": "string"
+              }
+            }
+          },
+          "ja": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "orderNote": {
+                "type": "string"
+              },
+              "terms": {
+                "type": "string"
+              },
+              "learnMore": {
+                "type": "string"
+              }
+            }
+          },
+          "fr": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "orderNote": {
+                "type": "string"
+              },
+              "terms": {
+                "type": "string"
+              },
+              "learnMore": {
+                "type": "string"
+              }
+            }
+          },
+          "de": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "orderNote": {
+                "type": "string"
+              },
+              "terms": {
+                "type": "string"
+              },
+              "learnMore": {
+                "type": "string"
+              }
+            }
+          },
+          "ko": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "orderNote": {
+                "type": "string"
+              },
+              "terms": {
+                "type": "string"
+              },
+              "learnMore": {
+                "type": "string"
+              }
+            }
+          },
+          "it": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "orderNote": {
+                "type": "string"
+              },
+              "terms": {
+                "type": "string"
+              },
+              "learnMore": {
+                "type": "string"
+              }
+            }
+          },
+          "ru": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "orderNote": {
+                "type": "string"
+              },
+              "terms": {
+                "type": "string"
+              },
+              "learnMore": {
+                "type": "string"
+              }
+            }
+          },
+          "nl": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "orderNote": {
+                "type": "string"
+              },
+              "terms": {
+                "type": "string"
+              },
+              "learnMore": {
+                "type": "string"
+              }
+            }
+          },
+          "tr": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "orderNote": {
+                "type": "string"
+              },
+              "terms": {
+                "type": "string"
+              },
+              "learnMore": {
+                "type": "string"
+              }
+            }
+          },
+          "pl": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "orderNote": {
+                "type": "string"
+              },
+              "terms": {
+                "type": "string"
+              },
+              "learnMore": {
+                "type": "string"
+              }
+            }
+          },
+          "sv": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "orderNote": {
+                "type": "string"
+              },
+              "terms": {
+                "type": "string"
+              },
+              "learnMore": {
+                "type": "string"
+              }
+            }
+          },
+          "fi": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "orderNote": {
+                "type": "string"
+              },
+              "terms": {
+                "type": "string"
+              },
+              "learnMore": {
+                "type": "string"
+              }
+            }
+          },
+          "el": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "orderNote": {
+                "type": "string"
+              },
+              "terms": {
+                "type": "string"
+              },
+              "learnMore": {
+                "type": "string"
+              }
+            }
+          },
+          "da": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "orderNote": {
+                "type": "string"
+              },
+              "terms": {
+                "type": "string"
+              },
+              "learnMore": {
+                "type": "string"
+              }
+            }
+          },
+          "id": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "orderNote": {
+                "type": "string"
+              },
+              "terms": {
+                "type": "string"
+              },
+              "learnMore": {
+                "type": "string"
+              }
+            }
+          },
+          "th": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "orderNote": {
+                "type": "string"
+              },
+              "terms": {
+                "type": "string"
+              },
+              "learnMore": {
+                "type": "string"
+              }
+            }
+          },
+          "pt-BR": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "orderNote": {
+                "type": "string"
+              },
+              "terms": {
+                "type": "string"
+              },
+              "learnMore": {
+                "type": "string"
+              }
+            }
+          },
+          "nb": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "orderNote": {
+                "type": "string"
+              },
+              "terms": {
+                "type": "string"
+              },
+              "learnMore": {
+                "type": "string"
+              }
+            }
+          },
+          "es": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "orderNote": {
+                "type": "string"
+              },
+              "terms": {
+                "type": "string"
+              },
+              "learnMore": {
+                "type": "string"
+              }
+            }
+          },
+          "es-MX": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "orderNote": {
+                "type": "string"
+              },
+              "terms": {
+                "type": "string"
+              },
+              "learnMore": {
+                "type": "string"
+              }
+            }
+          },
+          "pt": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "orderNote": {
+                "type": "string"
+              },
+              "terms": {
+                "type": "string"
+              },
+              "learnMore": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      },
+      "startDate": {
+        "type": "string",
+        "format": "date-time"
+      },
+      "endDate": {
+        "type": "string",
+        "format": "date-time"
+      },
+      "createdAt": {
+        "type": "string",
+        "format": "date-time"
+      },
+      "updatedAt": {
+        "type": "string",
+        "format": "date-time"
+      }
+    }
+  }
+}

@@ -5,7 +5,7 @@ import {writeRoutes} from '../../routes'
 export async function generate(opts : any = {}) {
   try {
 
-    const schemaName = 'minimal' // 'api-v1'
+    const schemaName = opts.name || 'api-v1' // 'minimal' // 
     
     const $doc = await loadDoc(schemaName, schemaPath)
     //log($doc);

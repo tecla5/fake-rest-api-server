@@ -1,0 +1,19 @@
+{
+  "required": [
+    "ok"
+  ],
+  "properties": {
+    "ok": {
+      "type": "boolean"
+    },
+    "reason": {
+      "type": "string",
+      "enum": [
+        "UNSUPPORTED_CLIENT_VERSION"
+      ]
+    },
+    "message": {
+      "type": "string"
+    }
+  }
+}

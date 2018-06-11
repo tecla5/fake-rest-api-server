@@ -4,13 +4,11 @@ export {writeFile, rootPath, serverPath}
 from '../util'
 const yaml = require('js-yaml');
 const $path = require('path');
-const deref = require('json-schema-deref');
-
-// const {promisify} = require("util");
-// const promisify = require("promisify-node");
-// const promisify = require("js-promisify");
-const promisify = require("util-promisify");
+// const promisify = require("util-promisify");
+// const deref = require('json-schema-deref');
 // const derefAsync = promisify(deref)
+
+var derefLocal = require('json-schema-deref-local')
 
 export function dasherize(str : string) {
   return str
@@ -21,10 +19,9 @@ export function dasherize(str : string) {
     .toLowerCase();
 };
 
-async function loadFullDoc(doc: any) {
-  const derefAsync = promisify(deref)
-  return await derefAsync(doc)
-  // return await promisify(deref, doc)
+async function loadFullDoc(doc: any, opts = {}) {  
+  // return await derefAsync(doc, opts)
+  return await derefLocal(doc, opts)  
 }
 
 export async function loadDoc(schemaName : string, schemaPath : string) {
@@ -34,7 +31,11 @@ export async function loadDoc(schemaName : string, schemaPath : string) {
   const original = yaml.safeLoad(src);
   // log(doc);
   try {
-    const expanded = await loadFullDoc(original)
+    const opts = {
+      // failOnMissing: true
+    }
+
+    const expanded = await loadFullDoc(original, opts)
     return {
       original,
       expanded

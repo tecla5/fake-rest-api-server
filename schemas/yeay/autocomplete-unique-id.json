@@ -11,6 +11,23 @@
       },
       "avatarImageUrl": {
         "type": "string"
+      },
+      "altAvatarImages": {
+        "type": "object",
+        "properties": {
+          "s": {
+            "type": "string"
+          },
+          "m": {
+            "type": "string"
+          },
+          "l": {
+            "type": "string"
+          },
+          "xl": {
+            "type": "string"
+          }
+        }
       }
     }
   }

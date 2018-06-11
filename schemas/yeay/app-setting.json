@@ -1,0 +1,34 @@
+{
+  "properties": {
+    "videoLimit": {
+      "type": "number"
+    },
+    "videoServerRegion": {
+      "type": "string"
+    },
+    "videoServerPrefix": {
+      "type": "string"
+    },
+    "videoServerBucket": {
+      "type": "string"
+    },
+    "updatedAt": {
+      "type": "string"
+    },
+    "iOSAppStoreVersion": {
+      "type": "string"
+    },
+    "androidPlayStoreVersion": {
+      "type": "string"
+    },
+    "acceptedCurrencies": {
+      "type": "object"
+    },
+    "serverTimeEpoch": {
+      "type": "number"
+    },
+    "serverTime": {
+      "type": "string"
+    }
+  }
+}
