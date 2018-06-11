@@ -26,6 +26,7 @@
     "js-yaml": "^3.12.0",
     "json-schema-deref": "^0.4.3",
     "lodash": "^4.17.10",
+    "lodash-inflection": "^1.5.0",
     "template-helpers": "^0.6.7"
   }
 }

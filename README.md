@@ -66,6 +66,39 @@ For each path definition under `paths`, find those that get a single domain enti
 * `'/affiliate-products/{productId}'` (get single product by ID)
 * `'/affiliate-products` (get list)
 
+### All together
+
+Routes in `routes.json`
+
+```js
+schemas = {
+  affiliateProduct: require('affiliate-product.json'),
+}
+```
+
+DB in `db.json`
+
+Note: schema name must be pluralized
+
+```json
+{
+  "affiliateProducts": [{
+    // ...
+  }],
+  // ...
+}
+```
+
+Routes in `routes.json`
+
+```json
+{
+  "/affiliate-products": "/affiliateProducts",
+  "/affiliate-products/:productId": "/affiliateProducts/:productId",
+  // ...
+}
+```
+
 ### Generate mock data
 
 ```bash
