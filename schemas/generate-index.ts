@@ -3,6 +3,9 @@ const $path = require('path');
 const helpers = require('template-helpers')();
 const _ = require('lodash')
 
+const schemasPath: any = {}
+schemasPath.root = __dirname
+
 function writeFile(filePath : string, data : any) {
   $fs.writeFileSync(filePath, data, 'utf8')
   console.log('wrote to:', filePath)
@@ -17,7 +20,7 @@ const imports = {
 };
 
 const template : any = {
-  filePath: $path.join(__dirname, './index.ts.tpl')
+  filePath: $path.join(schemasPath.root, 'index.ts.tpl')
 }
 
 template.src = readFile(template.filePath)
@@ -25,7 +28,10 @@ template.src = readFile(template.filePath)
 // compile a template
 const templateFn = _.template(template.src, imports);
 
-const schemaList = ['affiliate-product', 'autocomplete-unique-id']
+const schemaList = [
+  'affiliate-product', 
+  'autocomplete-unique-id'
+]
 
 // const schemaMap = {   affiliateProduct: 'affiliate-product',
 // autocompleteUniqueId: 'autocomplete-unique-id' }
@@ -51,6 +57,8 @@ const data = Object
 
 const fileSrc = templateFn({data})
 
+schemasPath.yeay = $path.join(schemasPath.root, 'yeay')
+
 // console.log({fileSrc})
-const destFilePath = $path.join(__dirname, './index.ts')
+const destFilePath = $path.join(schemasPath.yeay, 'index.ts')
 writeFile(destFilePath, fileSrc)

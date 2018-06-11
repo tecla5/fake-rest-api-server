@@ -1,0 +1,114 @@
+{
+  "type": "array",
+  "items": {
+    "allOf": [
+      {
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "firstname": {
+            "type": "string"
+          },
+          "lastname": {
+            "type": "string"
+          },
+          "userName": {
+            "type": "string"
+          },
+          "username": {
+            "type": "string"
+          },
+          "profileKey": {
+            "type": "string"
+          },
+          "avatarImageUrl": {
+            "type": "string"
+          },
+          "altAvatarImages": {
+            "type": "object"
+          },
+          "splashImageUrl": {
+            "type": "string"
+          },
+          "shipToAddress": {
+            "$ref": "#/definitions/Address"
+          },
+          "phoneNumber": {
+            "type": "string"
+          },
+          "profileBio": {
+            "type": "string"
+          },
+          "sellerRating": {
+            "type": "number"
+          },
+          "totalReviews": {
+            "type": "number"
+          },
+          "paypalEmail": {
+            "type": "string"
+          },
+          "shareUrl": {
+            "type": "string"
+          },
+          "allowsChat": {
+            "type": "boolean"
+          },
+          "isFollowed": {
+            "type": "boolean"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "updatedAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "appUserType": {
+            "type": "string",
+            "enum": [
+              "regular",
+              "influencer",
+              "retailer",
+              "brand"
+            ]
+          },
+          "isVerifiedByYeay": {
+            "type": "boolean"
+          }
+        }
+      },
+      {
+        "properties": {
+          "numOfLikes": {
+            "type": "number"
+          },
+          "numOfFollowers": {
+            "type": "number"
+          },
+          "numOfFollowing": {
+            "type": "number"
+          },
+          "allowsChat": {
+            "type": "boolean"
+          },
+          "averageRating": {
+            "type": "number",
+            "description": "Avarage rating of seller basend on recent orders.",
+            "minimum": 1,
+            "maximum": 5
+          },
+          "numOfRatings": {
+            "type": "integer",
+            "description": "Total number of ratings."
+          }
+        }
+      }
+    ]
+  }
+}

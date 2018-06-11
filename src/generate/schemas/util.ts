@@ -5,8 +5,12 @@ from '../util'
 const yaml = require('js-yaml');
 const $path = require('path');
 const deref = require('json-schema-deref');
-const {promisify} = require('util');
-const derefAsync = promisify(deref)
+
+// const {promisify} = require("util");
+// const promisify = require("promisify-node");
+// const promisify = require("js-promisify");
+const promisify = require("util-promisify");
+// const derefAsync = promisify(deref)
 
 export function dasherize(str : string) {
   return str
@@ -17,14 +21,24 @@ export function dasherize(str : string) {
     .toLowerCase();
 };
 
+async function loadFullDoc(doc: any) {
+  const derefAsync = promisify(deref)
+  return await derefAsync(doc)
+  // return await promisify(deref, doc)
+}
+
 export async function loadDoc(schemaName : string, schemaPath : string) {
   const fileName = `${schemaName}.yaml`
   const schemaFilePath = $path.join(schemaPath, fileName)
   const src = readFile(schemaFilePath)
-  const doc = yaml.safeLoad(src);
+  const original = yaml.safeLoad(src);
   // log(doc);
   try {
-    return await derefAsync(doc)
+    const expanded = await loadFullDoc(original)
+    return {
+      original,
+      expanded
+    }
   } catch (e) {
     return {}
   }

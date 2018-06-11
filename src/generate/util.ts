@@ -1,11 +1,12 @@
 const $fs = require('fs');
+const $path = require('path');
 import chalk from "chalk";
 const {green, red} = chalk
 export const {
   log
 } = console
 
-export const rootPath = $path.join(__dirname, '..')
+export const rootPath = $path.join(__dirname, '../..')
 export const serverPath = $path.join(rootPath, 'server')
 
 export function warn(msg : string) {

@@ -6,10 +6,11 @@ export async function generate(opts : any = {}) {
   try {
 
     const schemaName = 'minimal' // 'api-v1'
+    
     const $doc = await loadDoc(schemaName, schemaPath)
     //log($doc);
 
-    const {paths} = $doc
+    const {paths} = $doc.expanded
 
     const pathKeys = Object.keys(paths)
 
@@ -19,14 +20,14 @@ export async function generate(opts : any = {}) {
 
     const singleEntityPaths = pathKeys
 
-    const promises = singleEntityPaths.map(async(singleEntityPath : string) => {
-      const pathObj = paths[singleEntityPath]
-      return await generateOne(pathObj)
+    const promises = singleEntityPaths.map(async(pathKey : string) => {
+      const pathObj = paths[pathKey]
+      return await generateOne(pathObj, pathKey, $doc)
     })
 
     return Promise.all(promises)
   } catch (e) {
-    log(e);
+    log('ERROR', e);
     return e
   }
 }

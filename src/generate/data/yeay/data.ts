@@ -1,5 +1,5 @@
 import {jsf} from '../jsf'
-import {schemas} from '../../../../schemas';
+import {schemas} from '../../../../schemas/yeay';
 const _ = require('lodash');
 _.mixin(require("lodash-inflection"))
 
