@@ -119,7 +119,7 @@ Routes in `routes.json`
 npm run prestart
 ```
 
-The generator generates a JSON database in `/buildScripts/db.json`
+The generator generates a JSON database in `/server/db.json`
 
 ### Start JSON server
 
@@ -131,61 +131,20 @@ npm run start
 
 The JSON server serves the generated JSON database on a REST server on port 3000 by default
 
-`json-server --watch buildScripts/db.json --port 3000`
+`json-server --watch server/db.json --port 3000`
 
 #### Custom routes
+
+To run server with custom routes
 
 ```bash
 npm run start:routes
 ```
 
-Starts JSON server using custom routes defined in `buildScripts/routes.json`
+Starts JSON server using custom routes defined in `server/routes.json`
 
 See [add-custom-routes](https://github.com/typicode/json-server#add-custom-routes)
 
-## Design
+## License
 
-The source code currently lives in `/buildScripts` and `/src`
-
-Currently the generator code in `/buildScripts/generateData.ts` is hard-coded to the specific design.
-We need to re-work it to be fully generic
-
-```js
-const groups = compiledGroupSchema.groups;
-let sites: ISite[] = [];
-
-groups.forEach((group: IGroup) => {
-  const compiledSiteSchema = jsf(siteSchema);
-
-  sites = [...sites, ...compiledSiteSchema.sites];
-
-  group.sites = compiledSiteSchema.sites.map((site: ISite) => site.id);
-});
-
-const json = JSON.stringify({
-  groups,
-  sites
-});
-
-fs.writeFile("./buildScripts/db.json", json, err => {
-  if (err) {
-    console.log(red(err.message));
-  } else {
-    console.log(green("Mock API data generated."));
-  }
-});
-```
-
-### Models
-
-Define models:
-
-* `/src/models/IGroup.ts`
-* `/src/models/ISchema.ts`
-
-### Schemas
-
-Define schemas:
-
-* `/buildScripts/groupSchema.ts`
-* `/buildScripts/siteSchema.ts`
+MIT
