@@ -5,27 +5,26 @@ import {writeRoutes} from '../../routes'
 export async function generate(opts : any = {}) {
   try {
 
-    const schemaName = opts.name || 'api-v1' // 'minimal' // 
-    
+    const schemaName = opts.name || 'api-v1' // 'minimal' //
+
     const $doc = await loadDoc(schemaName, schemaPath)
     //log($doc);
 
     const {paths} = $doc.expanded
 
-    const pathKeys = Object.keys(paths)
-
     if (opts.routes) {
-      writeRoutes(pathKeys)
+      writeRoutes($doc.original)
     }
 
-    const singleEntityPaths = pathKeys
+    if (opts.schemas) {
+      const pathKeys = Object.keys(paths)
+      const promises = pathKeys.map(async(pathKey : string) => {
+        const pathObj = paths[pathKey]
+        return await generateOne(pathObj, pathKey, $doc)
+      })
 
-    const promises = singleEntityPaths.map(async(pathKey : string) => {
-      const pathObj = paths[pathKey]
-      return await generateOne(pathObj, pathKey, $doc)
-    })
-
-    return Promise.all(promises)
+      return Promise.all(promises)
+    }
   } catch (e) {
     log('ERROR', e);
     return e

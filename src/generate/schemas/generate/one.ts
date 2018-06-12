@@ -11,14 +11,12 @@ import {
 const arraySchema = {
   type: "array",
   uniqueItems: true,
-  items: {
-  }
-} 
+  items: {}
+}
 
-
-function wrapAsArray(schema: any) {
-  const $schema: any = {
-    ...arraySchema,
+function wrapAsArray(schema : any) {
+  const $schema : any = {
+    ...arraySchema
   }
 
   $schema.items = schema
@@ -31,8 +29,12 @@ const fakerMap = {
   name: 'commerce.productName',
   description: 'lorem.words',
   network: 'internet.domainName',
-  rank: {"random.number": [20]},
-  ranking: {"random.number": [20]},  
+  rank: {
+    "random.number": [20]
+  },
+  ranking: {
+    "random.number": [20]
+  },
   currency: "finance.currencyCode",
   email: "internet.email",
   firstname: "name.firstName",
@@ -44,7 +46,7 @@ const fakerMap = {
   brands: "company.companyName"
 }
 
-function addFakerToProp(key: string, prop: any) {  
+function addFakerToProp(key : string, prop : any) {
   if (/Id$/.test(key)) {
     prop.faker = "random.number"
   }
@@ -54,25 +56,22 @@ function addFakerToProp(key: string, prop: any) {
   }
 
   if (key === 'gender') {
-    prop.enum = [ "male", "female"]
+    prop.enum = ["male", "female"]
   }
 
   if (key === 'videoType') {
-    prop.enum = [
-      "sale",
-      ""
-    ]
+    prop.enum = ["sale", ""]
   }
-  
+
   if (/Currency$/.test(key)) {
     prop.faker = "finance.currencyCode"
   }
-  
 
   if (/Likes$/.test(key) || /Views$/.test(key) || /Comments$/.test(key)) {
-    prop.faker = {"random.number": [20]}
+    prop.faker = {
+      "random.number": [20]
+    }
   }
-
 
   if (/Code$/.test(key)) {
     prop.faker = "lorem.slug"
@@ -87,19 +86,19 @@ function addFakerToProp(key: string, prop: any) {
   }
 
   if (/Amount$/.test(key)) {
-    prop.faker = {"finance.amount": [10, 1000, 2]} // "random.number"
+    prop.faker = {
+      "finance.amount": [10, 1000, 2]
+    } // "random.number"
   }
 
   if (key === 'roles') {
-    prop.enum = [
-      'admin',
-      'guest',
-      'user'
-    ]
+    prop.enum = ['admin', 'guest', 'user']
   }
-  
+
   if (/Score$/.test(key)) {
-    prop.faker = {"random.number": [1000]}
+    prop.faker = {
+      "random.number": [1000]
+    }
   }
 
   if (/At$/.test(key) || key === 'serverTime') {
@@ -112,10 +111,10 @@ function addFakerToProp(key: string, prop: any) {
 
   if (key === 'endDate') {
     prop.format = 'date-time'
-    prop.faker = 'date.future'    
+    prop.faker = 'date.future'
   }
 
-  const faker = fakerMap[key]    
+  const faker = fakerMap[key]
   if (faker) {
     prop.faker = faker
   }
@@ -123,19 +122,24 @@ function addFakerToProp(key: string, prop: any) {
   return prop
 }
 
-export async function generateOne(path : any, pathKey: string, doc: any) {
+function schemaFromPath(path : any) : any {
   // only GET methods are valid
-  const methodName : any = ['get'].find((name : string) => !!path[name])
+  const methodName: any = ['get'].find((name : string) => !!path[name]);
   if (!methodName) {
     return
   }
-  const method = path[methodName]
+  const method = path[methodName];
+  const schema = method.responses['200'].schema;
+  return {schema, method, methodName}
+}
+
+export async function generateOne(path : any, pathKey : string, doc : any) {
+  let {schema, method, methodName} = schemaFromPath(path)
+
   const tags = method.tags || {}
   if (hasDeprecated(tags)) {
     return
   }
-
-  let schema = method.responses['200'].schema
 
   const docPath = doc.original.paths[pathKey]
   const schemaWithRef = docPath[methodName].responses['200'].schema
@@ -146,7 +150,9 @@ export async function generateOne(path : any, pathKey: string, doc: any) {
   if (schemaRef) {
     const matchExpr = /\/(\w+)$/
     const matches = matchExpr.exec(schemaRef)
-    schemaName = matches ? matches[1] : schemaName
+    schemaName = matches
+      ? matches[1]
+      : schemaName
   }
 
   const name = schemaName || nameOf(method, tags)
@@ -162,7 +168,7 @@ export async function generateOne(path : any, pathKey: string, doc: any) {
   }
 
   if (schema.type === 'object' || !schema.type) {
-    schema = wrapAsArray(schema)  
+    schema = wrapAsArray(schema)
   }
 
   if (schema.items) {
@@ -170,7 +176,7 @@ export async function generateOne(path : any, pathKey: string, doc: any) {
     const keys = Object.keys(properties)
     schema.uniqueItems = true
     schema.items.required = keys
-    
+
     properties = keys.reduce((acc, key) => {
       acc[key] = addFakerToProp(key, properties[key])
       return acc

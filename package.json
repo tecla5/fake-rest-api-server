@@ -15,6 +15,7 @@
     "typescript": "^2.9.1"
   },
   "scripts": {
+    "routes:map": "ts-node src/generate/routes/run.ts",
     "schemas:from-swagger": "ts-node src/generate/schemas/run.ts",
     "schemas:index": "ts-node schemas/generate-index.ts",
     "db:generate": "ts-node src/generate/data/run.ts",
