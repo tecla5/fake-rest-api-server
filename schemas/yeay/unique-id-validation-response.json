@@ -1,0 +1,56 @@
+{
+  "type": "array",
+  "uniqueItems": true,
+  "items": {
+    "required": [
+      "isValid",
+      "suggestions",
+      "reason"
+    ],
+    "properties": {
+      "isValid": {
+        "type": "boolean"
+      },
+      "suggestions": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "reason": {
+        "title": "UniqeIdValidationFailureReason",
+        "description": "Reason gives more information in case the requested unique id is not valid or not available.",
+        "type": "object",
+        "required": [
+          "code",
+          "message"
+        ],
+        "properties": {
+          "code": {
+            "type": "string",
+            "enum": [
+              "BLACKLISTED",
+              "INVALID_CHARACTERS",
+              "ALREADY_IN_USE"
+            ]
+          },
+          "message": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "example": {
+      "isValid": false,
+      "suggestions": [
+        "test-12345",
+        "test-12346",
+        "..."
+      ],
+      "reason": {
+        "code": "INVALID_CHARACTERS",
+        "message": "The given uniqueId contains invalid character(s)."
+      }
+    }
+  }
+}

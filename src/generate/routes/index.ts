@@ -1,4 +1,4 @@
-import {log, writeFile, toJson, serverPath} from '../schemas/util'
+import {log, writeFile, toJson, serverPath, nameOf} from '../schemas/util'
 const $path = require('path');
 const _ = require('lodash');
 _.mixin(require("lodash-inflection"))
@@ -29,8 +29,13 @@ function schemaFromPath(path : any) : any {
   const method = path[methodName];
   const okResponse = method.responses['200'];
   return okResponse
-    ? okResponse.schema
-    : {}
+    ? {
+      schema: okResponse.schema,
+      method
+    }
+    : {
+      method
+    }
 }
 
 export function writeRoutes(doc : any) {
@@ -38,9 +43,15 @@ export function writeRoutes(doc : any) {
   const pathKeys = Object.keys(paths)
 
   function translatePath(pathKey : string, path : any) : any {
-    const translatedPathKey = pathKey.replace(/{(\w+)}/g, ':$1')
-    const schema = schemaFromPath(path) || {};
-    const schemaName = resolveSchemaName(schema.$ref);
+    const translatedPathKey = pathKey.replace(/{(\w+)}/g, ':$1');
+    const {schema, method} = schemaFromPath(path);
+    if (!schema) {
+      return {path: translatedPathKey}
+    }
+
+    const schemaName = schema.$ref
+      ? resolveSchemaName(schema.$ref)
+      : nameOf(method, schema.tags);
     if (!schemaName) {
       return {path: translatedPathKey}
     }

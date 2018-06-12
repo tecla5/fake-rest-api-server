@@ -1,0 +1,87 @@
+{
+  "type": "array",
+  "uniqueItems": true,
+  "items": {
+    "required": [
+      "id",
+      "userId",
+      "userYeayScore",
+      "productId",
+      "productYeayScorePrice",
+      "videoId",
+      "email",
+      "phoneNumber",
+      "address"
+    ],
+    "properties": {
+      "id": {
+        "type": "string",
+        "faker": "random.uuid"
+      },
+      "userId": {
+        "type": "string",
+        "faker": "random.number"
+      },
+      "userYeayScore": {
+        "type": "number",
+        "faker": {
+          "random.number": [
+            1000
+          ]
+        }
+      },
+      "productId": {
+        "type": "string",
+        "faker": "random.number"
+      },
+      "productYeayScorePrice": {
+        "type": "number"
+      },
+      "videoId": {
+        "type": "string",
+        "faker": "random.number"
+      },
+      "email": {
+        "type": "string",
+        "faker": "internet.email"
+      },
+      "phoneNumber": {
+        "type": "string",
+        "faker": "phone.phoneNumber"
+      },
+      "address": {
+        "properties": {
+          "administrativeArea": {
+            "type": "string"
+          },
+          "country": {
+            "type": "string",
+            "description": "Deprecated, use `isoCountryCode` instead."
+          },
+          "formattedAddressLines": {
+            "type": "string",
+            "description": "Read-only, pretty printed string of the address"
+          },
+          "locality": {
+            "type": "string"
+          },
+          "thoroughfare": {
+            "type": "string"
+          },
+          "postalCode": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "suite": {
+            "type": "string"
+          },
+          "isoCountryCode": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

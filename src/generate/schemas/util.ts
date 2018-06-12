@@ -4,9 +4,8 @@ export {writeFile, rootPath, serverPath}
 from '../util'
 const yaml = require('js-yaml');
 const $path = require('path');
-// const promisify = require("util-promisify");
-// const deref = require('json-schema-deref');
-// const derefAsync = promisify(deref)
+// const promisify = require("util-promisify"); const deref =
+// require('json-schema-deref'); const derefAsync = promisify(deref)
 
 var derefLocal = require('json-schema-deref-local')
 
@@ -19,9 +18,9 @@ export function dasherize(str : string) {
     .toLowerCase();
 };
 
-async function loadFullDoc(doc: any, opts = {}) {  
+async function loadFullDoc(doc : any, opts = {}) {
   // return await derefAsync(doc, opts)
-  return await derefLocal(doc, opts)  
+  return await derefLocal(doc, opts)
 }
 
 export async function loadDoc(schemaName : string, schemaPath : string) {
@@ -36,10 +35,7 @@ export async function loadDoc(schemaName : string, schemaPath : string) {
     }
 
     const expanded = await loadFullDoc(original, opts)
-    return {
-      original,
-      expanded
-    }
+    return {original, expanded}
   } catch (e) {
     return {}
   }
@@ -60,7 +56,7 @@ export function hasDeprecated(tags : string[]) {
   return tags.find((tag : string) => tag === 'Deprecated')
 }
 
-export function nameOf(method : any, tags : string[]) {
+export function nameOf(method : any, tags : string[] = []) {
   const opId = method.operationId
   return opId
     ? opId.replace(/^get/, '')

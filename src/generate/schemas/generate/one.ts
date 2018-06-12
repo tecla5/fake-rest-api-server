@@ -124,12 +124,17 @@ function addFakerToProp(key : string, prop : any) {
 
 function schemaFromPath(path : any) : any {
   // only GET methods are valid
-  const methodName: any = ['get'].find((name : string) => !!path[name]);
+  const methodName: any = ['get', 'post', 'put', 'delete'].find((name : string) => !!path[name]);
   if (!methodName) {
     return
   }
   const method = path[methodName];
-  const schema = method.responses['200'].schema;
+  const okResponse = method.responses['200'];
+  if (!okResponse) {
+    return {method, methodName}
+  }
+
+  const schema = okResponse.schema;
   return {schema, method, methodName}
 }
 
@@ -142,9 +147,12 @@ export async function generateOne(path : any, pathKey : string, doc : any) {
   }
 
   const docPath = doc.original.paths[pathKey]
-  const schemaWithRef = docPath[methodName].responses['200'].schema
+  const okResponse = docPath[methodName].responses['200']
+  const schemaWithRef = okResponse
+    ? okResponse.schema
+    : {}
   // use Definitions reference name if present
-  const schemaRef = schemaWithRef.$ref
+  const schemaRef = (schemaWithRef || {}).$ref
 
   let schemaName
   if (schemaRef) {
@@ -158,6 +166,9 @@ export async function generateOne(path : any, pathKey : string, doc : any) {
   const name = schemaName || nameOf(method, tags)
 
   if (/List$/.test(name)) {
+    return
+  }
+  if (!schema) {
     return
   }
 

@@ -1,0 +1,16 @@
+{
+  "type": "array",
+  "uniqueItems": true,
+  "items": {
+    "type": "object",
+    "properties": {
+      "isValid": {
+        "type": "boolean",
+        "description": "Email is valid (=true) or not (=false)"
+      }
+    },
+    "required": [
+      "isValid"
+    ]
+  }
+}
