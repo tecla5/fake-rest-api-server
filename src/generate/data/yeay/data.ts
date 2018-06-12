@@ -3,6 +3,10 @@ import {schemas} from '../../../../schemas/yeay';
 const _ = require('lodash');
 _.mixin(require("lodash-inflection"))
 
+console.log({
+  schemas
+})
+
 const schemaNames = Object.keys(schemas)
 
 export const data = schemaNames.reduce((acc: any, name : any) => {

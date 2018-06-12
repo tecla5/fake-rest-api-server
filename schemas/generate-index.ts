@@ -48,7 +48,7 @@ const schemaList = readdir(schemasPath.yeay).then((files: string[]) => {
     .keys(schemaMap)
     .reduce((acc : any, key : string) => {
       const val = schemaMap[key]
-      acc.push(`${key}: require('${val}.json'),\n  `)
+      acc.push(`${key}: require('./${val}.json'),\n  `)
       return acc
     }, [])
     .join('')
