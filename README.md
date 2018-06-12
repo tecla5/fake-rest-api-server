@@ -12,6 +12,21 @@ Install dependencies
 npm i
 ```
 
+## Status
+
+WIP, see [TODO](./TODO.md) for list of properties that need better schema generation
+
+## Scripts available
+
+- `prepare` generates schemas, routes and DB (json) from the Swagger API to prepare everything for the JSON REST server
+- `start` starts the JSON REST server using the generated routes and a DB loaded with the JSON DB data
+
+Utility scripts
+
+- `schemas:from-swagger` generate JSON schemas from Swagger API file
+- `schemas:index` generate JSON schemas index file (`.ts`)
+- `db:generate` generate JSON database from schemas (using faker and type definition of each schema property)
+
 ## Usage
 
 Usage instructions
@@ -28,7 +43,7 @@ npm run start
 Generate JSON schema(s) from Swagger API yaml file in `schemas` folder
 
 ```bash
-npm run generate-schemas
+npm run schemas:from-swagger
 ```
 
 Output:
@@ -42,82 +57,17 @@ catalog-seller.json
 The schema generated must have the following form:
 
 ```js
-export const groupSchema = {
-  type: "object",
-  properties: {
-    groups: {
-      type: "array",
-      minItems: 0,
-      maxItems: 5,
-      uniqueItems: true,
-      items: {
-        type: "object",
-        properties: {
-          id: {
-            type: "string",
-            faker: "random.uuid"
-          },
-          name: {
-            type: "string",
-            faker: "commerce.productName"
-          }
-        },
-        required: ["id", "name"]
-      }
-    }
-  },
-  required: ["groups"]
-};
-```
-
-Note in particular `required` for the array property `challenges` and for the `items`
-
-```js
-  type: "object",
-  required: ["challenges"]` // <--- property challenges must be required
-```  
-
-```js
-    challenges: {
-      "type": "array",
-      "items": {
-      required: ["id"], // <--- must have one or more required properties
-      // ...
-    }
-```  
-
-Full schema example:
-
-```js
-{
-  type: "object",
-  required: ["challenges"],
-  properties: {
-    challenges: {
-      "type": "array",
-      "minItems": 5,
-      "maxItems": 10,
-      "items": {
-        required: ["id"],
-        properties: {
-
-        }
-      }
-    }
-  }
-}
-```
-
-Alternatively you can have the schema be an array:
-
-```js
 export const listSchema = {
     type: "array",
     uniqueItems: true,
     items: {
         type: "object",
-        required: ["id", "name"],
+        required: ["id", "name", ...],
         properties: {
+          ...
+        }
+    }
+}
 ```
 
 We should use the schema array approach for the generated YeaY schema and ensure they all follow this model.
@@ -127,7 +77,7 @@ We should use the schema array approach for the generated YeaY schema and ensure
 To generate an index file that collects all the generated schemas into a JS object:
 
 ```bash
-npm run generate-schema-index
+npm run schemas:index
 ```
 
 Will write a `schemas/index.ts` file which can be referenced from the JS code.
@@ -175,14 +125,35 @@ export const schemas = {
 }
 ```
 
-DB in `db.json`
+## JSON Database
+
+```bash
+npm run db:generate
+```
+
+Generates JSON database in `db.json`
 
 Note: schema name must be pluralized, either via `camelize` or `dasherize`
 
 ```json
 {
-  "affiliateProducts": [{
-  }],
+  "affiliateProducts": [
+    {
+      "id": "6770b316-33b5-4e79-912e-471b8fddab91",
+      "network": "micheal.com",
+      "advertisingId": "80729",
+      "link": "sit est laboris",
+      "networkProductId": "54094",
+      "name": "Handmade Soft Bacon",
+      "description": "culpa ut rem",
+      "isInStock": false,
+      "imageUrl": "http://lorempixel.com/640/480",
+      "isActive": false,
+      "createdAt": "Mon Jun 11 2018 21:59:31 GMT+0200 (CEST)",
+      "globalProductIds": {},
+      "price": {}
+    },
+  ]
 }
 ```
 
@@ -208,7 +179,7 @@ The generator generates a JSON database in `/server/db.json`
 Serve mock data from REST routes
 
 ```bash
-npm run start
+npm run start:default
 ```
 
 The JSON server serves the generated JSON database on a REST server on port 3000 by default
@@ -220,7 +191,7 @@ The JSON server serves the generated JSON database on a REST server on port 3000
 To run server with custom routes
 
 ```bash
-npm run start:routes
+npm run start
 ```
 
 Starts JSON server using custom routes defined in `server/routes.json`

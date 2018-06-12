@@ -49,6 +49,10 @@ function addFakerToProp(key: string, prop: any) {
     prop.faker = "random.number"
   }
 
+  if (/Email$/.test(key)) {
+    prop.faker = "internet.email"
+  }
+
   if (key === 'gender') {
     prop.enum = [ "male", "female"]
   }

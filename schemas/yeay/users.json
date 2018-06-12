@@ -80,7 +80,8 @@
         }
       },
       "paypalEmail": {
-        "type": "string"
+        "type": "string",
+        "faker": "internet.email"
       },
       "phoneNumber": {
         "type": "string",

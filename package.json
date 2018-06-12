@@ -15,12 +15,12 @@
     "typescript": "^2.9.1"
   },
   "scripts": {
-    "generate-schema-index": "ts-node schemas/generate-index.ts",
-    "generate-schemas": "ts-node src/generate/schemas/run.ts",
-    "generate-mock-api-data": "ts-node src/generate/data/run.ts",
-    "prestart": "npm run generate-mock-api-data",
-    "start": "json-server --watch src/db.json --port 3000",
-    "start:routes": "json-server --watch src/db.json --routes routes.json --port 3000"
+    "schemas:from-swagger": "ts-node src/generate/schemas/run.ts",
+    "schemas:index": "ts-node schemas/generate-index.ts",
+    "db:generate": "ts-node src/generate/data/run.ts",
+    "prestart": "npm run schemas:from-swagger && npm run db:generate",
+    "start:default": "json-server --watch src/db.json --port 3000",
+    "start": "json-server --watch src/db.json --routes routes.json --port 3000"
   },
   "dependencies": {
     "fs-readdir-promise": "^1.0.1",
