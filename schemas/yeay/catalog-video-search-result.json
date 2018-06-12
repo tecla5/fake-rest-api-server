@@ -3,40 +3,51 @@
   "items": {
     "properties": {
       "id": {
-        "type": "string"
+        "type": "string",
+        "faker": "random.uuid"
       },
       "title": {
         "type": "string"
       },
       "shareUrl": {
-        "type": "string"
+        "type": "string",
+        "faker": "internet.url"
       },
       "mediaUrl": {
-        "type": "string"
+        "type": "string",
+        "faker": "image.avatar"
       },
       "altMediaUrl": {
-        "type": "string"
+        "type": "string",
+        "faker": "image.avatar"
       },
       "sourceMediaUrl": {
-        "type": "string"
+        "type": "string",
+        "faker": "image.avatar"
       },
       "socialVideoUrl": {
-        "type": "string"
+        "type": "string",
+        "faker": "image.avatar"
       },
       "previewUrl": {
-        "type": "string"
+        "type": "string",
+        "faker": "image.avatar"
       },
       "altPreviewUrl": {
-        "type": "string"
+        "type": "string",
+        "faker": "image.avatar"
       },
       "sharingImageUrl": {
-        "type": "string"
+        "type": "string",
+        "faker": "image.avatar"
       },
       "squareVideoUrl": {
-        "type": "string"
+        "type": "string",
+        "faker": "image.avatar"
       },
       "posterImageUrl": {
-        "type": "string"
+        "type": "string",
+        "faker": "image.avatar"
       },
       "converted": {
         "type": "boolean"
@@ -45,7 +56,12 @@
         "type": "string"
       },
       "ranking": {
-        "type": "number"
+        "type": "number",
+        "faker": {
+          "random.number": [
+            20
+          ]
+        }
       },
       "approved": {
         "type": "boolean"
@@ -55,11 +71,13 @@
       },
       "createdAt": {
         "type": "string",
-        "format": "date-time"
+        "format": "date-time",
+        "faker": "date.recent"
       },
       "updatedAt": {
         "type": "string",
-        "format": "date-time"
+        "format": "date-time",
+        "faker": "date.recent"
       },
       "categories": {
         "type": "array",
@@ -78,22 +96,52 @@
         }
       },
       "numOfLikes": {
-        "type": "number"
+        "type": "number",
+        "faker": {
+          "random.number": [
+            20
+          ]
+        }
       },
       "numOfRecentLikes": {
-        "type": "number"
+        "type": "number",
+        "faker": {
+          "random.number": [
+            20
+          ]
+        }
       },
       "numOfViews": {
-        "type": "number"
+        "type": "number",
+        "faker": {
+          "random.number": [
+            20
+          ]
+        }
       },
       "numOfRecentViews": {
-        "type": "number"
+        "type": "number",
+        "faker": {
+          "random.number": [
+            20
+          ]
+        }
       },
       "numOfComments": {
-        "type": "number"
+        "type": "number",
+        "faker": {
+          "random.number": [
+            20
+          ]
+        }
       },
       "numOfRecentComments": {
-        "type": "number"
+        "type": "number",
+        "faker": {
+          "random.number": [
+            20
+          ]
+        }
       },
       "product": {
         "properties": {
@@ -580,7 +628,8 @@
         }
       },
       "challengeId": {
-        "type": "string"
+        "type": "string",
+        "faker": "random.number"
       }
     },
     "required": [

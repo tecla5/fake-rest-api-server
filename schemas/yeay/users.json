@@ -3,37 +3,48 @@
   "items": {
     "properties": {
       "id": {
-        "type": "string"
+        "type": "string",
+        "faker": "random.uuid"
       },
       "email": {
-        "type": "string"
+        "type": "string",
+        "faker": "internet.email"
       },
       "firstname": {
-        "type": "string"
+        "type": "string",
+        "faker": "name.firstName"
       },
       "lastname": {
-        "type": "string"
+        "type": "string",
+        "faker": "name.lastName"
       },
       "username": {
-        "type": "string"
+        "type": "string",
+        "faker": "internet.userName"
       },
       "emailVerified": {
         "type": "boolean"
       },
       "avatarImageUrl": {
-        "type": "string"
+        "type": "string",
+        "faker": "image.avatar"
       },
       "splashImageUrl": {
-        "type": "string"
+        "type": "string",
+        "faker": "image.avatar"
       },
       "deviceToken": {
         "type": "string"
       },
       "updatedAt": {
-        "type": "string"
+        "type": "string",
+        "format": "date-time",
+        "faker": "date.recent"
       },
       "createdAt": {
-        "type": "string"
+        "type": "string",
+        "format": "date-time",
+        "faker": "date.recent"
       },
       "address": {
         "properties": {
@@ -72,26 +83,38 @@
         "type": "string"
       },
       "phoneNumber": {
-        "type": "string"
+        "type": "string",
+        "faker": "phone.phoneNumber"
       },
       "gender": {
-        "type": "string"
+        "type": "string",
+        "enum": [
+          "male",
+          "female"
+        ]
       },
       "birthday": {
         "type": "string",
         "format": "date"
       },
       "taxId": {
-        "type": "string"
+        "type": "string",
+        "faker": "random.number"
       },
       "locale": {
-        "type": "string"
+        "type": "string",
+        "faker": "random.locale"
       },
       "roles": {
         "type": "array",
         "items": {
           "type": "string"
-        }
+        },
+        "enum": [
+          "admin",
+          "guest",
+          "user"
+        ]
       },
       "altAvatarImages": {
         "type": "object"
@@ -103,7 +126,8 @@
         "type": "boolean"
       },
       "currency": {
-        "type": "string"
+        "type": "string",
+        "faker": "finance.currencyCode"
       },
       "paymentDetails": {
         "type": "object",
@@ -142,7 +166,12 @@
       "yeayScore": {
         "type": "integer",
         "minimum": 0,
-        "description": "Only available if user is own user or when in admin context"
+        "description": "Only available if user is own user or when in admin context",
+        "faker": {
+          "random.number": [
+            1000
+          ]
+        }
       },
       "isScoreFrozen": {
         "type": "boolean",

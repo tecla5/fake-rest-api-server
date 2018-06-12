@@ -4,28 +4,39 @@
   "items": {
     "properties": {
       "id": {
-        "type": "string"
+        "type": "string",
+        "faker": "random.uuid"
       },
       "name": {
-        "type": "string"
+        "type": "string",
+        "faker": "commerce.productName"
       },
       "description": {
-        "type": "string"
+        "type": "string",
+        "faker": "lorem.words"
       },
       "challengeCode": {
-        "type": "string"
+        "type": "string",
+        "faker": "lorem.slug"
       },
       "isEnabled": {
         "type": "boolean"
       },
       "rank": {
-        "type": "integer"
+        "type": "integer",
+        "faker": {
+          "random.number": [
+            20
+          ]
+        }
       },
       "imageUrl": {
-        "type": "string"
+        "type": "string",
+        "faker": "image.imageUrl"
       },
       "brandLogoUrl": {
-        "type": "string"
+        "type": "string",
+        "faker": "image.avatar"
       },
       "brandName": {
         "type": "string"
@@ -40,13 +51,21 @@
       },
       "commissionAmount": {
         "type": "integer",
-        "description": "Commission amount in cents"
+        "description": "Commission amount in cents",
+        "faker": {
+          "finance.amount": [
+            10,
+            1000,
+            2
+          ]
+        }
       },
       "commissionCurrency": {
         "type": "string",
         "pattern": "[A-Z]",
         "minLength": 3,
-        "maxLength": 3
+        "maxLength": 3,
+        "faker": "finance.currencyCode"
       },
       "associatedProducts": {
         "type": "array",
@@ -812,11 +831,13 @@
       },
       "startDate": {
         "type": "string",
-        "format": "date-time"
+        "format": "date-time",
+        "faker": "date.recent"
       },
       "endDate": {
         "type": "string",
-        "format": "date-time"
+        "format": "date-time",
+        "faker": "date.future"
       },
       "canParticipate": {
         "type": "boolean",

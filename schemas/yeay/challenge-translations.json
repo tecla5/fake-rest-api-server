@@ -301,7 +301,8 @@
           "learnMore": {
             "type": "string"
           }
-        }
+        },
+        "faker": "random.uuid"
       },
       "th": {
         "type": "object",

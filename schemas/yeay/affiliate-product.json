@@ -5,38 +5,46 @@
     "type": "object",
     "properties": {
       "id": {
-        "type": "string"
+        "type": "string",
+        "faker": "random.uuid"
       },
       "network": {
-        "type": "string"
+        "type": "string",
+        "faker": "internet.domainName"
       },
       "advertisingId": {
-        "type": "string"
+        "type": "string",
+        "faker": "random.number"
       },
       "link": {
         "type": "string"
       },
       "networkProductId": {
-        "type": "string"
+        "type": "string",
+        "faker": "random.number"
       },
       "name": {
-        "type": "string"
+        "type": "string",
+        "faker": "commerce.productName"
       },
       "description": {
-        "type": "string"
+        "type": "string",
+        "faker": "lorem.words"
       },
       "isInStock": {
         "type": "boolean"
       },
       "imageUrl": {
-        "type": "string"
+        "type": "string",
+        "faker": "image.imageUrl"
       },
       "isActive": {
         "type": "boolean"
       },
       "createdAt": {
         "type": "string",
-        "format": "date-time"
+        "format": "date-time",
+        "faker": "date.recent"
       },
       "globalProductIds": {
         "type": "object",

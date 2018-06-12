@@ -4,22 +4,29 @@
   "items": {
     "properties": {
       "id": {
-        "type": "string"
+        "type": "string",
+        "faker": "random.uuid"
       },
       "userId": {
-        "type": "string"
+        "type": "string",
+        "faker": "random.number"
       },
       "videoId": {
-        "type": "string"
+        "type": "string",
+        "faker": "random.number"
       },
       "type": {
         "type": "string"
       },
       "createdAt": {
-        "type": "string"
+        "type": "string",
+        "format": "date-time",
+        "faker": "date.recent"
       },
       "updatedAt": {
-        "type": "string"
+        "type": "string",
+        "format": "date-time",
+        "faker": "date.recent"
       }
     },
     "required": [

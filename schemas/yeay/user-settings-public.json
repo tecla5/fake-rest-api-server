@@ -4,10 +4,16 @@
   "items": {
     "properties": {
       "id": {
-        "type": "string"
+        "type": "string",
+        "faker": "random.uuid"
       },
       "totalLikes": {
-        "type": "number"
+        "type": "number",
+        "faker": {
+          "random.number": [
+            20
+          ]
+        }
       },
       "totalFollowing": {
         "type": "number"

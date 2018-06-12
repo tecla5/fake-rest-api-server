@@ -1,0 +1,1439 @@
+{
+  "affiliateProducts": [
+    {
+      "id": "82f73e4f-884e-46a3-8237-53348651cfd4",
+      "network": "jackie.biz",
+      "advertisingId": "53390",
+      "link": "reprehenderit",
+      "networkProductId": "27170",
+      "name": "Rustic Steel Sausages",
+      "description": "consequuntur id et",
+      "isInStock": false,
+      "imageUrl": "http://lorempixel.com/640/480",
+      "isActive": true,
+      "createdAt": "Mon Jun 11 2018 16:59:59 GMT+0200 (CEST)",
+      "globalProductIds": {},
+      "price": {}
+    },
+    {
+      "id": "060c6779-2e60-4576-8657-8c736db19735",
+      "network": "jeffry.org",
+      "advertisingId": "79833",
+      "link": "cillum mollit laboris",
+      "networkProductId": "93167",
+      "name": "Unbranded Concrete Gloves",
+      "description": "necessitatibus doloremque veritatis",
+      "isInStock": true,
+      "imageUrl": "http://lorempixel.com/640/480",
+      "isActive": false,
+      "createdAt": "Tue Jun 12 2018 05:06:09 GMT+0200 (CEST)",
+      "globalProductIds": {},
+      "price": {}
+    },
+    {
+      "id": "99a53a25-3866-4101-bd96-4f3b372de546",
+      "network": "van.info",
+      "advertisingId": "9850",
+      "link": "Ut est sed quis",
+      "networkProductId": "7126",
+      "name": "Intelligent Frozen Gloves",
+      "description": "eum libero aut",
+      "isInStock": false,
+      "imageUrl": "http://lorempixel.com/640/480",
+      "isActive": true,
+      "createdAt": "Tue Jun 12 2018 00:43:46 GMT+0200 (CEST)",
+      "globalProductIds": {},
+      "price": {}
+    },
+    {
+      "id": "4ae27e58-9f9f-43d5-aa2c-f5b9e77df7bd",
+      "network": "cade.org",
+      "advertisingId": "79729",
+      "link": "anim et",
+      "networkProductId": "55266",
+      "name": "Tasty Plastic Shirt",
+      "description": "earum dicta qui",
+      "isInStock": false,
+      "imageUrl": "http://lorempixel.com/640/480",
+      "isActive": true,
+      "createdAt": "Tue Jun 12 2018 05:59:29 GMT+0200 (CEST)",
+      "globalProductIds": {},
+      "price": {}
+    }
+  ],
+  "appSettings": [
+    {
+      "videoLimit": -37142611.67755537,
+      "videoServerRegion": "pariatur",
+      "videoServerPrefix": "anim pariatur ut",
+      "videoServerBucket": "incididunt in aute ipsum enim",
+      "updatedAt": "Tue Jun 12 2018 07:47:59 GMT+0200 (CEST)",
+      "iOSAppStoreVersion": "laboris",
+      "androidPlayStoreVersion": "aute s",
+      "acceptedCurrencies": {},
+      "serverTimeEpoch": 16918129.553125545,
+      "serverTime": "Tue Jun 12 2018 15:44:13 GMT+0200 (CEST)"
+    },
+    {
+      "videoLimit": -87282353.50408062,
+      "videoServerRegion": "esse",
+      "videoServerPrefix": "ipsum sed consequat ",
+      "videoServerBucket": "exercitation dolore eiusmod et",
+      "updatedAt": "Mon Jun 11 2018 21:20:11 GMT+0200 (CEST)",
+      "iOSAppStoreVersion": "ex consequat",
+      "androidPlayStoreVersion": "ullamco adipisicing reprehenderit officia aute",
+      "acceptedCurrencies": {},
+      "serverTimeEpoch": 59999165.78170374,
+      "serverTime": "Mon Jun 11 2018 16:17:30 GMT+0200 (CEST)"
+    }
+  ],
+  "appStatuses": [
+    {
+      "ok": true,
+      "reason": "UNSUPPORTED_CLIENT_VERSION",
+      "message": "Ut do eu"
+    },
+    {
+      "ok": false,
+      "reason": "UNSUPPORTED_CLIENT_VERSION",
+      "message": "nisi"
+    },
+    {
+      "ok": true,
+      "reason": "UNSUPPORTED_CLIENT_VERSION",
+      "message": "eiusmod anim Ut aliquip ad"
+    }
+  ],
+  "autocompleteProductTags": [
+    "sint",
+    "do nulla in",
+    "voluptate ",
+    "eu",
+    "amet ex"
+  ],
+  "autocompleteUniqueIds": [
+    {
+      "id": "1580b778-b49f-48dd-b19b-86bda8b5716d",
+      "uniqueId": "13959",
+      "avatarImageUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/krasnoukhov/128.jpg",
+      "altAvatarImages": {}
+    },
+    {
+      "id": "59a29b76-8c79-474d-98c5-f8e8cc09b00f",
+      "uniqueId": "59924",
+      "avatarImageUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/wikiziner/128.jpg",
+      "altAvatarImages": {}
+    },
+    {
+      "id": "cb7d1b01-842f-4e93-af87-09322afbd391",
+      "uniqueId": "40044",
+      "avatarImageUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/_vojto/128.jpg",
+      "altAvatarImages": {}
+    }
+  ],
+  "catalogChallengeListItems": [
+    {
+      "id": "be7f6b1a-619c-4d7c-909f-bf3372d161f5",
+      "name": "Intelligent Plastic Chicken",
+      "description": "ex ex sunt",
+      "challengeCode": "dolorum-aliquam-libero",
+      "isEnabled": false,
+      "rank": 14,
+      "imageUrl": "http://lorempixel.com/640/480",
+      "brandLogoUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/akashsharma39/128.jpg",
+      "brandName": "proident consequat",
+      "terms": "aliquip dolor",
+      "learnMore": "mollit veniam proident",
+      "commissionAmount": 320,
+      "commissionCurrency": "LTL",
+      "associatedProducts": [],
+      "participationRequirements": [
+        "ENTER_CODE"
+      ],
+      "startDate": "Mon Jun 11 2018 19:29:52 GMT+0200 (CEST)",
+      "endDate": "Sat Dec 29 2018 14:08:10 GMT+0100 (CET)",
+      "canParticipate": false
+    },
+    {
+      "id": "bfd5b112-b787-44c9-b7b9-962c9c07c419",
+      "name": "Incredible Cotton Chips",
+      "description": "ut voluptates non",
+      "challengeCode": "possimus-quaerat-perferendis",
+      "isEnabled": true,
+      "rank": 13,
+      "imageUrl": "http://lorempixel.com/640/480",
+      "brandLogoUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/imcoding/128.jpg",
+      "brandName": "magna eiusmod quis sint",
+      "terms": "eu Excepteur irure in",
+      "learnMore": "adipisicing ad tempor proident voluptate",
+      "commissionAmount": 859,
+      "commissionCurrency": "ZAR",
+      "associatedProducts": [],
+      "participationRequirements": [
+        "PURCHASE_CHALLENGE_PRODUCT",
+        "PURCHASE_CHALLENGE_PRODUCT",
+        "PURCHASE_CHALLENGE_PRODUCT",
+        "PURCHASE_CHALLENGE_PRODUCT"
+      ],
+      "startDate": "Tue Jun 12 2018 12:30:11 GMT+0200 (CEST)",
+      "endDate": "Fri Jul 13 2018 10:10:42 GMT+0200 (CEST)",
+      "canParticipate": false
+    },
+    {
+      "id": "94c659f1-e636-408f-b31b-45008833113a",
+      "name": "Incredible Cotton Ball",
+      "description": "deleniti amet neque",
+      "challengeCode": "vel-eos-ad",
+      "isEnabled": true,
+      "rank": 2,
+      "imageUrl": "http://lorempixel.com/640/480",
+      "brandLogoUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/gmourier/128.jpg",
+      "brandName": "esse reprehenderit exercitation qui",
+      "terms": "mollit s",
+      "learnMore": "nulla est",
+      "commissionAmount": 611,
+      "commissionCurrency": "SRD",
+      "associatedProducts": [],
+      "participationRequirements": [
+        "PURCHASE_CHALLENGE_PRODUCT",
+        "ENTER_CODE",
+        "PURCHASE_CHALLENGE_PRODUCT"
+      ],
+      "startDate": "Tue Jun 12 2018 04:30:08 GMT+0200 (CEST)",
+      "endDate": "Sun Sep 16 2018 19:34:16 GMT+0200 (CEST)",
+      "canParticipate": true
+    }
+  ],
+  "catalogChallenges": [
+    {
+      "id": "d852ee68-cf8e-41e7-8495-a23cfa139668",
+      "name": "Awesome Metal Pizza",
+      "description": "beatae quaerat nemo",
+      "challengeCode": "sunt-non-quidem",
+      "isEnabled": true,
+      "rank": 17,
+      "imageUrl": "http://lorempixel.com/640/480",
+      "brandLogoUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/adityasutomo/128.jpg",
+      "brandName": "est adipisicing",
+      "terms": "tempor aliqua qui laboris",
+      "learnMore": "consequat aute",
+      "commissionAmount": 787,
+      "commissionCurrency": "DZD",
+      "associatedProducts": [],
+      "participationRequirements": [
+        "PURCHASE_CHALLENGE_PRODUCT",
+        "PURCHASE_CHALLENGE_PRODUCT",
+        "ENTER_CODE",
+        "PURCHASE_CHALLENGE_PRODUCT"
+      ],
+      "startDate": "Mon Jun 11 2018 20:13:39 GMT+0200 (CEST)",
+      "endDate": "Sun Nov 11 2018 13:37:18 GMT+0100 (CET)",
+      "canParticipate": true
+    },
+    {
+      "id": "f197be8d-14c7-40a0-af92-fc4624f30db3",
+      "name": "Intelligent Granite Pants",
+      "description": "dolor ut itaque",
+      "challengeCode": "qui-molestiae-dolore",
+      "isEnabled": true,
+      "rank": 15,
+      "imageUrl": "http://lorempixel.com/640/480",
+      "brandLogoUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/iamkeithmason/128.jpg",
+      "brandName": "ex sit",
+      "terms": "tempor sit",
+      "learnMore": "laboris cupidatat nisi exercitation",
+      "commissionAmount": 708,
+      "commissionCurrency": "PEN",
+      "associatedProducts": [],
+      "participationRequirements": [
+        "PURCHASE_CHALLENGE_PRODUCT",
+        "ENTER_CODE"
+      ],
+      "startDate": "Mon Jun 11 2018 22:03:42 GMT+0200 (CEST)",
+      "endDate": "Sun Jun 09 2019 10:39:14 GMT+0200 (CEST)",
+      "canParticipate": false
+    },
+    {
+      "id": "16e5ced7-8996-4bd8-b7cc-8a1d39f336fe",
+      "name": "Refined Rubber Keyboard",
+      "description": "cupiditate esse eligendi",
+      "challengeCode": "inventore-et-et",
+      "isEnabled": true,
+      "rank": 1,
+      "imageUrl": "http://lorempixel.com/640/480",
+      "brandLogoUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/madysondesigns/128.jpg",
+      "brandName": "ut reprehenderit velit occaecat",
+      "terms": "nostrud dolore sed incididunt Duis",
+      "learnMore": "non fugiat enim nostrud ipsum",
+      "commissionAmount": 520,
+      "commissionCurrency": "LAK",
+      "associatedProducts": [],
+      "participationRequirements": [
+        "PURCHASE_CHALLENGE_PRODUCT",
+        "PURCHASE_CHALLENGE_PRODUCT",
+        "ENTER_CODE"
+      ],
+      "startDate": "Mon Jun 11 2018 21:42:52 GMT+0200 (CEST)",
+      "endDate": "Fri Jan 04 2019 04:52:11 GMT+0100 (CET)",
+      "canParticipate": true
+    }
+  ],
+  "catalogUserSearchResults": [],
+  "catalogVideoSearchResults": [
+    {
+      "id": "cd7d4a42-e1a6-4363-9a87-55075c8140eb",
+      "title": "et sed",
+      "shareUrl": "http://ofelia.com",
+      "mediaUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/ariffsetiawan/128.jpg",
+      "altMediaUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/zaki3d/128.jpg",
+      "sourceMediaUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/mactopus/128.jpg",
+      "socialVideoUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/tonymillion/128.jpg",
+      "previewUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/jeremiespoken/128.jpg",
+      "altPreviewUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/malykhinv/128.jpg",
+      "sharingImageUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/davidcazalis/128.jpg",
+      "squareVideoUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/sementiy/128.jpg",
+      "posterImageUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/mattdetails/128.jpg",
+      "converted": false,
+      "videoFormat": "anim",
+      "ranking": 16,
+      "approved": false,
+      "featured": false,
+      "createdAt": "Tue Jun 12 2018 01:19:44 GMT+0200 (CEST)",
+      "updatedAt": "Mon Jun 11 2018 17:31:04 GMT+0200 (CEST)",
+      "categories": [],
+      "numOfLikes": 5,
+      "numOfRecentLikes": 8,
+      "numOfViews": 8,
+      "numOfRecentViews": 6,
+      "numOfComments": 1,
+      "numOfRecentComments": 5,
+      "product": {},
+      "creator": {},
+      "seller": {},
+      "challengeId": "3706"
+    },
+    {
+      "id": "41250eb8-3a42-476a-bcf7-2ff7d0a51449",
+      "title": "laborum",
+      "shareUrl": "http://vivien.biz",
+      "mediaUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/jqiuss/128.jpg",
+      "altMediaUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/vitor376/128.jpg",
+      "sourceMediaUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/isnifer/128.jpg",
+      "socialVideoUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/karsh/128.jpg",
+      "previewUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/nwdsha/128.jpg",
+      "altPreviewUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/robinlayfield/128.jpg",
+      "sharingImageUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/xadhix/128.jpg",
+      "squareVideoUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/cybind/128.jpg",
+      "posterImageUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/nutzumi/128.jpg",
+      "converted": true,
+      "videoFormat": "laboris pariatur",
+      "ranking": 2,
+      "approved": false,
+      "featured": true,
+      "createdAt": "Tue Jun 12 2018 03:11:26 GMT+0200 (CEST)",
+      "updatedAt": "Tue Jun 12 2018 13:00:14 GMT+0200 (CEST)",
+      "categories": [],
+      "numOfLikes": 13,
+      "numOfRecentLikes": 20,
+      "numOfViews": 1,
+      "numOfRecentViews": 8,
+      "numOfComments": 19,
+      "numOfRecentComments": 14,
+      "product": {},
+      "creator": {},
+      "seller": {},
+      "challengeId": "77915"
+    },
+    {
+      "id": "b69fcd91-5d3a-4c1f-923d-63282c7667f6",
+      "title": "voluptate",
+      "shareUrl": "https://susana.org",
+      "mediaUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/alek_djuric/128.jpg",
+      "altMediaUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/osmanince/128.jpg",
+      "sourceMediaUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/kolmarlopez/128.jpg",
+      "socialVideoUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/thaisselenator_/128.jpg",
+      "previewUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/michaelmartinho/128.jpg",
+      "altPreviewUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/thedjpetersen/128.jpg",
+      "sharingImageUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/kucingbelang4/128.jpg",
+      "squareVideoUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/zvchkelly/128.jpg",
+      "posterImageUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/hjartstrorn/128.jpg",
+      "converted": true,
+      "videoFormat": "ullamco",
+      "ranking": 13,
+      "approved": true,
+      "featured": true,
+      "createdAt": "Mon Jun 11 2018 20:59:04 GMT+0200 (CEST)",
+      "updatedAt": "Tue Jun 12 2018 16:08:42 GMT+0200 (CEST)",
+      "categories": [],
+      "numOfLikes": 14,
+      "numOfRecentLikes": 20,
+      "numOfViews": 16,
+      "numOfRecentViews": 7,
+      "numOfComments": 14,
+      "numOfRecentComments": 12,
+      "product": {},
+      "creator": {},
+      "seller": {},
+      "challengeId": "22957"
+    },
+    {
+      "id": "0230f044-5b65-459d-8a01-9b0ae65033c9",
+      "title": "veniam aute",
+      "shareUrl": "http://amani.name",
+      "mediaUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/Stievius/128.jpg",
+      "altMediaUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/rohixx/128.jpg",
+      "sourceMediaUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/itskawsar/128.jpg",
+      "socialVideoUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/bboy1895/128.jpg",
+      "previewUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/jqiuss/128.jpg",
+      "altPreviewUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/snowshade/128.jpg",
+      "sharingImageUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/cofla/128.jpg",
+      "squareVideoUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/vinciarts/128.jpg",
+      "posterImageUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/gregkilian/128.jpg",
+      "converted": false,
+      "videoFormat": "magna cillum proident",
+      "ranking": 10,
+      "approved": true,
+      "featured": false,
+      "createdAt": "Tue Jun 12 2018 08:34:21 GMT+0200 (CEST)",
+      "updatedAt": "Mon Jun 11 2018 20:11:49 GMT+0200 (CEST)",
+      "categories": [],
+      "numOfLikes": 8,
+      "numOfRecentLikes": 0,
+      "numOfViews": 16,
+      "numOfRecentViews": 17,
+      "numOfComments": 10,
+      "numOfRecentComments": 10,
+      "product": {},
+      "creator": {},
+      "seller": {},
+      "challengeId": "67234"
+    },
+    {
+      "id": "2197ef7b-3781-432c-911a-53f81c9825f2",
+      "title": "ex enim mollit pariatur",
+      "shareUrl": "http://fern.org",
+      "mediaUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/salimianoff/128.jpg",
+      "altMediaUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/bungiwan/128.jpg",
+      "sourceMediaUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/uxward/128.jpg",
+      "socialVideoUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/commadelimited/128.jpg",
+      "previewUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/kohette/128.jpg",
+      "altPreviewUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/rickdt/128.jpg",
+      "sharingImageUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/dhrubo/128.jpg",
+      "squareVideoUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/mhaligowski/128.jpg",
+      "posterImageUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/leandrovaranda/128.jpg",
+      "converted": true,
+      "videoFormat": "Duis qui nulla aliquip",
+      "ranking": 17,
+      "approved": true,
+      "featured": true,
+      "createdAt": "Mon Jun 11 2018 23:01:04 GMT+0200 (CEST)",
+      "updatedAt": "Tue Jun 12 2018 14:27:43 GMT+0200 (CEST)",
+      "categories": [],
+      "numOfLikes": 16,
+      "numOfRecentLikes": 20,
+      "numOfViews": 0,
+      "numOfRecentViews": 0,
+      "numOfComments": 3,
+      "numOfRecentComments": 4,
+      "product": {},
+      "creator": {},
+      "seller": {},
+      "challengeId": "98372"
+    }
+  ],
+  "catalogVideos": [],
+  "challengeTranslationPayloads": [
+    {
+      "name": "Generic Wooden Towels",
+      "description": "dicta ut et",
+      "orderNote": "ut sunt veniam ",
+      "terms": "non consequat aute ipsum",
+      "learnMore": "Ut"
+    },
+    {
+      "name": "Generic Soft Tuna",
+      "description": "autem illo aut",
+      "orderNote": "aliquip esse sint est",
+      "terms": "dolor Ut aute culpa adipisicing",
+      "learnMore": "ea sint cupidatat sunt"
+    },
+    {
+      "name": "Tasty Granite Bike",
+      "description": "voluptate quidem deserunt",
+      "orderNote": "commodo magna in",
+      "terms": "dolore sed non in nisi",
+      "learnMore": "id sed ut"
+    },
+    {
+      "name": "Sleek Concrete Gloves",
+      "description": "commodi sequi non",
+      "orderNote": "tempor",
+      "terms": "consequat consectetur cillum ipsum",
+      "learnMore": "cupidatat"
+    }
+  ],
+  "challengeTranslations": [
+    {
+      "zh-CN": {},
+      "ja": {},
+      "fr": {},
+      "de": {},
+      "ko": {},
+      "it": {},
+      "ru": {},
+      "nl": {},
+      "tr": {},
+      "pl": {},
+      "sv": {},
+      "fi": {},
+      "el": {},
+      "da": {},
+      "id": "2efe9d75-1109-404e-9287-42c6795c6ad6",
+      "th": {},
+      "pt-BR": {},
+      "nb": {},
+      "es": {},
+      "es-MX": {},
+      "pt": {}
+    },
+    {
+      "zh-CN": {},
+      "ja": {},
+      "fr": {},
+      "de": {},
+      "ko": {},
+      "it": {},
+      "ru": {},
+      "nl": {},
+      "tr": {},
+      "pl": {},
+      "sv": {},
+      "fi": {},
+      "el": {},
+      "da": {},
+      "id": "b3f32102-ada9-44d2-b6c7-73aa8f68d931",
+      "th": {},
+      "pt-BR": {},
+      "nb": {},
+      "es": {},
+      "es-MX": {},
+      "pt": {}
+    }
+  ],
+  "challenges": [
+    {
+      "id": "adb4eb2a-2d4a-49a4-8745-f1d6e5eabd68",
+      "name": "Practical Rubber Ball",
+      "description": "cumque qui odit",
+      "challengeCode": "nostrum-rerum-totam",
+      "isEnabled": true,
+      "rank": 0,
+      "imageUrl": "http://lorempixel.com/640/480",
+      "brandLogoUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/coderdiaz/128.jpg",
+      "brandName": "exercitation eu voluptate aliqua dolor",
+      "terms": "consectetur enim",
+      "orderNote": "aute sint est nisi voluptate",
+      "learnMore": "sit",
+      "commissionAmount": 716,
+      "commissionCurrency": "MYR",
+      "associatedProducts": [],
+      "participationRequirements": [
+        "PURCHASE_CHALLENGE_PRODUCT",
+        "ENTER_CODE"
+      ],
+      "featuredVideoIds": [
+        "Duis"
+      ],
+      "translations": {},
+      "startDate": "Mon Jun 11 2018 17:27:24 GMT+0200 (CEST)",
+      "endDate": "Fri Aug 10 2018 01:22:30 GMT+0200 (CEST)",
+      "createdAt": "Tue Jun 12 2018 12:36:24 GMT+0200 (CEST)",
+      "updatedAt": "Tue Jun 12 2018 06:42:53 GMT+0200 (CEST)"
+    }
+  ],
+  "devices": [],
+  "featuredTags": [
+    {
+      "id": "d6a4108f-4df9-4c93-bd32-2bd3ee833bb4",
+      "name": "Handcrafted Granite Chips",
+      "imageUrl": "http://lorempixel.com/640/480",
+      "isHero": true,
+      "ordering": 78051587.8528345,
+      "createdAt": "Tue Jun 12 2018 06:45:48 GMT+0200 (CEST)",
+      "updatedAt": "Mon Jun 11 2018 19:00:02 GMT+0200 (CEST)"
+    },
+    {
+      "id": "0133f53c-9e76-41ec-8e08-f6f1ce660fbc",
+      "name": "Practical Metal Pants",
+      "imageUrl": "http://lorempixel.com/640/480",
+      "isHero": false,
+      "ordering": -54045566.48263701,
+      "createdAt": "Tue Jun 12 2018 03:11:06 GMT+0200 (CEST)",
+      "updatedAt": "Tue Jun 12 2018 01:46:13 GMT+0200 (CEST)"
+    },
+    {
+      "id": "064603d5-205a-45d9-a8f3-f40893c56f95",
+      "name": "Sleek Metal Soap",
+      "imageUrl": "http://lorempixel.com/640/480",
+      "isHero": true,
+      "ordering": 56244870.83144894,
+      "createdAt": "Tue Jun 12 2018 11:44:46 GMT+0200 (CEST)",
+      "updatedAt": "Tue Jun 12 2018 09:57:53 GMT+0200 (CEST)"
+    }
+  ],
+  "flaggedCommentDetails": [
+    {
+      "comment": {},
+      "previousComments": 11,
+      "nextComments": 5
+    },
+    {
+      "comment": {},
+      "previousComments": 8,
+      "nextComments": 18
+    },
+    {
+      "comment": {},
+      "previousComments": 15,
+      "nextComments": 20
+    },
+    {
+      "comment": {},
+      "previousComments": 11,
+      "nextComments": 11
+    }
+  ],
+  "flaggedComments": [
+    {
+      "id": "7c3cac5d-087d-49d9-99fa-646d0a59818f",
+      "videoId": "46175",
+      "author": {},
+      "status": "ut amet nisi",
+      "comment": "id",
+      "createdAt": "Mon Jun 11 2018 21:05:05 GMT+0200 (CEST)",
+      "updatedAt": "Mon Jun 11 2018 23:47:24 GMT+0200 (CEST)"
+    },
+    {
+      "id": "993d45b5-b367-4875-88c7-de2d991582c7",
+      "videoId": "71451",
+      "author": {},
+      "status": "deserunt fugiat in proident tempor",
+      "comment": "in",
+      "createdAt": "Mon Jun 11 2018 18:38:41 GMT+0200 (CEST)",
+      "updatedAt": "Tue Jun 12 2018 02:03:05 GMT+0200 (CEST)"
+    },
+    {
+      "id": "0688ff5f-e975-4360-b235-3cd590b7ab70",
+      "videoId": "54659",
+      "author": {},
+      "status": "irure veniam aliquip",
+      "comment": "esse veniam irure consequat",
+      "createdAt": "Tue Jun 12 2018 09:13:19 GMT+0200 (CEST)",
+      "updatedAt": "Mon Jun 11 2018 20:51:00 GMT+0200 (CEST)"
+    }
+  ],
+  "followersOfUsers": [],
+  "likes": [
+    {
+      "id": "117961e8-998e-4145-ad9f-86582c7f719c",
+      "userId": "26786",
+      "videoId": "5339",
+      "type": "cu",
+      "createdAt": "Tue Jun 12 2018 11:29:09 GMT+0200 (CEST)",
+      "updatedAt": "Tue Jun 12 2018 02:38:27 GMT+0200 (CEST)"
+    },
+    {
+      "id": "777ea680-2bef-47fe-94c6-13bf3920e167",
+      "userId": "37528",
+      "videoId": "56710",
+      "type": "Lorem cupidatat dolor quis ipsum",
+      "createdAt": "Mon Jun 11 2018 20:40:43 GMT+0200 (CEST)",
+      "updatedAt": "Mon Jun 11 2018 19:16:45 GMT+0200 (CEST)"
+    }
+  ],
+  "listChallenges": [
+    {
+      "id": "6af83964-6022-4014-b02b-ef04b69f484d",
+      "name": "Handcrafted Rubber Cheese",
+      "description": "quo eos est",
+      "challengeCode": "corrupti-similique-est",
+      "isEnabled": false,
+      "rank": 12,
+      "imageUrl": "http://lorempixel.com/640/480",
+      "brandLogoUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/malgordon/128.jpg",
+      "brandName": "officia amet in",
+      "terms": "dolor l",
+      "orderNote": "elit reprehenderit quis dolore",
+      "learnMore": "ut pariatur eu",
+      "commissionAmount": 732,
+      "commissionCurrency": "RWF",
+      "associatedProducts": [],
+      "participationRequirements": [
+        "ENTER_CODE",
+        "PURCHASE_CHALLENGE_PRODUCT",
+        "PURCHASE_CHALLENGE_PRODUCT"
+      ],
+      "featuredVideoIds": [
+        "ea ullamco",
+        "e",
+        "Lorem u",
+        "ut",
+        "Ut sed aliqua qui deserunt"
+      ],
+      "translations": {},
+      "startDate": "Tue Jun 12 2018 11:09:45 GMT+0200 (CEST)",
+      "endDate": "Mon Dec 17 2018 16:12:28 GMT+0100 (CET)",
+      "createdAt": "Mon Jun 11 2018 18:42:14 GMT+0200 (CEST)",
+      "updatedAt": "Tue Jun 12 2018 06:44:21 GMT+0200 (CEST)"
+    },
+    {
+      "id": "008f1832-4569-4fb2-8b1a-8c020ef471b1",
+      "name": "Refined Steel Mouse",
+      "description": "quae ut nulla",
+      "challengeCode": "accusamus-ut-ipsam",
+      "isEnabled": false,
+      "rank": 7,
+      "imageUrl": "http://lorempixel.com/640/480",
+      "brandLogoUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/chris_witko/128.jpg",
+      "brandName": "nulla",
+      "terms": "aliqua ea proident Ut minim",
+      "orderNote": "Lorem sit",
+      "learnMore": "ullamco mollit",
+      "commissionAmount": 340,
+      "commissionCurrency": "NZD",
+      "associatedProducts": [],
+      "participationRequirements": [
+        "PURCHASE_CHALLENGE_PRODUCT",
+        "PURCHASE_CHALLENGE_PRODUCT",
+        "PURCHASE_CHALLENGE_PRODUCT"
+      ],
+      "featuredVideoIds": [
+        "ut Lorem",
+        "id sed",
+        "deserunt sed Excepteur cillum fugiat",
+        "ex nu"
+      ],
+      "translations": {},
+      "startDate": "Mon Jun 11 2018 22:29:23 GMT+0200 (CEST)",
+      "endDate": "Wed May 08 2019 10:53:19 GMT+0200 (CEST)",
+      "createdAt": "Tue Jun 12 2018 11:05:14 GMT+0200 (CEST)",
+      "updatedAt": "Tue Jun 12 2018 14:43:17 GMT+0200 (CEST)"
+    },
+    {
+      "id": "3de9bde1-9242-478f-bb6a-82164ad9fb4c",
+      "name": "Ergonomic Soft Fish",
+      "description": "reiciendis modi doloremque",
+      "challengeCode": "assumenda-illo-rerum",
+      "isEnabled": true,
+      "rank": 20,
+      "imageUrl": "http://lorempixel.com/640/480",
+      "brandLogoUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/peter576/128.jpg",
+      "brandName": "laboris cu",
+      "terms": "occaecat mollit Ut commodo",
+      "orderNote": "reprehenderit in eiusmod",
+      "learnMore": "do ullamco",
+      "commissionAmount": 441,
+      "commissionCurrency": "NPR",
+      "associatedProducts": [],
+      "participationRequirements": [
+        "ENTER_CODE",
+        "PURCHASE_CHALLENGE_PRODUCT",
+        "PURCHASE_CHALLENGE_PRODUCT",
+        "PURCHASE_CHALLENGE_PRODUCT"
+      ],
+      "featuredVideoIds": [
+        "incididunt",
+        "in velit commodo culpa",
+        "aliquip mollit",
+        "nulla fugiat reprehenderit laboris id"
+      ],
+      "translations": {},
+      "startDate": "Tue Jun 12 2018 12:36:51 GMT+0200 (CEST)",
+      "endDate": "Sat Oct 06 2018 22:16:44 GMT+0200 (CEST)",
+      "createdAt": "Mon Jun 11 2018 19:31:56 GMT+0200 (CEST)",
+      "updatedAt": "Tue Jun 12 2018 02:33:39 GMT+0200 (CEST)"
+    },
+    {
+      "id": "5881981e-da98-4607-b016-38c677bb30b6",
+      "name": "Sleek Granite Mouse",
+      "description": "vero eveniet pariatur",
+      "challengeCode": "laudantium-facilis-facilis",
+      "isEnabled": false,
+      "rank": 17,
+      "imageUrl": "http://lorempixel.com/640/480",
+      "brandLogoUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/chrisslowik/128.jpg",
+      "brandName": "irure ut",
+      "terms": "occaecat incididunt aliqua esse",
+      "orderNote": "in consectetur",
+      "learnMore": "adipisicing magna",
+      "commissionAmount": 323,
+      "commissionCurrency": "KMF",
+      "associatedProducts": [],
+      "participationRequirements": [
+        "PURCHASE_CHALLENGE_PRODUCT",
+        "ENTER_CODE",
+        "ENTER_CODE",
+        "ENTER_CODE",
+        "PURCHASE_CHALLENGE_PRODUCT"
+      ],
+      "featuredVideoIds": [
+        "cillum",
+        "non enim est",
+        "ea in ullamco"
+      ],
+      "translations": {},
+      "startDate": "Tue Jun 12 2018 12:48:12 GMT+0200 (CEST)",
+      "endDate": "Wed Jun 20 2018 17:44:37 GMT+0200 (CEST)",
+      "createdAt": "Tue Jun 12 2018 01:09:17 GMT+0200 (CEST)",
+      "updatedAt": "Mon Jun 11 2018 18:30:02 GMT+0200 (CEST)"
+    }
+  ],
+  "metrics": [
+    {
+      "numOfTotalOrders": 82850708.89240572,
+      "numOfOrders": [],
+      "numOfTotalProducts": 9885934.47669062,
+      "numOfProducts": [],
+      "numOfTotalLikes": 2,
+      "numOfLikes": 18,
+      "numOfTotalFollows": -71024791.93647856,
+      "numOfFollows": []
+    },
+    {
+      "numOfTotalOrders": 22336368.48562157,
+      "numOfOrders": [],
+      "numOfTotalProducts": -41163433.993293986,
+      "numOfProducts": [],
+      "numOfTotalLikes": 2,
+      "numOfLikes": 2,
+      "numOfTotalFollows": 21673250.771656558,
+      "numOfFollows": []
+    },
+    {
+      "numOfTotalOrders": 28370141.376258656,
+      "numOfOrders": [],
+      "numOfTotalProducts": 85467201.56001717,
+      "numOfProducts": [],
+      "numOfTotalLikes": 14,
+      "numOfLikes": 12,
+      "numOfTotalFollows": 59737282.765309006,
+      "numOfFollows": []
+    },
+    {
+      "numOfTotalOrders": 38909722.31441888,
+      "numOfOrders": [],
+      "numOfTotalProducts": 6683932.96822311,
+      "numOfProducts": [],
+      "numOfTotalLikes": 3,
+      "numOfLikes": 15,
+      "numOfTotalFollows": -39102560.73673013,
+      "numOfFollows": []
+    }
+  ],
+  "notifications": [
+    {
+      "id": "8a212653-739d-41e9-acfb-c7af32ba3012",
+      "message": "officia elit Lorem esse",
+      "properties": {},
+      "createdAt": "Tue Jun 12 2018 14:09:01 GMT+0200 (CEST)"
+    },
+    {
+      "id": "9a0543ff-cbdc-44be-9e47-9ca47f5cb3d2",
+      "message": "velit en",
+      "properties": {},
+      "createdAt": "Mon Jun 11 2018 22:20:43 GMT+0200 (CEST)"
+    }
+  ],
+  "userFollows": [],
+  "userSettingsPublics": [
+    {
+      "id": "1a99411c-23e0-49e0-9241-8bf036020553",
+      "totalLikes": 7,
+      "totalFollowing": 20095888.83163467,
+      "totalFollowers": -64852064.30263388,
+      "totalProducts": -55467772.97991263
+    },
+    {
+      "id": "47cfe21a-eeb5-49dd-ad4c-d3e44a8fa413",
+      "totalLikes": 4,
+      "totalFollowing": 88208425.0535892,
+      "totalFollowers": 39598089.60594353,
+      "totalProducts": 80307753.74038401
+    }
+  ],
+  "users": [
+    {
+      "id": "368b4353-705f-4361-914a-4f18634c7d39",
+      "email": "David55@gmail.com",
+      "firstname": "Frida",
+      "lastname": "Wyman",
+      "username": "Flossie78",
+      "emailVerified": false,
+      "avatarImageUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/nomidesigns/128.jpg",
+      "splashImageUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/cofla/128.jpg",
+      "deviceToken": "ea",
+      "updatedAt": "Tue Jun 12 2018 09:59:44 GMT+0200 (CEST)",
+      "createdAt": "Tue Jun 12 2018 05:33:22 GMT+0200 (CEST)",
+      "address": {},
+      "paypalEmail": "tempor Ut esse",
+      "phoneNumber": "704.107.9322 x5501",
+      "gender": "female",
+      "birthday": "1996-09-05",
+      "taxId": "92293",
+      "locale": "de_CH",
+      "roles": "guest",
+      "altAvatarImages": {},
+      "profileBio": "dolore fugiat",
+      "allowsChat": false,
+      "currency": "XCD",
+      "paymentDetails": {},
+      "appUserType": "brand",
+      "isVerifiedByYeay": true,
+      "yeayScore": 47,
+      "isScoreFrozen": false
+    },
+    {
+      "id": "1164e2d8-3d4c-4357-8e5c-186c0a2e6f5c",
+      "email": "Bonnie_Cruickshank37@gmail.com",
+      "firstname": "Casey",
+      "lastname": "Ruecker",
+      "username": "Cayla_Hahn86",
+      "emailVerified": false,
+      "avatarImageUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/edhenderson/128.jpg",
+      "splashImageUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/apriendeau/128.jpg",
+      "deviceToken": "consectetur sunt veniam est",
+      "updatedAt": "Tue Jun 12 2018 04:31:59 GMT+0200 (CEST)",
+      "createdAt": "Tue Jun 12 2018 11:51:08 GMT+0200 (CEST)",
+      "address": {},
+      "paypalEmail": "dolor Lorem eiusmod proident",
+      "phoneNumber": "324-430-2470 x8538",
+      "gender": "male",
+      "birthday": "1952-12-08",
+      "taxId": "87457",
+      "locale": "vi",
+      "roles": "guest",
+      "altAvatarImages": {},
+      "profileBio": "ipsum ut non magna",
+      "allowsChat": false,
+      "currency": "MKD",
+      "paymentDetails": {},
+      "appUserType": "retailer",
+      "isVerifiedByYeay": false,
+      "yeayScore": 642,
+      "isScoreFrozen": false
+    }
+  ],
+  "versions": [
+    {
+      "version": "sed pariatur dolor consequat"
+    }
+  ],
+  "videoComments": [
+    {
+      "id": "38e7f5aa-9dbb-4efe-9f61-5825e762d811",
+      "videoId": "55102",
+      "author": {},
+      "status": "Lorem dolor",
+      "comment": "commodo pariatur in est",
+      "createdAt": "Tue Jun 12 2018 15:22:57 GMT+0200 (CEST)",
+      "updatedAt": "Tue Jun 12 2018 14:05:42 GMT+0200 (CEST)"
+    },
+    {
+      "id": "8af2a49e-1db6-4f66-b74d-e79c7ef04434",
+      "videoId": "79815",
+      "author": {},
+      "status": "cillum",
+      "comment": "aliqua ad adipisicing sint",
+      "createdAt": "Mon Jun 11 2018 19:35:00 GMT+0200 (CEST)",
+      "updatedAt": "Tue Jun 12 2018 01:14:15 GMT+0200 (CEST)"
+    },
+    {
+      "id": "e73ae440-6cba-4c03-b7e6-05248e983869",
+      "videoId": "91319",
+      "author": {},
+      "status": "minim fugiat ad",
+      "comment": "ea magna Ut veniam",
+      "createdAt": "Tue Jun 12 2018 15:49:28 GMT+0200 (CEST)",
+      "updatedAt": "Tue Jun 12 2018 04:08:24 GMT+0200 (CEST)"
+    },
+    {
+      "id": "8ea13d10-b588-4f94-8550-1f1e3e2bd362",
+      "videoId": "58216",
+      "author": {},
+      "status": "consectetur non",
+      "comment": "ex nostrud",
+      "createdAt": "Mon Jun 11 2018 18:00:06 GMT+0200 (CEST)",
+      "updatedAt": "Tue Jun 12 2018 05:24:36 GMT+0200 (CEST)"
+    }
+  ],
+  "videoReviewQueues": [
+    {
+      "id": "7316fbe2-2d33-4165-8edd-e023a92039da",
+      "videoTitle": "ad dolor Lorem id",
+      "description": "eum qui dolores",
+      "approved": true,
+      "submitted": false,
+      "featured": true,
+      "videoType": "sale",
+      "converted": true,
+      "expired": true,
+      "airedAt": "Tue Jun 12 2018 06:50:30 GMT+0200 (CEST)",
+      "ranking": 17,
+      "mediaUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/coreyweb/128.jpg",
+      "sourceMediaUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/nerrsoft/128.jpg",
+      "altMediaUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/joelcipriano/128.jpg",
+      "sharingImageUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/aviddayentonbay/128.jpg",
+      "posterImageUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/sangdth/128.jpg",
+      "previewUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/osmanince/128.jpg",
+      "altPreviewUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/simobenso/128.jpg",
+      "indexedAt": "Tue Jun 12 2018 15:48:31 GMT+0200 (CEST)",
+      "updatedAt": "Mon Jun 11 2018 21:20:48 GMT+0200 (CEST)",
+      "createdAt": "Mon Jun 11 2018 20:59:02 GMT+0200 (CEST)",
+      "website": "angelita.org",
+      "socialVideoUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/sawalazar/128.jpg",
+      "channels": [
+        "ex esse",
+        "aliquip exercitation labore",
+        "aute minim id non",
+        "dolor ut nulla cupidatat"
+      ],
+      "adminTags": [
+        "adipisicing id sint consectetur"
+      ],
+      "yeay": false,
+      "affiliateProductIds": [
+        "reprehenderit Ut dolor",
+        "ullamco"
+      ],
+      "totalLikes": 20,
+      "creator": {},
+      "user": {},
+      "challengeId": "62154",
+      "challenge": {
+        "id": "dolore nisi in quis"
+      },
+      "generalFeedVisibility": false,
+      "specificFeedVisibilities": {},
+      "isOnline": true,
+      "brands": "Feeney - Becker"
+    },
+    {
+      "id": "a96ac12b-9299-44b3-bb12-56a5bc26c27b",
+      "videoTitle": "ad Excepteur",
+      "description": "amet dolores exercitationem",
+      "approved": true,
+      "submitted": true,
+      "featured": false,
+      "videoType": "sale",
+      "converted": true,
+      "expired": true,
+      "airedAt": "Tue Jun 12 2018 00:52:30 GMT+0200 (CEST)",
+      "ranking": 14,
+      "mediaUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/samuelkraft/128.jpg",
+      "sourceMediaUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/leeiio/128.jpg",
+      "altMediaUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/shanehudson/128.jpg",
+      "sharingImageUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/duivvv/128.jpg",
+      "posterImageUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/herbigt/128.jpg",
+      "previewUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/yecidsm/128.jpg",
+      "altPreviewUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/kerihenare/128.jpg",
+      "indexedAt": "Tue Jun 12 2018 02:37:04 GMT+0200 (CEST)",
+      "updatedAt": "Mon Jun 11 2018 22:40:41 GMT+0200 (CEST)",
+      "createdAt": "Tue Jun 12 2018 04:22:41 GMT+0200 (CEST)",
+      "website": "misty.biz",
+      "socialVideoUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/alan_zhang_/128.jpg",
+      "channels": [
+        "ut ullamco cupidatat",
+        "qui anim dolor",
+        "consequat aliquip do exercitation ci",
+        "magna esse dolor"
+      ],
+      "adminTags": [
+        "nisi culpa",
+        "et eu Duis"
+      ],
+      "yeay": false,
+      "affiliateProductIds": [
+        "ut proident pa",
+        "proident laboris"
+      ],
+      "totalLikes": 9,
+      "creator": {},
+      "user": {},
+      "challengeId": "56753",
+      "challenge": {
+        "id": "anim sed proident"
+      },
+      "generalFeedVisibility": false,
+      "specificFeedVisibilities": {},
+      "isOnline": false,
+      "brands": "Stokes, Borer and Williamson"
+    },
+    {
+      "id": "c1d347b4-18b6-4457-9d6c-f000a94eb67a",
+      "videoTitle": "Ut ve",
+      "description": "aut fugit harum",
+      "approved": true,
+      "submitted": true,
+      "featured": false,
+      "videoType": "",
+      "converted": true,
+      "expired": false,
+      "airedAt": "Mon Jun 11 2018 16:33:10 GMT+0200 (CEST)",
+      "ranking": 15,
+      "mediaUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/lebronjennan/128.jpg",
+      "sourceMediaUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/matbeedotcom/128.jpg",
+      "altMediaUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/hgharrygo/128.jpg",
+      "sharingImageUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/josep_martins/128.jpg",
+      "posterImageUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/ooomz/128.jpg",
+      "previewUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/angelcreative/128.jpg",
+      "altPreviewUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/we_social/128.jpg",
+      "indexedAt": "Mon Jun 11 2018 23:53:35 GMT+0200 (CEST)",
+      "updatedAt": "Tue Jun 12 2018 05:15:41 GMT+0200 (CEST)",
+      "createdAt": "Tue Jun 12 2018 11:26:39 GMT+0200 (CEST)",
+      "website": "karianne.biz",
+      "socialVideoUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/richardgarretts/128.jpg",
+      "channels": [
+        "laboris ea adipisicing sit",
+        "veniam in dolore",
+        "esse veniam nostrud",
+        "fugiat cillum amet"
+      ],
+      "adminTags": [
+        "culpa exercitation"
+      ],
+      "yeay": false,
+      "affiliateProductIds": [
+        "et in",
+        "voluptate commodo dolor",
+        "cillum anim in",
+        "ad sunt",
+        "eiusmod et"
+      ],
+      "totalLikes": 8,
+      "creator": {},
+      "user": {},
+      "challengeId": "45931",
+      "challenge": {
+        "id": "adipisicing in"
+      },
+      "generalFeedVisibility": true,
+      "specificFeedVisibilities": {},
+      "isOnline": true,
+      "brands": "Sipes - Dickinson"
+    },
+    {
+      "id": "ba8733dc-8058-41fd-b2e8-856ad958b3ae",
+      "videoTitle": "cillum occaecat aliqua in",
+      "description": "nemo quam labore",
+      "approved": false,
+      "submitted": false,
+      "featured": false,
+      "videoType": "",
+      "converted": false,
+      "expired": false,
+      "airedAt": "Mon Jun 11 2018 23:19:14 GMT+0200 (CEST)",
+      "ranking": 0,
+      "mediaUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/malgordon/128.jpg",
+      "sourceMediaUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/rmlewisuk/128.jpg",
+      "altMediaUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/bboy1895/128.jpg",
+      "sharingImageUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/lhausermann/128.jpg",
+      "posterImageUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/jm_denis/128.jpg",
+      "previewUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/swooshycueb/128.jpg",
+      "altPreviewUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/sta1ex/128.jpg",
+      "indexedAt": "Tue Jun 12 2018 03:24:53 GMT+0200 (CEST)",
+      "updatedAt": "Mon Jun 11 2018 18:53:55 GMT+0200 (CEST)",
+      "createdAt": "Mon Jun 11 2018 20:07:22 GMT+0200 (CEST)",
+      "website": "toni.com",
+      "socialVideoUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/digitalmaverick/128.jpg",
+      "channels": [
+        "aute adipisicing"
+      ],
+      "adminTags": [
+        "in ad esse ea",
+        "aliquip do"
+      ],
+      "yeay": true,
+      "affiliateProductIds": [
+        "sunt voluptate",
+        "mollit",
+        "labore ex",
+        "sint cillum ad occaecat a",
+        "voluptate dolore proident esse"
+      ],
+      "totalLikes": 3,
+      "creator": {},
+      "user": {},
+      "challengeId": "25352",
+      "challenge": {
+        "id": "aliquip proident Ut irure"
+      },
+      "generalFeedVisibility": false,
+      "specificFeedVisibilities": {},
+      "isOnline": false,
+      "brands": "Harris, Bayer and Homenick"
+    }
+  ],
+  "videos": [
+    {
+      "id": "af47c0dc-a9a6-4a08-9f33-45ab691aac44",
+      "videoTitle": "exercitation dolor",
+      "description": "cupiditate mollitia rerum",
+      "approved": false,
+      "submitted": true,
+      "featured": false,
+      "videoType": "sale",
+      "converted": false,
+      "expired": false,
+      "airedAt": "Tue Jun 12 2018 08:45:17 GMT+0200 (CEST)",
+      "ranking": 1,
+      "mediaUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/nathalie_fs/128.jpg",
+      "sourceMediaUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/vickyshits/128.jpg",
+      "altMediaUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/nathalie_fs/128.jpg",
+      "sharingImageUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/josep_martins/128.jpg",
+      "posterImageUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/isacosta/128.jpg",
+      "previewUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/happypeter1983/128.jpg",
+      "altPreviewUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/zvchkelly/128.jpg",
+      "indexedAt": "Tue Jun 12 2018 02:55:58 GMT+0200 (CEST)",
+      "updatedAt": "Tue Jun 12 2018 04:49:06 GMT+0200 (CEST)",
+      "createdAt": "Mon Jun 11 2018 16:19:12 GMT+0200 (CEST)",
+      "website": "nigel.com",
+      "socialVideoUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/svenlen/128.jpg",
+      "channels": [
+        "quis sit in",
+        "Excepteur",
+        "proident magna sint",
+        "ut velit reprehenderit"
+      ],
+      "adminTags": [
+        "aliquip nisi laboris cupidatat",
+        "ex dolor tempor",
+        "id"
+      ],
+      "yeay": false,
+      "affiliateProductIds": [
+        "incididunt fugiat laborum",
+        "cupidatat ullamco aliquip",
+        "reprehenderit qui Ut sit fugiat",
+        "eiusmod aliquip enim quis"
+      ],
+      "totalLikes": 13,
+      "creator": {},
+      "user": {},
+      "challengeId": "42684",
+      "challenge": {
+        "id": "dolor laborum nostrud"
+      },
+      "generalFeedVisibility": true,
+      "specificFeedVisibilities": {},
+      "isOnline": true,
+      "brands": "Leannon - Kirlin"
+    },
+    {
+      "id": "37feea6d-efd4-47d1-a963-eccdaf630613",
+      "videoTitle": "eu ex esse laboris",
+      "description": "hic quis voluptatem",
+      "approved": true,
+      "submitted": false,
+      "featured": true,
+      "videoType": "",
+      "converted": false,
+      "expired": true,
+      "airedAt": "Mon Jun 11 2018 23:09:20 GMT+0200 (CEST)",
+      "ranking": 5,
+      "mediaUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/oaktreemedia/128.jpg",
+      "sourceMediaUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/heyimjuani/128.jpg",
+      "altMediaUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/xravil/128.jpg",
+      "sharingImageUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/klefue/128.jpg",
+      "posterImageUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/SlaapMe/128.jpg",
+      "previewUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/lanceguyatt/128.jpg",
+      "altPreviewUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/raphaelnikson/128.jpg",
+      "indexedAt": "Mon Jun 11 2018 22:58:23 GMT+0200 (CEST)",
+      "updatedAt": "Mon Jun 11 2018 18:34:36 GMT+0200 (CEST)",
+      "createdAt": "Tue Jun 12 2018 02:50:39 GMT+0200 (CEST)",
+      "website": "hannah.org",
+      "socialVideoUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/bartjo/128.jpg",
+      "channels": [
+        "reprehenderit aute sit",
+        "est"
+      ],
+      "adminTags": [
+        "commodo dolore ad occaecat",
+        "sunt dolor"
+      ],
+      "yeay": true,
+      "affiliateProductIds": [
+        "dolore pariat",
+        "dolor ullamco esse",
+        "in ullamco",
+        "deserunt enim ex",
+        "consequat dolore in"
+      ],
+      "totalLikes": 15,
+      "creator": {},
+      "user": {},
+      "challengeId": "65065",
+      "challenge": {
+        "id": "anim ea aute"
+      },
+      "generalFeedVisibility": true,
+      "specificFeedVisibilities": {},
+      "isOnline": true,
+      "brands": "McClure - Heller"
+    },
+    {
+      "id": "da1a1acc-dc94-43ad-a137-4027266920f9",
+      "videoTitle": "occaecat in nisi",
+      "description": "eligendi excepturi aut",
+      "approved": true,
+      "submitted": true,
+      "featured": false,
+      "videoType": "",
+      "converted": false,
+      "expired": true,
+      "airedAt": "Mon Jun 11 2018 21:55:30 GMT+0200 (CEST)",
+      "ranking": 4,
+      "mediaUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/enda/128.jpg",
+      "sourceMediaUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/9lessons/128.jpg",
+      "altMediaUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/madshensel/128.jpg",
+      "sharingImageUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/rachelreveley/128.jpg",
+      "posterImageUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/akashsharma39/128.jpg",
+      "previewUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/h1brd/128.jpg",
+      "altPreviewUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/laurengray/128.jpg",
+      "indexedAt": "Tue Jun 12 2018 11:33:01 GMT+0200 (CEST)",
+      "updatedAt": "Tue Jun 12 2018 14:49:22 GMT+0200 (CEST)",
+      "createdAt": "Tue Jun 12 2018 09:53:41 GMT+0200 (CEST)",
+      "website": "erica.com",
+      "socialVideoUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/demersdesigns/128.jpg",
+      "channels": [
+        "non deserunt Lorem cupidatat",
+        "magna"
+      ],
+      "adminTags": [
+        "commodo id amet",
+        "labore amet",
+        "culpa in ut"
+      ],
+      "yeay": true,
+      "affiliateProductIds": [
+        "do minim a",
+        "magna consequat "
+      ],
+      "totalLikes": 4,
+      "creator": {},
+      "user": {},
+      "challengeId": "33612",
+      "challenge": {
+        "id": "aute officia dolor"
+      },
+      "generalFeedVisibility": false,
+      "specificFeedVisibilities": {},
+      "isOnline": false,
+      "brands": "Jakubowski, Mante and Johnston"
+    },
+    {
+      "id": "40da7c7e-43c8-4270-b709-c31969faa2fa",
+      "videoTitle": "sint aute do",
+      "description": "est corporis impedit",
+      "approved": true,
+      "submitted": true,
+      "featured": true,
+      "videoType": "",
+      "converted": true,
+      "expired": false,
+      "airedAt": "Mon Jun 11 2018 19:30:23 GMT+0200 (CEST)",
+      "ranking": 9,
+      "mediaUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/byryan/128.jpg",
+      "sourceMediaUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/pierrestoffe/128.jpg",
+      "altMediaUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/osvaldas/128.jpg",
+      "sharingImageUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/we_social/128.jpg",
+      "posterImageUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/mtolokonnikov/128.jpg",
+      "previewUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/al_li/128.jpg",
+      "altPreviewUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/thedjpetersen/128.jpg",
+      "indexedAt": "Tue Jun 12 2018 02:10:02 GMT+0200 (CEST)",
+      "updatedAt": "Tue Jun 12 2018 13:27:59 GMT+0200 (CEST)",
+      "createdAt": "Tue Jun 12 2018 03:38:24 GMT+0200 (CEST)",
+      "website": "hollis.name",
+      "socialVideoUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/dzantievm/128.jpg",
+      "channels": [
+        "id ipsum",
+        "e"
+      ],
+      "adminTags": [
+        "nostrud voluptate est dolore",
+        "eu est ea labore",
+        "voluptate el"
+      ],
+      "yeay": true,
+      "affiliateProductIds": [
+        "voluptate minim",
+        "sint"
+      ],
+      "totalLikes": 1,
+      "creator": {},
+      "user": {},
+      "challengeId": "11546",
+      "challenge": {
+        "id": "Excepteur Duis"
+      },
+      "generalFeedVisibility": false,
+      "specificFeedVisibilities": {},
+      "isOnline": true,
+      "brands": "Gislason - Gleichner"
+    }
+  ],
+  "wishlists": [
+    {
+      "id": "7c9e910c-8853-44f3-8bdc-f201407da878",
+      "videoIds": [
+        "eiusmod nostrud sint ipsum",
+        "sed commodo"
+      ],
+      "createdAt": "Tue Jun 12 2018 03:02:41 GMT+0200 (CEST)",
+      "updatedAt": "Mon Jun 11 2018 17:18:37 GMT+0200 (CEST)"
+    },
+    {
+      "id": "d744756e-dfd3-4c30-a1ba-8a65c48e6e4e",
+      "videoIds": [
+        "commodo eu voluptate",
+        "tempor",
+        "ad in ex magna",
+        "ex voluptate"
+      ],
+      "createdAt": "Tue Jun 12 2018 00:34:46 GMT+0200 (CEST)",
+      "updatedAt": "Mon Jun 11 2018 23:04:51 GMT+0200 (CEST)"
+    },
+    {
+      "id": "59111545-d64c-4d9a-9d09-3023e8ac5995",
+      "videoIds": [
+        "Excepteur eu minim",
+        "dolor aliqua nostrud",
+        "dolor",
+        "ut",
+        "eiusmod eu enim incididunt"
+      ],
+      "createdAt": "Tue Jun 12 2018 07:58:08 GMT+0200 (CEST)",
+      "updatedAt": "Mon Jun 11 2018 20:04:35 GMT+0200 (CEST)"
+    },
+    {
+      "id": "e8ee2b5c-0686-4331-bfd5-e0916ffa581e",
+      "videoIds": [
+        "in deserunt qui aliquip",
+        "veniam",
+        "veniam"
+      ],
+      "createdAt": "Mon Jun 11 2018 19:03:56 GMT+0200 (CEST)",
+      "updatedAt": "Mon Jun 11 2018 19:39:17 GMT+0200 (CEST)"
+    },
+    {
+      "id": "6b9bcc30-eddc-4328-a3b4-564a6d910571",
+      "videoIds": [
+        "ex",
+        "magna sint consectetur mollit laboris",
+        "s",
+        "sint ad"
+      ],
+      "createdAt": "Tue Jun 12 2018 11:15:09 GMT+0200 (CEST)",
+      "updatedAt": "Tue Jun 12 2018 10:34:05 GMT+0200 (CEST)"
+    }
+  ]
+}

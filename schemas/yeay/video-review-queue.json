@@ -3,13 +3,15 @@
   "items": {
     "properties": {
       "id": {
-        "type": "string"
+        "type": "string",
+        "faker": "random.uuid"
       },
       "videoTitle": {
         "type": "string"
       },
       "description": {
-        "type": "string"
+        "type": "string",
+        "faker": "lorem.words"
       },
       "approved": {
         "type": "boolean"
@@ -21,7 +23,11 @@
         "type": "boolean"
       },
       "videoType": {
-        "type": "string"
+        "type": "string",
+        "enum": [
+          "sale",
+          ""
+        ]
       },
       "converted": {
         "type": "boolean"
@@ -30,51 +36,73 @@
         "type": "boolean"
       },
       "airedAt": {
-        "type": "string"
+        "type": "string",
+        "format": "date-time",
+        "faker": "date.recent"
       },
       "ranking": {
-        "type": "number"
+        "type": "number",
+        "faker": {
+          "random.number": [
+            20
+          ]
+        }
       },
       "mediaUrl": {
-        "type": "string"
+        "type": "string",
+        "faker": "image.avatar"
       },
       "sourceMediaUrl": {
-        "type": "string"
+        "type": "string",
+        "faker": "image.avatar"
       },
       "altMediaUrl": {
         "type": "string",
-        "description": "A new MPEG DASH url"
+        "description": "A new MPEG DASH url",
+        "faker": "image.avatar"
       },
       "sharingImageUrl": {
         "type": "string",
-        "description": "A url for shareable image generated on video upload"
+        "description": "A url for shareable image generated on video upload",
+        "faker": "image.avatar"
       },
       "posterImageUrl": {
         "type": "string",
-        "description": "The image that is used as the poster image"
+        "description": "The image that is used as the poster image",
+        "faker": "image.avatar"
       },
       "previewUrl": {
         "type": "string",
-        "description": "A url for a gif formatted preview of the video"
+        "description": "A url for a gif formatted preview of the video",
+        "faker": "image.avatar"
       },
       "altPreviewUrl": {
         "type": "string",
-        "description": "A url for an mp4 formatted preview video. Not gif"
+        "description": "A url for an mp4 formatted preview video. Not gif",
+        "faker": "image.avatar"
       },
       "indexedAt": {
-        "type": "string"
+        "type": "string",
+        "format": "date-time",
+        "faker": "date.recent"
       },
       "updatedAt": {
-        "type": "string"
+        "type": "string",
+        "format": "date-time",
+        "faker": "date.recent"
       },
       "createdAt": {
-        "type": "string"
+        "type": "string",
+        "format": "date-time",
+        "faker": "date.recent"
       },
       "website": {
-        "type": "string"
+        "type": "string",
+        "faker": "internet.domainName"
       },
       "socialVideoUrl": {
-        "type": "string"
+        "type": "string",
+        "faker": "image.avatar"
       },
       "channels": {
         "type": "array",
@@ -98,7 +126,12 @@
         }
       },
       "totalLikes": {
-        "type": "number"
+        "type": "number",
+        "faker": {
+          "random.number": [
+            20
+          ]
+        }
       },
       "creator": {
         "properties": {
@@ -402,7 +435,8 @@
       },
       "challengeId": {
         "type": "string",
-        "description": "The challenge id, if the video was uploaded for a challenge."
+        "description": "The challenge id, if the video was uploaded for a challenge.",
+        "faker": "random.number"
       },
       "challenge": {
         "allOf": [
@@ -446,7 +480,8 @@
       },
       "brands": {
         "description": "List of brand tags that appear in the video",
-        "type": "string"
+        "type": "string",
+        "faker": "company.companyName"
       }
     },
     "required": [

@@ -4,10 +4,12 @@
     "type": "object",
     "properties": {
       "id": {
-        "type": "string"
+        "type": "string",
+        "faker": "random.uuid"
       },
       "videoId": {
-        "type": "string"
+        "type": "string",
+        "faker": "random.number"
       },
       "author": {
         "type": "object",
@@ -48,11 +50,13 @@
       },
       "createdAt": {
         "type": "string",
-        "format": "date"
+        "format": "date-time",
+        "faker": "date.recent"
       },
       "updatedAt": {
         "type": "string",
-        "format": "date"
+        "format": "date-time",
+        "faker": "date.recent"
       }
     },
     "required": [

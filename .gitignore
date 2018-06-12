@@ -61,4 +61,4 @@ typings/
 .env
 
 # Generated files
-db.json
+# db.json

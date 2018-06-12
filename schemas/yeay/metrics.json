@@ -36,7 +36,12 @@
         }
       },
       "numOfTotalLikes": {
-        "type": "number"
+        "type": "number",
+        "faker": {
+          "random.number": [
+            20
+          ]
+        }
       },
       "numOfLikes": {
         "type": "array",
@@ -49,6 +54,11 @@
               "type": "number"
             }
           }
+        },
+        "faker": {
+          "random.number": [
+            20
+          ]
         }
       },
       "numOfTotalFollows": {

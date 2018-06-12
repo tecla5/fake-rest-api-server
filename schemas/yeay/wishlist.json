@@ -11,7 +11,8 @@
     "properties": {
       "id": {
         "description": "The unique identifier of the wishlist",
-        "type": "string"
+        "type": "string",
+        "faker": "random.uuid"
       },
       "videoIds": {
         "description": "The list of video ids on the wishlist",
@@ -23,12 +24,14 @@
       "createdAt": {
         "description": "Date of wishlist creation",
         "type": "string",
-        "format": "date-time"
+        "format": "date-time",
+        "faker": "date.recent"
       },
       "updatedAt": {
         "description": "Date of last update on the wishlist",
         "type": "string",
-        "format": "date-time"
+        "format": "date-time",
+        "faker": "date.recent"
       }
     }
   }

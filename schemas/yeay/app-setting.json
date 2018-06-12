@@ -16,7 +16,9 @@
         "type": "string"
       },
       "updatedAt": {
-        "type": "string"
+        "type": "string",
+        "format": "date-time",
+        "faker": "date.recent"
       },
       "iOSAppStoreVersion": {
         "type": "string"
@@ -31,7 +33,9 @@
         "type": "number"
       },
       "serverTime": {
-        "type": "string"
+        "type": "string",
+        "format": "date-time",
+        "faker": "date.recent"
       }
     },
     "required": [
