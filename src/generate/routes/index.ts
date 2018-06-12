@@ -1,4 +1,11 @@
-import {log, writeFile, toJson, serverPath, nameOf} from '../schemas/util'
+import {
+  log,
+  writeFile,
+  toJson,
+  serverPath,
+  nameOf,
+  hasDeprecated
+} from '../schemas/util'
 const $path = require('path');
 const _ = require('lodash');
 _.mixin(require("lodash-inflection"))
@@ -45,8 +52,11 @@ export function writeRoutes(doc : any) {
   function translatePath(pathKey : string, path : any) : any {
     const translatedPathKey = pathKey.replace(/{(\w+)}/g, ':$1');
     const {schema, method} = schemaFromPath(path);
-    if (!schema) {
-      return {path: translatedPathKey}
+
+    const tags = method.tags || {}
+
+    if (hasDeprecated(tags) || !schema) {
+      return false
     }
 
     const schemaName = schema.$ref
@@ -69,6 +79,8 @@ export function writeRoutes(doc : any) {
     return translatePath(pathKey, paths[pathKey])
   })
   const routes : any = translatedPathObjs.reduce((acc : any, pathObj : any) => {
+    if (!pathObj) 
+      return acc
     acc[pathObj.path] = pathObj.schemaPath || pathObj.path
     return acc
   }, {})
