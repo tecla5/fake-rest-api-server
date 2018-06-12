@@ -1,5 +1,5 @@
 import {writeDb} from "./write-db";
-import {data} from './sample/data'
+import {data} from './yeay/data'
 
 export function run() {
   const json = JSON.stringify(data, null, 2);

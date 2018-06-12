@@ -582,6 +582,39 @@
       "challengeId": {
         "type": "string"
       }
-    }
-  }
+    },
+    "required": [
+      "id",
+      "title",
+      "shareUrl",
+      "mediaUrl",
+      "altMediaUrl",
+      "sourceMediaUrl",
+      "socialVideoUrl",
+      "previewUrl",
+      "altPreviewUrl",
+      "sharingImageUrl",
+      "squareVideoUrl",
+      "posterImageUrl",
+      "converted",
+      "videoFormat",
+      "ranking",
+      "approved",
+      "featured",
+      "createdAt",
+      "updatedAt",
+      "categories",
+      "numOfLikes",
+      "numOfRecentLikes",
+      "numOfViews",
+      "numOfRecentViews",
+      "numOfComments",
+      "numOfRecentComments",
+      "product",
+      "creator",
+      "seller",
+      "challengeId"
+    ]
+  },
+  "uniqueItems": true
 }

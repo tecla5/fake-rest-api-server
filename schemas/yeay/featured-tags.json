@@ -24,6 +24,16 @@
       "updatedAt": {
         "type": "string"
       }
-    }
-  }
+    },
+    "required": [
+      "id",
+      "name",
+      "imageUrl",
+      "isHero",
+      "ordering",
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "uniqueItems": true
 }

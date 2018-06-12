@@ -1,19 +1,30 @@
 {
-  "properties": {
-    "id": {
-      "type": "string"
+  "type": "array",
+  "uniqueItems": true,
+  "items": {
+    "properties": {
+      "id": {
+        "type": "string"
+      },
+      "totalLikes": {
+        "type": "number"
+      },
+      "totalFollowing": {
+        "type": "number"
+      },
+      "totalFollowers": {
+        "type": "number"
+      },
+      "totalProducts": {
+        "type": "number"
+      }
     },
-    "totalLikes": {
-      "type": "number"
-    },
-    "totalFollowing": {
-      "type": "number"
-    },
-    "totalFollowers": {
-      "type": "number"
-    },
-    "totalProducts": {
-      "type": "number"
-    }
+    "required": [
+      "id",
+      "totalLikes",
+      "totalFollowing",
+      "totalFollowers",
+      "totalProducts"
+    ]
   }
 }

@@ -1,150 +1,184 @@
 {
-  "properties": {
-    "id": {
-      "type": "string"
-    },
-    "email": {
-      "type": "string"
-    },
-    "firstname": {
-      "type": "string"
-    },
-    "lastname": {
-      "type": "string"
-    },
-    "username": {
-      "type": "string"
-    },
-    "emailVerified": {
-      "type": "boolean"
-    },
-    "avatarImageUrl": {
-      "type": "string"
-    },
-    "splashImageUrl": {
-      "type": "string"
-    },
-    "deviceToken": {
-      "type": "string"
-    },
-    "updatedAt": {
-      "type": "string"
-    },
-    "createdAt": {
-      "type": "string"
-    },
-    "address": {
-      "properties": {
-        "administrativeArea": {
-          "type": "string"
-        },
-        "country": {
-          "type": "string",
-          "description": "Deprecated, use `isoCountryCode` instead."
-        },
-        "formattedAddressLines": {
-          "type": "string",
-          "description": "Read-only, pretty printed string of the address"
-        },
-        "locality": {
-          "type": "string"
-        },
-        "thoroughfare": {
-          "type": "string"
-        },
-        "postalCode": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        },
-        "suite": {
-          "type": "string"
-        },
-        "isoCountryCode": {
+  "type": "array",
+  "uniqueItems": true,
+  "items": {
+    "properties": {
+      "id": {
+        "type": "string"
+      },
+      "email": {
+        "type": "string"
+      },
+      "firstname": {
+        "type": "string"
+      },
+      "lastname": {
+        "type": "string"
+      },
+      "username": {
+        "type": "string"
+      },
+      "emailVerified": {
+        "type": "boolean"
+      },
+      "avatarImageUrl": {
+        "type": "string"
+      },
+      "splashImageUrl": {
+        "type": "string"
+      },
+      "deviceToken": {
+        "type": "string"
+      },
+      "updatedAt": {
+        "type": "string"
+      },
+      "createdAt": {
+        "type": "string"
+      },
+      "address": {
+        "properties": {
+          "administrativeArea": {
+            "type": "string"
+          },
+          "country": {
+            "type": "string",
+            "description": "Deprecated, use `isoCountryCode` instead."
+          },
+          "formattedAddressLines": {
+            "type": "string",
+            "description": "Read-only, pretty printed string of the address"
+          },
+          "locality": {
+            "type": "string"
+          },
+          "thoroughfare": {
+            "type": "string"
+          },
+          "postalCode": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "suite": {
+            "type": "string"
+          },
+          "isoCountryCode": {
+            "type": "string"
+          }
+        }
+      },
+      "paypalEmail": {
+        "type": "string"
+      },
+      "phoneNumber": {
+        "type": "string"
+      },
+      "gender": {
+        "type": "string"
+      },
+      "birthday": {
+        "type": "string",
+        "format": "date"
+      },
+      "taxId": {
+        "type": "string"
+      },
+      "locale": {
+        "type": "string"
+      },
+      "roles": {
+        "type": "array",
+        "items": {
           "type": "string"
         }
-      }
-    },
-    "paypalEmail": {
-      "type": "string"
-    },
-    "phoneNumber": {
-      "type": "string"
-    },
-    "gender": {
-      "type": "string"
-    },
-    "birthday": {
-      "type": "string",
-      "format": "date"
-    },
-    "taxId": {
-      "type": "string"
-    },
-    "locale": {
-      "type": "string"
-    },
-    "roles": {
-      "type": "array",
-      "items": {
+      },
+      "altAvatarImages": {
+        "type": "object"
+      },
+      "profileBio": {
         "type": "string"
-      }
-    },
-    "altAvatarImages": {
-      "type": "object"
-    },
-    "profileBio": {
-      "type": "string"
-    },
-    "allowsChat": {
-      "type": "boolean"
-    },
-    "currency": {
-      "type": "string"
-    },
-    "paymentDetails": {
-      "type": "object",
-      "properties": {
-        "stripe": {
-          "type": "object",
-          "properties": {
-            "gatewayCustomerId": {
-              "type": "string"
-            },
-            "gatewayEmail": {
-              "type": "string"
-            },
-            "gatewayPayload": {
-              "type": "object"
-            },
-            "gatewayCommerceType": {
-              "type": "string"
+      },
+      "allowsChat": {
+        "type": "boolean"
+      },
+      "currency": {
+        "type": "string"
+      },
+      "paymentDetails": {
+        "type": "object",
+        "properties": {
+          "stripe": {
+            "type": "object",
+            "properties": {
+              "gatewayCustomerId": {
+                "type": "string"
+              },
+              "gatewayEmail": {
+                "type": "string"
+              },
+              "gatewayPayload": {
+                "type": "object"
+              },
+              "gatewayCommerceType": {
+                "type": "string"
+              }
             }
           }
         }
+      },
+      "appUserType": {
+        "type": "string",
+        "enum": [
+          "regular",
+          "influencer",
+          "retailer",
+          "brand"
+        ]
+      },
+      "isVerifiedByYeay": {
+        "type": "boolean"
+      },
+      "yeayScore": {
+        "type": "integer",
+        "minimum": 0,
+        "description": "Only available if user is own user or when in admin context"
+      },
+      "isScoreFrozen": {
+        "type": "boolean",
+        "description": "Only available if user is own user or when in admin context"
       }
     },
-    "appUserType": {
-      "type": "string",
-      "enum": [
-        "regular",
-        "influencer",
-        "retailer",
-        "brand"
-      ]
-    },
-    "isVerifiedByYeay": {
-      "type": "boolean"
-    },
-    "yeayScore": {
-      "type": "integer",
-      "minimum": 0,
-      "description": "Only available if user is own user or when in admin context"
-    },
-    "isScoreFrozen": {
-      "type": "boolean",
-      "description": "Only available if user is own user or when in admin context"
-    }
+    "required": [
+      "id",
+      "email",
+      "firstname",
+      "lastname",
+      "username",
+      "emailVerified",
+      "avatarImageUrl",
+      "splashImageUrl",
+      "deviceToken",
+      "updatedAt",
+      "createdAt",
+      "address",
+      "paypalEmail",
+      "phoneNumber",
+      "gender",
+      "birthday",
+      "taxId",
+      "locale",
+      "roles",
+      "altAvatarImages",
+      "profileBio",
+      "allowsChat",
+      "currency",
+      "paymentDetails",
+      "appUserType",
+      "isVerifiedByYeay",
+      "yeayScore",
+      "isScoreFrozen"
+    ]
   }
 }

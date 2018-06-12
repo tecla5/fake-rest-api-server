@@ -1,25 +1,38 @@
 {
-  "properties": {
-    "id": {
-      "type": "string"
+  "type": "array",
+  "uniqueItems": true,
+  "items": {
+    "properties": {
+      "id": {
+        "type": "string"
+      },
+      "name": {
+        "type": "string"
+      },
+      "imageUrl": {
+        "type": "string"
+      },
+      "isHero": {
+        "type": "boolean"
+      },
+      "ordering": {
+        "type": "number"
+      },
+      "createdAt": {
+        "type": "string"
+      },
+      "updatedAt": {
+        "type": "string"
+      }
     },
-    "name": {
-      "type": "string"
-    },
-    "imageUrl": {
-      "type": "string"
-    },
-    "isHero": {
-      "type": "boolean"
-    },
-    "ordering": {
-      "type": "number"
-    },
-    "createdAt": {
-      "type": "string"
-    },
-    "updatedAt": {
-      "type": "string"
-    }
+    "required": [
+      "id",
+      "name",
+      "imageUrl",
+      "isHero",
+      "ordering",
+      "createdAt",
+      "updatedAt"
+    ]
   }
 }

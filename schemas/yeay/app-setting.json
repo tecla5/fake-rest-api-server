@@ -1,34 +1,50 @@
 {
-  "properties": {
-    "videoLimit": {
-      "type": "number"
+  "type": "array",
+  "uniqueItems": true,
+  "items": {
+    "properties": {
+      "videoLimit": {
+        "type": "number"
+      },
+      "videoServerRegion": {
+        "type": "string"
+      },
+      "videoServerPrefix": {
+        "type": "string"
+      },
+      "videoServerBucket": {
+        "type": "string"
+      },
+      "updatedAt": {
+        "type": "string"
+      },
+      "iOSAppStoreVersion": {
+        "type": "string"
+      },
+      "androidPlayStoreVersion": {
+        "type": "string"
+      },
+      "acceptedCurrencies": {
+        "type": "object"
+      },
+      "serverTimeEpoch": {
+        "type": "number"
+      },
+      "serverTime": {
+        "type": "string"
+      }
     },
-    "videoServerRegion": {
-      "type": "string"
-    },
-    "videoServerPrefix": {
-      "type": "string"
-    },
-    "videoServerBucket": {
-      "type": "string"
-    },
-    "updatedAt": {
-      "type": "string"
-    },
-    "iOSAppStoreVersion": {
-      "type": "string"
-    },
-    "androidPlayStoreVersion": {
-      "type": "string"
-    },
-    "acceptedCurrencies": {
-      "type": "object"
-    },
-    "serverTimeEpoch": {
-      "type": "number"
-    },
-    "serverTime": {
-      "type": "string"
-    }
+    "required": [
+      "videoLimit",
+      "videoServerRegion",
+      "videoServerPrefix",
+      "videoServerBucket",
+      "updatedAt",
+      "iOSAppStoreVersion",
+      "androidPlayStoreVersion",
+      "acceptedCurrencies",
+      "serverTimeEpoch",
+      "serverTime"
+    ]
   }
 }

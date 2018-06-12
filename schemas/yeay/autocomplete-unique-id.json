@@ -29,6 +29,13 @@
           }
         }
       }
-    }
-  }
+    },
+    "required": [
+      "id",
+      "uniqueId",
+      "avatarImageUrl",
+      "altAvatarImages"
+    ]
+  },
+  "uniqueItems": true
 }

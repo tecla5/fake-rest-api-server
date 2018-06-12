@@ -1,20 +1,31 @@
 {
-  "type": "object",
-  "properties": {
-    "name": {
-      "type": "string"
+  "type": "array",
+  "uniqueItems": true,
+  "items": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "description": {
+        "type": "string"
+      },
+      "orderNote": {
+        "type": "string"
+      },
+      "terms": {
+        "type": "string"
+      },
+      "learnMore": {
+        "type": "string"
+      }
     },
-    "description": {
-      "type": "string"
-    },
-    "orderNote": {
-      "type": "string"
-    },
-    "terms": {
-      "type": "string"
-    },
-    "learnMore": {
-      "type": "string"
-    }
+    "required": [
+      "name",
+      "description",
+      "orderNote",
+      "terms",
+      "learnMore"
+    ]
   }
 }

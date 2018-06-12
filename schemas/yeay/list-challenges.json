@@ -3,7 +3,27 @@
   "items": {
     "required": [
       "id",
-      "name"
+      "name",
+      "description",
+      "challengeCode",
+      "isEnabled",
+      "rank",
+      "imageUrl",
+      "brandLogoUrl",
+      "brandName",
+      "terms",
+      "orderNote",
+      "learnMore",
+      "commissionAmount",
+      "commissionCurrency",
+      "associatedProducts",
+      "participationRequirements",
+      "featuredVideoIds",
+      "translations",
+      "startDate",
+      "endDate",
+      "createdAt",
+      "updatedAt"
     ],
     "properties": {
       "id": {
@@ -1265,5 +1285,6 @@
         "format": "date-time"
       }
     }
-  }
+  },
+  "uniqueItems": true
 }

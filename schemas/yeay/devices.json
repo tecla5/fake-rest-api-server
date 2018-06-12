@@ -1,6 +1,8 @@
 {
   "type": "array",
   "items": {
-    "type": "object"
-  }
+    "type": "object",
+    "required": []
+  },
+  "uniqueItems": true
 }

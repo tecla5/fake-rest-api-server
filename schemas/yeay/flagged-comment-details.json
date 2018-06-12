@@ -1,179 +1,188 @@
 {
-  "type": "object",
-  "properties": {
-    "comment": {
-      "type": "object",
-      "properties": {
-        "id": {
-          "type": "string"
-        },
-        "videoId": {
-          "type": "string"
-        },
-        "author": {
+  "type": "array",
+  "uniqueItems": true,
+  "items": {
+    "type": "object",
+    "properties": {
+      "comment": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "videoId": {
+            "type": "string"
+          },
+          "author": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "uniqueId": {
+                "type": "string"
+              },
+              "avatarImageUrl": {
+                "type": "string"
+              },
+              "altAvatarImages": {
+                "type": "object",
+                "properties": {
+                  "s": {
+                    "type": "string"
+                  },
+                  "m": {
+                    "type": "string"
+                  },
+                  "l": {
+                    "type": "string"
+                  },
+                  "xl": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          },
+          "status": {
+            "type": "string"
+          },
+          "comment": {
+            "type": "string"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date"
+          },
+          "updatedAt": {
+            "type": "string",
+            "format": "date"
+          }
+        }
+      },
+      "previousComments": {
+        "type": "array",
+        "items": {
           "type": "object",
           "properties": {
             "id": {
               "type": "string"
             },
-            "uniqueId": {
+            "videoId": {
               "type": "string"
             },
-            "avatarImageUrl": {
-              "type": "string"
-            },
-            "altAvatarImages": {
+            "author": {
               "type": "object",
               "properties": {
-                "s": {
+                "id": {
                   "type": "string"
                 },
-                "m": {
+                "uniqueId": {
                   "type": "string"
                 },
-                "l": {
+                "avatarImageUrl": {
                   "type": "string"
                 },
-                "xl": {
-                  "type": "string"
-                }
-              }
-            }
-          }
-        },
-        "status": {
-          "type": "string"
-        },
-        "comment": {
-          "type": "string"
-        },
-        "createdAt": {
-          "type": "string",
-          "format": "date"
-        },
-        "updatedAt": {
-          "type": "string",
-          "format": "date"
-        }
-      }
-    },
-    "previousComments": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "string"
-          },
-          "videoId": {
-            "type": "string"
-          },
-          "author": {
-            "type": "object",
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "uniqueId": {
-                "type": "string"
-              },
-              "avatarImageUrl": {
-                "type": "string"
-              },
-              "altAvatarImages": {
-                "type": "object",
-                "properties": {
-                  "s": {
-                    "type": "string"
-                  },
-                  "m": {
-                    "type": "string"
-                  },
-                  "l": {
-                    "type": "string"
-                  },
-                  "xl": {
-                    "type": "string"
+                "altAvatarImages": {
+                  "type": "object",
+                  "properties": {
+                    "s": {
+                      "type": "string"
+                    },
+                    "m": {
+                      "type": "string"
+                    },
+                    "l": {
+                      "type": "string"
+                    },
+                    "xl": {
+                      "type": "string"
+                    }
                   }
                 }
               }
+            },
+            "status": {
+              "type": "string"
+            },
+            "comment": {
+              "type": "string"
+            },
+            "createdAt": {
+              "type": "string",
+              "format": "date"
+            },
+            "updatedAt": {
+              "type": "string",
+              "format": "date"
             }
-          },
-          "status": {
-            "type": "string"
-          },
-          "comment": {
-            "type": "string"
-          },
-          "createdAt": {
-            "type": "string",
-            "format": "date"
-          },
-          "updatedAt": {
-            "type": "string",
-            "format": "date"
+          }
+        }
+      },
+      "nextComments": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "videoId": {
+              "type": "string"
+            },
+            "author": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "uniqueId": {
+                  "type": "string"
+                },
+                "avatarImageUrl": {
+                  "type": "string"
+                },
+                "altAvatarImages": {
+                  "type": "object",
+                  "properties": {
+                    "s": {
+                      "type": "string"
+                    },
+                    "m": {
+                      "type": "string"
+                    },
+                    "l": {
+                      "type": "string"
+                    },
+                    "xl": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            },
+            "status": {
+              "type": "string"
+            },
+            "comment": {
+              "type": "string"
+            },
+            "createdAt": {
+              "type": "string",
+              "format": "date"
+            },
+            "updatedAt": {
+              "type": "string",
+              "format": "date"
+            }
           }
         }
       }
     },
-    "nextComments": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "string"
-          },
-          "videoId": {
-            "type": "string"
-          },
-          "author": {
-            "type": "object",
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "uniqueId": {
-                "type": "string"
-              },
-              "avatarImageUrl": {
-                "type": "string"
-              },
-              "altAvatarImages": {
-                "type": "object",
-                "properties": {
-                  "s": {
-                    "type": "string"
-                  },
-                  "m": {
-                    "type": "string"
-                  },
-                  "l": {
-                    "type": "string"
-                  },
-                  "xl": {
-                    "type": "string"
-                  }
-                }
-              }
-            }
-          },
-          "status": {
-            "type": "string"
-          },
-          "comment": {
-            "type": "string"
-          },
-          "createdAt": {
-            "type": "string",
-            "format": "date"
-          },
-          "updatedAt": {
-            "type": "string",
-            "format": "date"
-          }
-        }
-      }
-    }
+    "required": [
+      "comment",
+      "previousComments",
+      "nextComments"
+    ]
   }
 }

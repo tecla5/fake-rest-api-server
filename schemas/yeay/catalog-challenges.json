@@ -1,7 +1,5 @@
 {
   "type": "array",
-  "minItems": 0,
-  "maxItems": 10,
   "items": {
     "properties": {
       "id": {
@@ -823,6 +821,27 @@
         "type": "boolean",
         "description": "Indicator that states whether the requesting user meets all requirements in order to paticipate in this challenge.\n"
       }
-    }
-  }
+    },
+    "required": [
+      "id",
+      "name",
+      "description",
+      "challengeCode",
+      "isEnabled",
+      "rank",
+      "imageUrl",
+      "brandLogoUrl",
+      "brandName",
+      "terms",
+      "learnMore",
+      "commissionAmount",
+      "commissionCurrency",
+      "associatedProducts",
+      "participationRequirements",
+      "startDate",
+      "endDate",
+      "canParticipate"
+    ]
+  },
+  "uniqueItems": true
 }

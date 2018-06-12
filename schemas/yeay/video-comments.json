@@ -54,6 +54,16 @@
         "type": "string",
         "format": "date"
       }
-    }
-  }
+    },
+    "required": [
+      "id",
+      "videoId",
+      "author",
+      "status",
+      "comment",
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "uniqueItems": true
 }

@@ -8,6 +8,23 @@ import {
   nameOf
 } from '../util'
 
+const arraySchema = {
+  type: "array",
+  uniqueItems: true,
+  items: {
+  }
+} 
+
+
+function wrapAsArray(schema: any) {
+  const $schema: any = {
+    ...arraySchema,
+  }
+
+  $schema.items = schema
+  return $schema
+}
+
 export async function generateOne(path : any, pathKey: string, doc: any) {
   // only GET methods are valid
   const methodName : any = ['get'].find((name : string) => !!path[name])
@@ -20,7 +37,7 @@ export async function generateOne(path : any, pathKey: string, doc: any) {
     return
   }
 
-  const schema = method.responses['200'].schema
+  let schema = method.responses['200'].schema
 
   const docPath = doc.original.paths[pathKey]
   const schemaWithRef = docPath[methodName].responses['200'].schema
@@ -44,6 +61,16 @@ export async function generateOne(path : any, pathKey: string, doc: any) {
   const schemaKeys = Object.keys(schema)
   if (schemaKeys.includes('allOf')) {
     return
+  }
+
+  if (schema.type === 'object' || !schema.type) {
+    schema = wrapAsArray(schema)  
+  }
+
+  if (schema.items) {
+    const keys = Object.keys(schema.items.properties || {})
+    schema.uniqueItems = true
+    schema.items.required = keys  
   }
 
   const schemaFileName = `${dasherize(name)}.json`

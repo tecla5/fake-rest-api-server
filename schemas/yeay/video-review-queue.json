@@ -448,6 +448,45 @@
         "description": "List of brand tags that appear in the video",
         "type": "string"
       }
-    }
-  }
+    },
+    "required": [
+      "id",
+      "videoTitle",
+      "description",
+      "approved",
+      "submitted",
+      "featured",
+      "videoType",
+      "converted",
+      "expired",
+      "airedAt",
+      "ranking",
+      "mediaUrl",
+      "sourceMediaUrl",
+      "altMediaUrl",
+      "sharingImageUrl",
+      "posterImageUrl",
+      "previewUrl",
+      "altPreviewUrl",
+      "indexedAt",
+      "updatedAt",
+      "createdAt",
+      "website",
+      "socialVideoUrl",
+      "channels",
+      "adminTags",
+      "yeay",
+      "affiliateProductIds",
+      "totalLikes",
+      "creator",
+      "user",
+      "challengeId",
+      "challenge",
+      "generalFeedVisibility",
+      "specificFeedVisibilities",
+      "isOnline",
+      "brands"
+    ]
+  },
+  "uniqueItems": true
 }

@@ -148,6 +148,37 @@
         "type": "boolean",
         "description": "Only available if user is own user or when in admin context"
       }
-    }
-  }
+    },
+    "required": [
+      "id",
+      "email",
+      "firstname",
+      "lastname",
+      "username",
+      "emailVerified",
+      "avatarImageUrl",
+      "splashImageUrl",
+      "deviceToken",
+      "updatedAt",
+      "createdAt",
+      "address",
+      "paypalEmail",
+      "phoneNumber",
+      "gender",
+      "birthday",
+      "taxId",
+      "locale",
+      "roles",
+      "altAvatarImages",
+      "profileBio",
+      "allowsChat",
+      "currency",
+      "paymentDetails",
+      "appUserType",
+      "isVerifiedByYeay",
+      "yeayScore",
+      "isScoreFrozen"
+    ]
+  },
+  "uniqueItems": true
 }

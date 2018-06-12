@@ -1,8 +1,15 @@
 {
-  "type": "object",
-  "properties": {
-    "version": {
-      "type": "string"
-    }
+  "type": "array",
+  "uniqueItems": true,
+  "items": {
+    "type": "object",
+    "properties": {
+      "version": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "version"
+    ]
   }
 }
