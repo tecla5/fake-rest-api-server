@@ -39,6 +39,91 @@ catalog-seller.json
 ...
 ```
 
+The schema generated must have the following form:
+
+```js
+export const groupSchema = {
+  type: "object",
+  properties: {
+    groups: {
+      type: "array",
+      minItems: 0,
+      maxItems: 5,
+      uniqueItems: true,
+      items: {
+        type: "object",
+        properties: {
+          id: {
+            type: "string",
+            faker: "random.uuid"
+          },
+          name: {
+            type: "string",
+            faker: "commerce.productName"
+          }
+        },
+        required: ["id", "name"]
+      }
+    }
+  },
+  required: ["groups"]
+};
+```
+
+Note in particular `required` for the array property `challenges` and for the `items`
+
+```js
+  type: "object",
+  required: ["challenges"]` // <--- property challenges must be required
+```  
+
+```js
+    challenges: {
+      "type": "array",
+      "items": {
+      required: ["id"], // <--- must have one or more required properties
+      // ...
+    }
+```  
+
+Full schema example:
+
+```js
+{
+  type: "object",
+  required: ["challenges"],
+  properties: {
+    challenges: {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 10,
+      "items": {
+        required: ["id"],
+        properties: {
+
+        }
+      }
+    }
+  }
+}
+```
+
+Alternatively you can have the schema be an array:
+
+```js
+export const listSchema = {
+    type: "array",
+    uniqueItems: true,
+    items: {
+        type: "object",
+        required: ["id", "name"],
+        properties: {
+```
+
+We should use the schema array approach for the generated YeaY schema and ensure they all follow this model.
+
+### Generate schema index
+
 To generate an index file that collects all the generated schemas into a JS object:
 
 ```bash
@@ -92,14 +177,12 @@ export const schemas = {
 
 DB in `db.json`
 
-Note: schema name must be pluralized
+Note: schema name must be pluralized, either via `camelize` or `dasherize`
 
 ```json
 {
   "affiliateProducts": [{
-    // ...
   }],
-  // ...
 }
 ```
 
@@ -109,7 +192,6 @@ Routes in `routes.json`
 {
   "/affiliate-products": "/affiliateProducts",
   "/affiliate-products/:productId": "/affiliateProducts/:productId",
-  // ...
 }
 ```
 
@@ -144,6 +226,16 @@ npm run start:routes
 Starts JSON server using custom routes defined in `server/routes.json`
 
 See [add-custom-routes](https://github.com/typicode/json-server#add-custom-routes)
+
+## TODO
+
+We could perhaps let the JSF resolve the schemas when generating the DB
+
+```js
+jsf.resolve(schema).then(() => {
+  // ...
+})
+```
 
 ## License
 

@@ -3,8 +3,8 @@ export const siteSchema = {
   properties: {
     sites: {
       type: "array",
-      minItems: 20,
-      maxItems: 40,
+      minItems: 0,
+      maxItems: 20,
       uniqueItems: true,
       items: {
         type: "object",
