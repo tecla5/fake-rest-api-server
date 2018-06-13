@@ -14,18 +14,7 @@ npm i
 
 ## Status
 
-WIP, see [TODO](./TODO.md) for list of properties that need better schema generation
-
-## Scripts available
-
-- `prepare` generates schemas, routes and DB (json) from the Swagger API to prepare everything for the JSON REST server
-- `start` starts the JSON REST server using the generated routes and a DB loaded with the JSON DB data
-
-Utility scripts
-
-- `schemas:from-swagger` generate JSON schemas from Swagger API file
-- `schemas:index` generate JSON schemas index file (`.ts`)
-- `db:generate` generate JSON database from schemas (using faker and type definition of each schema property)
+WIP, see [TODO](./TODO.md) for list of properties that need better schema generation in `src/generate/schemas/one.ts`
 
 ## Usage
 
@@ -33,10 +22,32 @@ Usage instructions
 
 ## Quick start
 
+Simply run the `start` script
+
 ```bash
-npm run prestart
 npm run start
 ```
+
+- runs all prepare scripts
+- starts JSON REST server using generated DB and routes
+
+## Scripts available
+
+### Start server
+
+- `start:db` starts the JSON REST server using DB loaded with the JSON DB data
+- `start:routes` starts the JSON REST server using the generated routes and a DB loaded with the JSON DB data
+
+### Prepare server config
+
+- `prepare` generates schemas, routes and DB (json) from the Swagger API to prepare everything for the JSON REST server to work from
+
+### Generators
+
+- `schemas:from-swagger` generate JSON schemas from Swagger API file
+- `schemas:index` generate JSON schemas index file (`.ts`)
+- `db:generate` generate JSON database from schemas (using faker and type definition of each schema property)
+- `routes:map` generate routes map, mapping swagget API routes to JSON REST server routes
 
 ### Generate schemas
 
@@ -46,15 +57,7 @@ Generate JSON schema(s) from Swagger API yaml file in `schemas` folder
 npm run schemas:from-swagger
 ```
 
-Output:
-
-```bash
-affiliate-product.json
-catalog-seller.json
-...
-```
-
-The schema generated must have the following form:
+The schemas generated should have the following form:
 
 ```js
 export const listSchema = {
@@ -70,40 +73,15 @@ export const listSchema = {
 }
 ```
 
-We should use the schema array approach for the generated YeaY schema and ensure they all follow this model.
-
 ### Generate schema index
 
-To generate an index file that collects all the generated schemas into a JS object:
+To generate an `index` file that collects all the generated schemas into a JS object:
 
 ```bash
 npm run schemas:index
 ```
 
-Will write a `schemas/index.ts` file which can be referenced from the JS code.
-
-### Routes
-
-Generates a `routes.json` file from all the entries under `paths` in the Swagger API file
-
-Routes with params such as `'/affiliate-products/{productId}'` will be written to `routes.json` as `/affiliate-products/:productId`
-
-```json
-{
-  "/affiliate-products/:productId": "/affiliate-products/:productId"
-}
-```
-
-### Schemas
-
-For each path definition under `paths`, find those that get a single domain entity
-
-* `'/affiliate-products/{productId}'` (get single product by ID)
-* `'/affiliate-products` (get list)
-
-### All together
-
-Routes in `routes.json`
+The script will write a `schemas/index.ts` file which can be referenced from the JS code, such as the script that generates fake data based on schema definitions and writes to DB.
 
 ```js
 export const schemas = {
@@ -157,7 +135,15 @@ Note: schema name must be pluralized, either via `camelize` or `dasherize`
 }
 ```
 
-Routes in `routes.json`
+## Routes
+
+Generate a `routes.json` mapping file with custom routes, based on the Swagger API entries under `paths:`
+
+```bash
+npm run routes:map
+```
+
+Routes with params such as `'/affiliate-products/{productId}'` will be translated to the form `:<name>` such as `/affiliate-products/:productId`
 
 ```json
 {
@@ -174,12 +160,16 @@ npm run prestart
 
 The generator generates a JSON database in `/server/db.json`
 
-### Start JSON server
+## Server
+
+You can start the JSON REST server using different configurations
+
+### Default routes
 
 Serve mock data from REST routes
 
 ```bash
-npm run start:default
+npm run start:db
 ```
 
 The JSON server serves the generated JSON database on a REST server on port 3000 by default
