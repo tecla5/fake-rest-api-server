@@ -1,15 +1,20 @@
 import {generateOne} from './one'
 import {log, loadDoc, schemaPath} from '../util'
 import {writeRoutes} from '../../routes'
+const mergeJSON = require("merge-json")
 
 export async function generate(opts : any = {}) {
   try {
+    // TODO: support multiple docs by merging
+    opts.names = opts.names || [opts.name || 'api-v1']
 
-    const schemaName = opts.name || 'api-v1' // 'minimal' //
-
-    const $doc = await loadDoc(schemaName, schemaPath)
-    //log($doc);
-
+    const docPromises = opts
+      .names
+      .map(async(name : string) => {
+        return await loadDoc(name, schemaPath)
+      })
+    const docs = await Promise.all(docPromises)
+    const $doc = mergeJSON.merge(...docs)
     const {paths} = $doc.expanded
 
     if (opts.routes) {

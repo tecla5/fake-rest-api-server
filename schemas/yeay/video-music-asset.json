@@ -1,0 +1,79 @@
+{
+  "type": "array",
+  "uniqueItems": true,
+  "items": {
+    "required": [
+      "id",
+      "name",
+      "artist",
+      "assets",
+      "createdAt",
+      "updatedAt"
+    ],
+    "properties": {
+      "id": {
+        "type": "string",
+        "example": 123,
+        "faker": "random.uuid"
+      },
+      "name": {
+        "type": "string",
+        "example": "Music123",
+        "faker": "commerce.productName"
+      },
+      "artist": {
+        "type": "string",
+        "example": "John Doe"
+      },
+      "assets": {
+        "type": "array",
+        "items": {
+          "allOf": [
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "example": "first_pic"
+                },
+                "type": {
+                  "type": "string",
+                  "example": "image"
+                },
+                "url": {
+                  "type": "string",
+                  "example": "httts://example.com/image.png"
+                }
+              },
+              "required": [
+                "name",
+                "type",
+                "url"
+              ]
+            },
+            {
+              "properties": {
+                "checksum": {
+                  "type": "string",
+                  "example": "120EA8A25E5D487BF68B5F7096440019"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "createdAt": {
+        "type": "string",
+        "format": "date-time",
+        "example": "2018-06-04T19:45:02.097Z",
+        "faker": "date.recent"
+      },
+      "updatedAt": {
+        "type": "string",
+        "format": "date-time",
+        "example": "2018-06-04T19:45:02.097Z",
+        "faker": "date.recent"
+      }
+    }
+  }
+}

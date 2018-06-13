@@ -19,7 +19,7 @@
     "schemas:from-swagger": "ts-node src/generate/schemas/run.ts",
     "schemas:index": "ts-node schemas/generate-index.ts",
     "db:generate": "ts-node src/generate/data/run.ts",
-    "prepare": "npm run schemas:from-swagger && npm run db:generate",
+    "prepare": "npm run schemas:from-swagger && npm run schemas:index && npm run routes:map && npm run db:generate",
     "start:db": "json-server --watch src/db.json --port 3000",
     "start:routes": "json-server --watch src/db.json --routes routes.json --port 3000",
     "start": "npm run prepare && npm run start:routes"
@@ -28,10 +28,10 @@
     "fs-readdir-promise": "^1.0.1",
     "js-promisify": "^1.3.1",
     "js-yaml": "^3.12.0",
-    "json-schema-deref": "^0.4.3",
     "json-schema-deref-local": "^0.2.1",
     "lodash": "^4.17.10",
     "lodash-inflection": "^1.5.0",
+    "merge-json": "0.1.0-b.3",
     "promisify-node": "^0.5.0",
     "template-helpers": "^0.6.7",
     "util-promisify": "^2.1.0"
