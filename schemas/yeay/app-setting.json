@@ -21,13 +21,16 @@
         "faker": "date.recent"
       },
       "iOSAppStoreVersion": {
-        "type": "string"
+        "type": "string",
+        "faker": "random.number"
       },
       "androidPlayStoreVersion": {
-        "type": "string"
+        "type": "string",
+        "faker": "random.number"
       },
       "acceptedCurrencies": {
-        "type": "object"
+        "type": "object",
+        "properties": {}
       },
       "serverTimeEpoch": {
         "type": "number"

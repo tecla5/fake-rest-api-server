@@ -146,34 +146,67 @@
       "product": {
         "properties": {
           "id": {
-            "type": "string"
+            "type": "string",
+            "faker": "random.uuid"
           },
           "name": {
-            "type": "string"
+            "type": "string",
+            "faker": "commerce.productName"
           },
           "description": {
-            "type": "string"
+            "type": "string",
+            "faker": "lorem.words"
           },
           "price": {
-            "type": "number"
+            "type": "number",
+            "faker": {
+              "finance.amount": [
+                10,
+                1000,
+                2
+              ]
+            }
           },
           "yeayScorePrice": {
             "description": "The product price in yeay score points.",
             "type": "integer",
             "format": "int32",
-            "minimum": 0
+            "minimum": 0,
+            "faker": {
+              "finance.amount": [
+                10,
+                1000,
+                2
+              ]
+            }
           },
           "shippingPrice": {
-            "type": "number"
+            "type": "number",
+            "faker": {
+              "finance.amount": [
+                10,
+                1000,
+                2
+              ]
+            }
           },
           "intlShippingPrice": {
-            "type": "number"
+            "type": "number",
+            "faker": {
+              "finance.amount": [
+                10,
+                1000,
+                2
+              ]
+            }
           },
           "productImageUrl": {
-            "type": "string"
+            "type": "string",
+            "faker": "image.avatar"
           },
           "currency": {
-            "type": "string"
+            "type": "string",
+            "faker": "finance.currencyCode"
           },
           "originCountry": {
             "type": "string"
@@ -185,19 +218,25 @@
             "type": "number"
           },
           "productOptions": {
-            "type": "object"
+            "type": "object",
+            "properties": {}
           },
           "condition": {
             "type": "string"
           },
           "shareUrl": {
-            "type": "string"
+            "type": "string",
+            "faker": "internet.url"
           },
           "size": {
             "type": "string"
           },
           "gender": {
-            "type": "string"
+            "type": "string",
+            "enum": [
+              "male",
+              "female"
+            ]
           },
           "color": {
             "type": "string"
@@ -232,7 +271,14 @@
             }
           },
           "regularPrice": {
-            "type": "number"
+            "type": "number",
+            "faker": {
+              "finance.amount": [
+                10,
+                1000,
+                2
+              ]
+            }
           },
           "taxes": {
             "type": "number"
@@ -263,47 +309,53 @@
           "seller": {
             "properties": {
               "id": {
-                "type": "string"
+                "type": "string",
+                "faker": "random.uuid"
               },
               "email": {
-                "type": "string"
+                "type": "string",
+                "faker": "internet.email"
               },
               "firstname": {
-                "type": "string"
+                "type": "string",
+                "faker": "name.firstName"
               },
               "lastname": {
-                "type": "string"
+                "type": "string",
+                "faker": "name.lastName"
               },
               "userName": {
                 "type": "string"
               },
               "username": {
-                "type": "string"
+                "type": "string",
+                "faker": "internet.userName"
               },
               "profileKey": {
                 "type": "string"
               },
               "avatarImageUrl": {
-                "type": "string"
+                "type": "string",
+                "faker": "image.avatar"
               },
               "altAvatarImages": {
-                "type": "object"
+                "type": "object",
+                "properties": {}
               },
               "splashImageUrl": {
-                "type": "string"
+                "type": "string",
+                "faker": "image.avatar"
               },
               "shipToAddress": {
                 "properties": {
                   "administrativeArea": {
-                    "type": "string"
-                  },
-                  "country": {
                     "type": "string",
-                    "description": "Deprecated, use `isoCountryCode` instead."
+                    "faker": "address.state"
                   },
                   "formattedAddressLines": {
                     "type": "string",
-                    "description": "Read-only, pretty printed string of the address"
+                    "description": "Read-only, pretty printed string of the address",
+                    "faker": "address.streetAddress"
                   },
                   "locality": {
                     "type": "string"
@@ -312,21 +364,25 @@
                     "type": "string"
                   },
                   "postalCode": {
-                    "type": "string"
+                    "type": "string",
+                    "faker": "address.zipCode"
                   },
                   "name": {
-                    "type": "string"
+                    "type": "string",
+                    "faker": "commerce.productName"
                   },
                   "suite": {
                     "type": "string"
                   },
                   "isoCountryCode": {
-                    "type": "string"
+                    "type": "string",
+                    "faker": "address.countryCode"
                   }
                 }
               },
               "phoneNumber": {
-                "type": "string"
+                "type": "string",
+                "faker": "phone.phoneNumber"
               },
               "profileBio": {
                 "type": "string"
@@ -338,10 +394,12 @@
                 "type": "number"
               },
               "paypalEmail": {
-                "type": "string"
+                "type": "string",
+                "faker": "internet.email"
               },
               "shareUrl": {
-                "type": "string"
+                "type": "string",
+                "faker": "internet.url"
               },
               "allowsChat": {
                 "type": "boolean"
@@ -351,11 +409,13 @@
               },
               "createdAt": {
                 "type": "string",
-                "format": "date-time"
+                "format": "date-time",
+                "faker": "date.recent"
               },
               "updatedAt": {
                 "type": "string",
-                "format": "date-time"
+                "format": "date-time",
+                "faker": "date.recent"
               },
               "appUserType": {
                 "type": "string",
@@ -397,58 +457,66 @@
           },
           "createdAt": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "faker": "date.recent"
           },
           "updatedAt": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "faker": "date.recent"
           }
         }
       },
       "creator": {
         "properties": {
           "id": {
-            "type": "string"
+            "type": "string",
+            "faker": "random.uuid"
           },
           "email": {
-            "type": "string"
+            "type": "string",
+            "faker": "internet.email"
           },
           "firstname": {
-            "type": "string"
+            "type": "string",
+            "faker": "name.firstName"
           },
           "lastname": {
-            "type": "string"
+            "type": "string",
+            "faker": "name.lastName"
           },
           "userName": {
             "type": "string"
           },
           "username": {
-            "type": "string"
+            "type": "string",
+            "faker": "internet.userName"
           },
           "profileKey": {
             "type": "string"
           },
           "avatarImageUrl": {
-            "type": "string"
+            "type": "string",
+            "faker": "image.avatar"
           },
           "altAvatarImages": {
-            "type": "object"
+            "type": "object",
+            "properties": {}
           },
           "splashImageUrl": {
-            "type": "string"
+            "type": "string",
+            "faker": "image.avatar"
           },
           "shipToAddress": {
             "properties": {
               "administrativeArea": {
-                "type": "string"
-              },
-              "country": {
                 "type": "string",
-                "description": "Deprecated, use `isoCountryCode` instead."
+                "faker": "address.state"
               },
               "formattedAddressLines": {
                 "type": "string",
-                "description": "Read-only, pretty printed string of the address"
+                "description": "Read-only, pretty printed string of the address",
+                "faker": "address.streetAddress"
               },
               "locality": {
                 "type": "string"
@@ -457,21 +525,25 @@
                 "type": "string"
               },
               "postalCode": {
-                "type": "string"
+                "type": "string",
+                "faker": "address.zipCode"
               },
               "name": {
-                "type": "string"
+                "type": "string",
+                "faker": "commerce.productName"
               },
               "suite": {
                 "type": "string"
               },
               "isoCountryCode": {
-                "type": "string"
+                "type": "string",
+                "faker": "address.countryCode"
               }
             }
           },
           "phoneNumber": {
-            "type": "string"
+            "type": "string",
+            "faker": "phone.phoneNumber"
           },
           "profileBio": {
             "type": "string"
@@ -483,10 +555,12 @@
             "type": "number"
           },
           "paypalEmail": {
-            "type": "string"
+            "type": "string",
+            "faker": "internet.email"
           },
           "shareUrl": {
-            "type": "string"
+            "type": "string",
+            "faker": "internet.url"
           },
           "allowsChat": {
             "type": "boolean"
@@ -496,11 +570,13 @@
           },
           "createdAt": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "faker": "date.recent"
           },
           "updatedAt": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "faker": "date.recent"
           },
           "appUserType": {
             "type": "string",
@@ -519,47 +595,53 @@
       "seller": {
         "properties": {
           "id": {
-            "type": "string"
+            "type": "string",
+            "faker": "random.uuid"
           },
           "email": {
-            "type": "string"
+            "type": "string",
+            "faker": "internet.email"
           },
           "firstname": {
-            "type": "string"
+            "type": "string",
+            "faker": "name.firstName"
           },
           "lastname": {
-            "type": "string"
+            "type": "string",
+            "faker": "name.lastName"
           },
           "userName": {
             "type": "string"
           },
           "username": {
-            "type": "string"
+            "type": "string",
+            "faker": "internet.userName"
           },
           "profileKey": {
             "type": "string"
           },
           "avatarImageUrl": {
-            "type": "string"
+            "type": "string",
+            "faker": "image.avatar"
           },
           "altAvatarImages": {
-            "type": "object"
+            "type": "object",
+            "properties": {}
           },
           "splashImageUrl": {
-            "type": "string"
+            "type": "string",
+            "faker": "image.avatar"
           },
           "shipToAddress": {
             "properties": {
               "administrativeArea": {
-                "type": "string"
-              },
-              "country": {
                 "type": "string",
-                "description": "Deprecated, use `isoCountryCode` instead."
+                "faker": "address.state"
               },
               "formattedAddressLines": {
                 "type": "string",
-                "description": "Read-only, pretty printed string of the address"
+                "description": "Read-only, pretty printed string of the address",
+                "faker": "address.streetAddress"
               },
               "locality": {
                 "type": "string"
@@ -568,21 +650,25 @@
                 "type": "string"
               },
               "postalCode": {
-                "type": "string"
+                "type": "string",
+                "faker": "address.zipCode"
               },
               "name": {
-                "type": "string"
+                "type": "string",
+                "faker": "commerce.productName"
               },
               "suite": {
                 "type": "string"
               },
               "isoCountryCode": {
-                "type": "string"
+                "type": "string",
+                "faker": "address.countryCode"
               }
             }
           },
           "phoneNumber": {
-            "type": "string"
+            "type": "string",
+            "faker": "phone.phoneNumber"
           },
           "profileBio": {
             "type": "string"
@@ -594,10 +680,12 @@
             "type": "number"
           },
           "paypalEmail": {
-            "type": "string"
+            "type": "string",
+            "faker": "internet.email"
           },
           "shareUrl": {
-            "type": "string"
+            "type": "string",
+            "faker": "internet.url"
           },
           "allowsChat": {
             "type": "boolean"
@@ -607,11 +695,13 @@
           },
           "createdAt": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "faker": "date.recent"
           },
           "updatedAt": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "faker": "date.recent"
           },
           "appUserType": {
             "type": "string",

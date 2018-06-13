@@ -43,10 +43,22 @@ const fakerMap = {
   locale: "random.locale",
   "phoneNumber": "phone.phoneNumber",
   website: 'internet.domainName',
-  brands: "company.companyName"
+  brands: "company.companyName",
+  isoCountryCode: "address.countryCode",
+  postalCode: "address.zipCode",
+  administrativeArea: "address.state",
+  formattedAddressLines: "address.streetAddress",
+  price: {
+    "finance.amount": [10, 1000, 2]
+  } 
 }
 
-function addFakerToProp(key : string, prop : any) {
+function addFakerToProp(key : string, prop: any = {}) {
+  const { description } = prop
+  if (description && /^Deprecated/.test(description)) {
+    return
+  }
+
   if (/Id$/.test(key)) {
     prop.faker = "random.number"
   }
@@ -57,6 +69,10 @@ function addFakerToProp(key : string, prop : any) {
 
   if (key === 'gender') {
     prop.enum = ["male", "female"]
+  }
+
+  if (key === 'adminTags') {
+    prop.enum = ["feature", "winter", "summer"]
   }
 
   if (key === 'videoType') {
@@ -81,14 +97,18 @@ function addFakerToProp(key : string, prop : any) {
     prop.faker = "internet.url"
   }
 
+  if (/StoreVersion$/.test(key)) {
+    prop.faker = "random.number"
+  }
+
   if (/LogoUrl$/.test(key) || /ImageUrl$/.test(key) || /PreviewUrl$/.test(key) || /MediaUrl$/.test(key) || /mediaUrl$/.test(key) || /previewUrl$/.test(key) || /VideoUrl$/.test(key)) {
     prop.faker = "image.avatar"
   }
 
-  if (/Amount$/.test(key)) {
+  if (/Amount$/.test(key) || /Price$/.test(key)) {
     prop.faker = {
       "finance.amount": [10, 1000, 2]
-    } // "random.number"
+    } 
   }
 
   if (key === 'roles') {
@@ -117,6 +137,26 @@ function addFakerToProp(key : string, prop : any) {
   const faker = fakerMap[key]
   if (faker) {
     prop.faker = faker
+  }
+  // nested
+  if (prop.type === 'object' || prop.properties) {
+    let props = prop.properties || []
+    const keys = Object.keys(props)
+    const fakedProps = keys.reduce((acc: any, key: string) => {
+      try {
+        const prop = props[key]
+        const fakedProp = addFakerToProp(key, prop)
+        if (fakedProp) {
+          acc[key] = fakedProp
+        }        
+        return acc  
+      } catch (e) {
+        console.log('ERROR', e)
+        return acc
+      }
+    }, {})  
+
+    prop.properties = fakedProps
   }
 
   return prop
@@ -189,7 +229,10 @@ export async function generateOne(path : any, pathKey : string, doc : any) {
     schema.items.required = keys
 
     properties = keys.reduce((acc, key) => {
-      acc[key] = addFakerToProp(key, properties[key])
+      const fakedProp = addFakerToProp(key, properties[key])
+      if (fakedProp) {
+        acc[key] = fakedProp
+      }      
       return acc
     }, {})
   }

@@ -10,7 +10,8 @@
         "type": "string"
       },
       "properties": {
-        "type": "object"
+        "type": "object",
+        "properties": {}
       },
       "createdAt": {
         "type": "string",

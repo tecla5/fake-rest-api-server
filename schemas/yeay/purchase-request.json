@@ -35,7 +35,14 @@
         "faker": "random.number"
       },
       "productYeayScorePrice": {
-        "type": "number"
+        "type": "number",
+        "faker": {
+          "finance.amount": [
+            10,
+            1000,
+            2
+          ]
+        }
       },
       "videoId": {
         "type": "string",
@@ -52,15 +59,13 @@
       "address": {
         "properties": {
           "administrativeArea": {
-            "type": "string"
-          },
-          "country": {
             "type": "string",
-            "description": "Deprecated, use `isoCountryCode` instead."
+            "faker": "address.state"
           },
           "formattedAddressLines": {
             "type": "string",
-            "description": "Read-only, pretty printed string of the address"
+            "description": "Read-only, pretty printed string of the address",
+            "faker": "address.streetAddress"
           },
           "locality": {
             "type": "string"
@@ -69,16 +74,19 @@
             "type": "string"
           },
           "postalCode": {
-            "type": "string"
+            "type": "string",
+            "faker": "address.zipCode"
           },
           "name": {
-            "type": "string"
+            "type": "string",
+            "faker": "commerce.productName"
           },
           "suite": {
             "type": "string"
           },
           "isoCountryCode": {
-            "type": "string"
+            "type": "string",
+            "faker": "address.countryCode"
           }
         }
       }

@@ -16,13 +16,16 @@
         "type": "object",
         "properties": {
           "id": {
-            "type": "string"
+            "type": "string",
+            "faker": "random.uuid"
           },
           "uniqueId": {
-            "type": "string"
+            "type": "string",
+            "faker": "random.number"
           },
           "avatarImageUrl": {
-            "type": "string"
+            "type": "string",
+            "faker": "image.avatar"
           },
           "altAvatarImages": {
             "type": "object",

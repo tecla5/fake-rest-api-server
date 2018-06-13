@@ -114,7 +114,12 @@
         "type": "array",
         "items": {
           "type": "string"
-        }
+        },
+        "enum": [
+          "feature",
+          "winter",
+          "summer"
+        ]
       },
       "yeay": {
         "type": "boolean"
@@ -136,50 +141,59 @@
       "creator": {
         "properties": {
           "id": {
-            "type": "string"
+            "type": "string",
+            "faker": "random.uuid"
           },
           "email": {
-            "type": "string"
+            "type": "string",
+            "faker": "internet.email"
           },
           "firstname": {
-            "type": "string"
+            "type": "string",
+            "faker": "name.firstName"
           },
           "lastname": {
-            "type": "string"
+            "type": "string",
+            "faker": "name.lastName"
           },
           "username": {
-            "type": "string"
+            "type": "string",
+            "faker": "internet.userName"
           },
           "emailVerified": {
             "type": "boolean"
           },
           "avatarImageUrl": {
-            "type": "string"
+            "type": "string",
+            "faker": "image.avatar"
           },
           "splashImageUrl": {
-            "type": "string"
+            "type": "string",
+            "faker": "image.avatar"
           },
           "deviceToken": {
             "type": "string"
           },
           "updatedAt": {
-            "type": "string"
+            "type": "string",
+            "format": "date-time",
+            "faker": "date.recent"
           },
           "createdAt": {
-            "type": "string"
+            "type": "string",
+            "format": "date-time",
+            "faker": "date.recent"
           },
           "address": {
             "properties": {
               "administrativeArea": {
-                "type": "string"
-              },
-              "country": {
                 "type": "string",
-                "description": "Deprecated, use `isoCountryCode` instead."
+                "faker": "address.state"
               },
               "formattedAddressLines": {
                 "type": "string",
-                "description": "Read-only, pretty printed string of the address"
+                "description": "Read-only, pretty printed string of the address",
+                "faker": "address.streetAddress"
               },
               "locality": {
                 "type": "string"
@@ -188,46 +202,63 @@
                 "type": "string"
               },
               "postalCode": {
-                "type": "string"
+                "type": "string",
+                "faker": "address.zipCode"
               },
               "name": {
-                "type": "string"
+                "type": "string",
+                "faker": "commerce.productName"
               },
               "suite": {
                 "type": "string"
               },
               "isoCountryCode": {
-                "type": "string"
+                "type": "string",
+                "faker": "address.countryCode"
               }
             }
           },
           "paypalEmail": {
-            "type": "string"
+            "type": "string",
+            "faker": "internet.email"
           },
           "phoneNumber": {
-            "type": "string"
+            "type": "string",
+            "faker": "phone.phoneNumber"
           },
           "gender": {
-            "type": "string"
+            "type": "string",
+            "enum": [
+              "male",
+              "female"
+            ]
           },
           "birthday": {
             "type": "string",
             "format": "date"
           },
           "taxId": {
-            "type": "string"
+            "type": "string",
+            "faker": "random.number"
           },
           "locale": {
-            "type": "string"
+            "type": "string",
+            "faker": "random.locale"
           },
           "roles": {
             "type": "array",
             "items": {
               "type": "string"
-            }
+            },
+            "enum": [
+              "admin",
+              "guest",
+              "user"
+            ]
           },
           "altAvatarImages": {
-            "type": "object"
+            "type": "object",
+            "properties": {}
           },
           "profileBio": {
             "type": "string"
@@ -236,7 +267,8 @@
             "type": "boolean"
           },
           "currency": {
-            "type": "string"
+            "type": "string",
+            "faker": "finance.currencyCode"
           },
           "paymentDetails": {
             "type": "object",
@@ -245,13 +277,16 @@
                 "type": "object",
                 "properties": {
                   "gatewayCustomerId": {
-                    "type": "string"
+                    "type": "string",
+                    "faker": "random.number"
                   },
                   "gatewayEmail": {
-                    "type": "string"
+                    "type": "string",
+                    "faker": "internet.email"
                   },
                   "gatewayPayload": {
-                    "type": "object"
+                    "type": "object",
+                    "properties": {}
                   },
                   "gatewayCommerceType": {
                     "type": "string"
@@ -275,7 +310,12 @@
           "yeayScore": {
             "type": "integer",
             "minimum": 0,
-            "description": "Only available if user is own user or when in admin context"
+            "description": "Only available if user is own user or when in admin context",
+            "faker": {
+              "random.number": [
+                1000
+              ]
+            }
           },
           "isScoreFrozen": {
             "type": "boolean",
@@ -286,50 +326,59 @@
       "user": {
         "properties": {
           "id": {
-            "type": "string"
+            "type": "string",
+            "faker": "random.uuid"
           },
           "email": {
-            "type": "string"
+            "type": "string",
+            "faker": "internet.email"
           },
           "firstname": {
-            "type": "string"
+            "type": "string",
+            "faker": "name.firstName"
           },
           "lastname": {
-            "type": "string"
+            "type": "string",
+            "faker": "name.lastName"
           },
           "username": {
-            "type": "string"
+            "type": "string",
+            "faker": "internet.userName"
           },
           "emailVerified": {
             "type": "boolean"
           },
           "avatarImageUrl": {
-            "type": "string"
+            "type": "string",
+            "faker": "image.avatar"
           },
           "splashImageUrl": {
-            "type": "string"
+            "type": "string",
+            "faker": "image.avatar"
           },
           "deviceToken": {
             "type": "string"
           },
           "updatedAt": {
-            "type": "string"
+            "type": "string",
+            "format": "date-time",
+            "faker": "date.recent"
           },
           "createdAt": {
-            "type": "string"
+            "type": "string",
+            "format": "date-time",
+            "faker": "date.recent"
           },
           "address": {
             "properties": {
               "administrativeArea": {
-                "type": "string"
-              },
-              "country": {
                 "type": "string",
-                "description": "Deprecated, use `isoCountryCode` instead."
+                "faker": "address.state"
               },
               "formattedAddressLines": {
                 "type": "string",
-                "description": "Read-only, pretty printed string of the address"
+                "description": "Read-only, pretty printed string of the address",
+                "faker": "address.streetAddress"
               },
               "locality": {
                 "type": "string"
@@ -338,46 +387,63 @@
                 "type": "string"
               },
               "postalCode": {
-                "type": "string"
+                "type": "string",
+                "faker": "address.zipCode"
               },
               "name": {
-                "type": "string"
+                "type": "string",
+                "faker": "commerce.productName"
               },
               "suite": {
                 "type": "string"
               },
               "isoCountryCode": {
-                "type": "string"
+                "type": "string",
+                "faker": "address.countryCode"
               }
             }
           },
           "paypalEmail": {
-            "type": "string"
+            "type": "string",
+            "faker": "internet.email"
           },
           "phoneNumber": {
-            "type": "string"
+            "type": "string",
+            "faker": "phone.phoneNumber"
           },
           "gender": {
-            "type": "string"
+            "type": "string",
+            "enum": [
+              "male",
+              "female"
+            ]
           },
           "birthday": {
             "type": "string",
             "format": "date"
           },
           "taxId": {
-            "type": "string"
+            "type": "string",
+            "faker": "random.number"
           },
           "locale": {
-            "type": "string"
+            "type": "string",
+            "faker": "random.locale"
           },
           "roles": {
             "type": "array",
             "items": {
               "type": "string"
-            }
+            },
+            "enum": [
+              "admin",
+              "guest",
+              "user"
+            ]
           },
           "altAvatarImages": {
-            "type": "object"
+            "type": "object",
+            "properties": {}
           },
           "profileBio": {
             "type": "string"
@@ -386,7 +452,8 @@
             "type": "boolean"
           },
           "currency": {
-            "type": "string"
+            "type": "string",
+            "faker": "finance.currencyCode"
           },
           "paymentDetails": {
             "type": "object",
@@ -395,13 +462,16 @@
                 "type": "object",
                 "properties": {
                   "gatewayCustomerId": {
-                    "type": "string"
+                    "type": "string",
+                    "faker": "random.number"
                   },
                   "gatewayEmail": {
-                    "type": "string"
+                    "type": "string",
+                    "faker": "internet.email"
                   },
                   "gatewayPayload": {
-                    "type": "object"
+                    "type": "object",
+                    "properties": {}
                   },
                   "gatewayCommerceType": {
                     "type": "string"
@@ -425,7 +495,12 @@
           "yeayScore": {
             "type": "integer",
             "minimum": 0,
-            "description": "Only available if user is own user or when in admin context"
+            "description": "Only available if user is own user or when in admin context",
+            "faker": {
+              "random.number": [
+                1000
+              ]
+            }
           },
           "isScoreFrozen": {
             "type": "boolean",

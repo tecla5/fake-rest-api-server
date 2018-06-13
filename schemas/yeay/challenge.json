@@ -870,10 +870,12 @@
             "type": "object",
             "properties": {
               "name": {
-                "type": "string"
+                "type": "string",
+                "faker": "commerce.productName"
               },
               "description": {
-                "type": "string"
+                "type": "string",
+                "faker": "lorem.words"
               },
               "orderNote": {
                 "type": "string"
@@ -890,10 +892,12 @@
             "type": "object",
             "properties": {
               "name": {
-                "type": "string"
+                "type": "string",
+                "faker": "commerce.productName"
               },
               "description": {
-                "type": "string"
+                "type": "string",
+                "faker": "lorem.words"
               },
               "orderNote": {
                 "type": "string"
@@ -910,10 +914,12 @@
             "type": "object",
             "properties": {
               "name": {
-                "type": "string"
+                "type": "string",
+                "faker": "commerce.productName"
               },
               "description": {
-                "type": "string"
+                "type": "string",
+                "faker": "lorem.words"
               },
               "orderNote": {
                 "type": "string"
@@ -930,10 +936,12 @@
             "type": "object",
             "properties": {
               "name": {
-                "type": "string"
+                "type": "string",
+                "faker": "commerce.productName"
               },
               "description": {
-                "type": "string"
+                "type": "string",
+                "faker": "lorem.words"
               },
               "orderNote": {
                 "type": "string"
@@ -950,10 +958,12 @@
             "type": "object",
             "properties": {
               "name": {
-                "type": "string"
+                "type": "string",
+                "faker": "commerce.productName"
               },
               "description": {
-                "type": "string"
+                "type": "string",
+                "faker": "lorem.words"
               },
               "orderNote": {
                 "type": "string"
@@ -970,10 +980,12 @@
             "type": "object",
             "properties": {
               "name": {
-                "type": "string"
+                "type": "string",
+                "faker": "commerce.productName"
               },
               "description": {
-                "type": "string"
+                "type": "string",
+                "faker": "lorem.words"
               },
               "orderNote": {
                 "type": "string"
@@ -990,10 +1002,12 @@
             "type": "object",
             "properties": {
               "name": {
-                "type": "string"
+                "type": "string",
+                "faker": "commerce.productName"
               },
               "description": {
-                "type": "string"
+                "type": "string",
+                "faker": "lorem.words"
               },
               "orderNote": {
                 "type": "string"
@@ -1010,10 +1024,12 @@
             "type": "object",
             "properties": {
               "name": {
-                "type": "string"
+                "type": "string",
+                "faker": "commerce.productName"
               },
               "description": {
-                "type": "string"
+                "type": "string",
+                "faker": "lorem.words"
               },
               "orderNote": {
                 "type": "string"
@@ -1030,10 +1046,12 @@
             "type": "object",
             "properties": {
               "name": {
-                "type": "string"
+                "type": "string",
+                "faker": "commerce.productName"
               },
               "description": {
-                "type": "string"
+                "type": "string",
+                "faker": "lorem.words"
               },
               "orderNote": {
                 "type": "string"
@@ -1050,10 +1068,12 @@
             "type": "object",
             "properties": {
               "name": {
-                "type": "string"
+                "type": "string",
+                "faker": "commerce.productName"
               },
               "description": {
-                "type": "string"
+                "type": "string",
+                "faker": "lorem.words"
               },
               "orderNote": {
                 "type": "string"
@@ -1070,10 +1090,12 @@
             "type": "object",
             "properties": {
               "name": {
-                "type": "string"
+                "type": "string",
+                "faker": "commerce.productName"
               },
               "description": {
-                "type": "string"
+                "type": "string",
+                "faker": "lorem.words"
               },
               "orderNote": {
                 "type": "string"
@@ -1090,10 +1112,12 @@
             "type": "object",
             "properties": {
               "name": {
-                "type": "string"
+                "type": "string",
+                "faker": "commerce.productName"
               },
               "description": {
-                "type": "string"
+                "type": "string",
+                "faker": "lorem.words"
               },
               "orderNote": {
                 "type": "string"
@@ -1110,10 +1134,12 @@
             "type": "object",
             "properties": {
               "name": {
-                "type": "string"
+                "type": "string",
+                "faker": "commerce.productName"
               },
               "description": {
-                "type": "string"
+                "type": "string",
+                "faker": "lorem.words"
               },
               "orderNote": {
                 "type": "string"
@@ -1130,10 +1156,12 @@
             "type": "object",
             "properties": {
               "name": {
-                "type": "string"
+                "type": "string",
+                "faker": "commerce.productName"
               },
               "description": {
-                "type": "string"
+                "type": "string",
+                "faker": "lorem.words"
               },
               "orderNote": {
                 "type": "string"
@@ -1150,10 +1178,12 @@
             "type": "object",
             "properties": {
               "name": {
-                "type": "string"
+                "type": "string",
+                "faker": "commerce.productName"
               },
               "description": {
-                "type": "string"
+                "type": "string",
+                "faker": "lorem.words"
               },
               "orderNote": {
                 "type": "string"
@@ -1164,16 +1194,19 @@
               "learnMore": {
                 "type": "string"
               }
-            }
+            },
+            "faker": "random.uuid"
           },
           "th": {
             "type": "object",
             "properties": {
               "name": {
-                "type": "string"
+                "type": "string",
+                "faker": "commerce.productName"
               },
               "description": {
-                "type": "string"
+                "type": "string",
+                "faker": "lorem.words"
               },
               "orderNote": {
                 "type": "string"
@@ -1190,10 +1223,12 @@
             "type": "object",
             "properties": {
               "name": {
-                "type": "string"
+                "type": "string",
+                "faker": "commerce.productName"
               },
               "description": {
-                "type": "string"
+                "type": "string",
+                "faker": "lorem.words"
               },
               "orderNote": {
                 "type": "string"
@@ -1210,10 +1245,12 @@
             "type": "object",
             "properties": {
               "name": {
-                "type": "string"
+                "type": "string",
+                "faker": "commerce.productName"
               },
               "description": {
-                "type": "string"
+                "type": "string",
+                "faker": "lorem.words"
               },
               "orderNote": {
                 "type": "string"
@@ -1230,10 +1267,12 @@
             "type": "object",
             "properties": {
               "name": {
-                "type": "string"
+                "type": "string",
+                "faker": "commerce.productName"
               },
               "description": {
-                "type": "string"
+                "type": "string",
+                "faker": "lorem.words"
               },
               "orderNote": {
                 "type": "string"
@@ -1250,10 +1289,12 @@
             "type": "object",
             "properties": {
               "name": {
-                "type": "string"
+                "type": "string",
+                "faker": "commerce.productName"
               },
               "description": {
-                "type": "string"
+                "type": "string",
+                "faker": "lorem.words"
               },
               "orderNote": {
                 "type": "string"
@@ -1270,10 +1311,12 @@
             "type": "object",
             "properties": {
               "name": {
-                "type": "string"
+                "type": "string",
+                "faker": "commerce.productName"
               },
               "description": {
-                "type": "string"
+                "type": "string",
+                "faker": "lorem.words"
               },
               "orderNote": {
                 "type": "string"

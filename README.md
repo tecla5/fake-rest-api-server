@@ -12,10 +12,6 @@ Install dependencies
 npm i
 ```
 
-## Status
-
-WIP, see [TODO](./TODO.md) for list of properties that need better schema generation in `src/generate/schemas/one.ts`
-
 ## Usage
 
 Usage instructions
@@ -197,6 +193,10 @@ jsf.resolve(schema).then(() => {
   // ...
 })
 ```
+
+## Status
+
+See [TODO](./TODO.md) for a list of properties that need better schema generation (in `src/generate/schemas/one.ts`). Please use the `TODO` file to add properties you think could have better data/schema generation.
 
 ## License
 

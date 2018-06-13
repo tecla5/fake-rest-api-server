@@ -50,7 +50,8 @@
         "type": "object",
         "items": {
           "type": "string"
-        }
+        },
+        "properties": {}
       },
       "price": {
         "type": "object",
@@ -59,8 +60,16 @@
             "type": "number"
           },
           "currency": {
-            "type": "string"
+            "type": "string",
+            "faker": "finance.currencyCode"
           }
+        },
+        "faker": {
+          "finance.amount": [
+            10,
+            1000,
+            2
+          ]
         }
       }
     },
