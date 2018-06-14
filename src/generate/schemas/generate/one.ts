@@ -26,6 +26,7 @@ function wrapAsArray(schema : any) {
 const fakerMap = {
   id: "random.uuid",
   imageUrl: 'image.imageUrl',
+  link: "internet.url",
   name: 'commerce.productName',
   description: 'lorem.words',
   network: 'internet.domainName',

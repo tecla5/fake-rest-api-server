@@ -1,7 +1,6 @@
 import {generateOne} from './one'
 import {log, loadDoc, schemaPath} from '../util'
 import {writeRoutes} from '../../routes'
-const mergeJSON = require("merge-json")
 
 export async function generate(opts : any = {}) {
   try {
@@ -13,23 +12,26 @@ export async function generate(opts : any = {}) {
       .map(async(name : string) => {
         return await loadDoc(name, schemaPath)
       })
-    const docs = await Promise.all(docPromises)
-    const $doc = mergeJSON.merge(...docs)
-    const {paths} = $doc.expanded
+    const docs: any[] = await Promise.all(docPromises)
 
-    if (opts.routes) {
-      writeRoutes($doc.original)
+    for (let $doc of docs) {
+      const {paths} = $doc.expanded
+
+      if (opts.routes) {
+        writeRoutes($doc.original)
+      }
+  
+      if (opts.schemas) {
+        const pathKeys = Object.keys(paths)
+        const promises = pathKeys.map(async(pathKey : string) => {
+          const pathObj = paths[pathKey]
+          return await generateOne(pathObj, pathKey, $doc)
+        })
+  
+        return Promise.all(promises)
+      }  
     }
 
-    if (opts.schemas) {
-      const pathKeys = Object.keys(paths)
-      const promises = pathKeys.map(async(pathKey : string) => {
-        const pathObj = paths[pathKey]
-        return await generateOne(pathObj, pathKey, $doc)
-      })
-
-      return Promise.all(promises)
-    }
   } catch (e) {
     log('ERROR', e);
     return e

@@ -78,10 +78,17 @@ export function writeRoutes(doc : any) {
   const translatedPathObjs = pathKeys.map((pathKey) => {
     return translatePath(pathKey, paths[pathKey])
   })
+
+  const { basePath } = doc  
+
   const routes : any = translatedPathObjs.reduce((acc : any, pathObj : any) => {
     if (!pathObj) 
       return acc
-    acc[pathObj.path] = pathObj.schemaPath || pathObj.path
+
+    // add basePath such as /v1 or /v2 
+    const apiPath = [basePath, pathObj.path].join('')
+
+    acc[apiPath] = pathObj.schemaPath || pathObj.path
     return acc
   }, {})
 

@@ -17,7 +17,8 @@
         "faker": "random.number"
       },
       "link": {
-        "type": "string"
+        "type": "string",
+        "faker": "internet.url"
       },
       "networkProductId": {
         "type": "string",

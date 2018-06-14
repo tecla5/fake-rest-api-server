@@ -4,8 +4,6 @@ export {writeFile, rootPath, serverPath}
 from '../util'
 const yaml = require('js-yaml');
 const $path = require('path');
-// const promisify = require("util-promisify"); const deref =
-// require('json-schema-deref'); const derefAsync = promisify(deref)
 
 var derefLocal = require('json-schema-deref-local')
 

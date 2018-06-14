@@ -3,7 +3,7 @@
   "version": "1.1.0",
   "main": "index.js",
   "repository": "https://github.com/JonJam/fake-rest-api.git",
-  "author": "Jonathan Harrison",
+  "author": "Kristian Mandrup",
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^10.3.1",
@@ -26,14 +26,10 @@
   },
   "dependencies": {
     "fs-readdir-promise": "^1.0.1",
-    "js-promisify": "^1.3.1",
     "js-yaml": "^3.12.0",
     "json-schema-deref-local": "^0.2.1",
     "lodash": "^4.17.10",
     "lodash-inflection": "^1.5.0",
-    "merge-json": "0.1.0-b.3",
-    "promisify-node": "^0.5.0",
-    "template-helpers": "^0.6.7",
-    "util-promisify": "^2.1.0"
+    "template-helpers": "^0.6.7"
   }
 }

@@ -16,17 +16,14 @@
     "properties": {
       "id": {
         "type": "string",
-        "example": 123,
         "faker": "random.uuid"
       },
       "userId": {
         "type": "string",
-        "example": 456,
         "faker": "random.number"
       },
       "userYeayScore": {
         "type": "number",
-        "example": 120000,
         "faker": {
           "random.number": [
             1000
@@ -35,12 +32,10 @@
       },
       "productId": {
         "type": "string",
-        "example": "123adb2",
         "faker": "random.number"
       },
       "productYeayScorePrice": {
         "type": "number",
-        "example": 100000,
         "faker": {
           "finance.amount": [
             10,
@@ -51,23 +46,19 @@
       },
       "videoId": {
         "type": "string",
-        "example": "v12314",
         "faker": "random.number"
       },
       "email": {
         "type": "string",
-        "example": "hi@example.com",
         "faker": "internet.email"
       },
       "phoneNumber": {
         "type": "string",
-        "example": "001231234678",
         "faker": "phone.phoneNumber"
       },
       "address": {
         "properties": {
           "administrativeArea": {
-            "description": "e.g. State",
             "type": "string",
             "faker": "address.state"
           },
@@ -77,29 +68,23 @@
             "faker": "address.streetAddress"
           },
           "locality": {
-            "description": "City",
-            "type": "string",
-            "example": "Berlin"
+            "type": "string"
           },
           "thoroughfare": {
-            "description": "Street",
             "type": "string"
           },
           "postalCode": {
             "type": "string",
-            "example": 12345,
             "faker": "address.zipCode"
           },
           "name": {
             "type": "string",
-            "example": "Home",
             "faker": "commerce.productName"
           },
           "suite": {
             "type": "string"
           },
           "isoCountryCode": {
-            "description": "2-letter ISO country code, e.g. US, FR, DE",
             "type": "string",
             "faker": "address.countryCode"
           }
