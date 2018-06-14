@@ -194,6 +194,23 @@ jsf.resolve(schema).then(() => {
 })
 ```
 
+## Video data
+
+The following hard-coded url data is used for the `video.json` and `videos.json` schemas
+
+```json
+{
+  "mediaUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/video-DvyCq4rGZu-568.m3u8",
+  "sourceMediaUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/74703ca4-6cf3-478e-9195-0bf8c74bd649.mp4",
+  "altMediaUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/video-DvyCq4rGZu-568-dash.mpd",
+  "posterImageUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/products/tFlhXqdVBd/2c54f5b7-0fe3-46fc-b9ad-02a56d154f0b.jpg",
+  "socialVideoUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/user-portrait-1528968430066.mp4",
+  "previewUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/user-preview-1528968423559.gif",
+  "altPreviewUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/fast-1528968423708.mp4",
+  "sharingImageUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/user-shareimage-1528968495470.jpg",
+}
+```
+
 ## Status
 
 See [TODO](./TODO.md) for a list of properties that need better schema generation (in `src/generate/schemas/one.ts`). Please use the `TODO` file to add properties you think could have better data/schema generation.

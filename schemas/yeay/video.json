@@ -51,36 +51,50 @@
       },
       "mediaUrl": {
         "type": "string",
-        "faker": "image.avatar"
+        "enum": [
+          "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/video-DvyCq4rGZu-568.m3u8"
+        ]
       },
       "sourceMediaUrl": {
         "type": "string",
-        "faker": "image.avatar"
+        "enum": [
+          "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/74703ca4-6cf3-478e-9195-0bf8c74bd649.mp4"
+        ]
       },
       "altMediaUrl": {
         "type": "string",
         "description": "A new MPEG DASH url",
-        "faker": "image.avatar"
+        "enum": [
+          "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/video-DvyCq4rGZu-568-dash.mpd"
+        ]
       },
       "sharingImageUrl": {
         "type": "string",
         "description": "A url for shareable image generated on video upload",
-        "faker": "image.avatar"
+        "enum": [
+          "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/user-shareimage-1528968495470.jpg"
+        ]
       },
       "posterImageUrl": {
         "type": "string",
         "description": "The image that is used as the poster image",
-        "faker": "image.avatar"
+        "enum": [
+          "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/products/tFlhXqdVBd/2c54f5b7-0fe3-46fc-b9ad-02a56d154f0b.jpg"
+        ]
       },
       "previewUrl": {
         "type": "string",
         "description": "A url for a gif formatted preview of the video",
-        "faker": "image.avatar"
+        "enum": [
+          "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/user-preview-1528968423559.gif"
+        ]
       },
       "altPreviewUrl": {
         "type": "string",
         "description": "A url for an mp4 formatted preview video. Not gif",
-        "faker": "image.avatar"
+        "enum": [
+          "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/fast-1528968423708.mp4"
+        ]
       },
       "indexedAt": {
         "type": "string",
@@ -103,7 +117,9 @@
       },
       "socialVideoUrl": {
         "type": "string",
-        "faker": "image.avatar"
+        "enum": [
+          "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/user-portrait-1528968430066.mp4"
+        ]
       },
       "channels": {
         "type": "array",
