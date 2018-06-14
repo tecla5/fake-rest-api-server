@@ -20,8 +20,8 @@
     "schemas:index": "ts-node schemas/generate-index.ts",
     "db:generate": "ts-node src/generate/data/run.ts",
     "prepare": "npm run schemas:from-swagger && npm run schemas:index && npm run routes:map && npm run db:generate",
-    "start:db": "json-server --watch src/db.json --port 3000",
-    "start:routes": "json-server --watch src/db.json --routes routes.json --port 3000",
+    "start:db": "json-server --watch server/db.json --port 3000",
+    "start:routes": "json-server --watch server/db.json --routes server/routes.json --port 3000",
     "start": "npm run prepare && npm run start:routes"
   },
   "dependencies": {
