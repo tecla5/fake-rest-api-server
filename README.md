@@ -51,7 +51,10 @@ Generate JSON schema(s) from Swagger API yaml file in `schemas` folder
 
 ```bash
 npm run schemas:from-swagger
+# ...
 ```
+
+Note: You can add any Swagger 2.x compatible `.yaml` or `.yml` files to the `/swagger` folder and each file will be used to generate schemas.
 
 The schemas generated should have the following form:
 
@@ -81,22 +84,22 @@ The script will write a `schemas/index.ts` file which can be referenced from the
 
 ```js
 export const schemas = {
-  affiliateProduct: require('affiliate-product.json'),
-  appSetting: require('app-setting.json'),
-  appStatus: require('app-status.json'),
-  autocompleteProductTag: require('autocomplete-product-tag.json'),
-  autocompleteUniqueId: require('autocomplete-unique-id.json'),
-  catalogChallengeListItem: require('catalog-challenge-list-item.json'),
-  catalogChallenges: require('catalog-challenges.json'),
-  catalogSeller: require('catalog-seller.json'),
-  catalogUserSearchResult: require('catalog-user-search-result.json'),
-  catalogVideoSearchResult: require('catalog-video-search-result.json'),
-  catalogVideos: require('catalog-videos.json'),
-  challengeTranslationPayload: require('challenge-translation-payload.json'),
-  challengeTranslations: require('challenge-translations.json'),
-  challenge: require('challenge.json'),
+  affiliateProduct: require("affiliate-product.json"),
+  appSetting: require("app-setting.json"),
+  appStatus: require("app-status.json"),
+  autocompleteProductTag: require("autocomplete-product-tag.json"),
+  autocompleteUniqueId: require("autocomplete-unique-id.json"),
+  catalogChallengeListItem: require("catalog-challenge-list-item.json"),
+  catalogChallenges: require("catalog-challenges.json"),
+  catalogSeller: require("catalog-seller.json"),
+  catalogUserSearchResult: require("catalog-user-search-result.json"),
+  catalogVideoSearchResult: require("catalog-video-search-result.json"),
+  catalogVideos: require("catalog-videos.json"),
+  challengeTranslationPayload: require("challenge-translation-payload.json"),
+  challengeTranslations: require("challenge-translations.json"),
+  challenge: require("challenge.json")
   // ...
-}
+};
 ```
 
 ## JSON Database
@@ -126,7 +129,7 @@ Note: schema name must be pluralized, either via `camelize` or `dasherize`
       "createdAt": "Mon Jun 11 2018 21:59:31 GMT+0200 (CEST)",
       "globalProductIds": {},
       "price": {}
-    },
+    }
   ]
 }
 ```
@@ -144,7 +147,7 @@ Routes with params such as `'/affiliate-products/{productId}'` will be translate
 ```json
 {
   "/affiliate-products": "/affiliateProducts",
-  "/affiliate-products/:productId": "/affiliateProducts/:productId",
+  "/affiliate-products/:productId": "/affiliateProducts/:productId"
 }
 ```
 
@@ -191,8 +194,12 @@ We could perhaps let the JSF resolve the schemas when generating the DB
 ```js
 jsf.resolve(schema).then(() => {
   // ...
-})
+});
 ```
+
+### Support Swagger/Open API v3
+
+We should add support for Open API 3.x
 
 ## Video data
 
@@ -200,14 +207,22 @@ The following hard-coded url data is used for the `video.json` and `videos.json`
 
 ```json
 {
-  "mediaUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/video-DvyCq4rGZu-568.m3u8",
-  "sourceMediaUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/74703ca4-6cf3-478e-9195-0bf8c74bd649.mp4",
-  "altMediaUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/video-DvyCq4rGZu-568-dash.mpd",
-  "posterImageUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/products/tFlhXqdVBd/2c54f5b7-0fe3-46fc-b9ad-02a56d154f0b.jpg",
-  "socialVideoUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/user-portrait-1528968430066.mp4",
-  "previewUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/user-preview-1528968423559.gif",
-  "altPreviewUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/fast-1528968423708.mp4",
-  "sharingImageUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/user-shareimage-1528968495470.jpg",
+  "mediaUrl":
+    "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/video-DvyCq4rGZu-568.m3u8",
+  "sourceMediaUrl":
+    "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/74703ca4-6cf3-478e-9195-0bf8c74bd649.mp4",
+  "altMediaUrl":
+    "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/video-DvyCq4rGZu-568-dash.mpd",
+  "posterImageUrl":
+    "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/products/tFlhXqdVBd/2c54f5b7-0fe3-46fc-b9ad-02a56d154f0b.jpg",
+  "socialVideoUrl":
+    "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/user-portrait-1528968430066.mp4",
+  "previewUrl":
+    "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/user-preview-1528968423559.gif",
+  "altPreviewUrl":
+    "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/fast-1528968423708.mp4",
+  "sharingImageUrl":
+    "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/user-shareimage-1528968495470.jpg"
 }
 ```
 

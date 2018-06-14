@@ -21,8 +21,12 @@ async function loadFullDoc(doc : any, opts = {}) {
   return await derefLocal(doc, opts)
 }
 
+const yamlExtExpr = /\.ya?ml$/
+
 export async function loadDoc(schemaName : string, schemaPath : string) {
-  const fileName = `${schemaName}.yaml`
+  const fileName = yamlExtExpr.test(schemaName)
+    ? schemaName
+    : `${schemaName}.yaml`
   const schemaFilePath = $path.join(schemaPath, fileName)
   const src = readFile(schemaFilePath)
   const original = yaml.safeLoad(src);
@@ -39,7 +43,8 @@ export async function loadDoc(schemaName : string, schemaPath : string) {
   }
 }
 
-export const schemaPath = $path.join(rootPath, 'swagger')
+// TODO: rename to swaggerPath
+export const swaggerPath = $path.join(rootPath, 'swagger')
 export const schemaRootPath = $path.join(rootPath, 'schemas')
 
 export function toJson(obj : any) {
