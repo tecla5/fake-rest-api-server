@@ -136,18 +136,22 @@ Note: schema name must be pluralized, either via `camelize` or `dasherize`
 
 ## Routes
 
-Generate a `routes.json` mapping file with custom routes, based on the Swagger API entries under `paths:`
+Generate a `routes.json` mapping file with custom routes, based on the Swagger API `basePath:` entry concatenated with each path (key) entry under `paths:`
 
 ```bash
 npm run routes:map
 ```
 
-Routes with params such as `'/affiliate-products/{productId}'` will be translated to the form `:<name>` such as `/affiliate-products/:productId`
+Routes with params such as `'/v1/affiliate-products/{productId}'` will be translated to the form `:<name>` such as `/v1/affiliate-products/:productId`
 
-```json
+```js
 {
-  "/affiliate-products": "/affiliateProducts",
-  "/affiliate-products/:productId": "/affiliateProducts/:productId"
+  "/v1/affiliate-products": "/affiliateProducts",
+  "/v1/affiliate-products/:productId": "/affiliateProducts/:productId"
+  // ...
+  "/v2/purchase-requests": "/purchaseRequests",
+  "/v2/videos": "/paginatedVideoLists",
+  "/v2/videos/:videoId": "/videos/:videoId"
 }
 ```
 

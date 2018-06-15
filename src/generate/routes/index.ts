@@ -8,6 +8,7 @@ import {
 } from '../schemas/util'
 const $path = require('path');
 const _ = require('lodash');
+const mergeJSON = require('merge-json');
 _.mixin(require("lodash-inflection"))
 
 function resolveSchemaName(schemaRef : string) {
@@ -45,7 +46,7 @@ function schemaFromPath(path : any) : any {
     }
 }
 
-export function writeRoutes(doc : any) {
+export function addRoutes(doc : any, routeDoc : any) {
   const {paths} = doc
   const pathKeys = Object.keys(paths)
 
@@ -79,20 +80,25 @@ export function writeRoutes(doc : any) {
     return translatePath(pathKey, paths[pathKey])
   })
 
-  const { basePath } = doc  
+  const {basePath} = doc
 
   const routes : any = translatedPathObjs.reduce((acc : any, pathObj : any) => {
     if (!pathObj) 
       return acc
 
-    // add basePath such as /v1 or /v2 
+      // add basePath such as /v1 or /v2
     const apiPath = [basePath, pathObj.path].join('')
 
     acc[apiPath] = pathObj.schemaPath || pathObj.path
     return acc
   }, {})
 
-  const routesJson = toJson(routes)
+  routeDoc = mergeJSON.merge(routeDoc, routes)
+  return routeDoc
+}
+
+export function writeRoutes(doc : any) {
+  const routesJson = toJson(doc)
   log('routes', routesJson)
 
   const routesPath = $path.join(serverPath, 'routes.json')

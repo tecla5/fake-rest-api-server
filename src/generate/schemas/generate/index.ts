@@ -1,6 +1,6 @@
 import {generateOne} from './one'
 import {log, loadDoc, swaggerPath} from '../util'
-import {writeRoutes} from '../../routes'
+import {addRoutes, writeRoutes} from '../../routes'
 const readdir = require('fs-readdir-promise')
 
 const yamlExtExpr = /\.ya?ml$/
@@ -25,11 +25,13 @@ export async function generate(opts : any = {}) {
       })
     const docs : any[] = await Promise.all(docPromises)
 
+    let routesDoc = {}
+
     for (let $doc of docs) {
       const {paths} = $doc.expanded
 
       if (opts.routes) {
-        writeRoutes($doc.original)
+        routesDoc = addRoutes($doc.original, routesDoc)
       }
 
       if (opts.schemas) {
@@ -41,6 +43,10 @@ export async function generate(opts : any = {}) {
 
         return Promise.all(promises)
       }
+    }
+
+    if (opts.routes) {
+      writeRoutes(routesDoc)
     }
 
   } catch (e) {
