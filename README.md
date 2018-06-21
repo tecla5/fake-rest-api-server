@@ -66,6 +66,27 @@ $ yarn build
 
 `$ graph:generate` will generated a new `swagger-graph.gv` file in `/server/viz` that is rendered by the web server.
 
+The GraphViz output currently looks something like this:
+
+```txt
+digraph {
+/affiliate-products -> AffiliateProductList [ bold ]
+AffiliateProductList -> *PaginatedList [ filled ]
+/affiliate-products/{productId} -> AffiliateProduct [ bold ]
+/affiliate-products/{productId}/image -> AffiliateProduct [ bold ]
+/auth/signup -> Auth [ bold ]
+/auth -> Auth [ bold ]
+/passwordReset -> Auth [ bold ]
+/fbAuth -> fbAuth [ bold ]
+/autocomplete/uniqueId -> autocompleteUniqueId [ bold ]
+/autocomplete/productTag -> autocompleteProductTag [ bold ]
+...
+CatalogChallengeListItem -> *Product (associatedProducts) [ filled ]
+Challenge -> *Product (associatedProducts) [ filled ]
+```
+
+Edit the `toString()` method of the `Graph` class in `graph.ts` to change the GraphViz rendering.
+
 ### Generate schemas
 
 Generate JSON schema(s) from Swagger API yaml file in `schemas` folder
