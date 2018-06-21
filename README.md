@@ -87,6 +87,10 @@ Challenge -> *Product (associatedProducts) [ filled ]
 
 Edit the `toString()` method of the `Graph` class in `graph.ts` to change the GraphViz rendering.
 
+### UML diagrams
+
+Use [pikturr](https://github.com/nrekretep/pikturr#pikturr) to generate an UML diagram from a Swagger API spec
+
 ### Generate schemas
 
 Generate JSON schema(s) from Swagger API yaml file in `schemas` folder
