@@ -1,258 +1,340 @@
 {
   "affiliateProducts": [
     {
-      "id": "6e703fab-4765-4bff-9071-c5195c32c5ef",
-      "network": "marjorie.name",
-      "advertisingId": "60668",
-      "link": "https://evalyn.biz",
-      "networkProductId": "62245",
-      "name": "Sleek Rubber Salad",
-      "description": "et nulla quam",
+      "id": "75872502-565b-4863-8d63-da0607e6fd96",
+      "network": "guiseppe.net",
+      "advertisingId": "97906",
+      "link": "https://armani.biz",
+      "networkProductId": "92814",
+      "name": "Gorgeous Fresh Table",
+      "description": "cumque aut corrupti",
+      "isInStock": true,
+      "imageUrl": "http://lorempixel.com/640/480",
+      "isActive": true,
+      "createdAt": "Wed Jun 20 2018 15:02:43 GMT+0200 (Central European Summer Time)",
+      "globalProductIds": {},
+      "price": "918.08"
+    },
+    {
+      "id": "09190a6a-09da-4e39-a3ee-ae5c8f641a87",
+      "network": "amalia.org",
+      "advertisingId": "43683",
+      "link": "https://velva.com",
+      "networkProductId": "73111",
+      "name": "Small Frozen Pizza",
+      "description": "enim ipsa quia",
       "isInStock": false,
       "imageUrl": "http://lorempixel.com/640/480",
       "isActive": true,
-      "createdAt": "Wed Jun 20 2018 20:52:34 GMT+0200 (Central European Summer Time)",
+      "createdAt": "Wed Jun 20 2018 15:08:12 GMT+0200 (Central European Summer Time)",
       "globalProductIds": {},
-      "price": "767.73"
+      "price": "31.35"
     },
     {
-      "id": "96812c29-29d5-46cb-8014-fe80b9725116",
-      "network": "conner.com",
-      "advertisingId": "6743",
-      "link": "https://wilford.biz",
-      "networkProductId": "99241",
-      "name": "Generic Rubber Hat",
-      "description": "aut tempora sit",
-      "isInStock": true,
-      "imageUrl": "http://lorempixel.com/640/480",
-      "isActive": false,
-      "createdAt": "Wed Jun 20 2018 11:23:08 GMT+0200 (Central European Summer Time)",
-      "globalProductIds": {},
-      "price": "415.50"
-    },
-    {
-      "id": "1d8c07ba-ee3d-4257-9e8e-3cb3a721e5f1",
-      "network": "sherman.org",
-      "advertisingId": "14875",
-      "link": "http://mozell.biz",
-      "networkProductId": "29542",
-      "name": "Handmade Fresh Cheese",
-      "description": "nesciunt magni esse",
-      "isInStock": true,
-      "imageUrl": "http://lorempixel.com/640/480",
-      "isActive": false,
-      "createdAt": "Thu Jun 21 2018 07:11:08 GMT+0200 (Central European Summer Time)",
-      "globalProductIds": {},
-      "price": "442.45"
-    },
-    {
-      "id": "2aa91aef-eb13-4824-aadd-5d2a0e583e9a",
-      "network": "amelie.org",
-      "advertisingId": "21451",
-      "link": "http://stephen.biz",
-      "networkProductId": "59609",
-      "name": "Rustic Granite Bacon",
-      "description": "ab iste enim",
+      "id": "a5fd94fa-ff43-4c06-b0dd-21b58a6f8e0a",
+      "network": "rosie.info",
+      "advertisingId": "84140",
+      "link": "http://eleazar.biz",
+      "networkProductId": "95279",
+      "name": "Refined Fresh Bacon",
+      "description": "incidunt maiores modi",
       "isInStock": false,
       "imageUrl": "http://lorempixel.com/640/480",
-      "isActive": false,
-      "createdAt": "Wed Jun 20 2018 20:54:17 GMT+0200 (Central European Summer Time)",
+      "isActive": true,
+      "createdAt": "Thu Jun 21 2018 11:20:17 GMT+0200 (Central European Summer Time)",
       "globalProductIds": {},
-      "price": "907.63"
+      "price": "983.31"
+    },
+    {
+      "id": "b11486fc-657f-46d5-b4f8-f85c65892dc8",
+      "network": "joesph.biz",
+      "advertisingId": "10815",
+      "link": "https://theron.net",
+      "networkProductId": "55681",
+      "name": "Rustic Frozen Table",
+      "description": "minima debitis sit",
+      "isInStock": false,
+      "imageUrl": "http://lorempixel.com/640/480",
+      "isActive": true,
+      "createdAt": "Wed Jun 20 2018 18:08:28 GMT+0200 (Central European Summer Time)",
+      "globalProductIds": {},
+      "price": "404.38"
     }
   ],
   "appSettings": [
     {
-      "videoLimit": -7695210.015767008,
-      "videoServerRegion": "labore",
-      "videoServerPrefix": "tempor laborum Duis eiusmod",
-      "videoServerBucket": "fugiat sint reprehenderit",
-      "updatedAt": "Wed Jun 20 2018 11:09:35 GMT+0200 (Central European Summer Time)",
-      "iOSAppStoreVersion": "26637",
-      "androidPlayStoreVersion": "74035",
+      "videoLimit": -65337623.945679456,
+      "videoServerRegion": "aute",
+      "videoServerPrefix": "aliquip nostrud consequat",
+      "videoServerBucket": "laborum mollit quis Excepteur magna",
+      "updatedAt": "Thu Jun 21 2018 12:29:17 GMT+0200 (Central European Summer Time)",
+      "iOSAppStoreVersion": "11818",
+      "androidPlayStoreVersion": "92601",
       "acceptedCurrencies": {},
-      "serverTimeEpoch": 90069862.71470919,
-      "serverTime": "Wed Jun 20 2018 19:27:56 GMT+0200 (Central European Summer Time)"
+      "serverTimeEpoch": 51961463.21477246,
+      "serverTime": "Wed Jun 20 2018 17:24:53 GMT+0200 (Central European Summer Time)"
     },
     {
-      "videoLimit": -44935830.21363805,
-      "videoServerRegion": "labore",
-      "videoServerPrefix": "velit in",
-      "videoServerBucket": "ullamco ex est nulla minim",
-      "updatedAt": "Thu Jun 21 2018 03:41:16 GMT+0200 (Central European Summer Time)",
-      "iOSAppStoreVersion": "7180",
-      "androidPlayStoreVersion": "76083",
+      "videoLimit": 84380097.99430773,
+      "videoServerRegion": "velit",
+      "videoServerPrefix": "amet reprehenderit consectetur ipsum et",
+      "videoServerBucket": "ullamco exercitation",
+      "updatedAt": "Wed Jun 20 2018 23:55:58 GMT+0200 (Central European Summer Time)",
+      "iOSAppStoreVersion": "84176",
+      "androidPlayStoreVersion": "23882",
       "acceptedCurrencies": {},
-      "serverTimeEpoch": -57551599.94594825,
-      "serverTime": "Thu Jun 21 2018 07:05:04 GMT+0200 (Central European Summer Time)"
+      "serverTimeEpoch": 34942676.26228687,
+      "serverTime": "Wed Jun 20 2018 15:26:22 GMT+0200 (Central European Summer Time)"
     }
   ],
   "appStatuses": [
     {
-      "ok": true,
+      "ok": false,
       "reason": "UNSUPPORTED_CLIENT_VERSION",
-      "message": "occaecat esse"
+      "message": "aute dolor incididunt occaecat"
     },
     {
       "ok": true,
       "reason": "UNSUPPORTED_CLIENT_VERSION",
-      "message": "ex"
+      "message": "mollit dolore"
     },
     {
       "ok": false,
       "reason": "UNSUPPORTED_CLIENT_VERSION",
-      "message": "reprehenderit dolor aliqua Excepteur"
+      "message": "tempor proident consectetur"
+    },
+    {
+      "ok": false,
+      "reason": "UNSUPPORTED_CLIENT_VERSION",
+      "message": "dolore eiusmod"
+    },
+    {
+      "ok": true,
+      "reason": "UNSUPPORTED_CLIENT_VERSION",
+      "message": "dolor dolore"
     }
   ],
   "autocompleteBrandTags": [
-    "in quis dolore ex",
-    "tempor"
+    "in nostrud sit",
+    "adipisicing Excepteur dolor in",
+    "deserunt sunt"
   ],
   "autocompleteProductTags": [
-    "anim nulla deserunt",
-    "nisi et velit",
-    "minim et Excepteur",
-    "ipsum"
+    "irure in sint ea",
+    "laborum proident reprehenderit dolore"
   ],
   "autocompleteUniqueIds": [
     {
-      "id": "600614f4-1d6e-4ac2-b7fc-e1f76d83f09c",
-      "uniqueId": "78673",
-      "avatarImageUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/paulfarino/128.jpg",
+      "id": "1df7233a-c83f-4cd4-85b5-4efc44e72a0b",
+      "uniqueId": "87843",
+      "avatarImageUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/brenmurrell/128.jpg",
+      "altAvatarImages": {}
+    },
+    {
+      "id": "78604255-43f7-4fbb-878a-b976c7032692",
+      "uniqueId": "14437",
+      "avatarImageUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/creartinc/128.jpg",
+      "altAvatarImages": {}
+    },
+    {
+      "id": "b8939bd7-d214-4d0c-a265-3b73f11926c5",
+      "uniqueId": "47417",
+      "avatarImageUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/canapud/128.jpg",
+      "altAvatarImages": {}
+    },
+    {
+      "id": "9c435681-968b-4d16-b07a-322d9b89f0f6",
+      "uniqueId": "56911",
+      "avatarImageUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/chris_witko/128.jpg",
+      "altAvatarImages": {}
+    },
+    {
+      "id": "35d772d4-0001-4f6c-b507-1c15cf62d0ee",
+      "uniqueId": "50795",
+      "avatarImageUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/arindam_/128.jpg",
       "altAvatarImages": {}
     }
   ],
   "autocompleteVideoTags": [
-    "sit enim consequat",
-    "reprehenderit Ut ut",
-    "sint amet",
-    "dolor voluptate eu"
+    "ullamco tempor ex",
+    "ut in",
+    "Excepteur in ullamco deserunt"
   ],
   "catalogChallengeListItems": [
     {
-      "id": "e17b7d44-59de-4f5b-9e32-7c141fe78e42",
-      "name": "Unbranded Metal Car",
-      "description": "natus nulla neque",
-      "challengeCode": "eligendi-nesciunt-neque",
+      "id": "323cec3a-6dc7-45f0-8a09-4fef145c0e8f",
+      "name": "Handcrafted Plastic Towels",
+      "description": "consequatur et aut",
+      "challengeCode": "et-iusto-nisi",
       "isEnabled": false,
-      "rank": 14,
+      "rank": 18,
       "imageUrl": "http://lorempixel.com/640/480",
-      "brandLogoUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/_dwite_/128.jpg",
-      "brandName": "sed",
-      "terms": "qui ipsum labore laborum",
-      "learnMore": "adipisicing amet ad",
-      "commissionAmount": 808,
-      "commissionCurrency": "XPD",
-      "associatedProducts": [],
-      "participationRequirements": [
-        "ENTER_CODE"
-      ],
-      "startDate": "Thu Jun 21 2018 02:24:35 GMT+0200 (Central European Summer Time)",
-      "endDate": "Thu Jun 13 2019 10:14:32 GMT+0200 (Central European Summer Time)",
-      "canParticipate": true
-    },
-    {
-      "id": "fbb7e372-7bd4-48e3-884d-4de04b92ff04",
-      "name": "Generic Granite Shoes",
-      "description": "rerum nostrum nemo",
-      "challengeCode": "voluptatem-perferendis-minus",
-      "isEnabled": false,
-      "rank": 6,
-      "imageUrl": "http://lorempixel.com/640/480",
-      "brandLogoUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/ZacharyZorbas/128.jpg",
-      "brandName": "consequat",
-      "terms": "deserunt magna sunt amet non",
-      "learnMore": "nulla Ut",
-      "commissionAmount": 513,
-      "commissionCurrency": "EEK",
-      "associatedProducts": [],
-      "participationRequirements": [
-        "PURCHASE_CHALLENGE_PRODUCT",
-        "PURCHASE_CHALLENGE_PRODUCT"
-      ],
-      "startDate": "Thu Jun 21 2018 02:35:38 GMT+0200 (Central European Summer Time)",
-      "endDate": "Sun Jul 08 2018 14:40:37 GMT+0200 (Central European Summer Time)",
-      "canParticipate": true
-    },
-    {
-      "id": "67a82b55-f732-43d4-9c9d-b28696b85738",
-      "name": "Generic Granite Cheese",
-      "description": "aliquid aut dicta",
-      "challengeCode": "est-possimus-ipsum",
-      "isEnabled": false,
-      "rank": 10,
-      "imageUrl": "http://lorempixel.com/640/480",
-      "brandLogoUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/carlosgavina/128.jpg",
-      "brandName": "sunt laborum labore",
-      "terms": "adipisicing reprehenderit",
-      "learnMore": "sunt",
-      "commissionAmount": 232,
-      "commissionCurrency": "SOS",
-      "associatedProducts": [],
-      "participationRequirements": [
-        "PURCHASE_CHALLENGE_PRODUCT",
-        "ENTER_CODE"
-      ],
-      "startDate": "Wed Jun 20 2018 13:21:20 GMT+0200 (Central European Summer Time)",
-      "endDate": "Sat Apr 06 2019 22:42:06 GMT+0200 (Central European Summer Time)",
-      "canParticipate": true
-    },
-    {
-      "id": "6cbdfe80-e3ae-4568-bb8b-190ba903ca7a",
-      "name": "Unbranded Plastic Computer",
-      "description": "aut aspernatur saepe",
-      "challengeCode": "vitae-quasi-sunt",
-      "isEnabled": false,
-      "rank": 4,
-      "imageUrl": "http://lorempixel.com/640/480",
-      "brandLogoUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/geneseleznev/128.jpg",
-      "brandName": "quis labore ex exercitation cul",
-      "terms": "qui ea minim",
-      "learnMore": "tempor id sint adipisicing enim",
-      "commissionAmount": 543,
-      "commissionCurrency": "DKK",
-      "associatedProducts": [],
-      "participationRequirements": [
-        "PURCHASE_CHALLENGE_PRODUCT"
-      ],
-      "startDate": "Wed Jun 20 2018 23:04:16 GMT+0200 (Central European Summer Time)",
-      "endDate": "Sun Mar 10 2019 14:20:57 GMT+0100 (Central European Standard Time)",
-      "canParticipate": false
-    }
-  ],
-  "catalogChallenges": [
-    {
-      "id": "37695ff7-e1e9-42c3-9506-e2990c08a6f3",
-      "name": "Incredible Metal Shoes",
-      "description": "libero voluptates sint",
-      "challengeCode": "molestiae-suscipit-aut",
-      "isEnabled": false,
-      "rank": 17,
-      "imageUrl": "http://lorempixel.com/640/480",
-      "brandLogoUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/ntfblog/128.jpg",
-      "brandName": "in aliquip nostrud",
-      "terms": "dolor eu do",
-      "learnMore": "cillum irure mollit",
-      "commissionAmount": 194,
+      "brandLogoUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/tgerken/128.jpg",
+      "brandName": "dolore mollit occaecat dolor",
+      "terms": "aliqua ex",
+      "learnMore": "eu",
+      "commissionAmount": 994,
       "commissionCurrency": "XAG",
       "associatedProducts": [],
       "participationRequirements": [
         "ENTER_CODE",
+        "ENTER_CODE",
+        "ENTER_CODE"
+      ],
+      "startDate": "Wed Jun 20 2018 15:27:02 GMT+0200 (Central European Summer Time)",
+      "endDate": "Sun Nov 11 2018 14:45:17 GMT+0100 (Central European Standard Time)",
+      "canParticipate": true
+    },
+    {
+      "id": "844ca8e5-f872-4db1-bc07-f358166d2db9",
+      "name": "Handcrafted Metal Car",
+      "description": "et odio est",
+      "challengeCode": "mollitia-qui-ut",
+      "isEnabled": false,
+      "rank": 19,
+      "imageUrl": "http://lorempixel.com/640/480",
+      "brandLogoUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/vicivadeline/128.jpg",
+      "brandName": "dolore eu Duis",
+      "terms": "aliqua fugiat Duis",
+      "learnMore": "tempor reprehenderit culpa ullamco",
+      "commissionAmount": 476,
+      "commissionCurrency": "XAG",
+      "associatedProducts": [],
+      "participationRequirements": [
+        "PURCHASE_CHALLENGE_PRODUCT"
+      ],
+      "startDate": "Thu Jun 21 2018 12:22:45 GMT+0200 (Central European Summer Time)",
+      "endDate": "Fri Dec 14 2018 08:44:12 GMT+0100 (Central European Standard Time)",
+      "canParticipate": false
+    },
+    {
+      "id": "e9f2d71a-7cc7-4928-ac75-bb76d4b61d7e",
+      "name": "Licensed Soft Gloves",
+      "description": "et ipsam eos",
+      "challengeCode": "vero-et-et",
+      "isEnabled": true,
+      "rank": 10,
+      "imageUrl": "http://lorempixel.com/640/480",
+      "brandLogoUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/BryanHorsey/128.jpg",
+      "brandName": "culpa sit ad exercitation",
+      "terms": "in cillum r",
+      "learnMore": "dolore labore ut ea",
+      "commissionAmount": 546,
+      "commissionCurrency": "XOF",
+      "associatedProducts": [],
+      "participationRequirements": [
         "PURCHASE_CHALLENGE_PRODUCT",
+        "PURCHASE_CHALLENGE_PRODUCT",
+        "PURCHASE_CHALLENGE_PRODUCT"
+      ],
+      "startDate": "Thu Jun 21 2018 12:51:25 GMT+0200 (Central European Summer Time)",
+      "endDate": "Mon Jun 17 2019 01:05:29 GMT+0200 (Central European Summer Time)",
+      "canParticipate": true
+    }
+  ],
+  "catalogChallenges": [
+    {
+      "id": "b5848baa-d791-4586-92d8-01a5d7a27605",
+      "name": "Unbranded Granite Chair",
+      "description": "tempora nemo aspernatur",
+      "challengeCode": "numquam-minus-eum",
+      "isEnabled": true,
+      "rank": 3,
+      "imageUrl": "http://lorempixel.com/640/480",
+      "brandLogoUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/geobikas/128.jpg",
+      "brandName": "ullamco dolor",
+      "terms": "cillum pariatur",
+      "learnMore": "amet sit qui",
+      "commissionAmount": 913,
+      "commissionCurrency": "BIF",
+      "associatedProducts": [],
+      "participationRequirements": [
+        "ENTER_CODE",
+        "PURCHASE_CHALLENGE_PRODUCT",
+        "PURCHASE_CHALLENGE_PRODUCT"
+      ],
+      "startDate": "Wed Jun 20 2018 19:05:54 GMT+0200 (Central European Summer Time)",
+      "endDate": "Sun Sep 09 2018 04:34:43 GMT+0200 (Central European Summer Time)",
+      "canParticipate": false
+    },
+    {
+      "id": "29569fca-38f1-485f-805b-a78c8f865b01",
+      "name": "Intelligent Steel Sausages",
+      "description": "debitis quo ipsam",
+      "challengeCode": "reiciendis-explicabo-est",
+      "isEnabled": false,
+      "rank": 7,
+      "imageUrl": "http://lorempixel.com/640/480",
+      "brandLogoUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/andrea211087/128.jpg",
+      "brandName": "exercitation ullamco",
+      "terms": "ad non eu et occaecat",
+      "learnMore": "voluptate dolore occaecat",
+      "commissionAmount": 403,
+      "commissionCurrency": "SGD",
+      "associatedProducts": [],
+      "participationRequirements": [
+        "ENTER_CODE",
+        "ENTER_CODE"
+      ],
+      "startDate": "Wed Jun 20 2018 20:52:28 GMT+0200 (Central European Summer Time)",
+      "endDate": "Mon Nov 12 2018 15:51:10 GMT+0100 (Central European Standard Time)",
+      "canParticipate": true
+    },
+    {
+      "id": "8266c553-c8d6-42a0-bdbf-2867cef6532e",
+      "name": "Small Soft Pants",
+      "description": "sit sit sit",
+      "challengeCode": "alias-nostrum-quis",
+      "isEnabled": false,
+      "rank": 13,
+      "imageUrl": "http://lorempixel.com/640/480",
+      "brandLogoUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/fabbrucci/128.jpg",
+      "brandName": "laboris",
+      "terms": "",
+      "learnMore": "occaecat sunt",
+      "commissionAmount": 840,
+      "commissionCurrency": "BND",
+      "associatedProducts": [],
+      "participationRequirements": [
+        "ENTER_CODE",
+        "ENTER_CODE",
+        "ENTER_CODE"
+      ],
+      "startDate": "Thu Jun 21 2018 07:28:39 GMT+0200 (Central European Summer Time)",
+      "endDate": "Fri May 24 2019 13:35:29 GMT+0200 (Central European Summer Time)",
+      "canParticipate": false
+    },
+    {
+      "id": "db62680c-afb8-4ccb-bf33-ea2e39977f1b",
+      "name": "Handmade Cotton Ball",
+      "description": "aut facere eos",
+      "challengeCode": "ut-illo-nobis",
+      "isEnabled": true,
+      "rank": 18,
+      "imageUrl": "http://lorempixel.com/640/480",
+      "brandLogoUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/terpimost/128.jpg",
+      "brandName": "cupidatat magna exercitation",
+      "terms": "esse id",
+      "learnMore": "irure magna Lorem deserunt officia",
+      "commissionAmount": 515,
+      "commissionCurrency": "EGP",
+      "associatedProducts": [],
+      "participationRequirements": [
+        "ENTER_CODE",
         "PURCHASE_CHALLENGE_PRODUCT",
         "ENTER_CODE"
       ],
-      "startDate": "Thu Jun 21 2018 09:53:22 GMT+0200 (Central European Summer Time)",
-      "endDate": "Wed Jul 04 2018 08:03:54 GMT+0200 (Central European Summer Time)",
-      "canParticipate": false
+      "startDate": "Thu Jun 21 2018 11:44:16 GMT+0200 (Central European Summer Time)",
+      "endDate": "Thu Apr 25 2019 03:36:44 GMT+0200 (Central European Summer Time)",
+      "canParticipate": true
     }
   ],
   "catalogUserSearchResults": [],
   "catalogVideoSearchResults": [
     {
-      "id": "fc1203de-356b-4ef5-937a-a4922e2ee65f",
-      "title": "aliqua veniam tempor",
-      "shareUrl": "http://alysha.name",
+      "id": "b18fd5d1-d285-470d-8b63-520b14df48df",
+      "title": "consequat",
+      "shareUrl": "https://henderson.biz",
       "mediaUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/video-DvyCq4rGZu-568.m3u8",
       "altMediaUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/video-DvyCq4rGZu-568-dash.mpd",
       "sourceMediaUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/74703ca4-6cf3-478e-9195-0bf8c74bd649.mp4",
@@ -260,31 +342,31 @@
       "previewUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/user-preview-1528968423559.gif",
       "altPreviewUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/fast-1528968423708.mp4",
       "sharingImageUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/user-shareimage-1528968495470.jpg",
-      "squareVideoUrl": "http://garnett.com",
+      "squareVideoUrl": "http://deborah.com",
       "posterImageUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/products/tFlhXqdVBd/2c54f5b7-0fe3-46fc-b9ad-02a56d154f0b.jpg",
-      "converted": true,
-      "videoFormat": "qui cupidatat",
-      "ranking": 19,
+      "converted": false,
+      "videoFormat": "reprehenderit aliquip sunt est",
+      "ranking": 1,
       "approved": false,
       "featured": true,
-      "createdAt": "Wed Jun 20 2018 11:45:37 GMT+0200 (Central European Summer Time)",
-      "updatedAt": "Wed Jun 20 2018 10:30:54 GMT+0200 (Central European Summer Time)",
+      "createdAt": "Thu Jun 21 2018 05:30:48 GMT+0200 (Central European Summer Time)",
+      "updatedAt": "Wed Jun 20 2018 19:31:58 GMT+0200 (Central European Summer Time)",
       "categories": [],
-      "numOfLikes": 0,
-      "numOfRecentLikes": 20,
-      "numOfViews": 9,
-      "numOfRecentViews": 14,
-      "numOfComments": 3,
-      "numOfRecentComments": 4,
+      "numOfLikes": 12,
+      "numOfRecentLikes": 14,
+      "numOfViews": 16,
+      "numOfRecentViews": 9,
+      "numOfComments": 8,
+      "numOfRecentComments": 11,
       "product": {},
       "creator": {},
       "seller": {},
-      "challengeId": "15774"
+      "challengeId": "32042"
     },
     {
-      "id": "83007282-c09b-40ee-8b7d-d8b97818a07a",
-      "title": "dolore et",
-      "shareUrl": "http://lorenzo.biz",
+      "id": "84d76d33-a6df-4926-b055-f99db7e7a930",
+      "title": "voluptate magna ut",
+      "shareUrl": "https://isabella.com",
       "mediaUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/video-DvyCq4rGZu-568.m3u8",
       "altMediaUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/video-DvyCq4rGZu-568-dash.mpd",
       "sourceMediaUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/74703ca4-6cf3-478e-9195-0bf8c74bd649.mp4",
@@ -292,132 +374,114 @@
       "previewUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/user-preview-1528968423559.gif",
       "altPreviewUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/fast-1528968423708.mp4",
       "sharingImageUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/user-shareimage-1528968495470.jpg",
-      "squareVideoUrl": "https://werner.name",
+      "squareVideoUrl": "https://joey.biz",
       "posterImageUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/products/tFlhXqdVBd/2c54f5b7-0fe3-46fc-b9ad-02a56d154f0b.jpg",
       "converted": false,
-      "videoFormat": "proide",
+      "videoFormat": "ut Excepteur exercitation amet pariatur",
+      "ranking": 11,
+      "approved": true,
+      "featured": true,
+      "createdAt": "Wed Jun 20 2018 13:52:17 GMT+0200 (Central European Summer Time)",
+      "updatedAt": "Thu Jun 21 2018 08:07:45 GMT+0200 (Central European Summer Time)",
+      "categories": [],
+      "numOfLikes": 10,
+      "numOfRecentLikes": 7,
+      "numOfViews": 5,
+      "numOfRecentViews": 2,
+      "numOfComments": 0,
+      "numOfRecentComments": 2,
+      "product": {},
+      "creator": {},
+      "seller": {},
+      "challengeId": "43713"
+    },
+    {
+      "id": "5abc42cc-b80c-408f-8bbe-eaac08919c9e",
+      "title": "proident fugiat eiusmod",
+      "shareUrl": "http://maureen.info",
+      "mediaUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/video-DvyCq4rGZu-568.m3u8",
+      "altMediaUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/video-DvyCq4rGZu-568-dash.mpd",
+      "sourceMediaUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/74703ca4-6cf3-478e-9195-0bf8c74bd649.mp4",
+      "socialVideoUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/user-portrait-1528968430066.mp4",
+      "previewUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/user-preview-1528968423559.gif",
+      "altPreviewUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/fast-1528968423708.mp4",
+      "sharingImageUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/user-shareimage-1528968495470.jpg",
+      "squareVideoUrl": "https://anita.net",
+      "posterImageUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/products/tFlhXqdVBd/2c54f5b7-0fe3-46fc-b9ad-02a56d154f0b.jpg",
+      "converted": true,
+      "videoFormat": "proident reprehenderit aliquip est",
+      "ranking": 19,
+      "approved": true,
+      "featured": false,
+      "createdAt": "Thu Jun 21 2018 03:11:02 GMT+0200 (Central European Summer Time)",
+      "updatedAt": "Thu Jun 21 2018 02:19:33 GMT+0200 (Central European Summer Time)",
+      "categories": [],
+      "numOfLikes": 19,
+      "numOfRecentLikes": 14,
+      "numOfViews": 15,
+      "numOfRecentViews": 1,
+      "numOfComments": 4,
+      "numOfRecentComments": 2,
+      "product": {},
+      "creator": {},
+      "seller": {},
+      "challengeId": "29276"
+    },
+    {
+      "id": "4d870cd0-a0b9-4b2d-93ac-9826524056d8",
+      "title": "esse nisi",
+      "shareUrl": "http://marcelina.name",
+      "mediaUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/video-DvyCq4rGZu-568.m3u8",
+      "altMediaUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/video-DvyCq4rGZu-568-dash.mpd",
+      "sourceMediaUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/74703ca4-6cf3-478e-9195-0bf8c74bd649.mp4",
+      "socialVideoUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/user-portrait-1528968430066.mp4",
+      "previewUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/user-preview-1528968423559.gif",
+      "altPreviewUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/fast-1528968423708.mp4",
+      "sharingImageUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/user-shareimage-1528968495470.jpg",
+      "squareVideoUrl": "https://abel.name",
+      "posterImageUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/products/tFlhXqdVBd/2c54f5b7-0fe3-46fc-b9ad-02a56d154f0b.jpg",
+      "converted": false,
+      "videoFormat": "tempor non aliquip dolor",
       "ranking": 5,
       "approved": true,
       "featured": false,
-      "createdAt": "Wed Jun 20 2018 12:19:52 GMT+0200 (Central European Summer Time)",
-      "updatedAt": "Wed Jun 20 2018 12:07:39 GMT+0200 (Central European Summer Time)",
+      "createdAt": "Wed Jun 20 2018 13:08:26 GMT+0200 (Central European Summer Time)",
+      "updatedAt": "Wed Jun 20 2018 23:54:47 GMT+0200 (Central European Summer Time)",
       "categories": [],
-      "numOfLikes": 3,
-      "numOfRecentLikes": 4,
-      "numOfViews": 6,
-      "numOfRecentViews": 3,
-      "numOfComments": 9,
-      "numOfRecentComments": 6,
-      "product": {},
-      "creator": {},
-      "seller": {},
-      "challengeId": "92079"
-    },
-    {
-      "id": "ffdeb98f-c76d-46e8-9b9a-30bcf3cb7aab",
-      "title": "dolor dolor pariatur el",
-      "shareUrl": "http://ines.name",
-      "mediaUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/video-DvyCq4rGZu-568.m3u8",
-      "altMediaUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/video-DvyCq4rGZu-568-dash.mpd",
-      "sourceMediaUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/74703ca4-6cf3-478e-9195-0bf8c74bd649.mp4",
-      "socialVideoUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/user-portrait-1528968430066.mp4",
-      "previewUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/user-preview-1528968423559.gif",
-      "altPreviewUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/fast-1528968423708.mp4",
-      "sharingImageUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/user-shareimage-1528968495470.jpg",
-      "squareVideoUrl": "http://anita.net",
-      "posterImageUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/products/tFlhXqdVBd/2c54f5b7-0fe3-46fc-b9ad-02a56d154f0b.jpg",
-      "converted": false,
-      "videoFormat": "anim incididunt ipsum nostrud",
-      "ranking": 14,
-      "approved": false,
-      "featured": true,
-      "createdAt": "Thu Jun 21 2018 07:19:44 GMT+0200 (Central European Summer Time)",
-      "updatedAt": "Wed Jun 20 2018 14:41:45 GMT+0200 (Central European Summer Time)",
-      "categories": [],
-      "numOfLikes": 17,
-      "numOfRecentLikes": 12,
-      "numOfViews": 1,
-      "numOfRecentViews": 11,
-      "numOfComments": 7,
-      "numOfRecentComments": 0,
-      "product": {},
-      "creator": {},
-      "seller": {},
-      "challengeId": "78528"
-    },
-    {
-      "id": "1046d2d9-edee-4596-b73a-4b3c7bca9162",
-      "title": "proident consequat enim",
-      "shareUrl": "https://pascale.net",
-      "mediaUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/video-DvyCq4rGZu-568.m3u8",
-      "altMediaUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/video-DvyCq4rGZu-568-dash.mpd",
-      "sourceMediaUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/74703ca4-6cf3-478e-9195-0bf8c74bd649.mp4",
-      "socialVideoUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/user-portrait-1528968430066.mp4",
-      "previewUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/user-preview-1528968423559.gif",
-      "altPreviewUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/fast-1528968423708.mp4",
-      "sharingImageUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/user-shareimage-1528968495470.jpg",
-      "squareVideoUrl": "http://curtis.net",
-      "posterImageUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/products/tFlhXqdVBd/2c54f5b7-0fe3-46fc-b9ad-02a56d154f0b.jpg",
-      "converted": true,
-      "videoFormat": "lab",
-      "ranking": 8,
-      "approved": true,
-      "featured": true,
-      "createdAt": "Wed Jun 20 2018 17:05:29 GMT+0200 (Central European Summer Time)",
-      "updatedAt": "Thu Jun 21 2018 05:59:23 GMT+0200 (Central European Summer Time)",
-      "categories": [],
-      "numOfLikes": 1,
+      "numOfLikes": 15,
       "numOfRecentLikes": 17,
-      "numOfViews": 17,
-      "numOfRecentViews": 8,
-      "numOfComments": 16,
-      "numOfRecentComments": 0,
+      "numOfViews": 13,
+      "numOfRecentViews": 17,
+      "numOfComments": 10,
+      "numOfRecentComments": 20,
       "product": {},
       "creator": {},
       "seller": {},
-      "challengeId": "49465"
-    },
-    {
-      "id": "50a37590-dd8d-4103-802f-b21b35e9524b",
-      "title": "officia pariatur",
-      "shareUrl": "http://major.net",
-      "mediaUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/video-DvyCq4rGZu-568.m3u8",
-      "altMediaUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/video-DvyCq4rGZu-568-dash.mpd",
-      "sourceMediaUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/74703ca4-6cf3-478e-9195-0bf8c74bd649.mp4",
-      "socialVideoUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/user-portrait-1528968430066.mp4",
-      "previewUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/user-preview-1528968423559.gif",
-      "altPreviewUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/fast-1528968423708.mp4",
-      "sharingImageUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/user-shareimage-1528968495470.jpg",
-      "squareVideoUrl": "https://mortimer.info",
-      "posterImageUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/products/tFlhXqdVBd/2c54f5b7-0fe3-46fc-b9ad-02a56d154f0b.jpg",
-      "converted": false,
-      "videoFormat": "esse mollit",
-      "ranking": 9,
-      "approved": false,
-      "featured": false,
-      "createdAt": "Thu Jun 21 2018 01:00:56 GMT+0200 (Central European Summer Time)",
-      "updatedAt": "Thu Jun 21 2018 03:35:59 GMT+0200 (Central European Summer Time)",
-      "categories": [],
-      "numOfLikes": 2,
-      "numOfRecentLikes": 18,
-      "numOfViews": 6,
-      "numOfRecentViews": 19,
-      "numOfComments": 17,
-      "numOfRecentComments": 7,
-      "product": {},
-      "creator": {},
-      "seller": {},
-      "challengeId": "92002"
+      "challengeId": "62421"
     }
   ],
   "catalogVideos": [],
   "challengeTranslationPayloads": [
     {
-      "name": "Rustic Plastic Bike",
-      "description": "sapiente sint dolor",
-      "orderNote": "deserunt",
-      "terms": "pariatur mini",
-      "learnMore": "Lorem velit ex"
+      "name": "Fantastic Wooden Salad",
+      "description": "explicabo non nam",
+      "orderNote": "velit",
+      "terms": "sed officia laboris",
+      "learnMore": "pariat"
+    },
+    {
+      "name": "Practical Frozen Ball",
+      "description": "non explicabo at",
+      "orderNote": "minim commodo reprehenderit",
+      "terms": "velit dolor",
+      "learnMore": "eiusmod Duis nostrud et consect"
+    },
+    {
+      "name": "Generic Rubber Salad",
+      "description": "dolorem provident perferendis",
+      "orderNote": "sed Excepteur do incididunt",
+      "terms": "reprehenderit sunt officia",
+      "learnMore": "sit ea enim dolor"
     }
   ],
   "challengeTranslations": [
@@ -436,7 +500,7 @@
       "fi": {},
       "el": {},
       "da": {},
-      "id": "d02ce37f-454d-4744-94ae-74d38f7564d5",
+      "id": "a9edd887-6d0e-47e0-8fb0-a3bf86041dab",
       "th": {},
       "pt-BR": {},
       "nb": {},
@@ -459,7 +523,7 @@
       "fi": {},
       "el": {},
       "da": {},
-      "id": "05fcd39f-d698-4adf-a6d2-71a8181e1dde",
+      "id": "c89d9147-1a9d-44b1-a32c-ce0ae524c714",
       "th": {},
       "pt-BR": {},
       "nb": {},
@@ -482,7 +546,7 @@
       "fi": {},
       "el": {},
       "da": {},
-      "id": "67ba00b0-8084-486f-a8df-02f971254ecb",
+      "id": "3af430d5-2d8b-48f4-9f05-980d6836cfb7",
       "th": {},
       "pt-BR": {},
       "nb": {},
@@ -493,814 +557,549 @@
   ],
   "challenges": [
     {
-      "id": "a88ef592-176d-4132-899e-da7c907cd329",
-      "name": "Fantastic Concrete Chips",
-      "description": "totam corporis debitis",
-      "challengeCode": "eum-vel-cum",
-      "isEnabled": true,
-      "rank": 7,
-      "imageUrl": "http://lorempixel.com/640/480",
-      "brandLogoUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/praveen_vijaya/128.jpg",
-      "brandName": "consectetur mollit adipisicing esse",
-      "terms": "voluptate officia Duis",
-      "orderNote": "dolore pariatur",
-      "learnMore": "et adipisicing",
-      "commissionAmount": 81,
-      "commissionCurrency": "XAG",
-      "associatedProducts": [],
-      "participationRequirements": [
-        "ENTER_CODE",
-        "PURCHASE_CHALLENGE_PRODUCT",
-        "PURCHASE_CHALLENGE_PRODUCT",
-        "PURCHASE_CHALLENGE_PRODUCT"
-      ],
-      "featuredVideoIds": [
-        "in enim"
-      ],
-      "translations": {},
-      "startDate": "Thu Jun 21 2018 01:19:20 GMT+0200 (Central European Summer Time)",
-      "endDate": "Mon Oct 08 2018 05:09:48 GMT+0200 (Central European Summer Time)",
-      "createdAt": "Wed Jun 20 2018 13:43:24 GMT+0200 (Central European Summer Time)",
-      "updatedAt": "Thu Jun 21 2018 08:54:34 GMT+0200 (Central European Summer Time)"
-    },
-    {
-      "id": "f6a15383-8fd8-451d-b2df-ab167bccc09d",
-      "name": "Refined Soft Bacon",
-      "description": "iusto dolorum commodi",
-      "challengeCode": "iste-aut-unde",
+      "id": "9b249762-d127-421c-9a65-d8e66987b5e0",
+      "name": "Tasty Plastic Shirt",
+      "description": "facilis sequi dolorum",
+      "challengeCode": "numquam-aliquam-molestiae",
       "isEnabled": false,
       "rank": 0,
       "imageUrl": "http://lorempixel.com/640/480",
-      "brandLogoUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/stevedesigner/128.jpg",
-      "brandName": "sed ad quis",
-      "terms": "non aute veniam incididun",
-      "orderNote": "dolor quis deserunt esse",
-      "learnMore": "consequat ullamco in",
-      "commissionAmount": 622,
-      "commissionCurrency": "PLN",
+      "brandLogoUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/cybind/128.jpg",
+      "brandName": "proident",
+      "terms": "consectetur voluptate",
+      "orderNote": "dolor quis in sunt",
+      "learnMore": "consequat proident ipsum culpa",
+      "commissionAmount": 519,
+      "commissionCurrency": "UYU",
       "associatedProducts": [],
       "participationRequirements": [
-        "PURCHASE_CHALLENGE_PRODUCT",
         "ENTER_CODE",
-        "PURCHASE_CHALLENGE_PRODUCT",
         "ENTER_CODE"
       ],
       "featuredVideoIds": [
-        "esse adipisicing ipsum ex",
-        "consequat dolore Ut in",
-        "in",
-        "consequat"
+        "elit",
+        "qui amet quis",
+        "non aute",
+        "ad ullamco"
       ],
       "translations": {},
-      "startDate": "Thu Jun 21 2018 06:13:22 GMT+0200 (Central European Summer Time)",
-      "endDate": "Mon Apr 22 2019 12:23:27 GMT+0200 (Central European Summer Time)",
-      "createdAt": "Thu Jun 21 2018 03:55:32 GMT+0200 (Central European Summer Time)",
-      "updatedAt": "Wed Jun 20 2018 21:53:20 GMT+0200 (Central European Summer Time)"
+      "startDate": "Thu Jun 21 2018 05:59:55 GMT+0200 (Central European Summer Time)",
+      "endDate": "Sat Apr 06 2019 10:34:02 GMT+0200 (Central European Summer Time)",
+      "createdAt": "Thu Jun 21 2018 05:06:24 GMT+0200 (Central European Summer Time)",
+      "updatedAt": "Thu Jun 21 2018 07:53:30 GMT+0200 (Central European Summer Time)"
     },
     {
-      "id": "492d550d-8498-4bcc-8ca9-a51b8cc75fd2",
-      "name": "Awesome Steel Sausages",
-      "description": "eveniet optio ad",
-      "challengeCode": "eligendi-veritatis-et",
+      "id": "ad4912b9-8e1d-4b81-a7dd-a6c25d679cef",
+      "name": "Generic Metal Fish",
+      "description": "sit unde ipsa",
+      "challengeCode": "dignissimos-molestias-autem",
       "isEnabled": true,
-      "rank": 10,
+      "rank": 16,
       "imageUrl": "http://lorempixel.com/640/480",
-      "brandLogoUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/rehatkathuria/128.jpg",
-      "brandName": "amet Excepteur ipsum",
-      "terms": "dolor voluptate commodo",
-      "orderNote": "id",
-      "learnMore": "cillum",
-      "commissionAmount": 778,
-      "commissionCurrency": "MRO",
+      "brandLogoUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/plbabin/128.jpg",
+      "brandName": "deserunt fugiat",
+      "terms": "officia reprehenderit Lorem ni",
+      "orderNote": "ut anim veniam",
+      "learnMore": "officia",
+      "commissionAmount": 973,
+      "commissionCurrency": "FJD",
       "associatedProducts": [],
       "participationRequirements": [
-        "PURCHASE_CHALLENGE_PRODUCT",
-        "PURCHASE_CHALLENGE_PRODUCT",
-        "PURCHASE_CHALLENGE_PRODUCT",
         "ENTER_CODE",
-        "PURCHASE_CHALLENGE_PRODUCT"
+        "ENTER_CODE"
       ],
       "featuredVideoIds": [
-        "reprehenderit voluptate",
-        "Duis aliqua deserunt in nostrud",
-        "est in adip"
+        "ex cupidatat et",
+        "labore sint velit proident",
+        "do magna quis",
+        "ullamco ut cillum",
+        "sint"
       ],
       "translations": {},
-      "startDate": "Wed Jun 20 2018 10:39:22 GMT+0200 (Central European Summer Time)",
-      "endDate": "Sat Jun 08 2019 12:21:04 GMT+0200 (Central European Summer Time)",
-      "createdAt": "Thu Jun 21 2018 04:10:17 GMT+0200 (Central European Summer Time)",
-      "updatedAt": "Thu Jun 21 2018 07:18:34 GMT+0200 (Central European Summer Time)"
-    },
-    {
-      "id": "dc8068b8-bbb7-49d6-8f09-4d440d1f8f0e",
-      "name": "Refined Cotton Sausages",
-      "description": "aut vitae nihil",
-      "challengeCode": "sit-eum-at",
-      "isEnabled": true,
-      "rank": 9,
-      "imageUrl": "http://lorempixel.com/640/480",
-      "brandLogoUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/SULiik/128.jpg",
-      "brandName": "esse nisi est",
-      "terms": "cupidatat cillum dolor commodo",
-      "orderNote": "qui sit ipsum id",
-      "learnMore": "est esse sed exercitation ex",
-      "commissionAmount": 154,
-      "commissionCurrency": "XPF",
-      "associatedProducts": [],
-      "participationRequirements": [
-        "PURCHASE_CHALLENGE_PRODUCT",
-        "PURCHASE_CHALLENGE_PRODUCT"
-      ],
-      "featuredVideoIds": [
-        "D",
-        "pariatur aute in veniam",
-        "eiusmod",
-        "cillum sunt e",
-        "nostrud amet id"
-      ],
-      "translations": {},
-      "startDate": "Thu Jun 21 2018 05:40:55 GMT+0200 (Central European Summer Time)",
-      "endDate": "Mon May 27 2019 16:44:21 GMT+0200 (Central European Summer Time)",
-      "createdAt": "Thu Jun 21 2018 09:59:05 GMT+0200 (Central European Summer Time)",
-      "updatedAt": "Thu Jun 21 2018 02:08:27 GMT+0200 (Central European Summer Time)"
+      "startDate": "Wed Jun 20 2018 21:13:06 GMT+0200 (Central European Summer Time)",
+      "endDate": "Fri Jul 20 2018 19:42:52 GMT+0200 (Central European Summer Time)",
+      "createdAt": "Thu Jun 21 2018 09:44:12 GMT+0200 (Central European Summer Time)",
+      "updatedAt": "Wed Jun 20 2018 16:06:15 GMT+0200 (Central European Summer Time)"
     }
   ],
   "devices": [],
   "facebookUsers": [],
   "featuredTags": [
     {
-      "id": "e8a80736-c9ae-4d6b-b24e-36ee63c197de",
-      "name": "Generic Metal Soap",
+      "id": "5b45a980-ee01-42a1-89e2-0d653bb8efaf",
+      "name": "Sleek Metal Mouse",
+      "imageUrl": "http://lorempixel.com/640/480",
+      "isHero": true,
+      "ordering": 57603719.44722757,
+      "createdAt": "Thu Jun 21 2018 04:18:36 GMT+0200 (Central European Summer Time)",
+      "updatedAt": "Thu Jun 21 2018 05:30:04 GMT+0200 (Central European Summer Time)"
+    },
+    {
+      "id": "1c77b558-1dc8-40eb-8377-783f3af2ebc6",
+      "name": "Fantastic Cotton Chicken",
       "imageUrl": "http://lorempixel.com/640/480",
       "isHero": false,
-      "ordering": -69221764.00858366,
-      "createdAt": "Thu Jun 21 2018 08:22:10 GMT+0200 (Central European Summer Time)",
-      "updatedAt": "Wed Jun 20 2018 22:43:39 GMT+0200 (Central European Summer Time)"
+      "ordering": -58476693.480755195,
+      "createdAt": "Thu Jun 21 2018 09:06:25 GMT+0200 (Central European Summer Time)",
+      "updatedAt": "Wed Jun 20 2018 17:27:45 GMT+0200 (Central European Summer Time)"
     },
     {
-      "id": "7552fef3-2ff2-47c8-8ecf-d25cd51ccbbb",
-      "name": "Gorgeous Granite Gloves",
+      "id": "df2de9aa-0d36-45c7-b690-6275b8ae8a78",
+      "name": "Fantastic Concrete Ball",
       "imageUrl": "http://lorempixel.com/640/480",
       "isHero": true,
-      "ordering": 16142008.101242304,
-      "createdAt": "Thu Jun 21 2018 04:08:14 GMT+0200 (Central European Summer Time)",
-      "updatedAt": "Wed Jun 20 2018 14:02:29 GMT+0200 (Central European Summer Time)"
+      "ordering": -75042155.77794403,
+      "createdAt": "Thu Jun 21 2018 04:28:36 GMT+0200 (Central European Summer Time)",
+      "updatedAt": "Wed Jun 20 2018 14:42:32 GMT+0200 (Central European Summer Time)"
     },
     {
-      "id": "1066e6b4-3a4a-4bb4-8eb3-2f01df5729ec",
-      "name": "Unbranded Steel Salad",
+      "id": "fc2a22f5-827b-4c78-9eb4-967895564199",
+      "name": "Gorgeous Plastic Towels",
       "imageUrl": "http://lorempixel.com/640/480",
       "isHero": true,
-      "ordering": -5236711.768488705,
-      "createdAt": "Wed Jun 20 2018 21:17:28 GMT+0200 (Central European Summer Time)",
-      "updatedAt": "Thu Jun 21 2018 10:09:00 GMT+0200 (Central European Summer Time)"
-    },
-    {
-      "id": "7f648f19-2430-4263-8218-20ed5669eb46",
-      "name": "Handcrafted Granite Pizza",
-      "imageUrl": "http://lorempixel.com/640/480",
-      "isHero": true,
-      "ordering": 66766630.9513157,
-      "createdAt": "Wed Jun 20 2018 11:38:18 GMT+0200 (Central European Summer Time)",
-      "updatedAt": "Thu Jun 21 2018 02:35:25 GMT+0200 (Central European Summer Time)"
-    },
-    {
-      "id": "f0abb427-69d1-4ed5-8e32-193056f1c8df",
-      "name": "Small Granite Chair",
-      "imageUrl": "http://lorempixel.com/640/480",
-      "isHero": true,
-      "ordering": 77365319.58824,
-      "createdAt": "Wed Jun 20 2018 21:30:58 GMT+0200 (Central European Summer Time)",
-      "updatedAt": "Wed Jun 20 2018 21:01:45 GMT+0200 (Central European Summer Time)"
+      "ordering": -81101984.79583946,
+      "createdAt": "Thu Jun 21 2018 00:53:38 GMT+0200 (Central European Summer Time)",
+      "updatedAt": "Thu Jun 21 2018 06:47:36 GMT+0200 (Central European Summer Time)"
     }
   ],
   "flaggedCommentDetails": [
     {
       "comment": {},
-      "previousComments": 6,
-      "nextComments": 3
-    },
-    {
-      "comment": {},
-      "previousComments": 10,
-      "nextComments": 11
+      "previousComments": 18,
+      "nextComments": 1
     }
   ],
   "flaggedComments": [
     {
-      "id": "2809e12f-368a-4a6d-97d5-158488785d47",
-      "videoId": "24921",
+      "id": "915f26d8-d772-4b1b-95f3-0091835496d7",
+      "videoId": "77999",
       "author": {},
-      "status": "velit",
-      "comment": "laboris exercitation",
-      "createdAt": "Thu Jun 21 2018 01:04:56 GMT+0200 (Central European Summer Time)",
-      "updatedAt": "Thu Jun 21 2018 04:06:31 GMT+0200 (Central European Summer Time)"
+      "status": "aute anim ut consequat",
+      "comment": "officia",
+      "createdAt": "Wed Jun 20 2018 18:29:32 GMT+0200 (Central European Summer Time)",
+      "updatedAt": "Wed Jun 20 2018 15:39:31 GMT+0200 (Central European Summer Time)"
     },
     {
-      "id": "91618f83-3850-4b08-b0ea-a2c09d68a4bc",
-      "videoId": "68240",
+      "id": "143a843e-8b43-4347-a92e-55e10b29bf01",
+      "videoId": "73705",
       "author": {},
-      "status": "eiusmod Lorem labore Excepteur aliquip",
-      "comment": "Lorem non laborum nostrud in",
-      "createdAt": "Wed Jun 20 2018 20:11:09 GMT+0200 (Central European Summer Time)",
-      "updatedAt": "Thu Jun 21 2018 07:10:50 GMT+0200 (Central European Summer Time)"
+      "status": "labore voluptate aliqua qui",
+      "comment": "mollit sint labore velit",
+      "createdAt": "Thu Jun 21 2018 03:47:43 GMT+0200 (Central European Summer Time)",
+      "updatedAt": "Thu Jun 21 2018 05:24:45 GMT+0200 (Central European Summer Time)"
     },
     {
-      "id": "004332c6-2ff1-40ee-8f37-015779ab34ba",
-      "videoId": "40386",
+      "id": "d6cf5539-e0b1-44c6-add2-453bdfa353ad",
+      "videoId": "2458",
       "author": {},
-      "status": "dolor in quis",
-      "comment": "id sint",
-      "createdAt": "Wed Jun 20 2018 16:50:54 GMT+0200 (Central European Summer Time)",
-      "updatedAt": "Thu Jun 21 2018 05:41:28 GMT+0200 (Central European Summer Time)"
-    },
-    {
-      "id": "8677b108-c536-4498-8044-525d97d3ace5",
-      "videoId": "84713",
-      "author": {},
-      "status": "amet exercitation et dolo",
-      "comment": "culpa reprehenderit",
-      "createdAt": "Thu Jun 21 2018 07:10:18 GMT+0200 (Central European Summer Time)",
-      "updatedAt": "Wed Jun 20 2018 21:55:27 GMT+0200 (Central European Summer Time)"
-    },
-    {
-      "id": "6c19b9d8-c9ec-49fb-9bd4-87c390fa4a4b",
-      "videoId": "47653",
-      "author": {},
-      "status": "ex dolore",
-      "comment": "culpa veniam aliquip laborum d",
-      "createdAt": "Thu Jun 21 2018 03:02:26 GMT+0200 (Central European Summer Time)",
-      "updatedAt": "Wed Jun 20 2018 22:26:16 GMT+0200 (Central European Summer Time)"
+      "status": "anim ea do",
+      "comment": "ad dolor",
+      "createdAt": "Thu Jun 21 2018 12:23:32 GMT+0200 (Central European Summer Time)",
+      "updatedAt": "Thu Jun 21 2018 00:56:10 GMT+0200 (Central European Summer Time)"
     }
   ],
   "followersOfUsers": [],
   "likes": [
     {
-      "id": "01d40824-ec52-4c2b-8e37-640981abed88",
-      "userId": "89917",
-      "videoId": "58791",
-      "type": "aute labore sint",
-      "createdAt": "Wed Jun 20 2018 23:22:09 GMT+0200 (Central European Summer Time)",
-      "updatedAt": "Wed Jun 20 2018 18:05:40 GMT+0200 (Central European Summer Time)"
+      "id": "e3b2c571-1578-4511-908d-6ab294ee2753",
+      "userId": "40359",
+      "videoId": "27892",
+      "type": "ex consequa",
+      "createdAt": "Wed Jun 20 2018 21:42:49 GMT+0200 (Central European Summer Time)",
+      "updatedAt": "Wed Jun 20 2018 15:13:56 GMT+0200 (Central European Summer Time)"
+    },
+    {
+      "id": "fd43eff3-210d-4b19-a5c5-25d8ddea98ea",
+      "userId": "81566",
+      "videoId": "71609",
+      "type": "Ut elit veniam",
+      "createdAt": "Thu Jun 21 2018 12:27:32 GMT+0200 (Central European Summer Time)",
+      "updatedAt": "Thu Jun 21 2018 12:58:29 GMT+0200 (Central European Summer Time)"
     }
   ],
   "listChallenges": [
     {
-      "id": "d9ffed26-3000-4f98-8f4b-37da29922176",
-      "name": "Small Cotton Cheese",
-      "description": "placeat id non",
-      "challengeCode": "beatae-quae-voluptatem",
-      "isEnabled": false,
-      "rank": 17,
-      "imageUrl": "http://lorempixel.com/640/480",
-      "brandLogoUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/rpeezy/128.jpg",
-      "brandName": "nulla",
-      "terms": "ullamco",
-      "orderNote": "dolore",
-      "learnMore": "dolor adipisicing ad",
-      "commissionAmount": 258,
-      "commissionCurrency": "DKK",
-      "associatedProducts": [],
-      "participationRequirements": [
-        "ENTER_CODE",
-        "PURCHASE_CHALLENGE_PRODUCT",
-        "ENTER_CODE"
-      ],
-      "featuredVideoIds": [
-        "cupidatat ipsum",
-        "pariatur dolore consectetur ven"
-      ],
-      "translations": {},
-      "startDate": "Wed Jun 20 2018 17:08:52 GMT+0200 (Central European Summer Time)",
-      "endDate": "Sun Oct 14 2018 20:07:10 GMT+0200 (Central European Summer Time)",
-      "createdAt": "Thu Jun 21 2018 09:43:57 GMT+0200 (Central European Summer Time)",
-      "updatedAt": "Wed Jun 20 2018 23:37:56 GMT+0200 (Central European Summer Time)"
-    },
-    {
-      "id": "1bb163d2-ee6a-47a5-8c6f-fbac189649a6",
-      "name": "Practical Granite Chips",
-      "description": "vitae nostrum est",
-      "challengeCode": "eveniet-eaque-provident",
-      "isEnabled": false,
-      "rank": 20,
-      "imageUrl": "http://lorempixel.com/640/480",
-      "brandLogoUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/jghyllebert/128.jpg",
-      "brandName": "veniam fugiat",
-      "terms": "tempor consectetur pariatur",
-      "orderNote": "est amet",
-      "learnMore": "eu fugiat consequat",
-      "commissionAmount": 528,
-      "commissionCurrency": "RWF",
-      "associatedProducts": [],
-      "participationRequirements": [
-        "ENTER_CODE",
-        "ENTER_CODE",
-        "PURCHASE_CHALLENGE_PRODUCT",
-        "ENTER_CODE"
-      ],
-      "featuredVideoIds": [
-        "proident consequat",
-        "Duis c",
-        "aliquip"
-      ],
-      "translations": {},
-      "startDate": "Thu Jun 21 2018 08:10:45 GMT+0200 (Central European Summer Time)",
-      "endDate": "Fri Feb 08 2019 13:39:06 GMT+0100 (Central European Standard Time)",
-      "createdAt": "Wed Jun 20 2018 19:18:22 GMT+0200 (Central European Summer Time)",
-      "updatedAt": "Wed Jun 20 2018 11:44:38 GMT+0200 (Central European Summer Time)"
-    },
-    {
-      "id": "853b91e1-046c-4ac8-b30e-0cf4ee6fc2d2",
-      "name": "Licensed Cotton Gloves",
-      "description": "odio nulla cum",
-      "challengeCode": "porro-rerum-repudiandae",
-      "isEnabled": false,
-      "rank": 14,
-      "imageUrl": "http://lorempixel.com/640/480",
-      "brandLogoUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/wake_gs/128.jpg",
-      "brandName": "Ut quis labore",
-      "terms": "cupidatat culpa",
-      "orderNote": "consectetur labore Ut ea",
-      "learnMore": "cillum minim",
-      "commissionAmount": 581,
-      "commissionCurrency": "INR",
-      "associatedProducts": [],
-      "participationRequirements": [
-        "ENTER_CODE",
-        "PURCHASE_CHALLENGE_PRODUCT"
-      ],
-      "featuredVideoIds": [
-        "cupidatat aliquip minim tempor"
-      ],
-      "translations": {},
-      "startDate": "Thu Jun 21 2018 04:04:47 GMT+0200 (Central European Summer Time)",
-      "endDate": "Sun Mar 31 2019 04:29:11 GMT+0200 (Central European Summer Time)",
-      "createdAt": "Thu Jun 21 2018 10:07:49 GMT+0200 (Central European Summer Time)",
-      "updatedAt": "Wed Jun 20 2018 19:19:30 GMT+0200 (Central European Summer Time)"
-    },
-    {
-      "id": "27fd906f-c58e-4e49-816c-6b6ae3b28c6f",
-      "name": "Incredible Steel Car",
-      "description": "dicta consectetur repudiandae",
-      "challengeCode": "dolor-quam-est",
-      "isEnabled": false,
-      "rank": 0,
-      "imageUrl": "http://lorempixel.com/640/480",
-      "brandLogoUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/scrapdnb/128.jpg",
-      "brandName": "anim",
-      "terms": "Lorem dolore aliquip sint nisi",
-      "orderNote": "laborum incididunt dolor ips",
-      "learnMore": "ullamco sint labore",
-      "commissionAmount": 624,
-      "commissionCurrency": "VUV",
-      "associatedProducts": [],
-      "participationRequirements": [
-        "ENTER_CODE"
-      ],
-      "featuredVideoIds": [
-        "tempor pariatur irure",
-        "deserunt in anim dolore",
-        "dolor labore consectetur adipisicing"
-      ],
-      "translations": {},
-      "startDate": "Wed Jun 20 2018 16:09:40 GMT+0200 (Central European Summer Time)",
-      "endDate": "Mon Jul 02 2018 19:33:05 GMT+0200 (Central European Summer Time)",
-      "createdAt": "Wed Jun 20 2018 20:56:58 GMT+0200 (Central European Summer Time)",
-      "updatedAt": "Wed Jun 20 2018 21:02:30 GMT+0200 (Central European Summer Time)"
-    },
-    {
-      "id": "e9be7e18-b368-45b1-b6aa-405d12ad96fe",
-      "name": "Sleek Wooden Ball",
-      "description": "sint aut blanditiis",
-      "challengeCode": "reprehenderit-sed-adipisci",
+      "id": "6ad36404-99c6-4501-8107-f0f1ff651a88",
+      "name": "Incredible Frozen Shirt",
+      "description": "illum ex dolorem",
+      "challengeCode": "hic-itaque-debitis",
       "isEnabled": true,
-      "rank": 20,
+      "rank": 9,
       "imageUrl": "http://lorempixel.com/640/480",
-      "brandLogoUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/fotomagin/128.jpg",
-      "brandName": "commodo Duis",
-      "terms": "laboris non proi",
-      "orderNote": "mollit Ut aliquip in",
-      "learnMore": "do Excepte",
-      "commissionAmount": 763,
-      "commissionCurrency": "JOD",
+      "brandLogoUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/arashmanteghi/128.jpg",
+      "brandName": "eu",
+      "terms": "ut ut",
+      "orderNote": "laboris occaecat amet",
+      "learnMore": "ullamco Lorem",
+      "commissionAmount": 620,
+      "commissionCurrency": "DJF",
       "associatedProducts": [],
       "participationRequirements": [
-        "ENTER_CODE",
-        "PURCHASE_CHALLENGE_PRODUCT"
+        "PURCHASE_CHALLENGE_PRODUCT",
+        "ENTER_CODE"
       ],
       "featuredVideoIds": [
-        "reprehenderit aute",
-        "velit",
-        "ut laboris Duis Lorem ",
-        "sint est proident",
-        "et cupidatat mollit laborum"
+        "tempor sed"
       ],
       "translations": {},
-      "startDate": "Thu Jun 21 2018 06:30:06 GMT+0200 (Central European Summer Time)",
-      "endDate": "Fri Jun 14 2019 09:46:31 GMT+0200 (Central European Summer Time)",
-      "createdAt": "Wed Jun 20 2018 10:33:02 GMT+0200 (Central European Summer Time)",
-      "updatedAt": "Thu Jun 21 2018 10:02:46 GMT+0200 (Central European Summer Time)"
+      "startDate": "Thu Jun 21 2018 02:15:46 GMT+0200 (Central European Summer Time)",
+      "endDate": "Sat Dec 08 2018 20:25:05 GMT+0100 (Central European Standard Time)",
+      "createdAt": "Thu Jun 21 2018 00:45:26 GMT+0200 (Central European Summer Time)",
+      "updatedAt": "Wed Jun 20 2018 22:05:50 GMT+0200 (Central European Summer Time)"
     }
   ],
   "metrics": [
     {
-      "numOfTotalOrders": 84581593.6024453,
+      "numOfTotalOrders": 26606571.761887968,
       "numOfOrders": [],
-      "numOfTotalProducts": -70881973.10067348,
+      "numOfTotalProducts": -60337083.652826175,
       "numOfProducts": [],
-      "numOfTotalLikes": 17,
-      "numOfLikes": 19,
-      "numOfTotalFollows": 59851619.60569188,
+      "numOfTotalLikes": 1,
+      "numOfLikes": 2,
+      "numOfTotalFollows": -31026030.560782835,
       "numOfFollows": []
     },
     {
-      "numOfTotalOrders": 55260072.5698629,
+      "numOfTotalOrders": -25336112.253038675,
       "numOfOrders": [],
-      "numOfTotalProducts": 98592073.63012806,
+      "numOfTotalProducts": 65375126.20240736,
       "numOfProducts": [],
-      "numOfTotalLikes": 16,
-      "numOfLikes": 5,
-      "numOfTotalFollows": 16638525.240817964,
+      "numOfTotalLikes": 0,
+      "numOfLikes": 14,
+      "numOfTotalFollows": -81813834.34590907,
+      "numOfFollows": []
+    },
+    {
+      "numOfTotalOrders": 99712643.20325989,
+      "numOfOrders": [],
+      "numOfTotalProducts": 44622187.191571206,
+      "numOfProducts": [],
+      "numOfTotalLikes": 15,
+      "numOfLikes": 12,
+      "numOfTotalFollows": 24616613.26005213,
       "numOfFollows": []
     }
   ],
   "notifications": [
     {
-      "id": "fec540f3-0705-4805-a03f-b921b866f471",
-      "message": "pariatur exercitation ",
+      "id": "abdd5ff4-bf1a-499f-a285-60d4122514f0",
+      "message": "Lorem ut dolor laborum",
       "properties": {},
-      "createdAt": "Wed Jun 20 2018 14:47:18 GMT+0200 (Central European Summer Time)"
+      "createdAt": "Thu Jun 21 2018 00:04:54 GMT+0200 (Central European Summer Time)"
     },
     {
-      "id": "372c836d-feaa-46a5-a284-30b0f2a50b7d",
-      "message": "magna dolor laborum deserunt et",
+      "id": "51628310-0e05-41ff-b71c-4aa8e9a5abee",
+      "message": "tempor",
       "properties": {},
-      "createdAt": "Wed Jun 20 2018 14:06:45 GMT+0200 (Central European Summer Time)"
+      "createdAt": "Wed Jun 20 2018 18:55:00 GMT+0200 (Central European Summer Time)"
     }
   ],
   "purchaseRequests": [
     {
-      "id": "58e4d94b-39c8-4618-83da-be75598819cf",
-      "userId": "71875",
-      "userYeayScore": 683,
-      "productId": "54320",
-      "productYeayScorePrice": 737.15,
-      "videoId": "46713",
-      "email": "Graciela.Nader@gmail.com",
-      "phoneNumber": "713-529-1245 x5291",
+      "id": "c5586eac-2f48-4de1-b280-80ce2c8ef20d",
+      "userId": "69095",
+      "userYeayScore": 33,
+      "productId": "68226",
+      "productYeayScorePrice": 518.46,
+      "videoId": "38257",
+      "email": "Lisa93@hotmail.com",
+      "phoneNumber": "(090) 768-3662 x21853",
       "address": {}
     },
     {
-      "id": "4ddb6071-d927-497a-b7b9-87603d5e6ca5",
-      "userId": "88776",
-      "userYeayScore": 420,
-      "productId": "90102",
-      "productYeayScorePrice": 841.78,
-      "videoId": "69436",
-      "email": "Florencio96@yahoo.com",
-      "phoneNumber": "823-557-0048 x89785",
+      "id": "2458cb70-cdd7-40cb-9c34-e1ef91a58c69",
+      "userId": "78959",
+      "userYeayScore": 476,
+      "productId": "81397",
+      "productYeayScorePrice": 307.08,
+      "videoId": "22606",
+      "email": "Jena.Kub@hotmail.com",
+      "phoneNumber": "1-597-600-6312 x91977",
       "address": {}
     },
     {
-      "id": "560a9640-4d0e-422b-bec6-268ac228c313",
-      "userId": "27536",
-      "userYeayScore": 948,
-      "productId": "9331",
-      "productYeayScorePrice": 33.66,
-      "videoId": "99909",
-      "email": "Serenity72@yahoo.com",
-      "phoneNumber": "1-493-098-3513 x6351",
+      "id": "9fb3ac5a-db8e-4aa9-a68e-a82b42c6baa0",
+      "userId": "13203",
+      "userYeayScore": 773,
+      "productId": "38327",
+      "productYeayScorePrice": 331.76,
+      "videoId": "77579",
+      "email": "Edd6@hotmail.com",
+      "phoneNumber": "974-647-3203",
+      "address": {}
+    },
+    {
+      "id": "dfd4a4da-d23c-4068-8539-ce48d1547c5a",
+      "userId": "1523",
+      "userYeayScore": 823,
+      "productId": "97450",
+      "productYeayScorePrice": 425.19,
+      "videoId": "88259",
+      "email": "Mittie.Larson22@hotmail.com",
+      "phoneNumber": "(235) 238-4897 x2605",
       "address": {}
     }
   ],
   "uniqueIdValidationResponses": [
     {
-      "isValid": true,
+      "isValid": false,
       "suggestions": [
-        "ut dolor anim",
-        "Lorem laborum",
-        "",
-        "proident Lorem nisi"
+        "laborum velit min",
+        "fugiat",
+        "do aute",
+        "Duis anim quis magna Ut",
+        "e"
       ],
       "reason": {
-        "code": "BLACKLISTED",
-        "message": "ea dolor"
+        "code": "ALREADY_IN_USE",
+        "message": "commodo lab"
       }
     },
     {
-      "isValid": true,
+      "isValid": false,
       "suggestions": [
-        "occaecat ipsum eiusmod laborum"
+        "ut",
+        "commodo re",
+        "non sit Duis",
+        "id non officia Excepteur "
       ],
       "reason": {
-        "code": "BLACKLISTED",
-        "message": "dolore nostrud nulla"
-      }
-    },
-    {
-      "isValid": true,
-      "suggestions": [
-        "aute ipsum ea tempor",
-        "nulla aute",
-        "e",
-        "nostrud occaecat culpa",
-        "do proident anim consectetur"
-      ],
-      "reason": {
-        "code": "BLACKLISTED",
-        "message": "ipsum dolore"
+        "code": "INVALID_CHARACTERS",
+        "message": "dolore Lorem in veniam"
       }
     }
   ],
   "uploadImages": [
     {
-      "url": "velit cillum ut irure adipisicing"
+      "url": "Lorem qui"
     },
     {
-      "url": "minim"
-    },
-    {
-      "url": "ut officia consequat sint"
-    },
-    {
-      "url": "pariatur sint non velit"
-    },
-    {
-      "url": "amet dolore esse"
+      "url": "sint exercitation eu do amet"
     }
   ],
   "userFollows": [],
   "userSettingsPublics": [
     {
-      "id": "2b3dbbd7-1d1f-416d-a12b-bcb8b8b52020",
-      "totalLikes": 15,
-      "totalFollowing": -81208850.08808592,
-      "totalFollowers": 60172938.886108965,
-      "totalProducts": -76065275.86430198
-    },
-    {
-      "id": "8aaa3f0f-f912-4377-abc2-45fb7cbfb90a",
-      "totalLikes": 14,
-      "totalFollowing": 86856719.24344695,
-      "totalFollowers": 28551964.530409977,
-      "totalProducts": -72894206.07875398
+      "id": "9e15e2d5-a63c-4e6d-bcbd-f035be4eea55",
+      "totalLikes": 11,
+      "totalFollowing": 44877221.37131241,
+      "totalFollowers": -13062240.830304846,
+      "totalProducts": -31699222.661999077
     }
   ],
   "users": [
     {
-      "id": "82db2e82-e846-4b5b-8765-f29d456b5f28",
-      "email": "Nathaniel_Senger@yahoo.com",
-      "firstname": "Phyllis",
-      "lastname": "Yundt",
-      "username": "Jayce_Halvorson",
+      "id": "9078bfb1-12c5-4732-98df-3f344499fc43",
+      "email": "Deonte.Murray@yahoo.com",
+      "firstname": "Linnie",
+      "lastname": "Klein",
+      "username": "Aniyah35",
       "emailVerified": false,
-      "avatarImageUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/creartinc/128.jpg",
-      "splashImageUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/lisovsky/128.jpg",
-      "deviceToken": "ex elit",
-      "updatedAt": "Wed Jun 20 2018 15:19:00 GMT+0200 (Central European Summer Time)",
-      "createdAt": "Wed Jun 20 2018 17:15:22 GMT+0200 (Central European Summer Time)",
+      "avatarImageUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/matt3224/128.jpg",
+      "splashImageUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/drewbyreese/128.jpg",
+      "deviceToken": "voluptate minim dolor velit",
+      "updatedAt": "Wed Jun 20 2018 17:03:30 GMT+0200 (Central European Summer Time)",
+      "createdAt": "Thu Jun 21 2018 00:04:39 GMT+0200 (Central European Summer Time)",
       "address": {},
-      "paypalEmail": "Amya64@yahoo.com",
-      "phoneNumber": "616.774.4100",
-      "gender": "female",
-      "birthday": "1955-11-17",
-      "taxId": "60852",
-      "locale": "en_IND",
-      "roles": "admin",
-      "altAvatarImages": {},
-      "profileBio": "anim tem",
-      "allowsChat": false,
-      "currency": "ISK",
-      "paymentDetails": {},
-      "appUserType": "influencer",
-      "isVerifiedByYeay": false,
-      "yeayScore": 576,
-      "isScoreFrozen": true
-    },
-    {
-      "id": "dc8a4945-d5f0-4a28-a7b1-ec9018b555b8",
-      "email": "Daisha_Kihn18@yahoo.com",
-      "firstname": "Pietro",
-      "lastname": "Rath",
-      "username": "Luisa.Wilderman",
-      "emailVerified": false,
-      "avatarImageUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/Talbi_ConSept/128.jpg",
-      "splashImageUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/vitorleal/128.jpg",
-      "deviceToken": "eiusmod laboris in esse",
-      "updatedAt": "Thu Jun 21 2018 08:02:11 GMT+0200 (Central European Summer Time)",
-      "createdAt": "Thu Jun 21 2018 01:14:08 GMT+0200 (Central European Summer Time)",
-      "address": {},
-      "paypalEmail": "Jaren32@hotmail.com",
-      "phoneNumber": "(244) 386-1522",
+      "paypalEmail": "Jacklyn11@hotmail.com",
+      "phoneNumber": "1-553-049-6099 x217",
       "gender": "male",
-      "birthday": "1941-09-03",
-      "taxId": "64330",
-      "locale": "en",
+      "birthday": "1977-09-04",
+      "taxId": "9399",
+      "locale": "fa",
       "roles": "user",
       "altAvatarImages": {},
-      "profileBio": "sint aliquip ea deserunt",
-      "allowsChat": true,
-      "currency": "KES",
+      "profileBio": "ipsum ea eiusmod",
+      "allowsChat": false,
+      "currency": "CRC",
       "paymentDetails": {},
-      "appUserType": "regular",
+      "appUserType": "brand",
       "isVerifiedByYeay": true,
-      "yeayScore": 831,
+      "yeayScore": 929,
       "isScoreFrozen": true
     },
     {
-      "id": "ef3378de-cdcd-4b0a-920d-10f310c03dc9",
-      "email": "Melisa82@hotmail.com",
-      "firstname": "Ricardo",
-      "lastname": "Cartwright",
-      "username": "Stephania_Von93",
-      "emailVerified": false,
-      "avatarImageUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/kojourin/128.jpg",
-      "splashImageUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/rickyyean/128.jpg",
-      "deviceToken": "dolor aliquip nostrud officia ut",
-      "updatedAt": "Wed Jun 20 2018 18:19:25 GMT+0200 (Central European Summer Time)",
-      "createdAt": "Wed Jun 20 2018 20:40:01 GMT+0200 (Central European Summer Time)",
+      "id": "35f1d5f2-ce03-4e8d-8faf-0d2a02f1d21f",
+      "email": "Burnice.Ernser@yahoo.com",
+      "firstname": "Estefania",
+      "lastname": "McGlynn",
+      "username": "Anais.Hyatt",
+      "emailVerified": true,
+      "avatarImageUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/nomidesigns/128.jpg",
+      "splashImageUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/spacewood_/128.jpg",
+      "deviceToken": "do",
+      "updatedAt": "Wed Jun 20 2018 19:26:14 GMT+0200 (Central European Summer Time)",
+      "createdAt": "Wed Jun 20 2018 22:02:46 GMT+0200 (Central European Summer Time)",
       "address": {},
-      "paypalEmail": "Ari36@yahoo.com",
-      "phoneNumber": "047.611.3365",
-      "gender": "female",
-      "birthday": "1961-05-30",
-      "taxId": "12987",
-      "locale": "es",
+      "paypalEmail": "Brycen.Deckow70@yahoo.com",
+      "phoneNumber": "429-135-6645 x98203",
+      "gender": "male",
+      "birthday": "1964-08-11",
+      "taxId": "1181",
+      "locale": "en_CA",
       "roles": "admin",
       "altAvatarImages": {},
-      "profileBio": "sunt voluptate",
+      "profileBio": "amet sed",
       "allowsChat": true,
-      "currency": "XAU",
+      "currency": "USD",
       "paymentDetails": {},
       "appUserType": "influencer",
-      "isVerifiedByYeay": false,
-      "yeayScore": 395,
-      "isScoreFrozen": false
-    },
-    {
-      "id": "27839d58-075d-4741-b4fa-8cfb9e7c1e41",
-      "email": "Rodolfo_Hickle99@yahoo.com",
-      "firstname": "Hailie",
-      "lastname": "Padberg",
-      "username": "Ansel32",
-      "emailVerified": false,
-      "avatarImageUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/elliotlewis/128.jpg",
-      "splashImageUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/carbontwelve/128.jpg",
-      "deviceToken": "dolore Ut ut cillum anim",
-      "updatedAt": "Thu Jun 21 2018 09:19:26 GMT+0200 (Central European Summer Time)",
-      "createdAt": "Wed Jun 20 2018 14:40:10 GMT+0200 (Central European Summer Time)",
-      "address": {},
-      "paypalEmail": "Eladio6@gmail.com",
-      "phoneNumber": "979.437.1905",
-      "gender": "female",
-      "birthday": "2011-12-28",
-      "taxId": "2209",
-      "locale": "en_AU",
-      "roles": "guest",
-      "altAvatarImages": {},
-      "profileBio": "laborum in Lorem cillum proident",
-      "allowsChat": false,
-      "currency": "MMK",
-      "paymentDetails": {},
-      "appUserType": "brand",
-      "isVerifiedByYeay": false,
-      "yeayScore": 240,
-      "isScoreFrozen": false
+      "isVerifiedByYeay": true,
+      "yeayScore": 771,
+      "isScoreFrozen": true
     }
   ],
   "validateEmails": [
     {
-      "isValid": true
+      "isValid": false
     },
     {
-      "isValid": false
+      "isValid": true
     }
   ],
   "versions": [
     {
-      "version": "occaecat elit"
+      "version": "reprehenderit irure"
     },
     {
-      "version": "veniam ut l"
+      "version": "laborum amet magna sed"
     }
   ],
   "videoComments": [
     {
-      "id": "bcf2ba6e-a08c-4b7f-adb4-958fedc04cb7",
-      "videoId": "17754",
+      "id": "4f40d02f-4bfe-4762-8c09-cf7386124e11",
+      "videoId": "47534",
       "author": {},
-      "status": "in in dolor magna est",
-      "comment": "dolor",
-      "createdAt": "Thu Jun 21 2018 00:04:07 GMT+0200 (Central European Summer Time)",
-      "updatedAt": "Thu Jun 21 2018 04:17:28 GMT+0200 (Central European Summer Time)"
+      "status": "deserunt e",
+      "comment": "eli",
+      "createdAt": "Wed Jun 20 2018 19:14:24 GMT+0200 (Central European Summer Time)",
+      "updatedAt": "Thu Jun 21 2018 02:33:34 GMT+0200 (Central European Summer Time)"
+    },
+    {
+      "id": "b908856a-db6f-4b11-abb4-5cd45055d816",
+      "videoId": "36172",
+      "author": {},
+      "status": "laborum deserunt voluptate dolor in",
+      "comment": "reprehenderit",
+      "createdAt": "Thu Jun 21 2018 01:59:34 GMT+0200 (Central European Summer Time)",
+      "updatedAt": "Thu Jun 21 2018 02:35:26 GMT+0200 (Central European Summer Time)"
+    },
+    {
+      "id": "33527854-b881-49ea-881f-9bbf37a5073b",
+      "videoId": "87796",
+      "author": {},
+      "status": "ipsum sit adipisicing est Duis",
+      "comment": "esse minim",
+      "createdAt": "Wed Jun 20 2018 17:05:16 GMT+0200 (Central European Summer Time)",
+      "updatedAt": "Thu Jun 21 2018 02:28:54 GMT+0200 (Central European Summer Time)"
+    },
+    {
+      "id": "b142c48a-a464-4d1e-bc80-527a4a581d1c",
+      "videoId": "49144",
+      "author": {},
+      "status": "velit ea mollit in Ut",
+      "comment": "Ut ex incididunt",
+      "createdAt": "Thu Jun 21 2018 10:23:49 GMT+0200 (Central European Summer Time)",
+      "updatedAt": "Wed Jun 20 2018 16:26:53 GMT+0200 (Central European Summer Time)"
     }
   ],
   "videoMusicAssets": [
     {
-      "id": "c46e6be9-ed6e-4949-8f75-8b244a5a6197",
-      "name": "Licensed Wooden Tuna",
-      "artist": "est in quis nostrud",
+      "id": "5d94d9d9-8b64-45cf-886d-c42eae67ecdd",
+      "name": "Awesome Rubber Shoes",
+      "artist": "ex velit Ut nostrud mollit",
       "assets": [
         {
-          "name": "do laborum tempor consectetur",
-          "type": "Excepteur incididunt sunt",
-          "url": "ullamco"
+          "name": "nostrud",
+          "type": "sed dolore",
+          "url": "incididunt laboris u"
         },
         {
-          "name": "aute Duis eiusmod tempor",
-          "type": "in est proident",
-          "url": "est ut ad cupidatat"
+          "name": "occaecat dolore aliqua ut",
+          "type": "aliqua et esse ut",
+          "url": "ut"
         },
         {
-          "name": "adipisicing",
-          "type": "est nisi aute",
-          "url": "in"
-        },
-        {
-          "name": "velit non quis exercitation ad",
-          "type": "labore pariatur nisi ad",
-          "url": "voluptate ullamco"
+          "name": "dolore consequat Ut mollit",
+          "type": "voluptate id",
+          "url": "velit"
         }
       ],
-      "createdAt": "Wed Jun 20 2018 20:10:59 GMT+0200 (Central European Summer Time)",
-      "updatedAt": "Wed Jun 20 2018 11:55:54 GMT+0200 (Central European Summer Time)"
+      "createdAt": "Wed Jun 20 2018 17:23:58 GMT+0200 (Central European Summer Time)",
+      "updatedAt": "Thu Jun 21 2018 09:09:57 GMT+0200 (Central European Summer Time)"
     },
     {
-      "id": "5efbb109-ddef-42d8-9a41-0b908ec02681",
-      "name": "Gorgeous Granite Mouse",
-      "artist": "mollit ex nisi",
+      "id": "602f633f-5ed3-4fa7-bc72-d22837a0789f",
+      "name": "Intelligent Frozen Chips",
+      "artist": "sed Duis in dolor in",
       "assets": [
         {
-          "name": "velit s",
-          "type": "velit nulla",
-          "url": "pariatur in aliqua ut velit"
+          "name": "",
+          "type": "sint aute Excepteur reprehenderit amet",
+          "url": "officia"
         },
         {
-          "name": "in consequat nostrud laboris",
-          "type": "incididunt in aliquip quis",
-          "url": "ad eiusmod velit laboris"
+          "name": "cillu",
+          "type": "qui",
+          "url": "est ut dolore dolor amet"
+        },
+        {
+          "name": "est e",
+          "type": "nostrud sunt",
+          "url": "sint est magna Excepteur"
+        },
+        {
+          "name": "Lorem au",
+          "type": "tempor velit",
+          "url": "aliqua se"
         }
       ],
-      "createdAt": "Wed Jun 20 2018 11:27:41 GMT+0200 (Central European Summer Time)",
-      "updatedAt": "Thu Jun 21 2018 06:42:54 GMT+0200 (Central European Summer Time)"
+      "createdAt": "Thu Jun 21 2018 05:53:16 GMT+0200 (Central European Summer Time)",
+      "updatedAt": "Thu Jun 21 2018 06:24:47 GMT+0200 (Central European Summer Time)"
     },
     {
-      "id": "ed63e406-2f0a-4a46-8985-4960c77bd0e7",
-      "name": "Licensed Concrete Gloves",
-      "artist": "dolore veniam",
+      "id": "5a5f264a-2dda-4e75-aa13-4038989db17d",
+      "name": "Sleek Concrete Mouse",
+      "artist": "non",
       "assets": [
         {
-          "name": "ex Excepteur et",
-          "type": "culpa occaecat in adipisicing aute",
-          "url": "laboris commod"
+          "name": "dolor non sit",
+          "type": "dolore nostrud reprehenderit",
+          "url": "exercitation sit commodo"
         },
         {
-          "name": "sint cupidatat Lorem in sed",
-          "type": "laborum consectetur exercitatio",
-          "url": "do"
+          "name": "laborum nulla deserunt",
+          "type": "commodo ad",
+          "url": "cupidatat Ut in eu"
         },
         {
-          "name": "cupidatat",
-          "type": "officia non",
-          "url": "ullamco"
+          "name": "amet mollit Duis",
+          "type": "nostrud exercitation",
+          "url": "aute Duis in commodo am"
         },
         {
-          "name": "in nisi",
-          "type": "dolore ut reprehenderit proident",
-          "url": "tempor nostrud"
+          "name": "adipisicing nulla Ut eu commodo",
+          "type": "in sed fugiat nisi",
+          "url": "incididunt nostrud"
         }
       ],
-      "createdAt": "Wed Jun 20 2018 22:26:10 GMT+0200 (Central European Summer Time)",
-      "updatedAt": "Thu Jun 21 2018 03:24:48 GMT+0200 (Central European Summer Time)"
-    },
-    {
-      "id": "24de43a1-87f0-4652-9b52-17f8715c0dc7",
-      "name": "Rustic Soft Fish",
-      "artist": "nisi Ut aute",
-      "assets": [
-        {
-          "name": "nulla irure",
-          "type": "Du",
-          "url": "quis officia est ea"
-        }
-      ],
-      "createdAt": "Wed Jun 20 2018 13:44:31 GMT+0200 (Central European Summer Time)",
-      "updatedAt": "Wed Jun 20 2018 16:42:26 GMT+0200 (Central European Summer Time)"
+      "createdAt": "Thu Jun 21 2018 07:08:40 GMT+0200 (Central European Summer Time)",
+      "updatedAt": "Thu Jun 21 2018 02:07:54 GMT+0200 (Central European Summer Time)"
     }
   ],
   "videoReviewQueues": [
     {
-      "id": "d34c2cf4-fa8f-46d1-b0de-a22407f0dc15",
-      "videoTitle": "dolor in Excepteur ut reprehenderit",
-      "caption": "sed adipisicing",
-      "approved": false,
+      "id": "3ec452b7-f94a-4120-a462-c587652f2830",
+      "videoTitle": "tempor magna ullamco veniam fugiat",
+      "caption": "eiusmod",
+      "approved": true,
       "submitted": false,
       "featured": false,
-      "videoType": "sale",
+      "videoType": "",
       "converted": false,
-      "expired": false,
-      "airedAt": "Thu Jun 21 2018 00:42:11 GMT+0200 (Central European Summer Time)",
-      "ranking": 6,
+      "expired": true,
+      "airedAt": "Wed Jun 20 2018 15:05:46 GMT+0200 (Central European Summer Time)",
+      "ranking": 19,
       "mediaUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/video-DvyCq4rGZu-568.m3u8",
       "sourceMediaUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/74703ca4-6cf3-478e-9195-0bf8c74bd649.mp4",
       "altMediaUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/video-DvyCq4rGZu-568-dash.mpd",
@@ -1308,97 +1107,240 @@
       "posterImageUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/products/tFlhXqdVBd/2c54f5b7-0fe3-46fc-b9ad-02a56d154f0b.jpg",
       "previewUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/user-preview-1528968423559.gif",
       "altPreviewUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/fast-1528968423708.mp4",
-      "indexedAt": "Wed Jun 20 2018 13:46:43 GMT+0200 (Central European Summer Time)",
-      "updatedAt": "Wed Jun 20 2018 23:01:39 GMT+0200 (Central European Summer Time)",
-      "createdAt": "Wed Jun 20 2018 14:46:25 GMT+0200 (Central European Summer Time)",
-      "website": "hertha.biz",
+      "indexedAt": "Thu Jun 21 2018 09:41:39 GMT+0200 (Central European Summer Time)",
+      "updatedAt": "Thu Jun 21 2018 01:07:14 GMT+0200 (Central European Summer Time)",
+      "createdAt": "Thu Jun 21 2018 01:02:48 GMT+0200 (Central European Summer Time)",
+      "website": "tara.org",
       "socialVideoUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/user-portrait-1528968430066.mp4",
       "channels": [
-        "nostrud cupidatat proident",
-        "esse nulla",
-        "dolor culpa dolor Ut",
-        "qui enim",
-        "in fugiat reprehenderit do"
+        "ad pariatur",
+        "ex sit ipsum Duis",
+        "aute aliquip ",
+        "occaecat est",
+        "in do"
       ],
-      "adminTags": "winter",
-      "yeay": false,
+      "adminTags": "summer",
+      "yeay": true,
       "affiliateProductIds": [
-        "et ut ea mollit",
-        "eu esse laborum adipisicing",
-        "Excepteur volupt",
-        "ut proident amet"
+        "nisi Lorem qui adipisicing",
+        "voluptate ad ut ut amet",
+        "culpa co",
+        "aliquip"
       ],
-      "totalLikes": 5,
+      "totalLikes": 20,
       "creator": {},
       "user": {},
-      "challengeId": "5603",
+      "challengeId": "17279",
       "challenge": {
-        "id": "cupidatat tempor"
+        "id": "dolore"
+      },
+      "generalFeedVisibility": false,
+      "specificFeedVisibilities": {},
+      "isOnline": true,
+      "brands": "Rippin - Stoltenberg"
+    },
+    {
+      "id": "0023d09b-dda0-4b5e-abf0-cf545377e800",
+      "videoTitle": "eu sed",
+      "caption": "qui quis",
+      "approved": true,
+      "submitted": true,
+      "featured": false,
+      "videoType": "",
+      "converted": true,
+      "expired": true,
+      "airedAt": "Thu Jun 21 2018 12:07:07 GMT+0200 (Central European Summer Time)",
+      "ranking": 18,
+      "mediaUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/video-DvyCq4rGZu-568.m3u8",
+      "sourceMediaUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/74703ca4-6cf3-478e-9195-0bf8c74bd649.mp4",
+      "altMediaUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/video-DvyCq4rGZu-568-dash.mpd",
+      "sharingImageUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/user-shareimage-1528968495470.jpg",
+      "posterImageUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/products/tFlhXqdVBd/2c54f5b7-0fe3-46fc-b9ad-02a56d154f0b.jpg",
+      "previewUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/user-preview-1528968423559.gif",
+      "altPreviewUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/fast-1528968423708.mp4",
+      "indexedAt": "Wed Jun 20 2018 19:42:39 GMT+0200 (Central European Summer Time)",
+      "updatedAt": "Wed Jun 20 2018 19:02:43 GMT+0200 (Central European Summer Time)",
+      "createdAt": "Wed Jun 20 2018 21:57:18 GMT+0200 (Central European Summer Time)",
+      "website": "tyrel.name",
+      "socialVideoUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/user-portrait-1528968430066.mp4",
+      "channels": [
+        "esse aliqua magna Ut",
+        "in do officia ullamco"
+      ],
+      "adminTags": "summer",
+      "yeay": false,
+      "affiliateProductIds": [
+        "aute",
+        "incididunt est"
+      ],
+      "totalLikes": 11,
+      "creator": {},
+      "user": {},
+      "challengeId": "15240",
+      "challenge": {
+        "id": "dolor"
+      },
+      "generalFeedVisibility": true,
+      "specificFeedVisibilities": {},
+      "isOnline": true,
+      "brands": "Lubowitz, Price and Ernser"
+    },
+    {
+      "id": "9f5b6bba-631c-46c2-951e-9d2ee2701a11",
+      "videoTitle": "nisi",
+      "caption": "non Lorem",
+      "approved": false,
+      "submitted": true,
+      "featured": true,
+      "videoType": "sale",
+      "converted": false,
+      "expired": true,
+      "airedAt": "Wed Jun 20 2018 17:39:38 GMT+0200 (Central European Summer Time)",
+      "ranking": 7,
+      "mediaUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/video-DvyCq4rGZu-568.m3u8",
+      "sourceMediaUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/74703ca4-6cf3-478e-9195-0bf8c74bd649.mp4",
+      "altMediaUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/video-DvyCq4rGZu-568-dash.mpd",
+      "sharingImageUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/user-shareimage-1528968495470.jpg",
+      "posterImageUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/products/tFlhXqdVBd/2c54f5b7-0fe3-46fc-b9ad-02a56d154f0b.jpg",
+      "previewUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/user-preview-1528968423559.gif",
+      "altPreviewUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/fast-1528968423708.mp4",
+      "indexedAt": "Wed Jun 20 2018 13:30:06 GMT+0200 (Central European Summer Time)",
+      "updatedAt": "Wed Jun 20 2018 22:01:07 GMT+0200 (Central European Summer Time)",
+      "createdAt": "Thu Jun 21 2018 00:32:37 GMT+0200 (Central European Summer Time)",
+      "website": "noble.net",
+      "socialVideoUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/user-portrait-1528968430066.mp4",
+      "channels": [
+        "Lorem velit dolore sit",
+        "ad"
+      ],
+      "adminTags": "feature",
+      "yeay": false,
+      "affiliateProductIds": [
+        "cupidatat reprehenderit adipisicing consectetur"
+      ],
+      "totalLikes": 4,
+      "creator": {},
+      "user": {},
+      "challengeId": "25752",
+      "challenge": {
+        "id": "do in cillum mollit"
       },
       "generalFeedVisibility": false,
       "specificFeedVisibilities": {},
       "isOnline": false,
-      "brands": "Gulgowski - Kuphal"
+      "brands": "Berge - Wolf"
     },
     {
-      "id": "5f8369cc-f4b0-4f69-8ab6-a3c48473a9d9",
-      "videoTitle": "eiusmod occaecat m",
-      "caption": "ut in occaecat do",
+      "id": "0d3a96a4-f904-4443-8325-00793b505b3c",
+      "videoTitle": "in proident exercitation ",
+      "caption": "dolor ",
+      "approved": true,
+      "submitted": true,
+      "featured": true,
+      "videoType": "",
+      "converted": true,
+      "expired": false,
+      "airedAt": "Thu Jun 21 2018 02:34:58 GMT+0200 (Central European Summer Time)",
+      "ranking": 13,
+      "mediaUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/video-DvyCq4rGZu-568.m3u8",
+      "sourceMediaUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/74703ca4-6cf3-478e-9195-0bf8c74bd649.mp4",
+      "altMediaUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/video-DvyCq4rGZu-568-dash.mpd",
+      "sharingImageUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/user-shareimage-1528968495470.jpg",
+      "posterImageUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/products/tFlhXqdVBd/2c54f5b7-0fe3-46fc-b9ad-02a56d154f0b.jpg",
+      "previewUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/user-preview-1528968423559.gif",
+      "altPreviewUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/fast-1528968423708.mp4",
+      "indexedAt": "Wed Jun 20 2018 20:14:55 GMT+0200 (Central European Summer Time)",
+      "updatedAt": "Thu Jun 21 2018 01:49:34 GMT+0200 (Central European Summer Time)",
+      "createdAt": "Wed Jun 20 2018 15:06:42 GMT+0200 (Central European Summer Time)",
+      "website": "nora.info",
+      "socialVideoUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/user-portrait-1528968430066.mp4",
+      "channels": [
+        "exercitation voluptate dolor",
+        "proident Duis cupid",
+        "tempor velit",
+        "Lorem ipsum eiusmod sit"
+      ],
+      "adminTags": "feature",
+      "yeay": false,
+      "affiliateProductIds": [
+        "est amet minim",
+        "sint sed",
+        "proident pariatur laboris",
+        "in e"
+      ],
+      "totalLikes": 9,
+      "creator": {},
+      "user": {},
+      "challengeId": "66362",
+      "challenge": {
+        "id": "ullamco tempor ea nostrud aliquip"
+      },
+      "generalFeedVisibility": true,
+      "specificFeedVisibilities": {},
+      "isOnline": false,
+      "brands": "Gerhold - Daugherty"
+    }
+  ],
+  "videos": [
+    {
+      "id": "b3dcbab3-34cf-4c25-8c2d-8f2f25b134b9",
+      "videoTitle": "fugiat minim",
+      "caption": "ut non Duis",
+      "approved": false,
+      "submitted": true,
+      "featured": true,
+      "videoType": "sale",
+      "converted": true,
+      "expired": false,
+      "airedAt": "Thu Jun 21 2018 04:42:05 GMT+0200 (Central European Summer Time)",
+      "ranking": 5,
+      "mediaUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/video-DvyCq4rGZu-568.m3u8",
+      "sourceMediaUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/74703ca4-6cf3-478e-9195-0bf8c74bd649.mp4",
+      "altMediaUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/video-DvyCq4rGZu-568-dash.mpd",
+      "sharingImageUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/user-shareimage-1528968495470.jpg",
+      "posterImageUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/products/tFlhXqdVBd/2c54f5b7-0fe3-46fc-b9ad-02a56d154f0b.jpg",
+      "previewUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/user-preview-1528968423559.gif",
+      "altPreviewUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/fast-1528968423708.mp4",
+      "indexedAt": "Thu Jun 21 2018 01:06:31 GMT+0200 (Central European Summer Time)",
+      "updatedAt": "Thu Jun 21 2018 06:40:48 GMT+0200 (Central European Summer Time)",
+      "createdAt": "Thu Jun 21 2018 08:25:47 GMT+0200 (Central European Summer Time)",
+      "website": "jaden.net",
+      "socialVideoUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/user-portrait-1528968430066.mp4",
+      "channels": [
+        "labore dolor",
+        "non velit dolore deserunt aliquip",
+        "aliqua Ut"
+      ],
+      "adminTags": "feature",
+      "yeay": false,
+      "affiliateProductIds": [
+        "cillum ad",
+        "commodo nisi ex",
+        "tempor nisi ex dolore nulla"
+      ],
+      "totalLikes": 6,
+      "creator": {},
+      "user": {},
+      "challengeId": "38956",
+      "challenge": {
+        "id": "voluptate et Ut nisi Duis"
+      },
+      "generalFeedVisibility": false,
+      "specificFeedVisibilities": {},
+      "isOnline": false,
+      "brands": "Grant, Effertz and Smith"
+    },
+    {
+      "id": "447b88ad-6cad-4389-968d-64821b264cb6",
+      "videoTitle": "consequat labore ut",
+      "caption": "dolor nostrud",
       "approved": true,
       "submitted": false,
       "featured": true,
       "videoType": "",
       "converted": true,
       "expired": false,
-      "airedAt": "Thu Jun 21 2018 07:26:51 GMT+0200 (Central European Summer Time)",
-      "ranking": 12,
-      "mediaUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/video-DvyCq4rGZu-568.m3u8",
-      "sourceMediaUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/74703ca4-6cf3-478e-9195-0bf8c74bd649.mp4",
-      "altMediaUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/video-DvyCq4rGZu-568-dash.mpd",
-      "sharingImageUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/user-shareimage-1528968495470.jpg",
-      "posterImageUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/products/tFlhXqdVBd/2c54f5b7-0fe3-46fc-b9ad-02a56d154f0b.jpg",
-      "previewUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/user-preview-1528968423559.gif",
-      "altPreviewUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/fast-1528968423708.mp4",
-      "indexedAt": "Thu Jun 21 2018 06:31:39 GMT+0200 (Central European Summer Time)",
-      "updatedAt": "Thu Jun 21 2018 02:47:12 GMT+0200 (Central European Summer Time)",
-      "createdAt": "Thu Jun 21 2018 03:35:25 GMT+0200 (Central European Summer Time)",
-      "website": "joanny.biz",
-      "socialVideoUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/user-portrait-1528968430066.mp4",
-      "channels": [
-        "et aute ut anim laborum",
-        "aliqua anim voluptate sit",
-        "occaecat magna",
-        "nisi do"
-      ],
-      "adminTags": "summer",
-      "yeay": true,
-      "affiliateProductIds": [
-        "ea nulla aliqua",
-        "cupidatat adi"
-      ],
-      "totalLikes": 16,
-      "creator": {},
-      "user": {},
-      "challengeId": "63869",
-      "challenge": {
-        "id": "magna dolore adipisicing"
-      },
-      "generalFeedVisibility": false,
-      "specificFeedVisibilities": {},
-      "isOnline": true,
-      "brands": "Grant, Luettgen and McGlynn"
-    },
-    {
-      "id": "092925c7-8885-48e4-917b-64d6d84ab5c1",
-      "videoTitle": "culpa anim adipisicing",
-      "caption": "minim commodo Duis elit",
-      "approved": true,
-      "submitted": false,
-      "featured": false,
-      "videoType": "",
-      "converted": true,
-      "expired": false,
-      "airedAt": "Thu Jun 21 2018 00:29:50 GMT+0200 (Central European Summer Time)",
+      "airedAt": "Wed Jun 20 2018 15:57:46 GMT+0200 (Central European Summer Time)",
       "ranking": 15,
       "mediaUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/video-DvyCq4rGZu-568.m3u8",
       "sourceMediaUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/74703ca4-6cf3-478e-9195-0bf8c74bd649.mp4",
@@ -1407,194 +1349,48 @@
       "posterImageUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/products/tFlhXqdVBd/2c54f5b7-0fe3-46fc-b9ad-02a56d154f0b.jpg",
       "previewUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/user-preview-1528968423559.gif",
       "altPreviewUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/fast-1528968423708.mp4",
-      "indexedAt": "Wed Jun 20 2018 15:45:33 GMT+0200 (Central European Summer Time)",
-      "updatedAt": "Thu Jun 21 2018 09:11:57 GMT+0200 (Central European Summer Time)",
-      "createdAt": "Wed Jun 20 2018 19:22:10 GMT+0200 (Central European Summer Time)",
-      "website": "casimir.info",
+      "indexedAt": "Wed Jun 20 2018 16:45:53 GMT+0200 (Central European Summer Time)",
+      "updatedAt": "Thu Jun 21 2018 00:38:10 GMT+0200 (Central European Summer Time)",
+      "createdAt": "Thu Jun 21 2018 03:46:36 GMT+0200 (Central European Summer Time)",
+      "website": "halie.name",
       "socialVideoUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/user-portrait-1528968430066.mp4",
       "channels": [
-        "labore do sint consequat",
-        "amet",
-        "minim Lorem adipisicing esse",
-        "cillum incididunt amet",
-        "mollit eu aliqua of"
-      ],
-      "adminTags": "winter",
-      "yeay": true,
-      "affiliateProductIds": [
-        "exercitation reprehenderit am",
-        "aliquip"
-      ],
-      "totalLikes": 12,
-      "creator": {},
-      "user": {},
-      "challengeId": "94717",
-      "challenge": {
-        "id": "dolore in et consectetur"
-      },
-      "generalFeedVisibility": false,
-      "specificFeedVisibilities": {},
-      "isOnline": false,
-      "brands": "Ziemann, Bosco and Von"
-    },
-    {
-      "id": "acd260ec-8724-427f-86db-949415348b71",
-      "videoTitle": "Excepteur laboris",
-      "caption": "nulla sit dolore ea",
-      "approved": true,
-      "submitted": false,
-      "featured": false,
-      "videoType": "sale",
-      "converted": true,
-      "expired": false,
-      "airedAt": "Wed Jun 20 2018 14:05:27 GMT+0200 (Central European Summer Time)",
-      "ranking": 0,
-      "mediaUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/video-DvyCq4rGZu-568.m3u8",
-      "sourceMediaUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/74703ca4-6cf3-478e-9195-0bf8c74bd649.mp4",
-      "altMediaUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/video-DvyCq4rGZu-568-dash.mpd",
-      "sharingImageUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/user-shareimage-1528968495470.jpg",
-      "posterImageUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/products/tFlhXqdVBd/2c54f5b7-0fe3-46fc-b9ad-02a56d154f0b.jpg",
-      "previewUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/user-preview-1528968423559.gif",
-      "altPreviewUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/fast-1528968423708.mp4",
-      "indexedAt": "Wed Jun 20 2018 12:07:05 GMT+0200 (Central European Summer Time)",
-      "updatedAt": "Wed Jun 20 2018 15:13:36 GMT+0200 (Central European Summer Time)",
-      "createdAt": "Thu Jun 21 2018 03:28:30 GMT+0200 (Central European Summer Time)",
-      "website": "cassandra.info",
-      "socialVideoUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/user-portrait-1528968430066.mp4",
-      "channels": [
-        "non",
-        "deserunt ipsum amet in",
-        "eiusmod mollit nostrud",
-        "minim"
+        "non mollit tempor",
+        "aute mollit enim consequat"
       ],
       "adminTags": "summer",
-      "yeay": true,
+      "yeay": false,
       "affiliateProductIds": [
-        "mollit laborum pariatur",
-        "dolore in enim consectetur",
-        "laborum cupidatat dolor proident esse"
+        "culpa qui cillum deserunt",
+        "nulla commodo laboris mollit nostrud",
+        "magna veniam laborum",
+        "non Lorem ",
+        "occaecat dolore Lorem proident"
       ],
-      "totalLikes": 5,
+      "totalLikes": 0,
       "creator": {},
       "user": {},
-      "challengeId": "32204",
+      "challengeId": "84283",
       "challenge": {
-        "id": "aute cupid"
+        "id": "Lorem cillum"
       },
       "generalFeedVisibility": true,
       "specificFeedVisibilities": {},
       "isOnline": false,
-      "brands": "Block LLC"
+      "brands": "Gerhold LLC"
     },
     {
-      "id": "9abbc4b7-a898-49eb-b99d-9c7367c93e93",
-      "videoTitle": "tempor dolore esse ut",
-      "caption": "est in",
+      "id": "77087592-42fb-43c0-8464-4ac5edff8019",
+      "videoTitle": "ea velit ut",
+      "caption": "commodo ",
       "approved": false,
-      "submitted": true,
-      "featured": false,
-      "videoType": "",
-      "converted": true,
-      "expired": true,
-      "airedAt": "Wed Jun 20 2018 15:22:35 GMT+0200 (Central European Summer Time)",
-      "ranking": 17,
-      "mediaUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/video-DvyCq4rGZu-568.m3u8",
-      "sourceMediaUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/74703ca4-6cf3-478e-9195-0bf8c74bd649.mp4",
-      "altMediaUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/video-DvyCq4rGZu-568-dash.mpd",
-      "sharingImageUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/user-shareimage-1528968495470.jpg",
-      "posterImageUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/products/tFlhXqdVBd/2c54f5b7-0fe3-46fc-b9ad-02a56d154f0b.jpg",
-      "previewUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/user-preview-1528968423559.gif",
-      "altPreviewUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/fast-1528968423708.mp4",
-      "indexedAt": "Thu Jun 21 2018 05:54:42 GMT+0200 (Central European Summer Time)",
-      "updatedAt": "Thu Jun 21 2018 02:34:59 GMT+0200 (Central European Summer Time)",
-      "createdAt": "Thu Jun 21 2018 09:06:17 GMT+0200 (Central European Summer Time)",
-      "website": "michael.biz",
-      "socialVideoUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/user-portrait-1528968430066.mp4",
-      "channels": [
-        "tempor",
-        "magna ex",
-        "incididunt Duis labori",
-        "exercitation velit Lorem amet ad"
-      ],
-      "adminTags": "feature",
-      "yeay": false,
-      "affiliateProductIds": [
-        "consequat in aliqua nisi"
-      ],
-      "totalLikes": 10,
-      "creator": {},
-      "user": {},
-      "challengeId": "69571",
-      "challenge": {
-        "id": "mollit dolor aliqua sunt"
-      },
-      "generalFeedVisibility": false,
-      "specificFeedVisibilities": {},
-      "isOnline": true,
-      "brands": "Ankunding Inc"
-    }
-  ],
-  "videos": [
-    {
-      "id": "987b5ca2-2e91-44cd-ab1f-252cb4930594",
-      "videoTitle": "ad velit",
-      "caption": "Excepteur dolor Lorem adipisicing",
-      "approved": false,
-      "submitted": true,
-      "featured": false,
-      "videoType": "",
-      "converted": false,
-      "expired": false,
-      "airedAt": "Wed Jun 20 2018 17:41:25 GMT+0200 (Central European Summer Time)",
-      "ranking": 0,
-      "mediaUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/video-DvyCq4rGZu-568.m3u8",
-      "sourceMediaUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/74703ca4-6cf3-478e-9195-0bf8c74bd649.mp4",
-      "altMediaUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/video-DvyCq4rGZu-568-dash.mpd",
-      "sharingImageUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/user-shareimage-1528968495470.jpg",
-      "posterImageUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/products/tFlhXqdVBd/2c54f5b7-0fe3-46fc-b9ad-02a56d154f0b.jpg",
-      "previewUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/user-preview-1528968423559.gif",
-      "altPreviewUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/fast-1528968423708.mp4",
-      "indexedAt": "Thu Jun 21 2018 07:36:31 GMT+0200 (Central European Summer Time)",
-      "updatedAt": "Wed Jun 20 2018 19:33:13 GMT+0200 (Central European Summer Time)",
-      "createdAt": "Thu Jun 21 2018 08:38:18 GMT+0200 (Central European Summer Time)",
-      "website": "morris.net",
-      "socialVideoUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/user-portrait-1528968430066.mp4",
-      "channels": [
-        "dolor Duis in e",
-        "consequat incididunt dolore",
-        "Duis ipsum adipisicing",
-        "incididunt sunt",
-        "velit esse"
-      ],
-      "adminTags": "feature",
-      "yeay": false,
-      "affiliateProductIds": [
-        "do elit enim dolor et"
-      ],
-      "totalLikes": 8,
-      "creator": {},
-      "user": {},
-      "challengeId": "299",
-      "challenge": {
-        "id": "nulla nisi nostrud proident"
-      },
-      "generalFeedVisibility": false,
-      "specificFeedVisibilities": {},
-      "isOnline": false,
-      "brands": "Kunze - Wilderman"
-    },
-    {
-      "id": "e25c9043-643b-46eb-87b4-9a1fa04b3048",
-      "videoTitle": "labore nulla sint minim fugiat",
-      "caption": "exercitation nostrud incididunt tempor",
-      "approved": true,
       "submitted": true,
       "featured": true,
       "videoType": "sale",
       "converted": false,
-      "expired": true,
-      "airedAt": "Wed Jun 20 2018 10:51:29 GMT+0200 (Central European Summer Time)",
-      "ranking": 11,
+      "expired": false,
+      "airedAt": "Thu Jun 21 2018 00:56:22 GMT+0200 (Central European Summer Time)",
+      "ranking": 14,
       "mediaUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/video-DvyCq4rGZu-568.m3u8",
       "sourceMediaUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/74703ca4-6cf3-478e-9195-0bf8c74bd649.mp4",
       "altMediaUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/video-DvyCq4rGZu-568-dash.mpd",
@@ -1602,76 +1398,111 @@
       "posterImageUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/products/tFlhXqdVBd/2c54f5b7-0fe3-46fc-b9ad-02a56d154f0b.jpg",
       "previewUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/user-preview-1528968423559.gif",
       "altPreviewUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/fast-1528968423708.mp4",
-      "indexedAt": "Wed Jun 20 2018 19:01:11 GMT+0200 (Central European Summer Time)",
-      "updatedAt": "Wed Jun 20 2018 15:48:40 GMT+0200 (Central European Summer Time)",
-      "createdAt": "Wed Jun 20 2018 15:23:49 GMT+0200 (Central European Summer Time)",
-      "website": "roscoe.com",
+      "indexedAt": "Thu Jun 21 2018 10:00:25 GMT+0200 (Central European Summer Time)",
+      "updatedAt": "Thu Jun 21 2018 08:16:53 GMT+0200 (Central European Summer Time)",
+      "createdAt": "Thu Jun 21 2018 02:01:19 GMT+0200 (Central European Summer Time)",
+      "website": "arne.name",
       "socialVideoUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/user-portrait-1528968430066.mp4",
       "channels": [
-        "sit Duis",
-        "labore velit ex",
-        "magna minim officia sint",
-        "tempor cillum adipisicing elit",
-        "officia proident anim in tempor"
+        "do",
+        "mollit qu"
       ],
       "adminTags": "winter",
       "yeay": false,
       "affiliateProductIds": [
-        "qui aute adipisicing esse",
-        "minim"
+        "veniam consequat Ut",
+        "anim proident est ea"
       ],
-      "totalLikes": 20,
+      "totalLikes": 12,
       "creator": {},
       "user": {},
-      "challengeId": "17603",
+      "challengeId": "87060",
       "challenge": {
-        "id": "cillum nisi quis magna"
+        "id": "c"
       },
       "generalFeedVisibility": false,
       "specificFeedVisibilities": {},
+      "isOnline": false,
+      "brands": "Olson - Gulgowski"
+    },
+    {
+      "id": "f77f9293-5d89-4d2a-b7fe-af846619182f",
+      "videoTitle": "in non do sunt",
+      "caption": "dolore labore adipisicing Lorem",
+      "approved": false,
+      "submitted": false,
+      "featured": true,
+      "videoType": "",
+      "converted": true,
+      "expired": true,
+      "airedAt": "Thu Jun 21 2018 04:39:28 GMT+0200 (Central European Summer Time)",
+      "ranking": 8,
+      "mediaUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/video-DvyCq4rGZu-568.m3u8",
+      "sourceMediaUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/74703ca4-6cf3-478e-9195-0bf8c74bd649.mp4",
+      "altMediaUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/video-DvyCq4rGZu-568-dash.mpd",
+      "sharingImageUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/user-shareimage-1528968495470.jpg",
+      "posterImageUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/products/tFlhXqdVBd/2c54f5b7-0fe3-46fc-b9ad-02a56d154f0b.jpg",
+      "previewUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/user-preview-1528968423559.gif",
+      "altPreviewUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/fast-1528968423708.mp4",
+      "indexedAt": "Wed Jun 20 2018 17:15:25 GMT+0200 (Central European Summer Time)",
+      "updatedAt": "Wed Jun 20 2018 22:09:35 GMT+0200 (Central European Summer Time)",
+      "createdAt": "Thu Jun 21 2018 09:02:11 GMT+0200 (Central European Summer Time)",
+      "website": "cornelius.org",
+      "socialVideoUrl": "https://d9w0wfiu0u1pg.cloudfront.net/bOFe2AHEOs/videos/DvyCq4rGZu/user-portrait-1528968430066.mp4",
+      "channels": [
+        "in esse",
+        "enim Duis ut minim",
+        "ullamco labore"
+      ],
+      "adminTags": "summer",
+      "yeay": false,
+      "affiliateProductIds": [
+        "aute reprehenderit nostrud Lorem sed",
+        "qui non ut"
+      ],
+      "totalLikes": 9,
+      "creator": {},
+      "user": {},
+      "challengeId": "94095",
+      "challenge": {
+        "id": "mollit sit"
+      },
+      "generalFeedVisibility": true,
+      "specificFeedVisibilities": {},
       "isOnline": true,
-      "brands": "Reichert - Sipes"
+      "brands": "Botsford, Lemke and Kshlerin"
     }
   ],
   "wishlists": [
     {
-      "id": "acc7dffd-9f85-46eb-929b-da8dbbfa3c94",
+      "id": "ac4adefd-a365-4982-9d62-2022109a5df7",
       "videoIds": [
-        "adipisicing amet",
-        "Excepteur quis mollit veniam"
+        "tempor in proident",
+        "aliquip ni",
+        "reprehenderit exercitation",
+        "laborum reprehenderit esse Duis ea"
       ],
-      "createdAt": "Thu Jun 21 2018 06:25:14 GMT+0200 (Central European Summer Time)",
-      "updatedAt": "Thu Jun 21 2018 00:21:47 GMT+0200 (Central European Summer Time)"
+      "createdAt": "Wed Jun 20 2018 19:07:29 GMT+0200 (Central European Summer Time)",
+      "updatedAt": "Thu Jun 21 2018 04:55:32 GMT+0200 (Central European Summer Time)"
     },
     {
-      "id": "33f9c194-6c74-4ec1-9d68-d624cc39d8e2",
+      "id": "a2eb4b41-395b-4528-8376-22500094a4b6",
       "videoIds": [
-        "ea laborum ut aliqua in",
-        "consectetur cupidatat deserunt quis",
-        "pariatur",
-        "Lorem Excepteur"
+        "proident do id ipsum",
+        "laboris eiusmod tempor"
       ],
-      "createdAt": "Wed Jun 20 2018 21:52:33 GMT+0200 (Central European Summer Time)",
-      "updatedAt": "Wed Jun 20 2018 14:24:01 GMT+0200 (Central European Summer Time)"
+      "createdAt": "Thu Jun 21 2018 10:45:54 GMT+0200 (Central European Summer Time)",
+      "updatedAt": "Wed Jun 20 2018 21:01:38 GMT+0200 (Central European Summer Time)"
     },
     {
-      "id": "126cf0e9-ae87-4f46-a1da-429e2fc3a6a8",
+      "id": "005d6caf-a003-4f11-be95-30d87ee70b8f",
       "videoIds": [
-        "dolor",
-        "voluptate nulla aliquip in veniam"
+        "incididunt",
+        "eu sed velit id",
+        "nostrud occaecat non proident adipisicing"
       ],
-      "createdAt": "Wed Jun 20 2018 20:30:33 GMT+0200 (Central European Summer Time)",
-      "updatedAt": "Thu Jun 21 2018 03:31:20 GMT+0200 (Central European Summer Time)"
-    },
-    {
-      "id": "69cdac21-c9c0-4580-9a4a-69323386b5f1",
-      "videoIds": [
-        "deserunt incididunt irure cillum consequat",
-        "Ut dolor et dolore",
-        "eiusmod ipsum"
-      ],
-      "createdAt": "Thu Jun 21 2018 08:38:31 GMT+0200 (Central European Summer Time)",
-      "updatedAt": "Thu Jun 21 2018 08:53:50 GMT+0200 (Central European Summer Time)"
+      "createdAt": "Wed Jun 20 2018 20:26:33 GMT+0200 (Central European Summer Time)",
+      "updatedAt": "Thu Jun 21 2018 00:03:54 GMT+0200 (Central European Summer Time)"
     }
   ]
 }

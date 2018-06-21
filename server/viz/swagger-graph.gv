@@ -1,0 +1,151 @@
+digraph {
+/affiliate-products -> AffiliateProductList [ bold ]
+AffiliateProductList -> *PaginatedList [ filled ]
+/affiliate-products/{productId} -> AffiliateProduct [ bold ]
+/affiliate-products/{productId}/image -> AffiliateProduct [ bold ]
+/auth/signup -> Auth [ bold ]
+/auth -> Auth [ bold ]
+/passwordReset -> Auth [ bold ]
+/fbAuth -> fbAuth [ bold ]
+/autocomplete/uniqueId -> autocompleteUniqueId [ bold ]
+/autocomplete/productTag -> autocompleteProductTag [ bold ]
+/catalog/featuredSellers -> CatalogFeaturedSellerList [ bold ]
+CatalogFeaturedSellerList -> *CatalogFeaturedSeller [ filled ]
+CatalogFeaturedSeller -> *CatalogSeller [ filled ]
+CatalogSeller -> Address 
+/catalog/sellers/{sellerId} -> CatalogSellerDetails [ bold ]
+CatalogSellerDetails -> *CatalogSeller [ filled ]
+/catalog/users/search -> CatalogUserSearchResult [ bold ]
+CatalogUserSearchResult -> *CatalogSellerDetails [ filled ]
+/catalog/feeds/home/1 -> HomeFeed_1 [ bold ]
+/catalog/videos -> CatalogVideos [ bold ]
+/catalog/videos/{videoId} -> CatalogVideoDetails [ bold ]
+CatalogVideoDetails -> *CatalogVideo [ filled ]
+CatalogVideo -> *CatalogChannel (categories) [ filled ]
+CatalogVideo -> CatalogVideoProduct 
+CatalogVideoProduct -> CatalogSeller 
+CatalogVideoProduct -> productPurchaseStatus 
+CatalogVideo -> CatalogSeller 
+/catalog/videos/search -> CatalogVideoSearchResult [ bold ]
+CatalogVideoSearchResult -> *CatalogVideo [ filled ]
+CatalogVideo -> *CatalogChannel (categories) [ filled ]
+CatalogVideo -> CatalogVideoProduct 
+CatalogVideoProduct -> CatalogSeller 
+CatalogVideoProduct -> productPurchaseStatus 
+CatalogVideo -> CatalogSeller 
+/catalog/challenges -> CatalogChallenges [ bold ]
+/catalog/challenges/{challengeId} -> CatalogChallengeListItem [ bold ]
+CatalogChallengeListItem -> *Product (associatedProducts) [ filled ]
+Product -> User 
+User -> Address 
+Product -> ShippingInfo 
+Product -> Video 
+Video -> User 
+Video -> ChallengeStub 
+ChallengeStub -> *_GenericEntityStub [ filled ]
+Video -> videoGeneralFeedVisibility 
+Video -> videoSpecificFeedVisibilities 
+Product -> productPurchaseStatus 
+/challenges -> listChallenges [ bold ]
+/challenges/{challengeId} -> Challenge [ bold ]
+Challenge -> *Product (associatedProducts) [ filled ]
+Product -> User 
+Product -> ShippingInfo 
+Product -> Video 
+Video -> User 
+Video -> ChallengeStub 
+Video -> videoGeneralFeedVisibility 
+Video -> videoSpecificFeedVisibilities 
+Product -> productPurchaseStatus 
+Challenge -> ChallengeTranslations 
+ChallengeTranslations -> ChallengeTranslationPayload 
+/challenges/{challengeId}/image -> uploadChallengeImage [ bold ]
+/challenges/{challengeId}/brandLogo -> uploadBrandLogo [ bold ]
+/challenges/{challengeId}/translations -> ChallengeTranslations [ bold ]
+/challenges/{challengeId}/translations/{locale} -> ChallengeTranslationPayload [ bold ]
+/datatables/videos -> DataTableVideosResponse [ bold ]
+DataTableVideosResponse -> *DataTableGenericResponse [ filled ]
+/datatables/users -> DataTableUsersResponse [ bold ]
+DataTableUsersResponse -> *DataTableGenericResponse [ filled ]
+/datatables/featuredVideos -> DataTableFeaturedVideosResponse [ bold ]
+DataTableFeaturedVideosResponse -> *DataTableGenericResponse [ filled ]
+/datatables/featuredSellers -> DataTableFeaturedSellersResponse [ bold ]
+DataTableFeaturedSellersResponse -> *DataTableGenericResponse [ filled ]
+/datatables/disapprovedVideos -> DataTableDisapprovedVideosResponse [ bold ]
+DataTableDisapprovedVideosResponse -> *DataTableGenericResponse [ filled ]
+/datatables/affiliateProductsSearch -> DataTableAffiliateProductsResponse [ bold ]
+DataTableAffiliateProductsResponse -> *DataTableGenericResponse [ filled ]
+/featuredTags -> FeaturedTags [ bold ]
+/featuredTags/{tagId} -> FeaturedTag [ bold ]
+/featuredTags/{tagId}/image -> uploadTagImage [ bold ]
+/feedback/messages -> sendFeedbackMessage [ bold ]
+/featuredSellers/{userId} -> updateSeller [ bold ]
+/featuredVideos/{videoId} -> updateFeaturedVideo [ bold ]
+/metrics -> Metrics [ bold ]
+Metrics -> *MetricDayEntry (numOfOrders) [ filled ]
+/validation/uniqueId -> UniqueIdValidationResponse [ bold ]
+/validation/email -> validateEmail [ bold ]
+/recommendations/home-feed/videos -> submitRecommendations [ bold ]
+/notifications -> Notifications [ bold ]
+/me/purchaseRequests -> PurchaseRequest [ bold ]
+PurchaseRequest -> Address 
+/me -> User [ bold ]
+/me/avatarImage -> uploadAvatarImage [ bold ]
+/me/splashImage -> uploadSplashImage [ bold ]
+/users -> Users [ bold ]
+/users/{userId} -> User [ bold ]
+/users/{userId}/follow -> followUser [ bold ]
+/users/{userId}/following -> UserFollows [ bold ]
+/users/{userId}/followers -> FollowersOfUser [ bold ]
+/users/{userId}/settings -> UserSettingsPublic [ bold ]
+/users/devices -> Devices [ bold ]
+/users/devices/{deviceId} -> updateDevice [ bold ]
+/userSettings -> UserSettings [ bold ]
+UserSettings -> *UserSettingsPublic [ filled ]
+/utility/version -> Version [ bold ]
+/utility/facebookUsers -> facebookUsers [ bold ]
+/utility/appsettings -> AppSetting [ bold ]
+/utility/status -> AppStatus [ bold ]
+/videoReviewQueue -> VideoReviewQueue [ bold ]
+/videoReviewQueue/approval -> approveVideo [ bold ]
+/videoReviewQueue/disapproval -> disapproveVideo [ bold ]
+/videoReviewQueue/undisapproval -> unDisapproveVideo [ bold ]
+/videos -> Videos [ bold ]
+/videos/{videoId} -> Video [ bold ]
+Video -> User 
+Video -> ChallengeStub 
+Video -> videoGeneralFeedVisibility 
+Video -> videoSpecificFeedVisibilities 
+/videos/{videoId}/file -> uploadVideoFile [ bold ]
+/videos/{videoId}/like -> Like [ bold ]
+/videos/{videoId}/views -> addVideoView [ bold ]
+/videos/{videoId}/view-stopped -> addVideoViewStopped [ bold ]
+/videos/{videoId}/comments -> VideoComments [ bold ]
+/videos/{videoId}/comments/{commentId} -> VideoComment [ bold ]
+/videos/{videoId}/comments/{commentId}/objection -> flagVideoComment [ bold ]
+/videos/comments/objections -> FlaggedComments [ bold ]
+/videos/comments/objections/{commentId} -> FlaggedCommentDetails [ bold ]
+/wishlist -> Wishlist [ bold ]
+/wishlist/videos/{videoId} -> addVideoToWishlist [ bold ]
+/asset-library/video-background-music -> PaginatedVideoMusicAssetList [ bold ]
+PaginatedVideoMusicAssetList -> *PaginatedList [ filled ]
+/asset-library/video-background-music/{assetId} -> VideoMusicAsset [ bold ]
+VideoMusicAsset -> *AssetWithChecksum (assets) [ filled ]
+AssetWithChecksum -> *Asset [ filled ]
+/asset-library/video-background-music/{assetId}/audio -> uploadAudio [ bold ]
+/asset-library/video-background-music/{assetId}/image -> uploadImage [ bold ]
+/autocomplete/video-tag -> autocompleteVideoTag [ bold ]
+/autocomplete/brand-tag -> autocompleteBrandTag [ bold ]
+/catalog/videos -> PaginatedCatalogVideoList [ bold ]
+PaginatedCatalogVideoList -> *PaginatedList [ filled ]
+/catalog/videos/{videoId} -> PaginatedCatalogVideoList [ bold ]
+/catalog/feeds/home/1 -> PaginatedCatalogVideoList [ bold ]
+/purchase-requests -> PurchaseRequest [ bold ]
+/videos/{videoId}/poster-image -> uploadPosterImage [ bold ]
+/videos/{videoId}/video -> uploadVideo [ bold ]
+/videos/video-file -> uploadAnonymousVideo [ bold ]
+/videos -> PaginatedVideoList [ bold ]
+PaginatedVideoList -> *PaginatedList [ filled ]
+Video -> SocialStats 
+Video -> *Asset (assets) [ filled ]
+}

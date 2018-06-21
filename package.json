@@ -18,6 +18,7 @@
     "routes:map": "ts-node src/generate/routes/run.ts",
     "schemas:from-swagger": "ts-node src/generate/schemas/run.ts",
     "schemas:index": "ts-node schemas/generate-index.ts",
+    "graph:generate": "ts-node src/generate/graph/run.ts",
     "db:generate": "ts-node src/generate/data/run.ts",
     "prepare": "npm run schemas:from-swagger && npm run schemas:index && npm run routes:map && npm run db:generate",
     "start:db": "json-server --watch server/db.json --port 3000",
@@ -31,6 +32,7 @@
     "lodash": "^4.17.10",
     "lodash-inflection": "^1.5.0",
     "merge-json": "0.1.0-b.3",
-    "template-helpers": "^0.6.7"
+    "template-helpers": "^0.6.7",
+    "viz.js": "^2.0.0"
   }
 }

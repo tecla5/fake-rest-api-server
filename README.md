@@ -44,6 +44,27 @@ npm run start
 - `schemas:index` generate JSON schemas index file (`.ts`)
 - `db:generate` generate JSON database from schemas (using faker and type definition of each schema property)
 - `routes:map` generate routes map, mapping swagget API routes to JSON REST server routes
+- `graph:generate` generate graph of path and model (class/entity) graph for [GraphViz](https://graphviz.gitlab.io)
+
+### GraphViz
+
+[GraphViz](https://graphviz.gitlab.io) can be used with a [CLI](https://graphviz.gitlab.io/_pages/doc/info/command.html)
+
+### GraphViz web server
+
+You can render the GraphViz output via a webserver, using [viz.js](https://github.com/mdaines/viz.js/)
+For a sample GraphViz rendering, see [viz-js.com](http://viz-js.com/)
+
+To start the server
+
+```bash
+$ cd server/viz
+$ yarn install
+$ yarn build
+# ...
+```
+
+`$ graph:generate` will generated a new `swagger-graph.gv` file in `/server/viz` that is rendered by the web server.
 
 ### Generate schemas
 
