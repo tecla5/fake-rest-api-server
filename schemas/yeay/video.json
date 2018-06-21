@@ -10,9 +10,8 @@
       "videoTitle": {
         "type": "string"
       },
-      "description": {
-        "type": "string",
-        "faker": "lorem.words"
+      "caption": {
+        "type": "string"
       },
       "approved": {
         "type": "boolean"
@@ -579,7 +578,7 @@
     "required": [
       "id",
       "videoTitle",
-      "description",
+      "caption",
       "approved",
       "submitted",
       "featured",

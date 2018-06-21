@@ -603,7 +603,7 @@ paths:
           schema:
             $ref: '#/definitions/CreateOrUpdateVideoRequest'
             required:
-              - title
+              - caption
       responses:
         '201':
           description: The created video
@@ -835,8 +835,7 @@ definitions:
     properties:
       id:
         type: string
-        example: 123
-      title:
+      caption:
         type: string
         example: Adidas Stan Smith Shoes
       challengeId:
@@ -888,12 +887,9 @@ definitions:
         type: string
   CreateOrUpdateVideoRequest:
     properties:
-      title:
-        description: Title of video
+      caption:
+        description: Caption of video
         type: string
-      description:
-        description: Description of the video
-        $ref: '#/definitions/StringOrNull'
       challengeId:
         description: >
           An optional challenge ID. **NOTE**: if the given challenge is invalid
@@ -1024,16 +1020,14 @@ definitions:
         type: number
         example: 456
   StringOrNull:
-    type: string
+    type:
+      - string
+      - 'null'
   Video:
     properties:
       id:
         type: string
-        example: 123
-      title:
-        type: string
-        example: Adidas Stan Smith Shoes
-      description:
+      caption:
         type: string
         example: My `Adidas Stan Smith Shoes` video from last week.
       challengeId:
