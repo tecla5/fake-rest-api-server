@@ -2149,6 +2149,63 @@ paths:
           description: Error
           schema:
             $ref: '#/definitions/ErrorResponse'
+  /datatables/shows:
+    x-swagger-router-controller: dataTablesController
+    get:
+      tags:
+        - Datatables
+      operationId: getDtShows
+      security:
+        - Bearer: []
+      x-yeay-scope: admin
+      summary: Datatables endpoint for listing shows
+      parameters:
+        - $ref: '#/parameters/dtDraw'
+        - $ref: '#/parameters/dtStart'
+        - $ref: '#/parameters/dtLength'
+        - $ref: '#/parameters/dtOrder'
+        - $ref: '#/parameters/dtColumns'
+        - $ref: '#/parameters/dtSearch'
+      responses:
+        '200':
+          description: Datatable result
+          schema:
+            $ref: '#/definitions/DataTableShowsResponse'
+        default:
+          description: Error
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+  '/datatables/shows/{showId}/videos':
+    x-swagger-router-controller: dataTablesController
+    get:
+      tags:
+        - Datatables
+      operationId: getDtShowVideos
+      security:
+        - Bearer: []
+      x-yeay-scope: admin
+      summary: Datatables endpoint for listing videos of a given show
+      parameters:
+        - $ref: '#/parameters/dtDraw'
+        - $ref: '#/parameters/dtStart'
+        - $ref: '#/parameters/dtLength'
+        - $ref: '#/parameters/dtOrder'
+        - $ref: '#/parameters/dtColumns'
+        - $ref: '#/parameters/dtSearch'
+        - name: showId
+          in: path
+          required: true
+          type: string
+          pattern: '^[a-f0-9]{24}$'
+      responses:
+        '200':
+          description: Datatable result
+          schema:
+            $ref: '#/definitions/DataTableShowsResponse'
+        default:
+          description: Error
+          schema:
+            $ref: '#/definitions/ErrorResponse'
   /featuredTags:
     x-swagger-router-controller: featuredTagsController
     get:
@@ -6332,9 +6389,6 @@ definitions:
       videoTitle:
         type: string
         description: Title of video
-      description:
-        type: string
-        description: Description of the video
       videoType:
         $ref: '#/definitions/videoType'
       website:
@@ -6516,6 +6570,34 @@ definitions:
             type: array
             items:
               $ref: '#/definitions/Product'
+  DataTableShowsResponse:
+    allOf:
+      - $ref: '#/definitions/DataTableGenericResponse'
+      - properties:
+          data:
+            type: array
+            items:
+              properties:
+                id:
+                  type: string
+                title:
+                  type: string
+                creatorId:
+                  type: string
+                creatorUniqueId:
+                  type: string
+                imageUrl:
+                  type: string
+                ranking:
+                  type: number
+                numberOfVideos:
+                  type: number
+                createdAt:
+                  type: string
+                  format: date-time
+                updatedAt:
+                  type: string
+                  format: date-time
   DataTableUsersResponse:
     allOf:
       - $ref: '#/definitions/DataTableGenericResponse'
@@ -6610,8 +6692,9 @@ definitions:
             type: string
             description: Unique identifier for this order
   IdOrNull:
-    x-nullable: true
-    type: string
+    type:
+      - string
+      - 'null'
     description: |
       The id can be:
         - non empty string - value will be evaluated as id
@@ -7315,9 +7398,6 @@ definitions:
       videoTitle:
         type: string
         description: Title of video
-      description:
-        type: string
-        description: Description of the video
       videoType:
         $ref: '#/definitions/videoType'
       website:
@@ -7467,7 +7547,7 @@ definitions:
         type: string
       videoTitle:
         type: string
-      description:
+      caption:
         type: string
       approved:
         type: boolean

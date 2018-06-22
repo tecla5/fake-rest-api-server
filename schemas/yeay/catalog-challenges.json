@@ -334,7 +334,7 @@
                 "videoTitle": {
                   "type": "string"
                 },
-                "description": {
+                "caption": {
                   "type": "string"
                 },
                 "approved": {
