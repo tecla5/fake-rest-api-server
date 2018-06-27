@@ -285,31 +285,6 @@
             "type": "string",
             "faker": "finance.currencyCode"
           },
-          "paymentDetails": {
-            "type": "object",
-            "properties": {
-              "stripe": {
-                "type": "object",
-                "properties": {
-                  "gatewayCustomerId": {
-                    "type": "string",
-                    "faker": "random.number"
-                  },
-                  "gatewayEmail": {
-                    "type": "string",
-                    "faker": "internet.email"
-                  },
-                  "gatewayPayload": {
-                    "type": "object",
-                    "properties": {}
-                  },
-                  "gatewayCommerceType": {
-                    "type": "string"
-                  }
-                }
-              }
-            }
-          },
           "appUserType": {
             "type": "string",
             "enum": [
@@ -469,31 +444,6 @@
           "currency": {
             "type": "string",
             "faker": "finance.currencyCode"
-          },
-          "paymentDetails": {
-            "type": "object",
-            "properties": {
-              "stripe": {
-                "type": "object",
-                "properties": {
-                  "gatewayCustomerId": {
-                    "type": "string",
-                    "faker": "random.number"
-                  },
-                  "gatewayEmail": {
-                    "type": "string",
-                    "faker": "internet.email"
-                  },
-                  "gatewayPayload": {
-                    "type": "object",
-                    "properties": {}
-                  },
-                  "gatewayCommerceType": {
-                    "type": "string"
-                  }
-                }
-              }
-            }
           },
           "appUserType": {
             "type": "string",

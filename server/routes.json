@@ -23,8 +23,6 @@
   "/v1/datatables/featuredSellers": "/dataTableFeaturedSellersResponses",
   "/v1/datatables/disapprovedVideos": "/dataTableDisapprovedVideosResponses",
   "/v1/datatables/affiliateProductsSearch": "/dataTableAffiliateProductsResponses",
-  "/v1/datatables/shows": "/dataTableShowsResponses",
-  "/v1/datatables/shows/:showId/videos": "/dataTableShowsResponses/:showId",
   "/v1/featuredTags": "/featuredTags",
   "/v1/featuredTags/:tagId": "/featuredTags/:tagId",
   "/v1/metrics": "/metrics",
@@ -61,14 +59,7 @@
   "/v2/catalog/videos": "/paginatedCatalogVideoLists",
   "/v2/catalog/videos/:videoId": "/paginatedCatalogVideoLists/:videoId",
   "/v2/catalog/feeds/home/1": "/paginatedCatalogVideoLists",
-  "/v2/catalog/feeds/home/2": "/paginatedCatalogHomeFeed2Lists",
-  "/v2/catalog/shows": "/paginatedCatalogShowLists",
-  "/v2/catalog/shows/:showId": "/catalogShows/:showId",
   "/v2/purchase-requests": "/purchaseRequests",
-  "/v2/shows": "/paginatedShowsLists",
-  "/v2/shows/:showId": "/shows/:showId",
-  "/v2/shows/:showId/image": "/shows/:showId",
-  "/v2/shows/:showId/videos": "/shows/:showId",
   "/v2/videos": "/paginatedVideoLists",
   "/v2/videos/:videoId": "/videos/:videoId"
 }

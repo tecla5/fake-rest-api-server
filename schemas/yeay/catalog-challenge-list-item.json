@@ -224,28 +224,6 @@
                 "currency": {
                   "type": "string"
                 },
-                "paymentDetails": {
-                  "type": "object",
-                  "properties": {
-                    "stripe": {
-                      "type": "object",
-                      "properties": {
-                        "gatewayCustomerId": {
-                          "type": "string"
-                        },
-                        "gatewayEmail": {
-                          "type": "string"
-                        },
-                        "gatewayPayload": {
-                          "type": "object"
-                        },
-                        "gatewayCommerceType": {
-                          "type": "string"
-                        }
-                      }
-                    }
-                  }
-                },
                 "appUserType": {
                   "type": "string",
                   "enum": [
@@ -532,28 +510,6 @@
                     "currency": {
                       "type": "string"
                     },
-                    "paymentDetails": {
-                      "type": "object",
-                      "properties": {
-                        "stripe": {
-                          "type": "object",
-                          "properties": {
-                            "gatewayCustomerId": {
-                              "type": "string"
-                            },
-                            "gatewayEmail": {
-                              "type": "string"
-                            },
-                            "gatewayPayload": {
-                              "type": "object"
-                            },
-                            "gatewayCommerceType": {
-                              "type": "string"
-                            }
-                          }
-                        }
-                      }
-                    },
                     "appUserType": {
                       "type": "string",
                       "enum": [
@@ -681,28 +637,6 @@
                     },
                     "currency": {
                       "type": "string"
-                    },
-                    "paymentDetails": {
-                      "type": "object",
-                      "properties": {
-                        "stripe": {
-                          "type": "object",
-                          "properties": {
-                            "gatewayCustomerId": {
-                              "type": "string"
-                            },
-                            "gatewayEmail": {
-                              "type": "string"
-                            },
-                            "gatewayPayload": {
-                              "type": "object"
-                            },
-                            "gatewayCommerceType": {
-                              "type": "string"
-                            }
-                          }
-                        }
-                      }
                     },
                     "appUserType": {
                       "type": "string",

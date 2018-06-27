@@ -389,83 +389,6 @@ paths:
           description: Error
           schema:
             $ref: '#/definitions/ErrorResponse'
-  /catalog/feeds/home/2:
-    x-swagger-router-controller: catalogHomeFeedV2Controller
-    get:
-      tags:
-        - Catalog
-      operationId: getHomeFeed_2
-      summary: Retrieves content for the home feed
-      description: |
-        Retrieves content for the home feed.
-      security:
-        - None: []
-        - Bearer: []
-      parameters:
-        - $ref: '#/parameters/queryPaginationOffset'
-        - $ref: '#/parameters/queryPaginationLimit'
-      responses:
-        '200':
-          description: >
-            Object containing paginated list of home feed videos, shows and
-            pagination metadata.
-          schema:
-            $ref: '#/definitions/PaginatedCatalogHomeFeed2List'
-        default:
-          description: Error
-          schema:
-            $ref: '#/definitions/ErrorResponse'
-  /catalog/shows:
-    x-swagger-router-controller: catalogShowsController
-    get:
-      tags:
-        - Catalog
-      operationId: getShows
-      summary: Retrieves a list of publicly available shows
-      description: Retrieves a list of publicly available shows
-      parameters:
-        - $ref: '#/parameters/queryPaginationOffset'
-        - $ref: '#/parameters/queryPaginationLimit'
-        - name: creatorIds
-          in: query
-          type: array
-          items:
-            type: string
-        - name: search
-          in: query
-          type: string
-      responses:
-        '200':
-          description: A paginated list of catalog shows
-          schema:
-            $ref: '#/definitions/PaginatedCatalogShowList'
-        default:
-          description: Error
-          schema:
-            $ref: '#/definitions/ErrorResponse'
-  '/catalog/shows/{showId}':
-    x-swagger-router-controller: catalogShowsController
-    get:
-      tags:
-        - Catalog
-      operationId: getShowDetails
-      summary: Retrieves a specific publicly available show
-      description: Retrieves a specific publicly available show
-      parameters:
-        - name: showId
-          in: path
-          type: string
-          required: true
-          pattern: '^[a-f0-9]{24}$'
-      responses:
-        '200':
-          description: A catalog show
-          schema:
-            $ref: '#/definitions/CatalogShow'
-        default:
-          description: Error
-          schema:
-            $ref: '#/definitions/ErrorResponse'
   /purchase-requests:
     x-swagger-router-controller: purchaseRequestControllerV2
     post:
@@ -503,260 +426,6 @@ paths:
           description: The created purchase request
           schema:
             $ref: '#/definitions/PurchaseRequest'
-        default:
-          description: Error
-          schema:
-            $ref: '#/definitions/ErrorResponse'
-  /shows:
-    x-swagger-router-controller: showsController
-    get:
-      tags:
-        - Shows
-      operationId: getShows
-      summary: Retrieves all shows of the requesting user
-      description: |
-        Retrieves all shows of the requesting user
-      security:
-        - Bearer: []
-      x-yeay-scope: user
-      parameters:
-        - $ref: '#/parameters/queryPaginationOffset'
-        - $ref: '#/parameters/queryPaginationLimit'
-      responses:
-        '200':
-          description: A paginated list of shows
-          schema:
-            $ref: '#/definitions/PaginatedShowsList'
-        default:
-          description: Error
-          schema:
-            $ref: '#/definitions/ErrorResponse'
-    post:
-      tags:
-        - Shows
-      operationId: createShow
-      summary: Creates a show for the requesting user
-      description: |
-        Creates a show for the requesting user
-      security:
-        - Bearer: []
-      x-yeay-scope: user
-      parameters:
-        - name: body
-          in: body
-          required: true
-          schema:
-            $ref: '#/definitions/CreateShowRequest'
-            required:
-              - title
-      responses:
-        '201':
-          description: The created show
-          schema:
-            $ref: '#/definitions/Show'
-        default:
-          description: Error
-          schema:
-            $ref: '#/definitions/ErrorResponse'
-  '/shows/{showId}':
-    x-swagger-router-controller: showsController
-    get:
-      tags:
-        - Shows
-      operationId: getShow
-      summary: Retrieves a specific show of the requesting user
-      description: |
-        Retrieves a specific show of the requesting user
-      security:
-        - Bearer: []
-      x-yeay-scope: user
-      parameters:
-        - name: showId
-          in: path
-          type: string
-          pattern: '^[a-f0-9]{24}$'
-          required: true
-      responses:
-        '200':
-          description: A catalog shows
-          schema:
-            $ref: '#/definitions/Show'
-        default:
-          description: Error
-          schema:
-            $ref: '#/definitions/ErrorResponse'
-    delete:
-      tags:
-        - Shows
-      operationId: deleteShow
-      summary: Deletes a specific show of the requesting user
-      description: |
-        Deletes a specific show of the requesting user
-      security:
-        - Bearer: []
-      x-yeay-scope: user
-      parameters:
-        - name: showId
-          in: path
-          type: string
-          pattern: '^[a-f0-9]{24}$'
-          required: true
-      responses:
-        '204':
-          description: Show deletion successfull
-        '404':
-          description: Show does not exists
-        default:
-          description: Error
-          schema:
-            $ref: '#/definitions/ErrorResponse'
-    put:
-      tags:
-        - Shows
-      operationId: updateShow
-      summary: Updates a specific show of the requesting user
-      description: |
-        Updates a specific show of the requesting user
-      security:
-        - Bearer: []
-      x-yeay-scope: user
-      parameters:
-        - name: showId
-          in: path
-          type: string
-          pattern: '^[a-f0-9]{24}$'
-          required: true
-        - name: body
-          in: body
-          required: true
-          schema:
-            $ref: '#/definitions/UpdateShowRequest'
-      responses:
-        '200':
-          description: A show
-          schema:
-            $ref: '#/definitions/Show'
-        default:
-          description: Error
-          schema:
-            $ref: '#/definitions/ErrorResponse'
-  '/shows/{showId}/image':
-    x-swagger-router-controller: showsController
-    post:
-      tags:
-        - Shows
-      operationId: uploadImage
-      security:
-        - Bearer: []
-      x-yeay-scope: user
-      summary: Upload an image for a specific show of the requesting user
-      description: Upload an image for a specific show of the requesting user
-      consumes:
-        - multipart/form-data
-      parameters:
-        - $ref: '#/parameters/headerAsUser'
-        - name: showId
-          in: path
-          required: true
-          type: string
-          pattern: '^[a-f0-9]{24}$'
-        - name: file
-          in: formData
-          description: The uploaded file data
-          required: false
-          type: file
-      responses:
-        '200':
-          description: The updated show containing the image
-          schema:
-            $ref: '#/definitions/Show'
-        default:
-          description: Error
-          schema:
-            $ref: '#/definitions/ErrorResponse'
-    delete:
-      tags:
-        - Shows
-      operationId: deleteImage
-      security:
-        - Bearer: []
-      x-yeay-scope: user
-      summary: Remove the image from a specific show of the requesting user
-      description: Remove the image from a specific show of the requesting user
-      parameters:
-        - name: showId
-          in: path
-          required: true
-          type: string
-      responses:
-        '200':
-          description: The updated show without the image
-          schema:
-            $ref: '#/definitions/Show'
-        default:
-          description: Error
-          schema:
-            $ref: '#/definitions/ErrorResponse'
-  '/shows/{showId}/videos':
-    x-swagger-router-controller: showsController
-    post:
-      tags:
-        - Shows
-      operationId: assignVideo
-      security:
-        - Bearer: []
-      x-yeay-scope: user
-      summary: Assign video id to a show
-      description: Assign video id to a show
-      parameters:
-        - $ref: '#/parameters/headerAsUser'
-        - name: showId
-          in: path
-          required: true
-          type: string
-          pattern: '^[a-f0-9]{24}$'
-        - name: body
-          in: body
-          description: The video id to be assigned to the show
-          required: true
-          schema:
-            properties:
-              videoId:
-                type: string
-            required:
-              - videoId
-      responses:
-        '200':
-          description: The video is assigned successfully.
-          schema:
-            $ref: '#/definitions/Show'
-        default:
-          description: Error
-          schema:
-            $ref: '#/definitions/ErrorResponse'
-  '/shows/{showId}/videos/{videoId}':
-    x-swagger-router-controller: showsController
-    delete:
-      tags:
-        - Shows
-      operationId: unassignVideo
-      security:
-        - Bearer: []
-      x-yeay-scope: user
-      summary: Unassign video id to a show.
-      description: Unassign video id to a show.
-      parameters:
-        - name: showId
-          in: path
-          required: true
-          type: string
-        - name: videoId
-          in: path
-          required: true
-          type: string
-      responses:
-        '200':
-          description: The video is unassigned successfully.
         default:
           description: Error
           schema:
@@ -1162,19 +831,6 @@ definitions:
           checksum:
             type: string
             example: 120EA8A25E5D487BF68B5F7096440019
-  CatalogShow:
-    type: object
-    properties:
-      id:
-        type: string
-      title:
-        type: string
-      creatorId:
-        type: string
-      assets:
-        type: array
-        items:
-          $ref: '#/definitions/Asset'
   CatalogVideo:
     properties:
       id:
@@ -1210,21 +866,6 @@ definitions:
         items:
           type: string
           example: 'summer, beach'
-      shows:
-        type: array
-        items:
-          type: object
-          properties:
-            id:
-              type: string
-            title:
-              type: string
-            creatorId:
-              type: string
-            assets:
-              type: array
-              items:
-                $ref: '#/definitions/Asset'
   CatalogVideoCreator:
     type: object
     properties:
@@ -1257,14 +898,6 @@ definitions:
       brands:
         description: A list of brand tags for the video
         type: string
-  CreateShowRequest:
-    properties:
-      title:
-        type: string
-      ranking:
-        type: number
-    required:
-      - title
   ErrorResponse:
     required:
       - message
@@ -1285,43 +918,6 @@ definitions:
     example:
       message: Authentication field is invalid
       code: INVALID_AUTH
-  PaginatedCatalogHomeFeed2List:
-    allOf:
-      - $ref: '#/definitions/PaginatedList'
-      - properties:
-          items:
-            type: array
-            items:
-              - type: object
-                properties:
-                  type:
-                    type: string
-                    enum:
-                      - video
-                  item:
-                    type: object
-                    $ref: '#/definitions/CatalogVideo'
-              - type: object
-                properties:
-                  type:
-                    type: string
-                    enum:
-                      - show
-                  item:
-                    type: object
-                    $ref: '#/definitions/CatalogShow'
-        required:
-          - items
-  PaginatedCatalogShowList:
-    allOf:
-      - $ref: '#/definitions/PaginatedList'
-      - properties:
-          items:
-            type: array
-            items:
-              $ref: '#/definitions/CatalogShow'
-        required:
-          - items
   PaginatedCatalogVideoList:
     allOf:
       - $ref: '#/definitions/PaginatedList'
@@ -1358,17 +954,6 @@ definitions:
       - offset
       - limit
       - items
-  PaginatedShowsList:
-    type: object
-    allOf:
-      - $ref: '#/definitions/PaginatedList'
-      - properties:
-          items:
-            type: array
-            items:
-              $ref: '#/definitions/Show'
-        required:
-          - items
   PaginatedVideoList:
     allOf:
       - $ref: '#/definitions/PaginatedList'
@@ -1422,30 +1007,6 @@ definitions:
         example: 001231234678
       address:
         $ref: '#/definitions/Address'
-  Show:
-    properties:
-      id:
-        type: string
-      title:
-        type: string
-      ranking:
-        type: number
-      creatorId:
-        type: string
-      videoIds:
-        type: array
-        items:
-          type: string
-      assets:
-        type: array
-        items:
-          $ref: '#/definitions/Asset'
-      createdAt:
-        type: string
-        format: date-time
-      updatedAt:
-        type: string
-        format: date-time
   SocialStats:
     type: object
     properties:
@@ -1462,12 +1023,6 @@ definitions:
     type:
       - string
       - 'null'
-  UpdateShowRequest:
-    properties:
-      title:
-        type: string
-      ranking:
-        type: number
   Video:
     properties:
       id:
