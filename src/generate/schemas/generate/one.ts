@@ -5,7 +5,8 @@ import {
   toJson,
   dasherize,
   hasDeprecated,
-  nameOf
+  nameOf,
+  schemaRefName
 } from '../util'
 
 const arraySchema = {
@@ -197,21 +198,9 @@ function addFakerToProp(key : string, prop: any = {}) {
   return prop
 }
 
-function schemaFromPath(path : any) : any {
-  // only GET methods are valid
-  const methodName: any = ['get', 'post', 'put', 'delete'].find((name : string) => !!path[name]);
-  if (!methodName) {
-    return
-  }
-  const method = path[methodName];
-  const okResponse = method.responses['200'];
-  if (!okResponse) {
-    return {method, methodName}
-  }
-
-  const schema = okResponse.schema;
-  return {schema, method, methodName}
-}
+import {
+  schemaFromPath
+} from '../util'
 
 export async function generateOne(path : any, pathKey : string, doc : any) {
   let {schema, method, methodName} = schemaFromPath(path)
@@ -229,15 +218,7 @@ export async function generateOne(path : any, pathKey : string, doc : any) {
   // use Definitions reference name if present
   const schemaRef = (schemaWithRef || {}).$ref
 
-  let schemaName
-  if (schemaRef) {
-    const matchExpr = /\/(\w+)$/
-    const matches = matchExpr.exec(schemaRef)
-    schemaName = matches
-      ? matches[1]
-      : schemaName
-  }
-
+  let schemaName = schemaRefName(schemaRef)
   const name = schemaName || nameOf(method, tags)
 
   if (/List$/.test(name)) {
@@ -247,7 +228,7 @@ export async function generateOne(path : any, pathKey : string, doc : any) {
     return
   }
 
-  // ignore any schema with allOf at top leve, since this means it is a list
+  // ignore any schema with allOf at top level, since this means it is a list
   const schemaKeys = Object.keys(schema)
   if (schemaKeys.includes('allOf')) {
     return

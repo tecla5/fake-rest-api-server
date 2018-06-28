@@ -44,6 +44,7 @@ npm run start
 - `schemas:index` generate JSON schemas index file (`.ts`)
 - `db:generate` generate JSON database from schemas (using faker and type definition of each schema property)
 - `routes:map` generate routes map, mapping swagget API routes to JSON REST server routes
+- `graph:generate` generate graph of path and model (class/entity) graph for [GraphViz](https://graphviz.gitlab.io)
 
 ### Generate schemas
 
@@ -190,6 +191,56 @@ npm run start
 Starts JSON server using custom routes defined in `server/routes.json`
 
 See [add-custom-routes](https://github.com/typicode/json-server#add-custom-routes)
+
+### GraphViz
+
+[GraphViz](https://graphviz.gitlab.io) can be used with a [CLI](https://graphviz.gitlab.io/_pages/doc/info/command.html)
+
+### GraphViz web server
+
+You can render the GraphViz output via a webserver, using [viz.js](https://github.com/mdaines/viz.js/)
+For a sample GraphViz rendering, see [viz-js.com](http://viz-js.com/)
+
+To start the server
+
+```bash
+$ cd server/viz
+$ yarn install
+$ yarn build
+# ...
+```
+
+`$ graph:generate` will generated a new `swagger-graph.gv` file in `/server/viz` that is rendered by the web server.
+
+The GraphViz output currently looks something like this:
+
+```txt
+digraph {
+/affiliate-products -> AffiliateProductList [ bold ]
+AffiliateProductList -> *PaginatedList [ filled ]
+/affiliate-products/{productId} -> AffiliateProduct [ bold ]
+/affiliate-products/{productId}/image -> AffiliateProduct [ bold ]
+/auth/signup -> Auth [ bold ]
+/auth -> Auth [ bold ]
+/passwordReset -> Auth [ bold ]
+/fbAuth -> fbAuth [ bold ]
+/autocomplete/uniqueId -> autocompleteUniqueId [ bold ]
+/autocomplete/productTag -> autocompleteProductTag [ bold ]
+...
+CatalogChallengeListItem -> *Product (associatedProducts) [ filled ]
+Challenge -> *Product (associatedProducts) [ filled ]
+```
+
+Edit the `toString()` method of the `Graph` class in `graph.ts` to change the GraphViz rendering.
+
+### UML diagrams
+
+Use [pikturr](https://github.com/nrekretep/pikturr#pikturr) to generate an UML diagram from a Swagger API spec
+
+### Swagger graphs
+
+[swagger-graph](https://github.com/mcf-rocha/swagger-graph) is an other Swagger graphing approach
+
 
 ## TODO
 

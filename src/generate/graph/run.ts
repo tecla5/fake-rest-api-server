@@ -1,7 +1,9 @@
 import {run} from '../schemas'
 
 run({
-  routes: true,
-  auto: true
+  auto: true,
+  routes: false,
+  schemas: false,
+  graph: true,
   // names: ['api-v1', 'api-v2']
 })

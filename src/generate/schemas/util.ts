@@ -16,6 +16,35 @@ export function dasherize(str : string) {
     .toLowerCase();
 };
 
+export function schemaRefName(schemaRef: string): string {
+  let schemaName = ''
+  if (schemaRef) {
+    const matchExpr = /\/(\w+)$/
+    const matches = matchExpr.exec(schemaRef)
+    schemaName = matches
+      ? matches[1]
+      : schemaName
+  }
+  return schemaName
+}
+
+export function schemaFromPath(path : any) : any {
+  // only GET methods are valid
+  const methodName: any = ['get', 'post', 'put', 'delete'].find((name : string) => !!path[name]);
+  if (!methodName) {
+    return
+  }
+  const method = path[methodName];
+  const okResponse = method.responses['200'];
+  if (!okResponse) {
+    return {method, methodName}
+  }
+
+  const schema = okResponse.schema;
+  return {schema, method, methodName}
+}
+
+
 async function loadFullDoc(doc : any, opts = {}) {
   // return await derefAsync(doc, opts)
   return await derefLocal(doc, opts)
